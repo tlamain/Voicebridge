@@ -3,6 +3,8 @@ const nextConfig = {
   basePath: "/Voicebridge",
   assetPrefix: "/Voicebridge/",
   images: { unoptimized: true },
+  reactStrictMode: true,
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
