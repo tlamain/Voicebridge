@@ -10,6 +10,7 @@ export default function SiteHeader() {
           <Link href="/who-its-for">Who it’s for</Link>
           <Link href="/faq">FAQ</Link>
           <Link href="/contact">Contact</Link>
+          <Link href="/privacy-policy">Privacy Policy</Link>
         </nav>
       </div>
     </header>
