@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <>
-      <h1>VoiceBridge AAC</h1>
+      <h1>AyAySee (AAC)</h1>
       <p>
         A universal AAC app that bridges <strong>text-based</strong> and{" "}
         <strong>symbol-based</strong> communication in one simple interface.
