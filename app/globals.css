@@ -18,11 +18,6 @@ a {
   text-decoration: underline;
 }
 
-.container {
-  max-width: 880px;
-  margin: 0 auto;
-  padding: 24px;
-}
 
 /* Remove old header/footer styles - now handled by Tailwind in components */
 
