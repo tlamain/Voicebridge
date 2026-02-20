@@ -14,13 +14,13 @@ Implementation backlog for the marketing site in this repository.
 
 ## Sprint 2 - Content Expansion
 
-- [ ] `VB-008` Rewrite `/features` into full capability map
-- [ ] `VB-009` Rewrite `/who-its-for` into role-based workflows
-- [ ] `VB-010` Add product deep-dive routes (`/product`, `/grid-modes`, `/smart-grammar`, `/admin-for-clinicians`, `/backup-and-migration`, `/setup-wizard`)
-- [ ] `VB-011` Expand FAQ to production depth
-- [ ] `VB-012` Add FAQ JSON-LD structured data
-- [ ] `VB-013` Upgrade contact page to validated lead form
-- [ ] `VB-014` Improve privacy policy page UX and section navigation
+- [x] `VB-008` Rewrite `/features` into full capability map
+- [x] `VB-009` Rewrite `/who-its-for` into role-based workflows
+- [x] `VB-010` Add product deep-dive routes (`/product`, `/grid-modes`, `/smart-grammar`, `/admin-for-clinicians`, `/backup-and-migration`, `/setup-wizard`)
+- [x] `VB-011` Expand FAQ to production depth
+- [x] `VB-012` Add FAQ JSON-LD structured data
+- [x] `VB-013` Upgrade contact page to validated lead form
+- [x] `VB-014` Improve privacy policy page UX and section navigation
 
 ## Sprint 3 - Polish and Launch
 
