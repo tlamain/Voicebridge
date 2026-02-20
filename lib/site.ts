@@ -11,6 +11,12 @@ export const siteConfig = {
   },
   links: {
     home: "/",
+    product: "/product",
+    gridModes: "/grid-modes",
+    smartGrammar: "/smart-grammar",
+    adminForClinicians: "/admin-for-clinicians",
+    backupAndMigration: "/backup-and-migration",
+    setupWizard: "/setup-wizard",
     features: "/features",
     whoItsFor: "/who-its-for",
     faq: "/faq",
@@ -20,14 +26,16 @@ export const siteConfig = {
 } as const;
 
 export const primaryNavigation = [
-  { href: "/#product-pillars", label: "Product" },
-  { href: "/#grid-modes", label: "Grid Modes" },
-  { href: "/#smart-grammar", label: "Smart Grammar" },
-  { href: "/#admin-tools", label: "Admin Tools" },
+  { href: "/product", label: "Product" },
+  { href: "/grid-modes", label: "Grid Modes" },
+  { href: "/smart-grammar", label: "Smart Grammar" },
+  { href: "/admin-for-clinicians", label: "Admin Tools" },
   { href: "/features", label: "All Features" },
 ] as const;
 
 export const resourceNavigation = [
+  { href: "/backup-and-migration", label: "Backup and Migration" },
+  { href: "/setup-wizard", label: "Setup Wizard" },
   { href: "/who-its-for", label: "Who It Is For" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
