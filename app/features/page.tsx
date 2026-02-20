@@ -1,27 +1,57 @@
+import { gridModes, productPillars, smartGrammarHighlights } from "@/content/features";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+  title: "Feature Overview",
+  description:
+    "Explore VoiceBridge AAC capabilities across communication modes, grammar guidance, voice output, progression, and clinical admin workflows.",
+  path: "/features",
+});
+
 export default function FeaturesPage() {
   return (
-    <>
-      <h1>Features</h1>
+    <div className="space-y-10 py-12">
+      <header className="space-y-3">
+        <h1 className="font-[var(--font-jakarta)] text-4xl font-semibold tracking-tight text-slate-900">Feature Overview</h1>
+        <p className="max-w-3xl text-lg text-slate-600">
+          VoiceBridge AAC combines communication workflows, language support, and clinical controls in one platform.
+        </p>
+      </header>
 
-      <div className="card">
-        <h2>Hybrid communication</h2>
-        <p>Type and select symbols in a single flow, without switching modes.</p>
-      </div>
+      <section className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {productPillars.map((pillar) => (
+          <article key={pillar.id} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-[0.12em] text-blue-700">{pillar.value}</p>
+            <h2 className="mt-2 font-[var(--font-jakarta)] text-xl font-semibold text-slate-900">{pillar.title}</h2>
+            <p className="mt-2 text-sm text-slate-600">{pillar.description}</p>
+          </article>
+        ))}
+      </section>
 
-      <div className="card">
-        <h2>Motor-planning friendly grids</h2>
-        <p>Buttons stay in consistent positions to build muscle memory and reduce confusion.</p>
-      </div>
+      <section className="space-y-4">
+        <h2 className="font-[var(--font-jakarta)] text-2xl font-semibold text-slate-900">Grid Modes</h2>
+        <div className="grid gap-5 md:grid-cols-3">
+          {gridModes.map((mode) => (
+            <article key={mode.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{mode.bestFor}</p>
+              <h3 className="mt-2 text-lg font-semibold text-slate-900">{mode.name}</h3>
+              <p className="mt-2 text-sm text-slate-600">{mode.summary}</p>
+            </article>
+          ))}
+        </div>
+      </section>
 
-      <div className="card">
-        <h2>Offline-first reliability</h2>
-        <p>Works without internet. When online, you can use enhanced AI voice options; offline falls back to device TTS.</p>
-      </div>
-
-      <div className="card">
-        <h2>Caregiver admin mode</h2>
-        <p>PIN-protected editing to prevent accidental changes and keep the experience safe.</p>
-      </div>
-    </>
+      <section className="space-y-4">
+        <h2 className="font-[var(--font-jakarta)] text-2xl font-semibold text-slate-900">Smart Grammar Highlights</h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          {smartGrammarHighlights.map((item) => (
+            <article key={item.title} className="rounded-xl border border-slate-200 bg-white p-5">
+              <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
+              <p className="mt-2 text-sm text-slate-600">{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

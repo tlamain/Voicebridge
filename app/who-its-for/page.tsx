@@ -1,22 +1,31 @@
+import { personas } from "@/content/personas";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+  title: "Who It Is For",
+  description:
+    "See how VoiceBridge AAC supports literate adults, emergent communicators, caregivers, and speech-language professionals.",
+  path: "/who-its-for",
+});
+
 export default function WhoItsForPage() {
   return (
-    <>
-      <h1>Who it’s for</h1>
+    <div className="space-y-8 py-12">
+      <header className="space-y-3">
+        <h1 className="font-[var(--font-jakarta)] text-4xl font-semibold tracking-tight text-slate-900">Who It Is For</h1>
+        <p className="max-w-3xl text-lg text-slate-600">
+          VoiceBridge AAC is built for people who communicate differently and for the teams supporting them every day.
+        </p>
+      </header>
 
-      <div className="card">
-        <h2>Literate adults (ALS, stroke/aphasia)</h2>
-        <p>Efficient typing, fast access to common phrases, and voice output designed to preserve identity.</p>
+      <div className="grid gap-5 md:grid-cols-3">
+        {personas.map((persona) => (
+          <article key={persona.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 className="font-[var(--font-jakarta)] text-xl font-semibold text-slate-900">{persona.title}</h2>
+            <p className="mt-2 text-sm text-slate-600">{persona.description}</p>
+          </article>
+        ))}
       </div>
-
-      <div className="card">
-        <h2>Pre-literate or emergent communicators (autism, cerebral palsy)</h2>
-        <p>Symbol/photo-based communication with stable layouts that support learning and motor planning.</p>
-      </div>
-
-      <div className="card">
-        <h2>Caregivers & SLPs</h2>
-        <p>Easy customization, PIN protection, and privacy-minded workflows.</p>
-      </div>
-    </>
+    </div>
   );
 }
