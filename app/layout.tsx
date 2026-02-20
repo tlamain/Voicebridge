@@ -37,11 +37,20 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     url: absoluteSiteUrl("/"),
+    images: [
+      {
+        url: absoluteSiteUrl(siteConfig.socialImagePath),
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.name} preview`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
+    images: [absoluteSiteUrl(siteConfig.socialImagePath)],
   },
 };
 
@@ -51,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-slate-100 text-slate-900 flex flex-col font-[var(--font-inter)]">
         <SkipLink />
         <SiteHeader />
-        <main id="main" className="flex-grow mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <main id="main" tabIndex={-1} className="flex-grow mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           {children}
         </main>
         <SiteFooter />

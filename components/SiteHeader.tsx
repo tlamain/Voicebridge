@@ -44,8 +44,10 @@ export default function SiteHeader() {
           onClick={() => setIsMenuOpen((open) => !open)}
           aria-label="Toggle menu"
           aria-expanded={isMenuOpen}
+          aria-controls="mobile-navigation"
+          aria-haspopup="menu"
         >
-          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg aria-hidden className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {isMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -57,7 +59,7 @@ export default function SiteHeader() {
 
       {isMenuOpen && (
         <div className="border-t border-slate-200 bg-white md:hidden">
-          <nav className="mx-auto flex w-full max-w-7xl flex-col gap-1 px-4 py-3 sm:px-6" aria-label="Mobile">
+          <nav id="mobile-navigation" className="mx-auto flex w-full max-w-7xl flex-col gap-1 px-4 py-3 sm:px-6" aria-label="Mobile">
             {primaryNavigation.map((item) => (
               <Link
                 key={item.href}

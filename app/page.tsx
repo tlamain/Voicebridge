@@ -14,7 +14,7 @@ export const metadata = createPageMetadata({
 export default function HomePage() {
   return (
     <div className="space-y-20 py-10 sm:py-14">
-      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-12">
+      <section className="section-shell render-optimized relative overflow-hidden p-8 sm:p-12">
         <div className="absolute -left-24 -top-24 h-56 w-56 rounded-full bg-blue-100 blur-3xl" aria-hidden />
         <div className="absolute -right-20 bottom-0 h-52 w-52 rounded-full bg-cyan-100 blur-3xl" aria-hidden />
         <div className="relative space-y-7">
@@ -52,14 +52,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="product-pillars" className="space-y-5">
+      <section id="product-pillars" className="render-optimized space-y-5">
         <header className="space-y-2">
-          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Product Pillars</p>
-          <h2 className="font-[var(--font-jakarta)] text-3xl font-semibold text-slate-900">What the platform delivers</h2>
+          <p className="section-kicker">Product Pillars</p>
+          <h2 className="section-title">What the platform delivers</h2>
         </header>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {productPillars.map((pillar) => (
-            <article key={pillar.id} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <article key={pillar.id} className="surface-card p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.12em] text-blue-700">{pillar.value}</p>
               <h3 className="mt-2 font-[var(--font-jakarta)] text-xl font-semibold text-slate-900">{pillar.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">{pillar.description}</p>
@@ -68,16 +68,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="grid-modes" className="space-y-5">
+      <section id="grid-modes" className="render-optimized space-y-5">
         <header className="space-y-2">
-          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Grid Modes</p>
-          <h2 className="font-[var(--font-jakarta)] text-3xl font-semibold text-slate-900">
+          <p className="section-kicker">Grid Modes</p>
+          <h2 className="section-title">
             Choose the structure that matches each communicator
           </h2>
         </header>
         <div className="grid gap-5 lg:grid-cols-3">
           {gridModes.map((mode) => (
-            <article key={mode.id} className="rounded-2xl border border-slate-200 bg-gradient-to-b from-white to-slate-50 p-6">
+            <article key={mode.id} className="surface-card-muted bg-gradient-to-b from-white to-slate-50 p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{mode.bestFor}</p>
               <h3 className="mt-2 font-[var(--font-jakarta)] text-2xl font-semibold text-slate-900">{mode.name}</h3>
               <p className="mt-3 text-sm text-slate-600">{mode.summary}</p>
@@ -87,10 +87,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="smart-grammar" className="grid gap-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm lg:grid-cols-[1.2fr_1fr] lg:p-8">
+      <section id="smart-grammar" className="section-shell render-optimized grid gap-6 lg:grid-cols-[1.2fr_1fr]">
         <div className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Smart Grammar</p>
-          <h2 className="font-[var(--font-jakarta)] text-3xl font-semibold text-slate-900">
+          <p className="section-kicker">Smart Grammar</p>
+          <h2 className="section-title">
             Guidance that supports sentence quality without slowing communication
           </h2>
           <p className="text-slate-600">
@@ -100,7 +100,7 @@ export default function HomePage() {
         </div>
         <ul className="space-y-3">
           {smartGrammarHighlights.map((item) => (
-            <li key={item.title} className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+            <li key={item.title} className="surface-card-muted rounded-xl p-4">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1 text-sm text-slate-600">{item.description}</p>
             </li>
@@ -108,9 +108,9 @@ export default function HomePage() {
         </ul>
       </section>
 
-      <section id="admin-tools" className="grid gap-6 lg:grid-cols-[1fr_1.1fr]">
-        <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Communication Workflow</p>
+      <section id="admin-tools" className="render-optimized grid gap-6 lg:grid-cols-[1fr_1.1fr]">
+        <div className="surface-card space-y-4 p-6">
+          <p className="section-kicker">Communication Workflow</p>
           <h2 className="font-[var(--font-jakarta)] text-2xl font-semibold text-slate-900">From message creation to adaptation</h2>
           <ol className="space-y-3">
             {communicationWorkflow.map((item) => (
@@ -127,12 +127,12 @@ export default function HomePage() {
           </ol>
         </div>
 
-        <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Admin and Outcomes</p>
+        <div className="surface-card space-y-4 p-6">
+          <p className="section-kicker">Admin and Outcomes</p>
           <h2 className="font-[var(--font-jakarta)] text-2xl font-semibold text-slate-900">Operational control for care teams</h2>
           <ul className="space-y-3">
             {adminHighlights.map((item) => (
-              <li key={item.title} className="rounded-xl bg-slate-50 p-4">
+              <li key={item.title} className="surface-card-muted rounded-xl p-4">
                 <p className="font-semibold text-slate-900">{item.title}</p>
                 <p className="mt-1 text-sm text-slate-600">{item.description}</p>
               </li>
@@ -151,7 +151,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="rounded-3xl border border-blue-200 bg-gradient-to-r from-blue-700 to-blue-800 p-8 text-white shadow-lg shadow-blue-200">
+      <section className="render-optimized rounded-3xl border border-blue-200 bg-gradient-to-r from-blue-700 to-blue-800 p-8 text-white shadow-lg shadow-blue-200">
         <h2 className="font-[var(--font-jakarta)] text-3xl font-semibold">Ready to evaluate VoiceBridge AAC with your team?</h2>
         <p className="mt-2 max-w-2xl text-blue-100">
           Share your care setting, communication goals, and devices. We will map the best setup path and feature profile.

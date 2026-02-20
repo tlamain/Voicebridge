@@ -24,9 +24,9 @@ Implementation backlog for the marketing site in this repository.
 
 ## Sprint 3 - Polish and Launch
 
-- [ ] `VB-015` Establish global visual tokens and reusable section styles
-- [ ] `VB-016` Add social preview assets and OG/Twitter metadata
-- [ ] `VB-017` Add `sitemap` and `robots` routes
-- [ ] `VB-018` Run accessibility pass and fix findings
-- [ ] `VB-019` Run performance pass and fix top bottlenecks
-- [ ] `VB-020` Validate GitHub Pages release hardening and deploy pipeline
+- [x] `VB-015` Establish global visual tokens and reusable section styles
+- [x] `VB-016` Add social preview assets and OG/Twitter metadata
+- [x] `VB-017` Add `sitemap` and `robots` routes
+- [x] `VB-018` Run accessibility pass and fix findings
+- [x] `VB-019` Run performance pass and fix top bottlenecks
+- [x] `VB-020` Validate GitHub Pages release hardening and deploy pipeline

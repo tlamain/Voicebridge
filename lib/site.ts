@@ -4,6 +4,7 @@ export const siteConfig = {
   description:
     "VoiceBridge AAC helps people communicate with symbols and text, smart grammar support, and flexible voice output for home, school, and clinic use.",
   supportEmail: "hello@voicebridgeaac.com",
+  socialImagePath: "/og-default.svg",
   deployment: {
     origin: "https://tlamain.github.io",
     basePath: "/Voicebridge",
@@ -24,6 +25,21 @@ export const siteConfig = {
     privacy: "/privacy-policy",
   },
 } as const;
+
+export const publicRoutes = [
+  "/",
+  "/product",
+  "/features",
+  "/grid-modes",
+  "/smart-grammar",
+  "/admin-for-clinicians",
+  "/backup-and-migration",
+  "/setup-wizard",
+  "/who-its-for",
+  "/faq",
+  "/contact",
+  "/privacy-policy",
+] as const;
 
 export const primaryNavigation = [
   { href: "/product", label: "Product" },
