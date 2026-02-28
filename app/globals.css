@@ -2,47 +2,62 @@
 
 :root {
   color-scheme: light;
+  --surface-canvas: #f8fafc;
+  --surface-soft: #eef2ff;
+  --surface-card: #ffffff;
+  --surface-muted: #f1f5f9;
+  --border-default: #e2e8f0;
+  --text-default: #0f172a;
+  --text-muted: #475569;
+  --brand-primary: #4f46e5;
+  --brand-primary-strong: #4338ca;
+  --focus-ring: #4f46e5;
+  --radius-section: 1.5rem;
+  --radius-card: 1rem;
+  --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.06);
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.6;
 }
 
-a {
-  text-decoration: underline;
+h1 {
+  line-height: 1.2;
 }
-
-
-/* Remove old header/footer styles - now handled by Tailwind in components */
 
 .skip-link {
   position: absolute;
   left: -999px;
   top: 10px;
-  background: #000;
-  color: #fff;
+  background: #0f172a;
+  color: #ffffff;
   padding: 10px 12px;
   border-radius: 6px;
 }
 
-.skip-link:focus {
+.skip-link:focus-visible {
   left: 10px;
   z-index: 9999;
 }
 
-@layer components {
-  .card {
-    @apply border border-slate-200 rounded-lg p-4 my-3.5 bg-white;
+@layer base {
+  :where(a, button, input, select, textarea):focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
   }
 }
 
-h1 { line-height: 1.2; }
+@layer components {
+  .card {
+    @apply my-3.5 rounded-lg border border-slate-200 bg-white p-4;
+  }
+}
 
 /* Scroll-triggered animations */
 .animate-on-scroll {
@@ -67,4 +82,15 @@ h1 { line-height: 1.2; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

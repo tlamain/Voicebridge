@@ -1,0 +1,41 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">VoiceBridge AAC</title>
+  <desc id="desc">VoiceBridge AAC social preview image</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="860" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#E2E8F0" stop-opacity="0.96"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1080" cy="88" r="200" fill="#38BDF8" fill-opacity="0.12"/>
+  <circle cx="140" cy="560" r="180" fill="#60A5FA" fill-opacity="0.14"/>
+
+  <rect x="170" y="105" width="860" height="420" rx="28" fill="url(#card)"/>
+  <rect x="220" y="165" width="280" height="44" rx="22" fill="#DBEAFE"/>
+  <text x="360" y="194" text-anchor="middle" fill="#1E3A8A" font-size="18" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">
+    AAC PLATFORM
+  </text>
+
+  <text x="220" y="278" fill="#0F172A" font-size="64" font-family="Arial, sans-serif" font-weight="700">
+    VoiceBridge AAC
+  </text>
+  <text x="220" y="336" fill="#334155" font-size="30" font-family="Arial, sans-serif" font-weight="500">
+    Communication, grammar guidance, and clinical controls
+  </text>
+  <text x="220" y="384" fill="#475569" font-size="28" font-family="Arial, sans-serif" font-weight="500">
+    for users, caregivers, and SLP teams.
+  </text>
+
+  <g transform="translate(220 430)">
+    <rect width="170" height="52" rx="26" fill="#1D4ED8"/>
+    <text x="85" y="33" text-anchor="middle" fill="#FFFFFF" font-size="20" font-family="Arial, sans-serif" font-weight="700">
+      VoiceBridge
+    </text>
+  </g>
+</svg>

@@ -1,6 +1,13 @@
 import FAQItem from "../../components/FAQItem";
 import CTABanner from "../../components/CTABanner";
 import ScrollReveal from "../../components/ScrollReveal";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+  title: "Frequently Asked Questions",
+  description: "Answers to common questions about Loquor AAC — offline support, privacy, languages, grammar, voices, and more.",
+  path: "/faq",
+});
 
 const faqs = [
   {
@@ -54,9 +61,23 @@ const faqs = [
 ];
 
 export default function FaqPage() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="py-16 space-y-16">
-      {/* Hero */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+
       <ScrollReveal>
         <div className="text-center space-y-4">
           <h1 className="font-(--font-jakarta) text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight">
@@ -68,7 +89,6 @@ export default function FaqPage() {
         </div>
       </ScrollReveal>
 
-      {/* FAQ List */}
       <div className="max-w-3xl mx-auto space-y-4">
         {faqs.map((faq, i) => (
           <ScrollReveal key={i} delay={i < 4 ? ((i + 1) * 100 as 100 | 200 | 300 | 400) : 0}>
@@ -77,7 +97,6 @@ export default function FaqPage() {
         ))}
       </div>
 
-      {/* CTA */}
       <ScrollReveal>
         <CTABanner
           title="Still Have Questions?"

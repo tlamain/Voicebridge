@@ -1,5 +1,12 @@
 import CTABanner from "../../components/CTABanner";
 import ScrollReveal from "../../components/ScrollReveal";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+  title: "Who It's For",
+  description: "Loquor AAC serves communicators of all ages, speech-language pathologists, caregivers, and educators.",
+  path: "/who-its-for",
+});
 
 const audiences = [
   {
@@ -23,7 +30,7 @@ const audiences = [
     ),
     title: "Children & Pre-Literate Communicators",
     conditions: "Autism, cerebral palsy, developmental delays, intellectual disabilities",
-    description: "Symbol-based communication with stable, motor-planning friendly layouts that support learning. The progressive vocabulary system grows with the child, and the child-friendly theme makes the experience engaging and approachable.",
+    description: "Symbol-based communication with stable, motor-planning friendly layouts that support learning. The progressive vocabulary system grows with the child, and the child-friendly theme makes the experience engaging.",
     highlights: ["Pictogram symbols with stable grid positions for muscle memory", "Progressive 6-level vocabulary that grows with the child", "Child-friendly theme with large, colorful tap targets", "Fitzgerald Key color-coding for visual grammar learning"],
     color: "from-emerald-500 to-teal-600",
     bgColor: "bg-emerald-50",
@@ -36,7 +43,7 @@ const audiences = [
     ),
     title: "Speech-Language Pathologists",
     conditions: "Clinical practice, therapy sessions, assessment",
-    description: "Advanced grammar controls, three assist levels (Simple, Standard, Expert), and comprehensive admin tools give SLPs the precision they need. Grammar test runners, detailed vocabulary statistics, and pack management streamline clinical workflows.",
+    description: "Advanced grammar controls, three assist levels (Simple, Standard, Expert), and comprehensive admin tools give SLPs the precision they need. Vocabulary statistics and pack management streamline clinical workflows.",
     highlights: ["Three assist levels for different therapy stages", "Grammar Bar with gender-aware article selection", "Vocabulary statistics panel for tracking progress", "Vocabulary Packs for structured language intervention"],
     color: "from-violet-500 to-purple-600",
     bgColor: "bg-violet-50",
@@ -49,7 +56,7 @@ const audiences = [
     ),
     title: "Caregivers & Family Members",
     conditions: "Parents, guardians, home care, daily support",
-    description: "The 11-step guided setup wizard makes getting started simple — no technical expertise required. PIN protection keeps settings safe from accidental changes, while profile management lets caregivers manage multiple communicators on a single device.",
+    description: "The 11-step guided setup wizard makes getting started simple — no technical expertise required. PIN protection keeps settings safe, while profile management lets caregivers manage multiple communicators on a single device.",
     highlights: ["11-step guided setup wizard — no tech skills needed", "PIN-protected admin to prevent accidental edits", "Multi-user profiles for managing multiple communicators", "Backup & restore to protect customizations"],
     color: "from-rose-500 to-pink-600",
     bgColor: "bg-rose-50",
@@ -62,7 +69,7 @@ const audiences = [
     ),
     title: "Educational Settings",
     conditions: "Schools, special education, classroom use",
-    description: "The progressive vocabulary system and Fitzgerald Key visual learning aids make Loquor AAC ideal for educational environments. Activity Boards can be customized for classroom contexts, and the child-friendly theme creates an engaging learning environment.",
+    description: "The progressive vocabulary system and Fitzgerald Key visual learning aids make Loquor AAC ideal for educational environments. Activity Boards can be customized for classroom contexts.",
     highlights: ["Progressive vocabulary for structured learning paths", "Fitzgerald Key color-coding teaches grammar visually", "Activity Boards for classroom-specific contexts", "High contrast and accessible design for all learners"],
     color: "from-amber-500 to-orange-600",
     bgColor: "bg-amber-50",
@@ -72,7 +79,6 @@ const audiences = [
 export default function WhoItsForPage() {
   return (
     <div className="py-16 space-y-20">
-      {/* Hero */}
       <ScrollReveal>
         <div className="text-center space-y-4">
           <h1 className="font-(--font-jakarta) text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight">
@@ -86,15 +92,13 @@ export default function WhoItsForPage() {
         </div>
       </ScrollReveal>
 
-      {/* Audience Cards */}
       <div className="space-y-8">
-        {audiences.map((audience, i) => (
+        {audiences.map((audience) => (
           <ScrollReveal key={audience.title}>
-            <div className={`rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300`}>
+            <div className="rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
               <div className={`h-2 bg-linear-to-r ${audience.color}`} />
               <div className="p-8 sm:p-10">
                 <div className="flex flex-col lg:flex-row gap-8">
-                  {/* Left */}
                   <div className="lg:w-2/5 space-y-4">
                     <div className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl ${audience.bgColor} text-slate-700`}>
                       {audience.icon}
@@ -103,8 +107,6 @@ export default function WhoItsForPage() {
                     <p className="text-sm font-medium text-indigo-600">{audience.conditions}</p>
                     <p className="text-slate-600 leading-relaxed">{audience.description}</p>
                   </div>
-
-                  {/* Right: Highlights */}
                   <div className="lg:w-3/5">
                     <div className={`rounded-2xl ${audience.bgColor} p-6`}>
                       <p className="text-sm font-semibold text-slate-700 mb-4 uppercase tracking-wider">Key Benefits</p>
@@ -127,7 +129,6 @@ export default function WhoItsForPage() {
         ))}
       </div>
 
-      {/* CTA */}
       <ScrollReveal>
         <CTABanner
           title="Find Out How Loquor AAC Can Help"

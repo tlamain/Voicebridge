@@ -1,6 +1,13 @@
 import SectionHeading from "../../components/SectionHeading";
 import CTABanner from "../../components/CTABanner";
 import ScrollReveal from "../../components/ScrollReveal";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+  title: "Features",
+  description: "Explore Loquor AAC's communication tools, smart grammar, premium voices, progressive vocabulary, activity boards, and more.",
+  path: "/features",
+});
 
 const featureSections = [
   {
@@ -154,7 +161,6 @@ export default function FeaturesPage() {
         <ScrollReveal key={section.title}>
           <section className={`rounded-3xl p-8 sm:p-10 ${sectionIndex % 2 === 0 ? "bg-white border border-slate-200" : "bg-slate-50"}`}>
             <div className="flex flex-col lg:flex-row lg:items-start gap-8">
-              {/* Left: Icon + Title */}
               <div className="lg:w-1/3 space-y-4">
                 <div className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl ring-1 ${section.color}`}>
                   {section.icon}
@@ -163,8 +169,6 @@ export default function FeaturesPage() {
                 <h2 className="font-(--font-jakarta) text-2xl sm:text-3xl font-bold text-slate-900">{section.title}</h2>
                 <p className="text-slate-600 leading-relaxed">{section.description}</p>
               </div>
-
-              {/* Right: Feature List */}
               <div className="lg:w-2/3">
                 <ul className="space-y-4">
                   {section.items.map((item, i) => (
@@ -184,7 +188,6 @@ export default function FeaturesPage() {
         </ScrollReveal>
       ))}
 
-      {/* CTA */}
       <ScrollReveal>
         <CTABanner
           title="See It in Action"

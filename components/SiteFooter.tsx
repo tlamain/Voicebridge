@@ -1,9 +1,50 @@
+import Link from "next/link";
+import { legalNavigation, siteConfig } from "@/lib/site";
+
 export default function SiteFooter() {
   return (
-    <footer className="border-t border-slate-200 bg-white py-8">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-sm text-slate-500">
-          © {new Date().getFullYear()} Loquor AAC. Built with privacy and accessibility in mind.
+    <footer className="mt-14 border-t border-slate-200 bg-slate-50">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-10 sm:flex-row sm:items-start sm:justify-between sm:px-6 lg:px-8">
+        <div className="space-y-2">
+          <p className="font-(--font-jakarta) text-lg font-semibold text-slate-900">{siteConfig.name}</p>
+          <p className="max-w-md text-sm text-slate-600">
+            Empowering communication through symbols, text, and voice — with privacy and accessibility at the core.
+          </p>
+          <a
+            href={`mailto:${siteConfig.supportEmail}`}
+            className="inline-block text-sm font-medium text-indigo-600 no-underline transition hover:text-indigo-800"
+          >
+            {siteConfig.supportEmail}
+          </a>
+        </div>
+
+        <div className="flex gap-8">
+          <div>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Pages</p>
+            <ul className="space-y-2">
+              <li><Link href="/features" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Features</Link></li>
+              <li><Link href="/who-its-for" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Who It&apos;s For</Link></li>
+              <li><Link href="/faq" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">FAQ</Link></li>
+              <li><Link href="/contact" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Contact</Link></li>
+            </ul>
+          </div>
+          <div>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Legal</p>
+            <ul className="space-y-2">
+              {legalNavigation.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="border-t border-slate-200 py-4">
+        <p className="text-center text-xs text-slate-500">
+          &copy; {new Date().getFullYear()} {siteConfig.name}. Built with privacy and accessibility in mind.
         </p>
       </div>
     </footer>

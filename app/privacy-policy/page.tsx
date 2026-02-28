@@ -1,21 +1,30 @@
+import { createPageMetadata } from "@/lib/metadata";
+import { siteConfig } from "@/lib/site";
+
+export const metadata = createPageMetadata({
+  title: "Privacy Policy",
+  description: "Read how Loquor AAC handles local-first data, optional voice services, backups, and user-controlled privacy settings.",
+  path: "/privacy-policy",
+});
+
 export default function PrivacyPolicyPage() {
   return (
     <div className="py-16">
       <div className="max-w-3xl mx-auto">
         <h1 className="font-(--font-jakarta) text-4xl font-bold text-slate-900 tracking-tight mb-2">
-          Privacy Policy
+          Privacy Policy &mdash; {siteConfig.name}
         </h1>
         <p className="text-slate-500 mb-10">Effective date: January 5, 2026</p>
 
-        <div className="prose prose-slate max-w-none space-y-8">
+        <div className="space-y-8">
           <p className="text-lg text-slate-600 leading-relaxed">
-            Loquor AAC (&ldquo;the App&rdquo;) is designed to give users a reliable communication voice using text, symbols, and optional speech synthesis. Your privacy is central to our design.
+            {siteConfig.name} (&ldquo;the App&rdquo;) is designed to give users a reliable communication voice using text, symbols, and optional speech synthesis. Your privacy is central to our design.
           </p>
 
           <section className="rounded-2xl bg-white border border-slate-200 p-6 space-y-3">
             <h2 className="text-xl font-semibold text-slate-900">1. Data We Collect</h2>
             <p className="text-slate-600">
-              Loquor AAC does not automatically collect personal data. All vocabulary, phrases, symbols, and settings are stored locally on your device only.
+              {siteConfig.name} does not automatically collect personal data. All vocabulary, phrases, symbols, and settings are stored locally on your device only.
             </p>
             <p className="text-slate-600">The App may store the following locally if you choose to use it:</p>
             <ul className="list-disc list-inside space-y-1 text-slate-600">
@@ -44,7 +53,7 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-xl font-semibold text-slate-900">3. Optional Voice Services (User-Initiated Only)</h2>
             <p className="text-slate-600">
               If you enter your own API key to use third-party voice services (e.g., ElevenLabs), text you choose to speak may be sent to that provider only at the moment you press &ldquo;Speak&rdquo;.
-              Loquor AAC does not store or transmit your API key outside your device. Keys are kept in secure storage on the device.
+              {siteConfig.name} does not store or transmit your API key outside your device. Keys are kept in secure storage on the device.
             </p>
           </section>
 
@@ -69,7 +78,7 @@ export default function PrivacyPolicyPage() {
           <section className="rounded-2xl bg-white border border-slate-200 p-6 space-y-3">
             <h2 className="text-xl font-semibold text-slate-900">6. Children&apos;s Privacy</h2>
             <p className="text-slate-600">
-              Loquor AAC can be used by children, but the App itself does not collect data about age, identity, or behavior. Vocabulary is managed by caregivers using a local admin PIN.
+              {siteConfig.name} can be used by children, but the App itself does not collect data about age, identity, or behavior. Vocabulary is managed by caregivers using a local admin PIN.
             </p>
           </section>
 
@@ -98,8 +107,8 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-xl font-semibold text-slate-900">10. Contact</h2>
             <p className="text-slate-600">For questions about privacy, you can reach us at:</p>
             <p>
-              <a href="mailto:hello@loquoraac.com" className="text-indigo-600 hover:text-indigo-800 font-medium">
-                hello@loquoraac.com
+              <a href={`mailto:${siteConfig.supportEmail}`} className="text-indigo-600 hover:text-indigo-800 font-medium">
+                {siteConfig.supportEmail}
               </a>
             </p>
           </section>
