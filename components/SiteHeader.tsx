@@ -15,7 +15,7 @@ export default function SiteHeader() {
             className="text-xl font-bold text-indigo-700 hover:text-indigo-800 transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
-            AyAySee (AAC)
+            Loquor AAC
           </Link>
 
           {/* Desktop Navigation */}

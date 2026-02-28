@@ -20,9 +20,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AyAySee (AAC)",
+  title: "Loquor AAC — Communication for Every Voice",
   description:
-    "A universal AAC app that bridges text and symbols, with natural voice output. Built for users and caregivers.",
+    "Loquor AAC empowers people with speech difficulties through symbol-based communication, smart grammar, premium AI voices, and progressive vocabulary learning. Available in 5 languages.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
