@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { assetPath } from "@/lib/site";
 
 type AppScreenshotProps = {
   src?: string;
@@ -34,20 +34,11 @@ export default function AppScreenshot({
         className={`relative w-full ${aspectRatioClasses[aspectRatio]} overflow-hidden rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 border border-slate-300 shadow-md`}
       >
         {src ? (
-          <Image
-            src={src}
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
+            src={assetPath(src)}
             alt={description ? `${label} — ${description}` : label}
-            fill
-            className="object-cover"
-            sizes={
-              size === "full"
-                ? "100vw"
-                : size === "lg"
-                ? "28rem"
-                : size === "md"
-                ? "24rem"
-                : "20rem"
-            }
+            className="absolute inset-0 h-full w-full object-cover"
           />
         ) : (
           <>

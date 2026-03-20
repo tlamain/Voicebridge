@@ -43,6 +43,11 @@ export const resourceNavigation = [
 
 export const legalNavigation = [{ href: "/privacy-policy", label: "Privacy Policy" }] as const;
 
+export function assetPath(path: string): string {
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  return `${siteConfig.deployment.basePath}${normalizedPath}`;
+}
+
 export function absoluteSiteUrl(path: string): string {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
   const cleanSiteUrl = siteConfig.deployment.siteUrl.replace(/\/$/, "");

@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-import { legalNavigation, siteConfig } from "@/lib/site";
+import { assetPath, legalNavigation, siteConfig } from "@/lib/site";
 
 export default function SiteFooter() {
   return (
@@ -8,8 +7,9 @@ export default function SiteFooter() {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-10 sm:flex-row sm:items-start sm:justify-between sm:px-6 lg:px-8">
         <div className="space-y-2">
           <p className="flex items-center gap-2 font-(--font-jakarta) text-lg font-semibold text-slate-900">
-            <Image
-              src="/images/logo.png"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={assetPath("/images/logo.png")}
               alt={`${siteConfig.name} logo`}
               width={28}
               height={28}

@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { primaryNavigation, siteConfig } from "@/lib/site";
+import { assetPath, primaryNavigation, siteConfig } from "@/lib/site";
 
 export default function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +15,9 @@ export default function SiteHeader() {
           className="flex items-center gap-2 font-(--font-jakarta) text-xl font-bold text-indigo-700 hover:text-indigo-800 transition-colors no-underline"
           onClick={() => setIsMenuOpen(false)}
         >
-          <Image
-            src="/images/logo.png"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={assetPath("/images/logo.png")}
             alt={`${siteConfig.name} logo`}
             width={32}
             height={32}
