@@ -303,8 +303,8 @@ export default function SmartGrammarPage() {
                 </p>
                 <p className="text-sm text-slate-600 leading-relaxed">
                   <strong className="text-slate-800">Gender-aware dimming:</strong> when a noun is in the message,
-                  incompatible articles and demonstratives are automatically dimmed. Tap "appel" in Dutch
-                  and "de" lights up while "het" fades — no grammar knowledge required.
+                  incompatible articles and demonstratives are automatically dimmed. Tap &ldquo;appel&rdquo; in Dutch
+                  and &ldquo;de&rdquo; lights up while &ldquo;het&rdquo; fades — no grammar knowledge required.
                 </p>
                 <div className="space-y-3 pt-2">
                   {grammarBarGroups.map((group) => (
@@ -340,7 +340,7 @@ export default function SmartGrammarPage() {
             <h2 className="font-(--font-jakarta) text-3xl font-bold text-slate-900">The Right Amount of Help</h2>
             <p className="mx-auto max-w-2xl text-slate-600">
               One setting controls how much grammar assistance is shown. Choose the level that matches
-              the communicator's needs — or change it as they grow.
+              the communicator&apos;s needs — or change it as they grow.
             </p>
           </div>
         </ScrollReveal>

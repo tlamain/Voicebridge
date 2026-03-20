@@ -333,7 +333,7 @@ export default function ProgressiveVocabularyPage() {
               <h2 className="font-(--font-jakarta) text-2xl font-bold text-slate-900">Locked Words Are Clearly Marked</h2>
               <p className="text-slate-600 leading-relaxed">
                 Word Finder searches the entire vocabulary but shows locked words as unavailable — each
-                labelled with <em>"Available at Level X"</em>. Tapping a locked result does nothing.
+                labelled with <em>&ldquo;Available at Level X&rdquo;</em>. Tapping a locked result does nothing.
                 Once the user advances to the required level, the same result becomes fully selectable.
               </p>
               <ul className="space-y-2 text-sm text-slate-700">

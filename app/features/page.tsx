@@ -1,4 +1,3 @@
-import SectionHeading from "../../components/SectionHeading";
 import CTABanner from "../../components/CTABanner";
 import ScrollReveal from "../../components/ScrollReveal";
 import AppScreenshot from "../../components/AppScreenshot";
