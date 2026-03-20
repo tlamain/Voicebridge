@@ -39,10 +39,11 @@ User Action → Component → Hook → Service → Database → Redux → UI Upd
 
 | Screen | Purpose | Key Features |
 |--------|---------|--------------|
-| **MainScreen** | Primary communication interface | Symbol grid, message builder, prediction bar, TTS |
+| **MainScreen** | Primary communication interface | Symbol grid or text mode, message builder, prediction bar, TTS |
+| **TextModeScreen** | Text-based communication | Keyboard input, quick phrases, abbreviation shortcuts, phrase categories |
 | **WelcomeScreen** | First-launch overlay | Shows SetupWizard on first run |
 | **AdminScreen** | Content management | Symbol/phrase/abbreviation/board CRUD, pack installation, user profiles |
-| **SettingsScreen** | User configuration | Theme, progressive vocabulary, grammar, security |
+| **SettingsScreen** | User configuration | Input mode, theme, progressive vocabulary, grammar, security |
 
 #### MainScreen (`src/screens/main/`)
 
@@ -60,6 +61,22 @@ User Action → Component → Hook → Service → Database → Redux → UI Upd
 - **Prediction Bar**: Smart word suggestions
 - **Grammar Strip**: Multi-language grammar word chips (articles, demonstratives, possessives, prepositions) with gender-aware dimming and smart insertion
 - **WelcomeScreen overlay**: On first launch (`welcome_completed` not set), a modal overlay renders the SetupWizard while DB initialization proceeds in the background
+- **Input Mode Routing**: MainScreen reads the `input_mode` setting (`symbol_only` or `text`) and conditionally renders the symbol grid (default) or TextModeScreen. The mode is re-read on focus via `useFocusEffect` to detect admin changes, with a `useRef` guard to skip the initial mount read.
+
+#### TextModeScreen (`src/screens/main/TextModeScreen.tsx`)
+
+Text-based communication alternative to the symbol grid, optimized for users who prefer keyboard input:
+
+- **TextModeScreen**: Router that detects device type and renders phone or tablet layout
+- **TextModePhone** (`TextModePhone.tsx`): Single-column layout with KeyboardAvoidingView
+- **TextModeTablet** (`TextModeTablet.tsx`): Two-column layout with full-width composer
+- **useTextModeState Hook** (`useTextModeState.ts`): Core state — Redux message, phrases from DB (top 10 quick phrases, categories), abbreviations, TTS via voiceService, admin navigation with PIN, share
+- **Text Mode Components** (`src/components/textmode/`):
+  - `TextComposerBar` — Large text input with speak/stop/backspace/share toolbar
+  - `QuickPhraseStrip` — Horizontal scroll of frequently-used phrase chips
+  - `PhraseCategoryRow` — Horizontal scroll of category cards (folder icon, name, count)
+  - `PhrasePickerSheet` — Modal bottom sheet with FlatList of phrases per category
+  - `ShortcutStrip` — Abbreviation shortcode chips for quick text expansion
 
 #### SetupWizard (`src/screens/SetupWizard/`)
 
@@ -101,7 +118,7 @@ An 11-step wizard shown when creating a new user via "Add New User with Setup Wi
   - **SymbolsSubTab**: Symbol CRUD with batch operations
   - **AbbreviationsSubTab**: Text shortcut management
   - **PhrasesSubTab**: Common phrase management
-  - **CategoriesSubTab**: Category CRUD with image support
+  - **CategoriesSubTab**: Category CRUD with 3-tab icon picker (Emoji / Device / Pack) — Pack tab lazy-loads all symbols with images from the DB (same pattern as `BoardEditorModal`), searchable by label, resets on language change
   - **IrregularNounsSubTab**: Irregular noun form management
   - **IrregularVerbsSubTab**: Irregular verb form management
   - **ActivityBoardsSubTab**: Activity board CRUD (create, edit, delete boards via BoardEditorModal; "Edit Grid" navigates to MainScreen in admin board edit mode)
@@ -115,6 +132,7 @@ Refactored modular architecture (2026):
 
 | Section | Purpose |
 |---------|---------|
+| **InputModeSettings** | Switch between symbol-only and text input mode |
 | **AppearanceSettings** | Theme and UI preferences |
 | **ProgressiveVocabularySettings** | 6-level learning system configuration |
 | **GrammarSettings** | Smart grammar enable/disable |
@@ -157,8 +175,9 @@ src/components/
 │   ├── ActivityBoardView.tsx       # Board display
 │   ├── SchematicGrid.tsx           # Grid layout renderer
 │   ├── BoardButtonCell.tsx         # Grid cell button (React.memo with custom comparator)
-│   ├── BoardEditorModal.tsx        # Board creation/editing (emoji search, image picker, pack images)
-│   ├── ButtonEditorModal.tsx       # Button placement
+│   ├── BoardEditorModal.tsx        # Board creation/editing (title, description, grid columns, background color, icon preview)
+│   ├── BoardImagePickerModal.tsx   # Separate icon/image picker modal for boards (emoji/device/pack tabs, phone landscape-adaptive)
+│   ├── ButtonEditorModal.tsx       # Button editing (emoji picker, image picker, pack image picker modal)
 │   └── SymbolPickerModal.tsx       # Symbol selection
 │
 ├── wordFinder/                 # Word Finder (Guided Symbol Search)
@@ -171,7 +190,8 @@ src/components/
 │   ├── CoreFringeGrid.tsx          # Fixed-position grid with nav buttons
 │   ├── CoreFringeCell.tsx          # Memoized cell (React.memo)
 │   ├── CoreFringeHeader.tsx        # Grid header
-│   ├── SlotEditorModal.tsx         # Slot editing (emoji picker, image picker, Fitzgerald, category); link editing (emoji picker, image picker)
+│   ├── IconPickerModal.tsx          # Shared icon/image picker modal for Core-Fringe (emoji/device/pack tabs, phone landscape-adaptive)
+│   ├── SlotEditorModal.tsx         # Slot editing (emoji picker, image picker, pack image picker modal, Fitzgerald, category); link editing (emoji picker, image picker, pack image picker modal)
 │   ├── LinkEditorModal.tsx         # Category link creation (emoji search/picker, image picker)
 │   ├── PageManagerModal.tsx        # Page tree management
 │   └── PageEditorModal.tsx         # Page create/edit (icon/image picker)
@@ -302,14 +322,18 @@ On first launch, two things happen in parallel:
 
 2. **useMainScreenState** detects no categories in DB and calls `seedTestData()` (`src/db/seed.ts`) which:
 
-1. **Installs core vocabulary pack** (`newpackv4`) via `vocabularyPackService.installPack()`
-   - Batch-creates ~32 categories, ~3,240 symbols, ~12,960 translations in one transaction
+1. **Installs core vocabulary pack** (`BasePackV2`) via `vocabularyPackService.installPack()`
+   - Batch-creates ~34 categories, ~6,612 symbols, ~26,448 translations (4 languages) in one transaction
    - Batch-syncs grammar data (irregular verbs, noun plurals, symbol-lemma links)
 2. **Updates pronoun word types** for Dutch and English (batched)
 3. **Sets legacy migration flag** (`concept-based-full-imported-v1`) to skip obsolete normalization
 
 On subsequent launches (categories exist), the existing-DB path runs any pending migrations
-(pronoun updates, symbol normalization, pack upgrades) individually.
+(pronoun updates, symbol normalization, pack upgrades, legacy pack cleanup) individually.
+
+#### Legacy Pack Cleanup (`cleanupLegacyV1Pack`)
+
+When `BasePackV2` replaced `base-pack-v1`, the old symbols were never removed because `uninstallPack` did not delete symbols. The two packs use completely different `concept_key` values, so ~3,240 V1 symbols accumulated alongside V2's ~6,612, causing 11k+ rows and slow admin queries. A one-time cleanup migration (`cleanup-base-pack-v1-done` settings key) removes all orphaned `base-pack-v1` symbols, translations, favorites, and lemma links.
 
 ### Database Schema Diagram
 
@@ -464,7 +488,7 @@ export const vocabularyPackService = new VocabularyPackService();
 | Hook | Purpose |
 |------|---------|
 | **useCoreFringeMode()** | Core-Fringe grid state, layout/page/slot observers, navigation stack |
-| **useCoreFringeOperations()** | CRUD operations, `copyLayoutToGridSize()`, slot editing |
+| **useCoreFringeOperations()** | CRUD operations, `copyLayoutToGridSize()`, slot editing. `createPage()` returns `{ pageId, linkCreated }` — when `parentPageId` is provided, automatically finds the first free slot on the parent and creates a category link; `linkCreated: false` means parent grid was full. `copyPage()` inherits the source page's `parentPageId` (previously hardcoded to root). |
 
 ### Word Finder Hooks
 
@@ -476,10 +500,36 @@ export const vocabularyPackService = new VocabularyPackService();
 
 | Hook | Purpose |
 |------|---------|
-| **useSettingsState()** | Reactive settings updates |
+| **useSettingsState()** | Reactive settings updates (includes `inputMode` / `setInputMode`) |
+| **useTextModeState()** | Text mode state: message, phrases, abbreviations, TTS, admin nav |
 | **useDeviceType()** | Device type detection (phone/tablet) |
+| **useDeviceFeatures()** | Combines device type with feature availability config (see Device Feature Configuration) |
 | **useTabletLandscapeLock()** | Orientation locking (tablets→landscape, phones→portrait) |
 | **useGridLayout()** | Shared cell sizing: returns separate `cellWidth`/`cellHeight` for rectangular cells when height-constrained (e.g., grammar bar visible) |
+
+### Device Feature Configuration (`src/config/deviceFeatures.ts`)
+
+A static, non-React module that declares which features are available per device form factor (phone vs tablet). This is the single source of truth for feature availability — use it instead of ad-hoc `isTablet` checks when the conditional is about **whether a feature should exist**, not about layout/styling.
+
+| Feature Flag | Tablet | Phone | Description |
+|-------------|--------|-------|-------------|
+| `grammarStrip` | Yes | No | Grammar strip bar — requires landscape width |
+| `wordFinder` | Yes | No | Word Finder search + guidance — requires landscape space |
+| `landscapeDisplayMode` | Yes | No | Composer vs MessageBuilder toggle — landscape only |
+| `gridColumnsConfigurable` | Yes | No | Configurable 6-12 columns (phone fixed at `PHONE_GRID_COLUMNS = 4`) |
+| `editModeBar` | Yes | No | Tablet edit mode bar vs phone toggle button |
+| `gridSizePicker` | Yes | No | Grid size picker overlay on main screen |
+
+**Usage patterns:**
+
+- **Pure TypeScript** (services, utils): `getDeviceFeatures(deviceType)` or `isFeatureAvailable(deviceType, 'wordFinder')`
+- **React components**: `useDeviceFeatures()` hook — returns feature flags + `device` (passthrough to `useDeviceType()` for layout checks)
+- **Settings UI**: `AppearanceSettings` and `GrammarSettings` accept an optional `features` prop to hide irrelevant settings on phone. When omitted (e.g., tablet admin screen reusing the same components), all settings are shown.
+
+**When to use `isTablet` vs `features`:**
+
+- `features.wordFinder` — "should this feature exist at all?"
+- `device.isTablet` — "should this modal be 95% or 100% wide?"
 
 ---
 
@@ -512,6 +562,16 @@ interface VocabularyPackMetadata {
   totalCoreFringeLayouts?: number;
   dependencies: string[];
 }
+```
+
+### Input Mode Types (`inputMode.ts`)
+
+```typescript
+type InputMode = 'symbol_only' | 'text';
+const INPUT_MODE_VALUES: readonly InputMode[];
+const DEFAULT_INPUT_MODE: InputMode;            // 'symbol_only'
+const INPUT_MODE_SETTING_KEY = 'input_mode';
+function getEffectiveInputMode(value: string | null | undefined): InputMode;
 ```
 
 ### Progressive Vocabulary Types (`progressiveVocabulary.ts`)
@@ -685,7 +745,9 @@ Validate Pack → Check Dependencies → Import Concepts → Sync Grammar
 All pack import methods use WatermelonDB's `prepareCreate()` + `database.batch()` pattern
 to write thousands of records in a single SQLite transaction. On fresh install, per-record
 existence queries are skipped since the database is known to be empty. This reduces first-launch
-initialization from ~60s to ~3-5s for the core pack (~3,240 concepts × 4 languages = ~16,200 records).
+initialization from ~60s to ~3-5s for the core pack (~6,612 concepts × 4 languages = ~33,060 records).
+
+**Pack Uninstallation:** `uninstallPack()` removes all pack data including symbols, translations, favorites, symbol_lemmas, activity boards, board buttons, core-fringe layouts/pages/slots, and the pack registry record — all in a single atomic `database.batch()` transaction.
 
 ```typescript
 // Pattern used throughout pack installation
@@ -731,7 +793,8 @@ Alternative to category-based grid:
 - **Themed Grids**: Event/activity-based symbol organization
 - **Script Pattern**: WHO (left) → ACTION (center) → WHAT (right)
 - **Board Links**: Navigate between related boards
-- **Board Icons**: Emoji or custom image (library/camera/pack-embedded images)
+- **Board Icons**: Emoji or custom image (library/camera/pack-embedded images) via `BoardImagePickerModal` — a separate modal with 3 tabs (Emoji/Device/Pack), opened from a button in `BoardEditorModal`. Adapts layout for phone landscape orientation (wider container, reduced chrome).
+- **Button Icons**: `ButtonEditorModal` uses a separate pack image picker modal (opened via "Browse Pack Images" button) to avoid VirtualizedList nesting inside ScrollView. The picker modal renders a FlatList grid of pack images with search filtering.
 - **Pack Integration**: Boards included in vocabulary packs (with optional `image_uri`)
 - **Dashboard**: Visual board selection with edit mode
 - **Admin CRUD**: Create/edit/delete boards from Admin → Content → Boards sub-tab
@@ -746,11 +809,13 @@ Third grid mode where core vocabulary stays pinned while fringe symbols change:
 - **Multi-Layer Navigation**: Tree of pages with Back/Home buttons in the grid
 - **Configurable Grid Size**: 6-12 columns, each with independent layout records
 - **Per-Grid-Size Layouts**: `setCoreFringeColumns()` switches active layout; `copyLayoutToGridSize()` clones layouts across sizes
-- **Layout Icons**: Emoji or custom image (library/camera/pack-embedded images) — same picker as Activity Boards
-- **Page Icons**: Sub-pages also support emoji or custom image via `PageEditorModal` (same 3-tab picker)
+- **Layout Icons**: Emoji or custom image (library/camera/pack-embedded images) via `IconPickerModal` — shared 3-tab picker (Emoji/Device/Pack), phone landscape-adaptive
+- **Page Icons**: Sub-pages also support emoji or custom image via `IconPickerModal` (same shared picker)
 - **Pack Integration**: Layouts importable via vocabulary packs (multiple grid-size entries per pack, with optional icon/image_uri on both layouts and pages)
-- **Edit Mode**: Add/move/delete symbols, toggle pin state, manage pages, edit category links. `SlotEditorModal` supports full symbol editing (emoji search/picker, image picker, Fitzgerald category, category assignment, hide toggle) and full link editing (emoji search/picker, image picker, target page selection) alongside slot-level pin state and background color. `LinkEditorModal` provides the same emoji search/picker for link creation
-- **Admin Layout Editing**: "Edit Grid" button in `LayoutEditorModal` navigates to MainScreen with `editLayoutId`. Done ("Klaar") returns to AdminScreen → Content → coreFringeLayouts subtab with the `LayoutEditorModal` re-opened (via `pendingAdminReturn` module-level store on tablets, route params on phones)
+- **Edit Mode**: Add/move/delete symbols, toggle pin state, manage pages, edit category links. `SlotEditorModal` supports full symbol editing (emoji search/picker, image picker, pack image picker modal, Fitzgerald category, category assignment, hide toggle) and full link editing (emoji search/picker, image picker, pack image picker modal, target page selection) alongside slot-level pin state and background color. The pack image picker opens as a separate modal (via `packPickerTarget` state for symbol vs link context) to avoid VirtualizedList nesting inside ScrollView. `LinkEditorModal` provides the same emoji search/picker for link creation
+- **Admin Layout Editing**: "Edit Grid" button in `LayoutEditorModal` navigates to MainScreen with `editLayoutId`. Done ("Klaar") returns to AdminScreen → Content → coreFringeLayouts subtab with the `LayoutEditorModal` re-opened (via `pendingAdminReturn` module-level store on tablets, route params on phones). `LayoutEditorModal` uses `useIsFocused` to refresh the page tree whenever the admin screen regains focus, preventing stale hierarchy after returning from main-screen grid edits.
+- **Page Hierarchy vs Navigation Links**: `parentPageId` on `CoreFringePage` controls the admin tree structure (organizational hierarchy). `linkToPageId` on `CoreFringeSlot` (with `isCategoryLink=true`) controls grid navigation. These are independent fields. A slot can link to a page that is not its organizational child, and vice versa.
+- **Auto-Parenting (`maybeSetPageParent`)**: In `CoreFringeModeContainer`, whenever a category link is created from a non-root page to a target page, the target's `parentPageId` is automatically updated if the target is still at its default placement (no parent, or parent = root). If the target already has a specific non-root parent, it is left unchanged. This keeps the admin tree hierarchy consistent with the visual link structure on the main screen.
 - **DB Models**: `CoreFringeLayout` → `CoreFringePage` → `CoreFringeSlot` hierarchy
 
 See [Core-Fringe Grid documentation](features/core-fringe-grid.md) for full details.
@@ -878,6 +943,29 @@ src/theme/
     └── childFriendly.ts
 ```
 
+### Typography Tokens
+
+All text styling must use `theme.typography` tokens — **never hardcode font sizes or weights**. This ensures consistency across all screen layouts (phone portrait, phone landscape, tablet).
+
+| Token | Size | Usage |
+|-------|------|-------|
+| `fontSize.xs` | 10 | Badges, chips, compact labels |
+| `fontSize.sm` | 12 | Descriptions, secondary text, button text |
+| `fontSize.md` | 14 | Subsection titles, body text, language codes |
+| `fontSize.lg` | 16 | Pack names, stat values, flags |
+| `fontSize.xl` | 18 | Section titles |
+| `fontSize.2xl` | 20 | Large headings |
+| `fontSize.3xl` | 24 | Statistics numbers |
+
+| Token | Weight | Usage |
+|-------|--------|-------|
+| `fontWeight.normal` | 400 | Body text |
+| `fontWeight.medium` | 500 | Installed badges, reinstall buttons |
+| `fontWeight.semibold` | 600 | Titles, labels, primary buttons |
+| `fontWeight.bold` | 700 | Section titles, language codes |
+
+**Compact variants** should step one size down from the normal variant (e.g., `lg` → `md`, `sm` → `xs`).
+
 ---
 
 ## Internationalization
@@ -906,6 +994,10 @@ src/theme/
 | **Memoized Grid Cells** | Both `CoreFringeCell` and `BoardButtonCell` wrapped in `React.memo` with custom comparators for fine-grained skip of re-renders |
 | **Atomic Batch Deletions** | `uninstallPack()`, `deleteBoard()`, `deletePage()` use `prepareDestroyPermanently()` + single `database.batch()` instead of sequential awaits |
 | **Shared MainScreen Components** | `MainScreenModals` (React.memo), `CategoryBar`, and `useDerivedMainScreenState` extracted from Phone/Tablet parallel trees to eliminate ~600 lines of duplication |
+| **Batched Category Lookups** | Admin subtabs pre-load all categories into a `Map` for O(1) lookup instead of N individual `database.find()` queries per symbol/phrase |
+| **Count-Only Queries** | `useVocabularyManagement` uses `fetchCount()` for per-language symbol counts instead of hydrating 11k+ WatermelonDB model objects |
+| **Deduplicated Mount Loads** | SymbolsSubTab uses a single `useEffect` for initial load and language changes, preventing redundant `getSymbolsForLanguage` calls |
+| **Legacy Data Cleanup** | One-time removal of orphaned `base-pack-v1` symbols (~3,240 concepts + translations) that accumulated when replaced by `BasePackV2` — reduced admin Content tab load time from 25s to ~1.7s |
 
 ---
 
@@ -917,6 +1009,7 @@ src/
 │   ├── ErrorBoundary.tsx # Global error boundary (recovery UI)
 │   ├── schematic/      # Activity board components
 │   ├── corefringe/     # Core-Fringe grid components
+│   ├── textmode/       # Text mode components (TextComposerBar, QuickPhraseStrip, etc.)
 │   ├── shared/         # Shared cell rendering primitives
 │   └── settings/       # Reusable settings components
 ├── screens/            # Main app screens
@@ -925,6 +1018,7 @@ src/
 │   ├── SetupWizard/    # First-launch wizard + new-user wizard (steps, components, types)
 │   ├── AdminScreen/    # Content management
 │   └── SettingsScreen/ # User configuration (modular sections)
+├── config/             # Static configuration (device features)
 ├── contexts/           # App-level context providers (UserProfileContext)
 ├── services/           # Business logic services
 ├── grammar/            # Smart grammar engine
@@ -1010,4 +1104,5 @@ VoiceBridgeAAC follows a modern React Native architecture with:
 13. **Portable Backups**: Selective .vbaac backup/restore with embedded base64 images (5 MB limit) for cross-device portability
 14. **Multi-User Profiles**: Per-user database isolation with deferred setup, duplicate via backup/restore, and soft restart on switch
 15. **Error Resilience**: Global error boundary, tagged error logging in all CRUD hooks, atomic batch deletions, network timeouts
-16. **Cross-Platform**: Expo SDK 54 with New Architecture enabled; iOS and Android from a single codebase with minimal platform-specific code (8 `Platform.OS` checks)
+16. **Input Mode**: Symbol-only (default) or text-based communication, switchable from settings with adaptive phone/tablet layouts
+17. **Cross-Platform**: Expo SDK 54 with New Architecture enabled; iOS and Android from a single codebase with minimal platform-specific code (8 `Platform.OS` checks)

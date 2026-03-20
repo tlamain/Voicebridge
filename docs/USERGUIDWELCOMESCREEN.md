@@ -2,10 +2,12 @@
 
 ## Overview
 
-The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first app launch (when `welcome_completed` setting is false). It guides users through initial configuration using a horizontally-swipeable `PagerView` with animated step indicators and Back/Next navigation buttons.
+The Welcome Screen (`SetupWizard`) is an onboarding flow shown on first app launch (when `welcome_completed` setting is false). It guides users through initial configuration using a horizontally-swipeable `PagerView` with animated step indicators and Back/Next navigation buttons.
+
+The number of steps is **dynamic**: the wizard adapts its step list based on the **Input Mode** selected at step 2. Symbol Grid mode shows all steps (12 total); Text Only mode shows a reduced set (7 total), skipping steps that are irrelevant to text-based communication.
 
 **Key files:**
-- `src/screens/SetupWizard/SetupWizard.tsx` — Main container
+- `src/screens/SetupWizard/SetupWizard.tsx` — Main container; defines `STEP_CONFIGS` and computes the active filtered step list
 - `src/screens/SetupWizard/useSetupWizardState.ts` — Centralized state management
 - `src/screens/SetupWizard/steps/` — Individual step components
 - `src/screens/SetupWizard/components/` — Shared UI components (StepIndicator, WizardNavButtons, OptionCard)
@@ -22,14 +24,38 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 |                      [ Step Content ]                       |
 |                                                             |
 +-------------------------------------------------------------+
-|                    ● ● ● ○ ○ ○ ○ ○ ○ ○ ○                   |  <- StepIndicator (11 dots)
+|                    ● ● ● ○ ○ ○ ○                           |  <- StepIndicator (dynamic dots)
 +-------------------------------------------------------------+
 |   [Back]                                       [Next]       |  <- WizardNavButtons
 +-------------------------------------------------------------+
 ```
 
-- **StepIndicator**: 11 animated dots; active dot is full scale/opacity, inactive are reduced. All dots are tappable to jump to any step.
+- **StepIndicator**: Animated dots matching the active step count. Active dot is full scale/opacity, inactive are reduced. All dots are tappable to jump to any step.
 - **WizardNavButtons**: Back (hidden on step 0), Next (or "Get Started" on final step). Next is disabled when validation fails.
+
+---
+
+## Step Filtering by Input Mode
+
+The active step list is computed in `SetupWizard.tsx` by filtering `STEP_CONFIGS` against `state.selectedInputMode`:
+
+| Step            | Symbol Grid | Text Only |
+|-----------------|:-----------:|:---------:|
+| Language        | ✓           | ✓         |
+| Profile         | ✓           | ✓         |
+| **Input Mode**  | ✓           | ✓         |
+| Grid Mode       | ✓           | —         |
+| Voice           | ✓           | ✓         |
+| Fitzgerald Key  | ✓           | —         |
+| Progressive Vocab | ✓         | —         |
+| Appearance      | ✓           | ✓         |
+| Grid Layout     | ✓           | —         |
+| Smart Grammar   | ✓           | —         |
+| PIN Setup       | ✓           | ✓         |
+| Summary         | ✓           | ✓         |
+| **Total**       | **12**      | **7**     |
+
+Filtering happens reactively: when the user selects an input mode at step 2, steps after that point appear or disappear immediately. Since the InputMode step is always step index 2 and all filtered steps come after it, the user's current page position remains valid.
 
 ---
 
@@ -43,8 +69,8 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 ```
 +-------------------------------------------------------------+
 |                        [App Logo]                           |
-|                 Welcome to VoiceBridgeAAC                   |
-|            Select your preferred language                    |
+|                    Welcome to Loquor!                        |
+|             Select your preferred language                   |
 |                                                             |
 |  +-------------------------------------------------------+  |
 |  |  🇬🇧  English              English            ✓      |  |  <- selected
@@ -101,7 +127,38 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 
 ---
 
-### Step 2: Grid Mode
+### Step 2: Input Mode *(new)*
+
+**File:** `steps/InputModeStep.tsx`
+**Icon:** 💬
+
+```
++-------------------------------------------------------------+
+|                          💬                                  |
+|              How Will You Communicate?                       |
+|   Choose your primary communication style. You can          |
+|   change this later in Settings.                             |
+|                                                             |
+|  +-------------------------------------------------------+  |
+|  | 🔲  Symbol Grid                              ✓        |  |
+|  |     Use a symbol grid to build messages by tapping    |  |
+|  |     pictograms. Great for AAC users who rely on       |  |
+|  |     visual communication.                             |  |
+|  +-------------------------------------------------------+  |
+|  | ⌨️  Text Only                                         |  |
+|  |     Type messages with a keyboard and use quick       |  |
+|  |     phrases and shortcuts.                            |  |
+|  +-------------------------------------------------------+  |
++-------------------------------------------------------------+
+```
+
+- **Options:** `symbol_only` (Symbol Grid), `text` (Text Only)
+- **Default:** `symbol_only`
+- **Effect:** Selecting Text Only immediately removes symbol-grid-specific steps from the wizard (Grid Mode, Fitzgerald Key, Progressive Vocabulary, Grid Layout, Smart Grammar).
+
+---
+
+### Step 3 *(Symbol Grid only)*: Grid Mode
 
 **File:** `steps/GridModeStep.tsx`
 **Icon:** 📊
@@ -112,25 +169,25 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 |                   Choose Your Layout                         |
 |                                                             |
 |  +-------------------------------------------------------+  |
-|  | 📋  Standard Grid                               ✓    |  |
-|  |     Organized rows and columns of all symbols         |  |
+|  | 🎯  Core-Fringe Grid                          ✓       |  |
+|  |     Core vocabulary stays pinned while fringe changes |  |
+|  +-------------------------------------------------------+  |
+|  | 📋  Standard Symbol Grid                              |  |
+|  |     Classic category-based symbol navigation          |  |
 |  +-------------------------------------------------------+  |
 |  | 📌  Activity Boards                                   |  |
-|  |     Themed symbol collections for activities          |  |
-|  +-------------------------------------------------------+  |
-|  | 🎯  Core-Fringe Grid                                 |  |
-|  |     Core frequently-used + fringe specialized words   |  |
+|  |     Symbols grouped by activity or event              |  |
 |  +-------------------------------------------------------+  |
 +-------------------------------------------------------------+
 ```
 
-- **Options:** `standard`, `schematic` (Activity Boards), `corefringe` (Core-Fringe Grid)
-- **Default:** `standard`
+- **Options:** `corefringe`, `standard`, `schematic` (Activity Boards)
+- **Default:** `corefringe`
 - Uses `OptionCard` component with press animation.
 
 ---
 
-### Step 3: Voice Provider
+### Step 4 (Symbol) / Step 3 (Text): Voice Provider
 
 **File:** `steps/VoiceProviderStep.tsx`
 **Icon:** 🔊
@@ -154,10 +211,11 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 
 - **Options:** `device`, `elevenlabs`
 - **Default:** `device`
+- Shown in both modes (TTS is used in text mode too).
 
 ---
 
-### Step 4: Fitzgerald Key
+### Step 5 *(Symbol Grid only)*: Fitzgerald Key
 
 **File:** `steps/FitzgeraldStep.tsx`
 **Icon:** 🎨
@@ -185,7 +243,7 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 
 ---
 
-### Step 5: Progressive Vocabulary
+### Step 6 *(Symbol Grid only)*: Progressive Vocabulary
 
 **File:** `steps/ProgressiveVocabularyStep.tsx`
 **Icon:** 📈
@@ -216,7 +274,7 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 
 ---
 
-### Step 6: Appearance
+### Step 7 (Symbol) / Step 4 (Text): Appearance
 
 **File:** `steps/AppearanceStep.tsx`
 **Icon:** ✨
@@ -236,19 +294,19 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 |                                                             |
 |  Symbol Font Size                                           |
 |  +-------------------------------------------------------+  |
-|  |         "water"  (11px)                               |  |  <- live preview
+|  |         "water"  (12px)                               |  |  <- live preview
 |  +-------------------------------------------------------+  |
-|  [ 8 ] [ 9 ] [10] [11✓] [12] [13] [14]                    |  <- size buttons
+|  [ 8 ] [ 9 ] [10] [11] [12✓] [14] [15]                    |  <- size buttons
 +-------------------------------------------------------------+
 ```
 
 - **Theme options:** Light, Dark, High Contrast, Child Friendly
-- **Font sizes:** 8–14
-- **Defaults:** Light theme, size 11
+- **Font sizes:** 8–15
+- **Defaults:** Light theme, size 12
 
 ---
 
-### Step 7: Grid Layout
+### Step 8 *(Symbol Grid only)*: Grid Layout
 
 **File:** `steps/GridLayoutStep.tsx`
 **Icon:** 📐
@@ -256,7 +314,7 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 ```
 +-------------------------------------------------------------+
 |                          📐                                  |
-|                    Grid Layout                               |
+|                    Grid & Layout                             |
 |                                                             |
 |  Grid Size                                                  |
 |  [ 6 cols ] [ 7 cols ] [ 8 cols✓] [ 9 cols ] ...  ->      |  <- horizontal scroll
@@ -276,7 +334,7 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 
 ---
 
-### Step 8: Smart Grammar
+### Step 9 *(Symbol Grid only)*: Smart Grammar
 
 **File:** `steps/GrammarStep.tsx`
 **Icon:** 🧠
@@ -304,7 +362,7 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 
 ---
 
-### Step 9: PIN Setup
+### Step 10 (Symbol) / Step 5 (Text): PIN Setup
 
 **File:** `steps/PinSetupStep.tsx`
 **Icon:** 🔐
@@ -339,33 +397,41 @@ The Welcome Screen (`SetupWizard`) is an 11-step onboarding flow shown on first 
 
 ---
 
-### Step 10: Summary
+### Step 11 (Symbol) / Step 6 (Text): Summary
 
 **File:** `steps/SummaryStep.tsx`
 **Icon:** 🚀
 
+The summary card adapts to the selected input mode — symbol-grid-only rows are hidden in text mode.
+
+**Symbol Grid summary:**
 ```
-+-------------------------------------------------------------+
-|                          🚀                                  |
-|                    Ready to Go!                              |
-|  Here's a summary of your setup. You can change all         |
-|  settings later in the Admin screen.                         |
-|                                                             |
-|  +-------------------------------------------------------+  |
-|  | User              John                                |  |  <- only if name entered
-|  |-------------------------------------------------------|  |
-|  | Language           🇬🇧 English                        |  |
-|  | Grid Mode          Standard                           |  |
-|  | Voice              Device Voice                       |  |
-|  | Fitzgerald Key     Off                                |  |
-|  | Progressive        Off                                |  |
-|  | PIN Protection     Off                                |  |
-|  | Theme              Light                              |  |
-|  | Grid Size          8 columns                          |  |
-|  +-------------------------------------------------------+  |
-|                                                             |
-|  Tip: Open the Admin screen anytime to customize further.   |
-+-------------------------------------------------------------+
++-------------------------------------------------------+
+| User              John                                |  <- only if name entered
+|-------------------------------------------------------|
+| Language           🇬🇧 English                        |
+| Input Mode         Symbol Grid                        |
+| Grid Mode          Core-Fringe Grid                   |
+| Voice              Device Voice                       |
+| Fitzgerald Key     Off                                |
+| Progressive        Off                                |
+| PIN Protection     Off                                |
+| Theme              Light                              |
+| Grid Size          8 columns                          |
++-------------------------------------------------------+
+```
+
+**Text Only summary:**
+```
++-------------------------------------------------------+
+| User              John                                |  <- only if name entered
+|-------------------------------------------------------|
+| Language           🇬🇧 English                        |
+| Input Mode         Text Only                          |
+| Voice              Device Voice                       |
+| PIN Protection     Off                                |
+| Theme              Light                              |
++-------------------------------------------------------+
 ```
 
 - Read-only review of all configured settings.
@@ -382,14 +448,15 @@ Centralized hook managing all app settings for the wizard:
 | State                          | Type                   | Default                |
 |--------------------------------|------------------------|------------------------|
 | `selectedLanguage`             | `string`               | `'en'`                 |
-| `selectedGridMode`             | `GridMode`             | `'standard'`           |
+| `selectedInputMode`            | `InputMode`            | `'symbol_only'`        |
+| `selectedGridMode`             | `GridMode`             | `'corefringe'`         |
 | `selectedVoiceProvider`        | `VoiceProvider`        | `'device'`             |
 | `fitzgeraldEnabled`            | `boolean`              | `false`                |
 | `progressionEnabled`           | `boolean`              | `false`                |
 | `selectedTheme`                | `ThemeName`            | `'light'`              |
 | `selectedGridColumns`          | `number`               | `DEFAULT_GRID_COLUMNS` |
 | `selectedLandscapeMode`        | `LandscapeDisplayMode` | `'messageBuilder'`     |
-| `selectedFontSize`             | `number`               | `11`                   |
+| `selectedFontSize`             | `number`               | `12`                   |
 | `smartGrammarEnabled`          | `boolean`              | `true`                 |
 | `gridInflectionPickerEnabled`  | `boolean`              | `true`                 |
 | `pinEnabled`                   | `boolean`              | `false`                |
@@ -402,14 +469,14 @@ Profile state (name, photoUri, avatarEmoji, age, diagnosis, notes) is managed di
 
 ## Data Flow on Completion
 
-When the user taps "Get Started" on Step 10:
+When the user taps "Get Started" on the final step:
 
 1. **Redux dispatch:** `setLanguage()` for in-memory language state
-2. **WatermelonDB write:** All app settings in a single `settingsService.setSettings()` call (including `welcome_completed: 'true'`)
+2. **WatermelonDB write:** All app settings in a single `settingsService.setSettings()` call (including `input_mode` and `welcome_completed: 'true'`). When text mode is selected, symbol-grid-only settings (`gridMode`, `fitzgeraldEnabled`, `progressionEnabled`, `smartGrammarEnabled`, `gridInflectionPickerEnabled`) are written with safe defaults so the app behaves correctly if the user switches modes later.
 3. **PIN:** Persisted via `settingsService.setPin()` if enabled and confirmed
 4. **User profile:** Saved via `userProfileService.updateProfile()` with name, avatar, age, diagnosis, notes
 5. **Theme:** Applied via `ThemeContext.setTheme()` (auto-persists)
-6. **Dismiss:** Modal closes, MainScreen reloads settings from DB
+6. **Dismiss:** Modal closes; `MainScreen` re-reads both general settings and `input_mode` from DB to immediately route to the correct screen
 7. **Background:** Auto-imports core vocabulary pack if language is in `AUTO_IMPORT_LANGUAGE_CODES` (EN, NL, FR, ES)
 
 ---
@@ -418,15 +485,15 @@ When the user taps "Get Started" on Step 10:
 
 ### OptionCard (`components/OptionCard.tsx`)
 
-Reusable selection card with icon, title, description, and checkmark. Press animation scales to 0.97. Used by Grid Mode, Voice Provider, and Grid Layout steps.
+Reusable selection card with icon, title, description, and checkmark. Press animation scales to 0.97. Used by Input Mode, Grid Mode, Voice Provider, and Grid Layout steps.
 
 ### StepIndicator (`components/StepIndicator.tsx`)
 
-Row of 11 animated dots. Active dot is full scale/opacity; inactive dots are 0.8 scale and 0.35 opacity. All dots are tappable to jump directly to any step.
+Row of animated dots matching the active step count. Active dot is full scale/opacity; inactive dots are 0.8 scale and 0.35 opacity. All dots are tappable to jump directly to any step.
 
 ### WizardNavButtons (`components/WizardNavButtons.tsx`)
 
-Back/Next/Get Started buttons. Back hidden on step 0. Next can be disabled via `nextDisabled` prop (used on step 1 for name validation). Shows loading state during finish.
+Back/Next/Get Started buttons. Back hidden on step 0. Next can be disabled via `nextDisabled` prop (used on the Profile step for name validation). Shows loading state during finish.
 
 ---
 
@@ -439,6 +506,7 @@ The `NewUserWizardModal` (`src/screens/SetupWizard/NewUserWizardModal.tsx`) shar
 | When shown             | First app launch               | "Add Advanced" in Users tab  |
 | Step order             | Language → Profile → Settings  | Profile → Language → Settings|
 | Profile step           | Step 1                         | Step 0                       |
+| Input mode filtering   | Yes (dynamic step list)        | No                           |
 | On finish              | Persists directly to DB        | Returns data to parent       |
 | Cancel behavior        | Cannot cancel (no back on 0)   | Cancel reverts language      |
 

@@ -18,7 +18,7 @@ export default function SiteFooter() {
           </a>
         </div>
 
-        <div className="flex gap-8">
+        <div className="flex flex-wrap gap-8">
           <div>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Pages</p>
             <ul className="space-y-2">
@@ -26,6 +26,15 @@ export default function SiteFooter() {
               <li><Link href="/who-its-for" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Who It&apos;s For</Link></li>
               <li><Link href="/faq" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">FAQ</Link></li>
               <li><Link href="/contact" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Contact</Link></li>
+            </ul>
+          </div>
+          <div>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Deep Dive</p>
+            <ul className="space-y-2">
+              <li><Link href="/smart-grammar" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Smart Grammar</Link></li>
+              <li><Link href="/progressive-vocabulary" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Progressive Vocabulary</Link></li>
+              <li><Link href="/grid-modes" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Grid Modes</Link></li>
+              <li><Link href="/setup-wizard" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Setup Wizard</Link></li>
             </ul>
           </div>
           <div>

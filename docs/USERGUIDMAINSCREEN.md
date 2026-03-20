@@ -23,9 +23,15 @@ The Main Screen is the primary communication workspace where users:
 
 The screen is adaptive and changes layout by device type (phone/tablet) and orientation (portrait/landscape).
 
+**Input Mode**: The Main Screen operates in one of two modes, controlled by the `input_mode` setting (Admin -> Settings -> Input Mode):
+- **Symbol Only** (default): Symbol grid, message builder, prediction bar — the standard AAC experience described in detail throughout this document.
+- **Text**: Text-based communication with keyboard input, quick phrases, abbreviation shortcuts, and phrase categories. See [Section 10.4](#104-text-mode-text) for details.
+
 ---
 
 ## 3. Quick Start (User Workflow)
+
+### Symbol Mode (default)
 
 1. Select a category (or Favorites).
 2. Optionally select a subcategory if the category has children.
@@ -35,6 +41,15 @@ The screen is adaptive and changes layout by device type (phone/tablet) and orie
 6. Tap `Speak` to hear the message aloud.
 7. Tap `Backspace` to remove the last symbol, or long-press it to clear all.
 8. Tap `Share` to send the message to other apps (if enabled).
+
+### Text Mode
+
+1. Type directly in the text input area.
+2. Tap a quick phrase chip to insert a frequently used phrase.
+3. Tap an abbreviation shortcut to expand it into full text.
+4. Browse phrase categories for more phrases.
+5. Tap `Speak` to hear the message aloud.
+6. Tap `Backspace` to remove the last word, or long-press to clear all.
 
 ---
 
@@ -63,7 +78,7 @@ Character Counter:
 ### 4.2 Message Builder
 
 Features:
-- visual strip of selected pictogram cards (88x92px each)
+- visual strip of selected pictogram cards (88×92px each, or scaled to 80% on phone portrait: ~70×74px, or 70% on phone landscape: ~62×64px)
 - supports image and emoji symbols
 - supports grammar display forms (verb conjugations and noun inflections)
 - supports grammar badges showing locked verb/noun form state
@@ -87,6 +102,20 @@ Grammar Token Cards:
 Compact Mode:
 - in tablet landscape with `messageBuilder` display mode, the builder runs in compact mode
 - height fixed at 105px, horizontal scrolling, reduced padding
+
+Phone Portrait Mode:
+- symbols are rendered at 80% scale (`symbolScale={0.8}` prop on MessageBuilder)
+- gap between symbols is reduced to 6px (50% smaller than the default 12px)
+- builder stretches near edge-to-edge (`marginHorizontal: 4px`)
+- minimum height is increased by 20% compared to the default
+- extra spacing below the builder: `paddingBottom` and `marginBottom` each set to 20px
+- action panel below uses `flex: 1` for proper layout fill
+
+Phone Landscape Mode:
+- the message builder fills the top portion of the left panel with `flex: 1` and `minHeight: 0`
+- symbols are rendered at 70% scale (`symbolScale={0.7}` prop on MessageBuilder)
+- overflow is clipped to prevent bleeding outside the panel boundary
+- the `noMinHeight` prop removes the default 290px minimum height so the builder adapts to available space
 
 ### 4.3 Category And Symbol Grid Area
 
@@ -115,7 +144,7 @@ Core actions:
 - `Backspace`: short tap removes last symbol; long-press (500ms) clears all content instantly
 - `Share`: sends the message text to other apps via native share sheet (only if enabled in Settings)
 - `Admin` button (phone toolbar): opens Admin screen or PIN prompt
-- Settings cog (header): opens Admin screen or PIN prompt (both phone and tablet)
+- Settings cog (phone portrait/landscape: floats absolutely top-right at zIndex 10, no header row; tablet: in header/top row): opens Admin screen or PIN prompt
 - Word Finder search (tablet landscape, magnifying glass icon): opens Word Finder search modal (Activity Boards and Core-Fringe modes only)
 
 Visual feedback:
@@ -384,7 +413,7 @@ Tapping a grammar strip chip "arms" the token:
 
 ## 10. Grid Modes
 
-MainScreen supports three grid modes.
+MainScreen supports three symbol grid modes plus a text-only mode.
 
 ### 10.1 Standard Mode (`standard`)
 
@@ -455,6 +484,54 @@ Portrait tablet behavior:
 - shows rotate-to-landscape prompt for Core-Fringe usage
 - prompt includes: rotate icon, main text, and subtext
 
+### 10.4 Text Mode (`text`)
+
+Text mode replaces the entire symbol grid interface with a keyboard-first communication screen. It is activated by setting `input_mode` to `text` in Admin -> Settings -> Input Mode.
+
+What users get:
+- full-width text input area with keyboard
+- quick phrase strip (top 10 most-used phrases, sorted by frequency)
+- abbreviation shortcut strip (tap to expand shortcode into full text)
+- phrase category row (browse phrases by category)
+- phrase picker sheet (opens when a category is tapped, shows all phrases in that category)
+- speak / stop, backspace (removes last word), and clear buttons
+- share button (if enabled)
+- admin access button (PIN-protected if enabled)
+
+Layout adaptation:
+- **Phone portrait**: single-column layout with `KeyboardAvoidingView`. No dedicated header row — the settings cog floats absolutely (top-right, zIndex 10) over the content. Top-to-bottom order:
+  1. **Settings cog** — floating absolute-positioned, top-right, zIndex 10 (overlays content, not a separate row)
+  2. **Composer bar** — multiline text input (min 80px) with inline clear (×) button; toolbar row below with Speak/Stop (green/red), Backspace (long-press = clear all), and optional Share button
+  3. **Tab bar** — three equal pill buttons: **Phrases | Quick Phrases | Shortcuts** (active tab fills with primary color)
+  4. **Tab content** (fills remaining space) — shows one panel at a time based on active tab: Phrases → `PhraseCategoryRow` list; Quick Phrases → `QuickPhraseStrip` grid; Shortcuts → `ShortcutStrip` list
+- **Phone landscape**: same `KeyboardAvoidingView` wrapper, all sections fixed (no scroll view). Top-to-bottom order:
+  1. **Settings cog** — floating absolute-positioned, top-right, zIndex 10
+  2. **Composer bar** — pinned at the top; text input (minHeight 56) with inline clear (×) button; toolbar row with Speak/Stop, Backspace, optional Share
+  3. **PhraseCategoryRow** — fixed below composer (horizontal scrollable category chips)
+  4. **QuickPhraseStrip** — fixed below categories (horizontal scrollable phrase chips, taller buttons)
+  5. **ShortcutStrip** — fixed at the bottom (horizontal scrollable abbreviation chips)
+- **Tablet**: three-column top row matching symbol mode — settings cog (left), text input + clear button (center), Backspace / Share / Speak-Stop buttons (right) — below the top row, the remaining space is divided into three persistent side-by-side panels: **Quick Phrases** (widest, `flex 5`), **Phrase Categories** (`flex 3`), **Shortcuts** (`flex 3`). Each panel fills the available height and scrolls vertically within itself. Nothing is hidden behind horizontal scrolling.
+
+Typical workflow:
+1. Type a message directly, or tap quick phrase chips / abbreviation shortcuts to build text.
+2. Browse phrase categories for situational phrases.
+3. Tap `Speak` to hear the message aloud.
+4. Tap `Share` to send to other apps (if enabled).
+
+Key differences from symbol mode:
+- no symbol grid, categories, or message builder
+- no prediction bar, grammar strip, or Fitzgerald Key coloring
+- no edit mode or progressive vocabulary
+- phrases are sorted by usage frequency; tapping a phrase bumps its frequency for next time
+- backspace removes the last word (not last character)
+
+Components:
+- `TextComposerBar` — text input with speak/stop/backspace/clear/share action buttons (phone only)
+- `QuickPhraseStrip` — `strip` variant (phone): horizontal scrollable chips; `grid` variant (tablet): full-width vertical list of phrase buttons filling the left panel
+- `ShortcutStrip` — `strip` variant (phone): horizontal scrollable chips; `list` variant (tablet): vertical list with a primary-color shortcode badge and expanded text alongside
+- `PhraseCategoryRow` — `row` variant (phone): horizontal scrollable cards; `list` variant (tablet): vertical list of full-width cards with icon and phrase count
+- `PhrasePickerSheet` — bottom sheet modal; `numColumns={1}` on phone (single list), `numColumns={2}` on tablet (two-column grid); tapping the dim overlay closes the sheet
+
 ---
 
 ## 11. Edit Mode (User Perspective)
@@ -516,7 +593,7 @@ Placement:
 ## 12. Admin Access And PIN Behavior
 
 MainScreen admin entry points:
-- phone: toolbar `Admin` button, header settings cog, and toolbar cog
+- phone: toolbar `Admin` button, floating settings cog (top-right, absolute positioned), and toolbar cog
 - tablet: header/top-row settings cog
 
 Behavior:
@@ -537,21 +614,54 @@ Navigation target:
 
 ### 13.1 Phone Layout
 
+The phone layout adapts fully between portrait and landscape orientations. The device orientation lock that applies to tablets does **not** apply to phones — phones are free to rotate.
+
+#### 13.1.1 Phone Portrait
+
 Key traits:
 - single-column vertical flow with KeyboardAvoidingView (iOS)
-- header at top with edit toggle (left) and settings cog (right)
-- composer zone: text input (3 lines), prediction bar, message builder (vertical wrap)
+- no dedicated header row — settings cog floats absolutely (top-right, zIndex 10) over the content
+- composer zone: message builder (vertical wrap, symbols shown at 80% size, 6px gap between symbols, near edge-to-edge width, increased minimum height, 20px spacing below)
+- action panel below message builder uses `flex: 1`
+- in Symbol Only mode: text composer (pencil/text input/prediction bar) is hidden
 - horizontal category chips below composer
 - subcategory row (when applicable)
 - 4-column symbol grid in standard mode
-- toolbar at bottom: Speak, Backspace, Share (if enabled), Admin
-- Android keyboard dismiss shortcut shown while keyboard is open
+- toolbar at bottom: Speak (large), then Terug (Backspace) + Admin icon in a compact row
+
+#### 13.1.2 Phone Landscape
+
+When the phone is rotated to landscape, the layout switches to a two-column side-by-side view:
+
+```
++---------------------------+------------------------------------------+
+|  Message Builder          |                                          |
+|  (flex, scaled symbols)   |          Symbol Grid                     |
++---------------------------+  (4 columns, fills right panel)          |
+|  [     Spreek      ]      |                                          |
+|  [Terug]  [Admin icon]    |                                          |
++---------------------------+------------------------------------------+
+```
+
+Left panel (~36% width):
+- message builder strip at the top (flexible height, symbols at 70% scale, clips to panel)
+- Spreek button (full-width, large)
+- compact row: Terug (Backspace) on left, Admin icon on right
+
+Right panel (~64% width):
+- category bar and symbol grid fill all available height
+
+Orientation behavior:
+- `useTabletLandscapeLock` locks tablets to landscape and unlocks phones (free rotation)
+- orientation detection uses `useWindowDimensions`: `isLandscape = width > height`
+- the `isPhoneLandscape` guard (`width > height && Math.min(width, height) < 500`) is used for compact modal sizing to avoid affecting tablets
 
 Phone-specific notes:
 - no grammar strip (grammar strip is tablet landscape only)
 - no Core-Fringe mode (phone does not support it)
 - grid columns fixed at 4
 - schematic mode available with edit toggle
+- text composer (pencil button + text input + prediction bar) is hidden in Symbol Only mode on both portrait and landscape
 
 ### 13.2 Tablet Landscape Layout — Full Guide
 
@@ -740,6 +850,10 @@ User-visible outcomes:
 - Grammar strip is Dutch-specific in current MainScreen usage path and only appears in tablet landscape.
 - Core-Fringe is intended for landscape workflow (portrait prompts to rotate).
 - Core-Fringe is not available on phones.
+- Phones support both portrait and landscape — rotate freely without any lock.
+- In phone landscape, the layout switches to a two-column view: message builder + buttons on the left, symbol grid on the right.
+- In phone Symbol Only mode, the text composer (pencil button, text input, prediction bar) is always hidden regardless of orientation.
+- Grammar picker modals (verb and noun) use compact sizing in phone landscape to fit the shorter screen height.
 - Long-press `Backspace` is the fastest way to clear everything (500ms hold).
 - Fitzgerald Key coloring appears across all grid modes when enabled.
 - ElevenLabs voices require an internet connection; cached audio plays offline.
@@ -760,17 +874,22 @@ This section maps modules to behavior so developers and advanced admins can trac
 
 | File | Responsibility | User Impact |
 |---|---|---|
-| `src/screens/main/MainScreen.tsx` | Device-based router (phone vs tablet via `useDeviceType`) | Correct layout on each device |
+| `src/screens/main/MainScreen.tsx` | Device-based router; reads `input_mode` setting to render symbol grids or TextModeScreen | Correct layout on each device and input mode |
 | `src/hooks/useDeviceType.ts` | Detects tablet/phone and orientation | Live layout adaptation on rotate |
-| `src/screens/main/useMainScreenState.ts` | Single source of truth for all MainScreen logic/state (100+ state variables, 40+ handlers) | Consistent behavior across layouts |
+| `src/hooks/useTabletLandscapeLock.ts` | Locks tablets to landscape orientation; unlocks phones for free rotation | Tablets always landscape, phones rotate freely |
+| `src/screens/main/useMainScreenState.ts` | Single source of truth for all symbol-mode MainScreen logic/state (100+ state variables, 40+ handlers) | Consistent behavior across layouts |
+| `src/screens/main/useTextModeState.ts` | State for text mode: message, phrases (quick + categories), abbreviations, TTS, admin nav, share | Text mode behavior |
 | `src/navigation/types.ts` | MainScreen route params (`gridPreviewMode`, `fontSizePreviewMode`) | Settings-triggered preview overlays |
 
 ### 17.2 Layout Renderers
 
 | File | Responsibility | User Impact |
 |---|---|---|
-| `src/screens/main/MainScreenPhone.tsx` | Phone UI composition (single-column, keyboard-aware) | Single-column interaction flow |
+| `src/screens/main/MainScreenPhone.tsx` | Phone UI composition; portrait: single-column, no header row (settings cog floats top-right), message builder at 80% symbol scale with 6px gap and near-edge-to-edge width, action panel uses `flex: 1`; landscape: two-column (left: message builder at 70% scale + Spreek/Terug/Admin, right: grid); text composer hidden in Symbol Only mode | Portrait and landscape interaction flows |
 | `src/screens/main/MainScreenTablet.tsx` | Tablet portrait/landscape composition (three-section portrait, three-column landscape) | Wide-screen and portrait-optimized usage |
+| `src/screens/main/TextModeScreen.tsx` | Text mode router (phone vs tablet) | Keyboard-first communication |
+| `src/screens/main/TextModePhone.tsx` | Text mode phone layout (KeyboardAvoidingView). Portrait: no dedicated header row — settings cog floats absolutely top-right (zIndex 10); content order: composer bar → tab bar (Phrases / Quick Phrases / Shortcuts) → tab content. Landscape: composer bar at top → PhraseCategoryRow → QuickPhraseStrip → ShortcutStrip, all fixed (no scroll view); settings cog floating top-right. | Phone text communication |
+| `src/screens/main/TextModeTablet.tsx` | Text mode tablet layout (three-column top row: cog left, text input center, action buttons right; three persistent side-by-side panels below: Quick Phrases, Categories, Shortcuts) | Tablet text communication |
 
 ### 17.3 Composer And Message Modules
 
@@ -804,6 +923,11 @@ This section maps modules to behavior so developers and advanced admins can trac
 | `src/components/corefringe/CoreFringeModeContainer.tsx` | Core-Fringe orchestration and layout lifecycle | Core plus fringe navigation model |
 | `src/components/corefringe/CoreFringeGrid.tsx` | Core-Fringe fixed grid with symbol/link/nav/empty cells, BidirectionalScrollGrid, Back/Home buttons | Efficient page navigation |
 | `src/components/corefringe/CoreFringeCell.tsx` | Memoized slot cell renderer with custom React.memo comparator | Better performance during navigation |
+| `src/components/textmode/TextComposerBar.tsx` | Text input with speak/stop/backspace/clear/share buttons (phone only; tablet uses inline top-row layout) | Text mode message composition on phone |
+| `src/components/textmode/QuickPhraseStrip.tsx` | `strip` variant: horizontal scroll chips (phone); `grid` variant: vertical full-width list filling the left panel (tablet) | Quick phrase insertion |
+| `src/components/textmode/ShortcutStrip.tsx` | `strip` variant: horizontal scroll chips (phone); `list` variant: vertical list with shortcode badge + expanded text (tablet) | Abbreviation expansion |
+| `src/components/textmode/PhraseCategoryRow.tsx` | `row` variant: horizontal scroll cards (phone); `list` variant: vertical full-width cards with icon and count (tablet) | Browse phrases by category |
+| `src/components/textmode/PhrasePickerSheet.tsx` | Bottom sheet modal; single-column list (phone) or two-column grid (tablet); tap overlay to close | Category phrase selection |
 
 ### 17.6 Shared Rendering Primitives
 
@@ -819,11 +943,16 @@ This section maps modules to behavior so developers and advanced admins can trac
 
 | File | Responsibility | User Impact |
 |---|---|---|
-| `src/grammar/ui/InflectionPicker.tsx` | Verb inflection modal shell | Manual verb form control |
-| `src/grammar/ui/VerbPickerBeginnerBody.tsx` | Beginner form selection UX (4 options) | Simplified therapy-friendly flow |
-| `src/grammar/ui/VerbPickerAdvancedBody.tsx` | Advanced tense/pronoun picker with sentence context | Faster precise selection |
-| `src/grammar/ui/NounInflectionPicker.tsx` | Noun singular/plural picker | Number agreement control |
+| `src/grammar/ui/InflectionPicker.tsx` | Verb inflection modal shell; compact layout on phone landscape (`isPhoneLandscape`: reduced padding, smaller fonts, smaller scroll area) | Manual verb form control |
+| `src/grammar/ui/VerbPickerBeginnerBody.tsx` | Beginner form selection UX (4 options); reduced grid gap and button padding on phone landscape | Simplified therapy-friendly flow |
+| `src/grammar/ui/VerbPickerAdvancedBody.tsx` | Advanced tense/pronoun picker with sentence context; reduced margins/gaps/cell padding on phone landscape | Faster precise selection |
+| `src/grammar/ui/NounInflectionPicker.tsx` | Noun singular/plural picker; compact modal on phone landscape | Number agreement control |
 | `src/grammar/index.ts` | Grammar public exports (`useGrammar`, pickers) | Stable integration boundary |
+
+Phone landscape grammar modal sizing:
+- all grammar modals detect `isPhoneLandscape = width > height && Math.min(width, height) < 500`
+- this guard ensures tablet modals (which are also landscape) are unaffected
+- in phone landscape: overlay padding, header margins, font sizes, button padding, and scroll heights are all reduced to fit the shorter screen height
 
 ### 17.8 Fitzgerald Key Modules
 
@@ -876,7 +1005,7 @@ All settings that affect MainScreen behavior, with their storage keys and defaul
 |---|---|---|---|
 | Landscape display mode | `landscapeDisplayMode` | `composer` | `composer`, `messageBuilder` |
 | Grid columns | `gridColumns` | `8` | `6`-`12` |
-| Symbol font size | `symbolFontSize` | `10` | `8`-`14` |
+| Symbol font size | `symbolFontSize` | `12` | `8`-`15` |
 | Fitzgerald Key enabled | `fitzgeraldEnabled` | `false` | `true`, `false` |
 | Grid mode | `gridMode` | `standard` | `standard`, `schematic`, `corefringe` |
 
@@ -916,6 +1045,7 @@ All settings that affect MainScreen behavior, with their storage keys and defaul
 
 | Setting | Key | Default | Values |
 |---|---|---|---|
+| Input mode | `input_mode` | `symbol_only` | `symbol_only`, `text` |
 | Share enabled | `shareEnabled` | `false` | `true`, `false` |
 | Admin PIN | `admin_pin` | (none) | Hashed PIN string |
 | App language | `app_language` | `en` | Language code string |
@@ -984,3 +1114,14 @@ All settings that affect MainScreen behavior, with their storage keys and defaul
 6. User taps "Advance" → `handleAdvanceLevel` calculates new words.
 7. Level-up modal celebrates with new level number and up to 12 newly unlocked words.
 8. Grid updates to show new active symbols, previously ghost slots become active.
+
+### 19.7 Text Mode Phrase And Abbreviation Flow
+
+1. Admin sets `input_mode` to `text` in Settings -> Input Mode.
+2. User returns to Main Screen. `MainScreen` reads `input_mode` on focus, renders `TextModeScreen` instead of symbol grids.
+3. `useTextModeState` loads phrases (top 10 by frequency), phrase categories, and abbreviations for the current language.
+4. User taps a quick phrase chip (e.g., "I want water").
+5. `handlePhraseSelect` appends phrase text to the Redux `currentMessage` and bumps the phrase's frequency counter in the database.
+6. User taps an abbreviation shortcut (e.g., "ty").
+7. `handleAbbreviationPress` appends the expanded text (e.g., "thank you") to the message.
+8. User taps `Speak`. `voiceService.speak` uses the same TTS pipeline as symbol mode (device or ElevenLabs with fallback).

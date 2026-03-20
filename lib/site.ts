@@ -23,6 +23,8 @@ export const siteConfig = {
 export const publicRoutes = [
   "/",
   "/features",
+  "/smart-grammar",
+  "/progressive-vocabulary",
   "/who-its-for",
   "/faq",
   "/contact",

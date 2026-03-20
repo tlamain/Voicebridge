@@ -3,6 +3,7 @@ import FeatureCard from "../components/FeatureCard";
 import SectionHeading from "../components/SectionHeading";
 import CTABanner from "../components/CTABanner";
 import ScrollReveal from "../components/ScrollReveal";
+import AppScreenshot from "../components/AppScreenshot";
 
 const features = [
   {
@@ -12,16 +13,16 @@ const features = [
       </svg>
     ),
     title: "Symbol & Text Communication",
-    description: "Tap pictogram symbols or type freely. Build messages naturally using a configurable grid with 6-12 columns and a message builder strip.",
+    description: "Tap pictogram symbols or type freely. Build messages naturally with a configurable 6–12 column grid, a message builder strip, and smart word prediction.",
   },
   {
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
       </svg>
     ),
     title: "Smart Grammar Engine",
-    description: "Automatic verb conjugation, gender-aware articles, and color-coded grammar helpers reduce cognitive load and build natural sentences.",
+    description: "Automatic verb conjugation, perfect tense, continuous aspect, and reflexives — all handled silently. Supports Dutch, English, French, and Spanish with language-specific rules.",
   },
   {
     icon: (
@@ -30,7 +31,7 @@ const features = [
       </svg>
     ),
     title: "Premium AI Voices",
-    description: "Choose between free device voices that work offline or premium ElevenLabs AI voices for natural, expressive speech output.",
+    description: "Free offline device voices or premium ElevenLabs AI voices for natural, expressive speech. Automatic fallback ensures communication never stops.",
   },
   {
     icon: (
@@ -39,7 +40,7 @@ const features = [
       </svg>
     ),
     title: "Progressive Vocabulary",
-    description: "A 6-level learning system that grows with the user. Words unlock progressively based on usage, with readiness checks and auto-advance.",
+    description: "A 6-level learning system that grows with the user. Words unlock progressively based on real usage, with ghost slot previews and a floating readiness indicator.",
   },
   {
     icon: (
@@ -47,8 +48,8 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
       </svg>
     ),
-    title: "Activity Boards",
-    description: "Themed communication boards for specific contexts like meals, bathroom, and social activities. Each with custom icons and layouts.",
+    title: "Three Grid Modes",
+    description: "Standard Symbol Grid, Activity Boards for routines, and Core-Fringe with pinned core vocabulary. In-grid editing for full customisation.",
   },
   {
     icon: (
@@ -56,8 +57,8 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
       </svg>
     ),
-    title: "Multi-Language Support",
-    description: "Full support for English, Dutch, Spanish, Italian, and French with language-specific grammar rules and vocabulary packs.",
+    title: "4 Languages, All Offline",
+    description: "English, Dutch, French, and Spanish — each with its own grammar rules, vocabulary packs, and voice options. Everything works completely offline.",
   },
   {
     icon: (
@@ -66,7 +67,7 @@ const features = [
       </svg>
     ),
     title: "Clinical-Grade Privacy",
-    description: "All data stays on-device. No tracking, no cloud uploads, no conversation history stored. PIN-protected admin access keeps settings safe.",
+    description: "All data stays on-device. No tracking, no cloud uploads. PIN-protected admin access keeps settings safe from accidental changes.",
   },
   {
     icon: (
@@ -75,7 +76,7 @@ const features = [
       </svg>
     ),
     title: "Multi-User Profiles",
-    description: "Completely isolated profiles for each communicator with separate databases, settings, and vocabulary. Easy profile switching and duplication.",
+    description: "Completely isolated profiles for each communicator with separate databases and settings. Easy profile switching, duplication, and a guided setup wizard.",
   },
 ];
 
@@ -89,7 +90,7 @@ const howItWorks = [
   {
     step: "2",
     title: "Build",
-    description: "Smart grammar automatically conjugates verbs, selects articles, and arranges words into natural sentences.",
+    description: "Smart grammar automatically conjugates verbs, selects articles, and forms grammatically correct sentences.",
     color: "bg-blue-500",
   },
   {
@@ -101,7 +102,7 @@ const howItWorks = [
 ];
 
 const stats = [
-  { value: "5", label: "Languages" },
+  { value: "4", label: "Languages" },
   { value: "3", label: "Grid Modes" },
   { value: "6", label: "Vocabulary Levels" },
   { value: "100%", label: "Offline Capable" },
@@ -154,6 +155,18 @@ export default function HomePage() {
             </Link>
           </div>
         </ScrollReveal>
+
+        {/* Hero App Screenshot */}
+        <ScrollReveal>
+          <div className="mx-auto max-w-4xl">
+            <AppScreenshot
+              label="Loquor AAC — Main Screen"
+              description="Symbol grid, message builder, and grammar bar"
+              aspectRatio="landscape"
+              size="full"
+            />
+          </div>
+        </ScrollReveal>
       </section>
 
       {/* How It Works */}
@@ -204,6 +217,177 @@ export default function HomePage() {
               />
             </ScrollReveal>
           ))}
+        </div>
+      </section>
+
+      {/* Smart Grammar Feature Spotlight */}
+      <section className="space-y-10">
+        <ScrollReveal>
+          <SectionHeading
+            badge="Language Intelligence"
+            title="Smart Grammar That Thinks Ahead"
+            subtitle="Tap a subject and a verb — Loquor handles the rest. Context-aware conjugation across four languages."
+          />
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center">
+          <ScrollReveal>
+            <div className="space-y-6">
+              {[
+                {
+                  lang: "English",
+                  input: "she + walk",
+                  output: "she walks",
+                  note: "3rd person singular -s",
+                },
+                {
+                  lang: "Dutch",
+                  input: "ik + hebben + lopen",
+                  output: "ik heb gelopen",
+                  note: "Perfect tense with auxiliary",
+                },
+                {
+                  lang: "French",
+                  input: "je + aimer",
+                  output: "j'aime",
+                  note: "Automatic elision before vowel",
+                },
+                {
+                  lang: "Spanish",
+                  input: "ella + hablar",
+                  output: "ella habla",
+                  note: "Present tense conjugation",
+                },
+              ].map((example) => (
+                <div
+                  key={example.lang}
+                  className="flex items-start gap-4 rounded-2xl bg-white border border-slate-200 p-5 shadow-sm"
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-50 ring-1 ring-indigo-100">
+                    <svg className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+                    </svg>
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-indigo-600 mb-1">{example.lang}</p>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <code className="rounded-md bg-slate-100 px-2 py-0.5 text-sm font-mono text-slate-600">{example.input}</code>
+                      <svg className="h-3.5 w-3.5 text-slate-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                      <code className="rounded-md bg-emerald-50 px-2 py-0.5 text-sm font-mono font-semibold text-emerald-700">{example.output}</code>
+                    </div>
+                    <p className="mt-1 text-xs text-slate-500">{example.note}</p>
+                  </div>
+                </div>
+              ))}
+
+              <div className="pt-2">
+                <Link
+                  href="/smart-grammar"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 hover:text-indigo-800 no-underline transition-colors"
+                >
+                  Explore the full grammar engine
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <AppScreenshot
+              label="Smart Grammar Engine"
+              description="Context-aware verb conjugation and grammar bar"
+              aspectRatio="portrait"
+              size="md"
+            />
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Progressive Vocabulary Spotlight */}
+      <section className="space-y-10">
+        <ScrollReveal>
+          <SectionHeading
+            badge="Progressive Learning"
+            title="Vocabulary That Grows With the User"
+            subtitle="Words unlock based on real usage. Positions never change, so motor memory always carries forward."
+          />
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center">
+          <ScrollReveal>
+            <AppScreenshot
+              label="Progressive Vocabulary"
+              description="Level progression with ghost slots and readiness button"
+              aspectRatio="portrait"
+              size="md"
+            />
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <div className="space-y-5">
+              {[
+                {
+                  level: "Level 1",
+                  pct: 100,
+                  label: "Essential power words — 80% mastery threshold",
+                  color: "bg-emerald-500",
+                  badge: "Completed",
+                  badgeColor: "bg-emerald-100 text-emerald-700",
+                },
+                {
+                  level: "Level 2",
+                  pct: 75,
+                  label: "Core communication starter — 75% mastery threshold",
+                  color: "bg-blue-500",
+                  badge: "In progress",
+                  badgeColor: "bg-blue-100 text-blue-700",
+                },
+                {
+                  level: "Level 3",
+                  pct: 0,
+                  label: "Expanded core + basics — 70% mastery threshold",
+                  color: "bg-slate-300",
+                  badge: "Locked",
+                  badgeColor: "bg-slate-100 text-slate-500",
+                },
+                {
+                  level: "Level 4–6",
+                  pct: 0,
+                  label: "Full vocabulary up to expert level",
+                  color: "bg-slate-200",
+                  badge: "Locked",
+                  badgeColor: "bg-slate-100 text-slate-500",
+                },
+              ].map((item) => (
+                <div key={item.level} className="rounded-2xl bg-white border border-slate-200 p-5 shadow-sm space-y-2">
+                  <div className="flex items-center justify-between">
+                    <p className="text-sm font-semibold text-slate-900">{item.level}</p>
+                    <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${item.badgeColor}`}>{item.badge}</span>
+                  </div>
+                  <div className="h-2 w-full rounded-full bg-slate-100 overflow-hidden">
+                    <div className={`h-full rounded-full ${item.color} transition-all`} style={{ width: `${item.pct}%` }} />
+                  </div>
+                  <p className="text-xs text-slate-500">{item.label}</p>
+                </div>
+              ))}
+
+              <div className="pt-2">
+                <Link
+                  href="/progressive-vocabulary"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 hover:text-indigo-800 no-underline transition-colors"
+                >
+                  Learn how progression works
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

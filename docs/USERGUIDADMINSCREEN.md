@@ -27,13 +27,14 @@ If no PIN is configured, Admin opens directly.
 ## 3. Layout And Navigation
 
 The Admin Screen is adaptive:
-- Phone (portrait or landscape): top tabs.
+- Phone portrait: top tabs (`Settings`, `Content`, `Language`, `Users`).
+- Phone landscape: compact sidebar + content panel. The sidebar (left, ~200px) contains a back button, language flag, navigation items (`Settings`, `Content`, `Language`, `Users`, `About`), and a progression status chip. The content panel (right, flex) shows the selected tab's content. No top tab bar or header — all navigation is in the sidebar, maximizing vertical content space. In `Language`, a compact internal switcher lets you show either `Progression` or `Language Packs`, so the phone landscape layout does not stack both long sections at once.
 - Tablet portrait: top tabs.
-- Tablet landscape: sidebar + context bar + content panel.
+- Tablet landscape: sidebar (300px) + context bar + content panel.
 
 Common controls:
-- `Back` button: return to previous screen.
-- Language flag button (top-right): quick language switch.
+- `Back` button: return to previous screen (in header on portrait, in sidebar on landscape).
+- Language flag button: quick language switch (in header on portrait, in sidebar on landscape).
 
 Main areas:
 - `Settings`
@@ -41,7 +42,7 @@ Main areas:
 - `Language`
 - `Users`
 
-Tablet landscape adds a direct `About` tab in the sidebar.
+Phone landscape and tablet landscape add a direct `About` tab in the sidebar.
 
 ---
 
@@ -52,7 +53,7 @@ Tap the flag in the header to open language selection.
 What it does:
 - changes current app/admin language context
 - reloads language-scoped content lists (symbols, phrases, abbreviations)
-- for `en`, `nl`, and `es`: if core pack is missing, app attempts auto-install of `core-basic-all-v1`
+- for `en`, `nl`, `es`, and `fr`: if core pack is missing, app attempts auto-install of `BasePackV2`
 
 If language change fails, an error alert appears.
 
@@ -62,18 +63,7 @@ If language change fails, an error alert appears.
 
 The Settings tab contains operational app settings (not content records).
 
-### 5.1 Security
-
-Features:
-- `PIN Protection` on/off
-- `Change PIN` (visible when PIN is enabled)
-
-How to use:
-1. Enable PIN to protect Admin access.
-2. Set a new PIN in the PIN modal.
-3. To disable PIN, confirm the warning prompt.
-
-### 5.2 Voice
+### 5.1 Voice
 
 The Voice section supports two providers: **Device** (on-device TTS via expo-speech) and **ElevenLabs** (cloud AI voices). Device is the default. ElevenLabs is opt-in and requires an API key.
 
@@ -132,7 +122,34 @@ When ElevenLabs is selected but fails (no API key, no voice selected, offline, A
 
 ElevenLabs audio is cached locally to avoid repeated API calls and save credits. The same phrase spoken with the same voice and settings plays instantly from cache. Use `Clear Voice Cache` if you want to free disk space or force fresh generation.
 
-### 5.3 Appearance
+### 5.2 Input Mode
+
+Features:
+- switch between `Symbol Only` and `Text` communication mode
+
+How to use:
+1. Tap `Communication Mode` to open the mode picker.
+2. Choose `Symbol Only` (default) or `Text`.
+   - **Symbol Only**: The main screen shows the symbol grid, message builder, and prediction bar — the standard AAC experience.
+   - **Text**: The main screen shows a text-based interface with keyboard input, quick phrases, abbreviation shortcuts, and phrase categories.
+3. Return to the Main Screen. The selected mode takes effect immediately.
+
+The input mode is per-user and persists across sessions.
+
+### 5.3 Grid Mode (Activity/Core-Fringe)
+
+Features:
+- choose one grid mode:
+- `Standard Symbol Grid`
+- `Activity Boards`
+- `Core-Fringe Grid`
+
+How to use:
+1. Open mode selector.
+2. Choose the mode matching communication workflow.
+3. Return to Main Screen to use the selected mode.
+
+### 5.4 Appearance
 
 Features:
 - theme selector (`Light`, `Dark`, `High Contrast`, `Child Friendly`)
@@ -141,6 +158,7 @@ Features:
 - symbol font size picker
 - grammar strip toggle (shows/hides the grammar bar in landscape mode)
 - edit button toggle (shows/hides the edit button on the main screen)
+- Word Finder toggle (shows/hides the Word Finder search button on the main screen)
 
 How to use grid and font preview:
 1. Tap `Grid Size` or `Symbol Font Size`.
@@ -149,7 +167,7 @@ How to use grid and font preview:
 4. Tap `Apply` to keep or `Cancel` to revert.
 5. App navigates back to Admin Settings.
 
-### 5.4 Grammar
+### 5.5 Grammar
 
 The Grammar section controls smart verb conjugation, the grammar bar (determiner helper), the long-press form picker, and pronoun images.
 
@@ -218,7 +236,7 @@ How to use:
 
 Tap `Run Grammar Tests` to validate the grammar engine against the built-in test suite for the current language. Results show passed/failed counts. Check console logs for detailed per-test output.
 
-### 5.5 Fitzgerald Key
+### 5.6 Fitzgerald Key
 
 Features:
 - color-coded grammar toggle
@@ -227,19 +245,6 @@ Features:
 How to use:
 1. Enable color coding to show grammar colors on symbols.
 2. Tap `View Color Legend` to understand color meanings.
-
-### 5.6 Grid Mode (Activity/Core-Fringe)
-
-Features:
-- choose one grid mode:
-- `Standard Symbol Grid`
-- `Activity Boards`
-- `Core-Fringe Grid`
-
-How to use:
-1. Open mode selector.
-2. Choose the mode matching communication workflow.
-3. Return to Main Screen to use the selected mode.
 
 ### 5.7 Share
 
@@ -250,7 +255,30 @@ How to use:
 1. Enable to expose share action in the communication toolbar.
 2. Disable to hide it.
 
-### 5.8 About
+### 5.8 Security
+
+Features:
+- `PIN Protection` on/off
+- `Change PIN` (visible when PIN is enabled)
+
+How to use:
+1. Enable PIN to protect Admin access.
+2. Set a new PIN in the PIN modal.
+3. To disable PIN, confirm the warning prompt.
+
+### 5.9 Backup & Export
+
+Features:
+- create portable `.vbaac` backup of user data
+- restore from a `.vbaac` backup file
+
+How to use:
+1. Tap `Create Backup` to export the current user's data.
+2. Tap `Restore Backup` to import data from a `.vbaac` file.
+
+Backups include settings, symbols, phrases, abbreviations, activity boards, core-fringe layouts, and embedded images (up to 5 MB per image).
+
+### 5.10 About
 
 Shows:
 - app name
@@ -348,17 +376,54 @@ Main features:
 - view and manage vocabulary categories
 - add/edit/delete categories
 
-## 6.5 Irregular Nouns
+## 6.5 Irregular Nouns## 6.4 Categories
 
 Main features:
-- view and manage irregular noun forms
+- view and manage vocabulary categories
+- add/edit/delete categories
+
+Main features:
+- search irregular nouns by label or plural form
+- noun count display
 - add/edit/delete irregular nouns
+
+Noun list row info:
+- singular form (highlighted)
+- plural form or `Uncountable` badge
+- edit button (pencil)
+
+Add/Edit Irregular Noun modal fields:
+- `Singular` (required)
+- `Language`
+- `Type` selector: `Irregular Plural` or `Uncountable`
+- `Plural Form` (required when type is Irregular Plural)
 
 ## 6.6 Irregular Verbs
 
 Main features:
-- view and manage irregular verb forms
+- search irregular verbs by infinitive or conjugated form
+- verb count display
 - add/edit/delete irregular verbs
+
+Verb list row info:
+- infinitive form (highlighted)
+- exception count badge (e.g., `15 forms`)
+- auxiliary verb indicator (if set, e.g., `(hebben)` or `(zijn)`)
+- edit button (pencil)
+
+Add/Edit Irregular Verb modal fields:
+- `Infinitive` (required)
+- `Language` selector
+- `Auxiliary Verb` selector (language-dependent, e.g., `hebben`/`zijn` for Dutch)
+- `Exception Forms` — a list of conjugation slots with text inputs for each form. Slots are language-specific:
+  - **Dutch:** hele werkwoord, ik-vorm, jij-vorm, hij/zij-vorm, wij-vorm, jullie-vorm, zij-vorm (mv), verleden tijd (ik/jij/hij/wij/jullie/zij), voltooid deelwoord
+  - **English:** infinitive, present tenses, past tenses, past participle
+  - **Spanish:** full present/past/future/conditional/subjunctive/imperative paradigm
+- at least one exception form is required to save
+
+**Tablet layout:** On tablet, the editor uses a two-column layout — verb settings on the left, exception forms on the right.
+
+**Data source:** Irregular verb exceptions are imported from vocabulary packs during installation. The pack's grammar data is automatically synced to the database. If exceptions appear missing after a pack update, reinstall the pack from Admin -> Language -> Vocabulary Management to re-sync the grammar data.
 
 ## 6.7 Activity Boards
 
@@ -368,7 +433,7 @@ Main features:
 - add/edit/delete boards
 
 Board list row info:
-- icon or image
+- icon or image (pack images from vocabulary packs are fully resolved and displayed as thumbnails)
 - title
 - columns count and button count
 - description (if set)
@@ -376,10 +441,11 @@ Board list row info:
 - edit button (pencil)
 
 Board Editor modal (tap edit or add):
+- `Copy from existing board` (create mode only) — select an existing board to copy. Pre-fills title (as "Copy of {original}"), description, icon/image, grid columns, and background color. On save, all buttons from the source board are duplicated onto the new board. You can modify any field before saving.
 - `Preview` — shows board icon/image, title, and grid size
 - `Title` (required)
 - `Description` (optional)
-- `Icon/Image Picker` — three tabs: emoji picker, device image (camera/library), pack image (from installed packs)
+- `Icon/Image Picker` — three tabs: emoji picker, device image (camera/library), pack image (from installed packs). The pack image tab includes a search field to filter images by label.
 - `Edit Grid` button (edit mode only) — navigates to Main Screen to edit the board's buttons
 - `Grid Columns` stepper (2–8 columns)
 - `Background Color` swatches
@@ -387,17 +453,20 @@ Board Editor modal (tap edit or add):
 - `Delete` button (edit mode only)
 - `Cancel` / `Save` footer buttons
 
-**Tablet layout:** On tablet, the Board Editor modal uses a wide two-column layout (95% screen width, max 900px) so all content is visible without scrolling:
+**Two-column layout (tablet and phone landscape):** On tablet and phone landscape, the Board Editor modal uses a wide two-column layout so all content is visible without scrolling:
 - **Left column:** preview (compact horizontal), title, description, grid columns, background color
 - **Right column:** icon/image picker, Edit Grid button (edit mode), info section (edit mode)
-- On phone, the modal uses the standard narrow single-column scrollable layout.
+- On phone portrait, the modal uses the standard narrow single-column scrollable layout.
+
+**Edit mode visual indicators:** When editing a board's grid on the Main Screen, all symbol cells show dashed borders to signal that the grid is editable. Empty cells show a blue dashed border with a `+` icon. Selecting a cell for moving highlights it with a solid blue border. When you exit edit mode (tap the checkmark), borders return to solid and the grid becomes non-editable.
 
 How to use:
 1. Go to Admin -> Content -> Activity Boards.
 2. Tap `Add Board` to create a new board, or tap the edit button on an existing board.
-3. Fill in title, choose an icon or image, set grid columns and background color.
-4. Tap `Save`.
-5. To edit the board's buttons, tap `Edit Grid` in the editor — this navigates to the Main Screen with the board in edit mode.
+3. Optionally tap `Select a board to copy` to duplicate an existing board (create mode only). This pre-fills all fields and copies all buttons on save. You can clear the selection with the `✕` button.
+4. Fill in title, choose an icon or image, set grid columns and background color.
+5. Tap `Save`.
+6. To edit the board's buttons, tap `Edit Grid` in the editor — this navigates to the Main Screen with the board in edit mode.
 
 ## 6.8 Core-Fringe Layouts
 
@@ -418,7 +487,7 @@ Layout list row info:
 Layout Editor modal (tap edit or add):
 - `Preview` — shows layout icon/image, name, and grid size
 - `Name` (required)
-- `Icon/Image Picker` — three tabs: emoji picker, device image (camera/library), pack image (from installed packs)
+- `Icon/Image Picker` — three tabs: emoji picker, device image (camera/library), pack image (from installed packs). The pack image tab includes a search field to filter images by label.
 - `Grid Size` stepper (6–12 columns)
 - `Edit Grid` button (edit mode only) — navigates to Main Screen to edit slots
 - `Activate` button (edit mode only) — sets this layout as the active Core-Fringe layout
@@ -427,15 +496,38 @@ Layout Editor modal (tap edit or add):
 - `Delete` button (edit mode only)
 - `Cancel` / `Save` footer buttons
 
-**Tablet layout:** On tablet, the Layout Editor modal uses a wide two-column layout (95% screen width, max 900px) so all content is visible without scrolling:
+**Two-column layout (tablet and phone landscape):** On tablet and phone landscape, the Layout Editor modal uses a wide two-column layout with both columns independently scrollable:
 - **Edit mode:**
   - **Left column:** preview (compact horizontal), name, grid size, icon/image picker
   - **Right column:** inline page tree with add/edit/delete actions, Edit Grid button, Activate button, info section
 - **Create mode:**
   - **Left column:** preview (compact horizontal), name, grid size
   - **Right column:** icon/image picker
-- The page tree is shown inline on tablet (instead of a separate Page Manager modal), allowing direct page management without opening a second modal.
-- On phone, the modal uses the standard narrow single-column scrollable layout with a `Manage Pages` button that opens a separate Page Manager modal.
+- The page tree is shown inline (instead of a separate Page Manager modal), allowing direct page management without opening a second modal.
+- On tablet: 95% screen width, max 900px. On phone landscape: 95% width, max 760px, with reduced padding and a shorter page tree scroll area to fit the limited vertical space. The modal uses a fixed height (95%) to ensure the footer (delete/cancel/save) always stays visible.
+- On phone portrait, the modal uses the standard narrow single-column scrollable layout with a `Manage Pages` button that opens a separate Page Manager modal.
+
+### Page Editor (sub-page editing)
+
+When editing or creating a sub-page (via the page tree or Page Manager modal), the Page Editor provides:
+- `Title` (required)
+- `Parent Page` selector — choose which page this sub-page belongs to (dropdown of all available pages)
+- `Icon/Image Picker` — three tabs: emoji picker, device image (camera/library), pack image (from installed packs). The pack image tab includes a search field to filter images by label.
+- `Edit Grid` button (edit mode only) — navigates directly to the Main Screen with the sub-page's grid open in edit mode, allowing you to add and arrange slots for that specific page without manually navigating to it first.
+
+**Page metadata sync:** When you update a page's title, icon, or image, the change is automatically synced to all category link tiles on the grid that point to that page. This means the folder tiles on the Main Screen always reflect the latest page metadata without manual slot editing.
+
+### Sub-page navigation on Main Screen
+
+When using Core-Fringe mode on the Main Screen:
+- Sub-pages appear as folder tiles on the grid. Tapping a folder tile navigates into that sub-page's grid.
+- When you create a new sub-page (via Manage Pages or the inline page tree), a category link tile is automatically placed in the first available slot on the parent page's grid. If the parent page has no free slots, an alert "No Free Slot" is shown — the sub-page is still created, but you must manually add the link tile.
+- Auto-created navigation buttons: sub-pages automatically get a `Home` button (returns to the root page) and a `Back` button (returns to the parent page) placed in the last row of the grid (first and second column).
+- Newly created sub-pages are immediately navigable — the grid reactively updates when pages are added or modified.
+- **Auto-parenting from main screen**: When you create a category link on the main screen pointing from a non-root page to another page (e.g. by dropping a page tile onto a slot), the target page is automatically moved under the linking page in the admin hierarchy — provided the target page is still at its default location (no parent, or directly under the root). If the target already has a specific non-root parent, it is left unchanged. This means the page tree in Manage Pages stays consistent with the visual link structure on the main screen without manual re-parenting.
+- **Page tree refresh**: The Manage Pages hierarchy automatically refreshes when you return to the admin screen after editing on the main screen, so hierarchy changes are always current.
+
+**Edit mode visual indicators:** When editing a layout's grid on the Main Screen, all symbol cells show dashed borders to signal that the grid is editable. Empty cells show a blue dashed border with a `+` icon. Selecting a cell for moving highlights it with a solid blue border. When you exit edit mode (tap the checkmark), borders return to solid and the grid becomes non-editable.
 
 How to use:
 1. Go to Admin -> Content -> Core-Fringe Layouts.
@@ -445,6 +537,7 @@ How to use:
 5. To edit the layout's grid slots, tap `Edit Grid` — this navigates to the Main Screen with the layout in edit mode.
 6. To set a layout as active, tap `Activate` in the editor.
 7. To manage pages, use the inline page tree (tablet) or tap `Manage Pages` (phone) to add, edit, or delete sub-pages.
+8. To edit a specific sub-page's grid directly, open the page editor for that page and tap `Edit Grid` — this navigates to the Main Screen with that sub-page's grid open in edit mode.
 
 ---
 
@@ -456,24 +549,53 @@ The Language tab has two functional sections:
 
 ## 7.1 Progressive Vocabulary
 
+Progressive vocabulary is **per-user** — each user profile has its own progression level, word usage stats, and history stored in their isolated database.
+
 Features:
 - enable/disable progressive unlocking
 - current level card
 - category progress card
-- display options:
-- ghost slots
-- auto-advance
-- expert vocabulary (available from higher levels)
+- display settings:
+  - ghost slots (show/hide locked word previews with lock icons)
+  - auto-advance (automatically advance when ready vs. manual only)
+  - hide locked word popup (suppress the alert when tapping a locked word)
+  - expert vocabulary (available at level 5+; unlocks 200 additional words for 500 total)
+  - mastery threshold stepper (50%–100% in 5% steps; percentage of words that must be mastered to advance; reset to default available)
+  - min uses per word stepper (1–10; number of times each word must be used to count as mastered; reset to default available)
 - actions:
-- check readiness
-- reset progression
+  - check readiness
+  - reset progression
 
-Readiness check modal provides:
-- completion percentage
-- usage statistics
-- recommendation text
-- words needing practice
-- advance button when ready
+How to use:
+1. Enable `Progressive Vocabulary` to activate gradual word unlocking.
+2. The **Current Level & Grid Size** card shows your level, unlocked word count, and grid dimensions.
+3. The **Progress by Category** card shows per-category unlocked/total counts.
+4. Adjust **Display Settings** to customize the learning experience:
+   - Enable **Show Ghost Slots** to see locked words as ghosted previews with lock icons.
+   - Enable **Auto-Advance Levels** to automatically unlock the next level when ready.
+   - Enable **Hide Locked Word Popup** to suppress the alert shown when tapping a locked word.
+   - **Mastery Threshold** controls how many words (%) must be mastered before advancing. Use +/− to adjust in 5% steps, or tap `Reset` to restore the default.
+   - **Min Uses Per Word** controls how many times a word must be used to count as mastered. Use +/− to adjust, or tap `Reset` to restore the default.
+   - At level 5+, **Expert Vocabulary** appears — enable it to unlock 200 additional expert words (500 total).
+5. Tap **Check Readiness** to open the readiness check modal.
+6. Tap **Reset Progression** to reset all words back to Level 1 (with confirmation).
+
+### Readiness Check Modal
+
+The readiness check modal shows your progress toward the next level:
+- status emoji and title (Keep Going / Making Progress / Almost There / You're Ready) based on completion percentage
+- progress circle with completion percentage
+- current level → next level indicator
+- stats: words used, words mastered, total uses
+- recommendation message
+- words needing practice (up to 12 shown as chips, with "+N more" if there are more)
+
+When ready:
+- `Not Yet` button to close without advancing
+- `Unlock Level N` button to advance to the next level
+
+When not ready:
+- `Continue Practicing` button to close and keep working
 
 ## 7.2 Vocabulary Management And Packs
 
@@ -485,9 +607,9 @@ Features:
 - destructive maintenance actions
 
 Built-in pack entries currently include:
-- `core-basic-all-v1`
-- `dutch-children-v1`
-- `breakfast-children-v1`
+- `BasePackV2` — Base Vocabulary Pack V2 (6,500+ concepts in EN, NL, FR, ES)
+- `dutch-children-v1` — Nederlands voor Kinderen (150 concepts)
+- `breakfast-children-v1` — Children's Daily Activities (57 concepts, phrases, abbreviations, activity boards)
 
 Install result shows created counts (as available):
 - concepts
@@ -588,22 +710,32 @@ Restrictions:
 
 ---
 
-## 9. Tablet Landscape Specific UX
+## 9. Landscape Specific UX
 
-On tablet landscape:
-- left sidebar selects main section (`Settings`, `Content`, `Language`, `Users`, `About`)
-- context bar shows active language and current location
-- settings/content/language each use internal left navigation and right detail panel
+### Tablet Landscape
+- Left sidebar (300px) selects main section (`Settings`, `Content`, `Language`, `Users`, `About`)
+- Context bar shows active language and current location
+- Settings/content/language each use internal left navigation and right detail panel
 
-This layout is functionally equivalent to phone/tablet portrait, but optimized for faster navigation on wide screens.
+### Phone Landscape
+- Compact left sidebar (~200px) with back button, language flag, navigation items, and progression status
+- Content panel fills the remaining width
+- No top tab bar or header row — all chrome is in the sidebar, maximizing vertical space for content
+- In `Language`, a compact top switcher toggles between `Progression` and `Language Packs`, and only one section is shown at a time
+- Editor modals (Layout Editor, Board Editor) use a two-column layout with scrollable columns, matching the tablet experience in a more compact form
+
+Both landscape layouts are functionally equivalent to phone/tablet portrait, but optimized for faster navigation on wide screens.
 
 ---
 
 ## 10. Practical Notes And Limits
 
-- Pack uninstall is not exposed as a direct button in current Admin UI.
+- Pack uninstall is not exposed as a direct button in current Admin UI. When a pack is uninstalled programmatically (e.g., via `Clear All Vocabulary` or `Reset to Defaults`), all associated symbols, translations, favorites, lemmas, activity boards, core-fringe layouts, and pack records are removed.
 - Some actions are language-scoped (content lists, device voice selection), while others are app-wide (theme, PIN, share toggle, voice provider, ElevenLabs settings).
 - ElevenLabs requires an active internet connection for first-time phrase generation; cached phrases play offline. If offline and uncached, device TTS is used automatically.
+- Input Mode is per-user. Switching to a different user restores that user's input mode setting.
+- Progressive vocabulary is per-user. Each user has their own level, word usage stats, and progression history stored in their isolated database. User A can be at level 5 while User B is at level 3.
+- Word Finder is available in Core-Fringe and Activity Board modes only (not in Standard grid mode). It searches all symbols in the current layout and shows navigation paths to reach them.
 
 ---
 
@@ -614,6 +746,12 @@ This layout is functionally equivalent to phone/tablet portrait, but optimized f
 2. Tap `+ Add Symbol`.
 3. Fill label/category/language (and optional media/settings).
 4. Tap `Save`.
+
+### Switch to text mode
+1. Admin -> Settings -> Input Mode.
+2. Tap `Communication Mode`.
+3. Select `Text`.
+4. Return to Main Screen — the text-based interface is now active.
 
 ### Enable PIN protection
 1. Admin -> Settings -> Security.
@@ -654,3 +792,36 @@ This layout is functionally equivalent to phone/tablet portrait, but optimized f
 1. Admin -> Settings -> Grid Mode.
 2. Select `Core-Fringe Grid`.
 3. Return to Main Screen to use it.
+
+### Add a sub-page and have it appear automatically in the grid
+1. Admin -> Content -> Core-Fringe Layouts.
+2. Open the layout editor (edit button).
+3. In the page tree (tablet inline or via `Manage Pages` on phone), tap `Add Sub-Page`.
+4. Enter a title and optional icon/image. The parent page is pre-set to the current page.
+5. Tap `Save`.
+6. A link tile is automatically placed in the first free slot on the parent page's grid.
+   If no slot is free, an alert notifies you and you must add the link manually.
+
+### Use Word Finder to locate a symbol
+1. On the Main Screen (in Core-Fringe or Activity Board mode), tap the search icon in the toolbar.
+2. Type a word in the search field.
+3. Results show each matching symbol with its navigation path (e.g., "2 taps away", "Always visible", "On this page").
+4. Symbols locked by progressive vocabulary show "Available at Level N" and cannot be selected.
+5. Tap a result to start step-by-step guidance — the grid highlights each cell to tap in sequence until you reach the target symbol.
+6. To cancel guidance, tap the cancel button on the guidance bar.
+
+### Enable/disable the Word Finder button
+1. Admin -> Settings -> Appearance.
+2. Toggle `Word Finder` on or off.
+3. When enabled, a search button appears in the main screen toolbar (Core-Fringe and Activity Board modes only).
+
+### Adjust progressive vocabulary mastery requirements
+1. Admin -> Language -> Progressive Vocabulary.
+2. Under **Display Settings**, adjust **Mastery Threshold** (50%–100%) and **Min Uses Per Word** (1–10) using the +/− steppers.
+3. Tap `Reset` next to either stepper to restore the default value.
+4. These settings control how strict the readiness check is before allowing level advancement.
+
+### Understand why a page appears at the wrong level in the hierarchy
+The page tree is based on `parentPageId`, which is set when a page is created or when a category link is drawn on the main screen. If a page appears at root level but you expected it to be nested:
+- Check that a link tile on the parent page actually points to it (edit mode → long-press the tile → Link Editor).
+- If needed, open the Page Editor for the page (pencil icon in the tree) and set the correct parent page manually using the `Parent Page` dropdown.
