@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1f5f9"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1278" height="718" rx="15" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="50%" y="42%" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="600" fill="#475569">Progressive Vocabulary - Level Progress</text>
+  <text x="50%" y="50%" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#94a3b8">Ghost slots, floating readiness button, and level progression</text>
+  <text x="50%" y="60%" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#6366f1">Replace with real screenshot (1280x720)</text>
+</svg>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { primaryNavigation, siteConfig } from "@/lib/site";
@@ -12,9 +13,16 @@ export default function SiteHeader() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="font-(--font-jakarta) text-xl font-bold text-indigo-700 hover:text-indigo-800 transition-colors no-underline"
+          className="flex items-center gap-2 font-(--font-jakarta) text-xl font-bold text-indigo-700 hover:text-indigo-800 transition-colors no-underline"
           onClick={() => setIsMenuOpen(false)}
         >
+          <Image
+            src="/images/logo.png"
+            alt={`${siteConfig.name} logo`}
+            width={32}
+            height={32}
+            className="h-8 w-8"
+          />
           {siteConfig.name}
         </Link>
 

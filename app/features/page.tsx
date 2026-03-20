@@ -20,6 +20,7 @@ const featureSections = [
       </svg>
     ),
     color: "bg-blue-50 text-blue-600 ring-blue-100",
+    screenshotSrc: "/images/screenshots/main-screen.svg",
     screenshotLabel: "Main Communication Screen",
     screenshotDescription: "Symbol grid with message builder and prediction bar",
     items: [
@@ -41,6 +42,7 @@ const featureSections = [
       </svg>
     ),
     color: "bg-violet-50 text-violet-600 ring-violet-100",
+    screenshotSrc: "/images/screenshots/voice-settings.svg",
     screenshotLabel: "Voice Settings",
     screenshotDescription: "Voice provider selection and ElevenLabs configuration",
     items: [
@@ -62,6 +64,7 @@ const featureSections = [
       </svg>
     ),
     color: "bg-amber-50 text-amber-600 ring-amber-100",
+    screenshotSrc: "/images/screenshots/smart-grammar.svg",
     screenshotLabel: "Smart Grammar in Action",
     screenshotDescription: "Verb conjugation and grammar bar with determiner chips",
     items: [
@@ -86,6 +89,7 @@ const featureSections = [
       </svg>
     ),
     color: "bg-emerald-50 text-emerald-600 ring-emerald-100",
+    screenshotSrc: "/images/screenshots/progressive-vocabulary.svg",
     screenshotLabel: "Progressive Vocabulary",
     screenshotDescription: "6-level progression with ghost slots and readiness button",
     items: [
@@ -111,6 +115,7 @@ const featureSections = [
       </svg>
     ),
     color: "bg-sky-50 text-sky-600 ring-sky-100",
+    screenshotSrc: "/images/screenshots/core-fringe-grid.svg",
     screenshotLabel: "Core-Fringe Grid",
     screenshotDescription: "Pinned core vocabulary with multi-page fringe navigation",
     items: [
@@ -133,6 +138,7 @@ const featureSections = [
       </svg>
     ),
     color: "bg-rose-50 text-rose-600 ring-rose-100",
+    screenshotSrc: "/images/screenshots/admin-screen.svg",
     screenshotLabel: "Admin Screen",
     screenshotDescription: "Settings, content management, and user profiles",
     items: [
@@ -156,6 +162,7 @@ const featureSections = [
       </svg>
     ),
     color: "bg-indigo-50 text-indigo-600 ring-indigo-100",
+    screenshotSrc: "/images/screenshots/user-management.svg",
     screenshotLabel: "User Management",
     screenshotDescription: "Multiple isolated profiles with setup wizard",
     items: [
@@ -216,6 +223,7 @@ export default function FeaturesPage() {
               {/* Screenshot side */}
               <div className="lg:w-[45%] flex items-center justify-center">
                 <AppScreenshot
+                  src={section.screenshotSrc}
                   label={section.screenshotLabel}
                   description={section.screenshotDescription}
                   aspectRatio="portrait"

@@ -182,6 +182,7 @@ export default function SmartGrammarPage() {
       {/* Hero screenshot */}
       <ScrollReveal>
         <AppScreenshot
+          src="/images/screenshots/grammar-live-conjugation.svg"
           label="Smart Grammar Engine — Live Conjugation"
           description="Subject tapped → verb auto-conjugated → grammar bar ready for determiners"
           aspectRatio="landscape"
@@ -321,6 +322,7 @@ export default function SmartGrammarPage() {
               </div>
               <div className="lg:w-1/2">
                 <AppScreenshot
+                  src="/images/screenshots/grammar-bar.svg"
                   label="Grammar Bar"
                   description="Colour-coded determiner chips with gender-aware dimming"
                   aspectRatio="landscape"
