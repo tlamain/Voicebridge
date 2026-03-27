@@ -266,6 +266,21 @@ export const deepDiveLinks: DeepDiveLink[] = [
     description: "Level system, motor memory protection, ghost slots, and readiness checks.",
   },
   {
+    href: "/activity-boards",
+    label: "Activity Boards",
+    description: "Create themed boards for routines with custom icons, grid sizes, and in-grid editing.",
+  },
+  {
+    href: "/core-fringe",
+    label: "Core-Fringe Layouts",
+    description: "Multi-page layouts with pinned core vocabulary and dynamic fringe pages.",
+  },
+  {
+    href: "/symbol-management",
+    label: "Symbol Library",
+    description: "Search, filter, favourite, and edit symbols with progressive vocabulary metadata.",
+  },
+  {
     href: "/admin-for-clinicians",
     label: "Admin for Clinicians",
     description: "Understand settings, content, language, and user management capabilities.",

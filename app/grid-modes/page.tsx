@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { gridModes } from "@/content/features";
 import { createPageMetadata } from "@/lib/metadata";
 
@@ -43,10 +44,12 @@ export default function GridModesPage() {
           <article className="rounded-xl bg-white p-4">
             <p className="font-semibold text-slate-900">Use Activity Boards for routines</p>
             <p className="mt-1 text-sm text-slate-600">Best when communication is task or environment specific.</p>
+            <Link href="/activity-boards" className="mt-2 inline-block text-sm font-medium text-indigo-600 no-underline hover:text-indigo-800">Learn more &rarr;</Link>
           </article>
           <article className="rounded-xl bg-white p-4">
             <p className="font-semibold text-slate-900">Use Core-Fringe for depth</p>
             <p className="mt-1 text-sm text-slate-600">Best when core words must stay fixed while fringe vocabulary expands.</p>
+            <Link href="/core-fringe" className="mt-2 inline-block text-sm font-medium text-indigo-600 no-underline hover:text-indigo-800">Learn more &rarr;</Link>
           </article>
         </div>
       </section>

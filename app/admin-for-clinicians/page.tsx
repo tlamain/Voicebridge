@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { adminAreas } from "@/content/product-details";
 import { createPageMetadata } from "@/lib/metadata";
 
@@ -39,6 +40,16 @@ export default function AdminForCliniciansPage() {
           <li>- User profiles are isolated for cleaner care-team handoffs.</li>
           <li>- Backup and restore actions are explicit and user initiated.</li>
         </ul>
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 className="font-[var(--font-jakarta)] text-2xl font-semibold text-slate-900">Explore Content Management</h2>
+        <p className="mt-2 text-sm text-slate-600">Dive deeper into the tools clinicians use to manage communication content.</p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link href="/symbol-management" className="rounded-lg bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-700 no-underline ring-1 ring-indigo-100 transition hover:bg-indigo-100">Symbol Library &rarr;</Link>
+          <Link href="/activity-boards" className="rounded-lg bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-700 no-underline ring-1 ring-indigo-100 transition hover:bg-indigo-100">Activity Boards &rarr;</Link>
+          <Link href="/core-fringe" className="rounded-lg bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-700 no-underline ring-1 ring-indigo-100 transition hover:bg-indigo-100">Core-Fringe Layouts &rarr;</Link>
+        </div>
       </section>
     </div>
   );

@@ -44,6 +44,9 @@ export default function SiteFooter() {
               <li><Link href="/smart-grammar" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Smart Grammar</Link></li>
               <li><Link href="/progressive-vocabulary" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Progressive Vocabulary</Link></li>
               <li><Link href="/grid-modes" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Grid Modes</Link></li>
+              <li><Link href="/activity-boards" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Activity Boards</Link></li>
+              <li><Link href="/core-fringe" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Core-Fringe Layouts</Link></li>
+              <li><Link href="/symbol-management" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Symbol Library</Link></li>
               <li><Link href="/setup-wizard" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Setup Wizard</Link></li>
             </ul>
           </div>
