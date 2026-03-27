@@ -20,9 +20,9 @@ const featureSections = [
       </svg>
     ),
     color: "bg-blue-50 text-blue-600 ring-blue-100",
-    screenshotSrc: "/images/screenshots/main-screen.svg",
+    screenshotSrc: "/images/screenshots/text-mode.png",
     screenshotLabel: "Main Communication Screen",
-    screenshotDescription: "Symbol grid with message builder and prediction bar",
+    screenshotDescription: "Text mode with quick phrases, categories, and shortcuts",
     items: [
       "Symbol Grid with configurable sizes (6–12 columns) and category organisation",
       "Text Input mode with live character counter and bigram-based word predictions",
@@ -42,7 +42,7 @@ const featureSections = [
       </svg>
     ),
     color: "bg-violet-50 text-violet-600 ring-violet-100",
-    screenshotSrc: "/images/screenshots/voice-settings.svg",
+    screenshotSrc: "/images/screenshots/voice-settings.png",
     screenshotLabel: "Voice Settings",
     screenshotDescription: "Voice provider selection and ElevenLabs configuration",
     items: [
@@ -64,9 +64,9 @@ const featureSections = [
       </svg>
     ),
     color: "bg-amber-50 text-amber-600 ring-amber-100",
-    screenshotSrc: "/images/screenshots/smart-grammar.svg",
+    screenshotSrc: "/images/screenshots/verb-conjugation.png",
     screenshotLabel: "Smart Grammar in Action",
-    screenshotDescription: "Verb conjugation and grammar bar with determiner chips",
+    screenshotDescription: "Automatic verb conjugation with color-coded grammar",
     items: [
       "Automatic verb conjugation for Dutch, English, French, and Spanish — all 100% offline",
       "Perfect tense, continuous aspect (-ing), modal verbs, and reflexive forms handled automatically",
@@ -89,9 +89,9 @@ const featureSections = [
       </svg>
     ),
     color: "bg-emerald-50 text-emerald-600 ring-emerald-100",
-    screenshotSrc: "/images/screenshots/progressive-vocabulary.svg",
+    screenshotSrc: "/images/screenshots/progressive-vocabulary-settings.png",
     screenshotLabel: "Progressive Vocabulary",
-    screenshotDescription: "6-level progression with ghost slots and readiness button",
+    screenshotDescription: "Progressive vocabulary settings with level controls",
     items: [
       "6-level vocabulary learning — words unlock as the user demonstrates consistent use",
       "Motor memory protection: word positions never change once introduced, so muscle memory carries forward",
@@ -115,7 +115,7 @@ const featureSections = [
       </svg>
     ),
     color: "bg-sky-50 text-sky-600 ring-sky-100",
-    screenshotSrc: "/images/screenshots/core-fringe-grid.svg",
+    screenshotSrc: "/images/screenshots/core-fringe-grid.png",
     screenshotLabel: "Core-Fringe Grid",
     screenshotDescription: "Pinned core vocabulary with multi-page fringe navigation",
     items: [
@@ -138,9 +138,9 @@ const featureSections = [
       </svg>
     ),
     color: "bg-rose-50 text-rose-600 ring-rose-100",
-    screenshotSrc: "/images/screenshots/admin-screen.svg",
+    screenshotSrc: "/images/screenshots/customize-appearance.png",
     screenshotLabel: "Admin Screen",
-    screenshotDescription: "Settings, content management, and user profiles",
+    screenshotDescription: "Appearance customization with theme, grid size, and display settings",
     items: [
       "4 visual themes: Light, Dark, High Contrast, and Child-Friendly",
       "PIN-protected admin panel (4–6 digit) prevents accidental changes",
@@ -162,9 +162,9 @@ const featureSections = [
       </svg>
     ),
     color: "bg-indigo-50 text-indigo-600 ring-indigo-100",
-    screenshotSrc: "/images/screenshots/user-management.svg",
+    screenshotSrc: "/images/screenshots/multi-user-profiles.png",
     screenshotLabel: "User Management",
-    screenshotDescription: "Multiple isolated profiles with setup wizard",
+    screenshotDescription: "Multiple user profiles with setup wizard",
     items: [
       "Completely isolated user profiles — separate database, settings, and vocabulary per user",
       "Profile duplication clones all data and settings for a new user instantly",

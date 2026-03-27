@@ -22,6 +22,7 @@ const sections = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
       </svg>
     ),
+    screenshotSrc: "/images/screenshots/core-fringe-list.png",
     screenshotLabel: "Core-Fringe Layout List",
     screenshotDescription: "Layout list with active badge, grid size, page and slot counts",
     items: [
@@ -44,8 +45,9 @@ const sections = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
       </svg>
     ),
+    screenshotSrc: "/images/screenshots/edit-board-layout.png",
     screenshotLabel: "Page Tree Manager",
-    screenshotDescription: "Hierarchical page tree with Home root, sub-pages, and add/edit actions",
+    screenshotDescription: "Grid editor with page navigation and editing controls",
     items: [
       "Every layout starts with a root Home page — add sub-pages beneath it to build topic areas",
       "Creating a sub-page automatically places a link tile on the parent page (with a warning if no free slot exists)",
@@ -66,8 +68,9 @@ const sections = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
       </svg>
     ),
+    screenshotSrc: "/images/screenshots/core-fringe-grid.png",
     screenshotLabel: "Pinned vs Dynamic Slots",
-    screenshotDescription: "Grid showing pinned core words and page-specific fringe vocabulary",
+    screenshotDescription: "Core-fringe grid with pinned core words and dynamic fringe vocabulary",
     items: [
       "Pinned (Core) slots stay visible during navigation — they act as shared core vocabulary across the layout",
       "Dynamic (Fringe) slots change when the user moves between pages — used for topic-specific words",
@@ -87,6 +90,7 @@ const sections = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
       </svg>
     ),
+    screenshotSrc: "/images/screenshots/edit-board-layout.png",
     screenshotLabel: "Core-Fringe Grid Edit Mode",
     screenshotDescription: "Grid edit bar with page selector, Add Page, Copy Page, and Done actions",
     items: [
@@ -145,6 +149,7 @@ export default function CoreFringePage() {
               {/* Screenshot side */}
               <div className="lg:w-[45%] flex items-center justify-center">
                 <AppScreenshot
+                  src={section.screenshotSrc}
                   label={section.screenshotLabel}
                   description={section.screenshotDescription}
                   aspectRatio="portrait"

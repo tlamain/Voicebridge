@@ -112,9 +112,9 @@ export default function ProgressiveVocabularyPage() {
       {/* Hero screenshot */}
       <ScrollReveal>
         <AppScreenshot
-          src="/images/screenshots/vocabulary-level-progress.svg"
-          label="Progressive Vocabulary — Level Progress"
-          description="Ghost slots, floating readiness button, and level progression"
+          src="/images/screenshots/progressive-vocabulary-settings.png"
+          label="Progressive Vocabulary — Settings"
+          description="Progressive vocabulary settings with level controls and display options"
           aspectRatio="landscape"
           size="full"
         />
@@ -249,9 +249,9 @@ export default function ProgressiveVocabularyPage() {
               ))}
             </div>
             <AppScreenshot
-              src="/images/screenshots/readiness-check.svg"
+              src="/images/screenshots/progressive-vocabulary-settings.png"
               label="Readiness Check Modal"
-              description="Progress circle, stats, and practice recommendations"
+              description="Progressive vocabulary admin controls"
               aspectRatio="portrait"
               size="sm"
             />
@@ -356,7 +356,7 @@ export default function ProgressiveVocabularyPage() {
             </div>
             <div className="lg:w-1/2">
               <AppScreenshot
-                src="/images/screenshots/word-finder.svg"
+                src="/images/screenshots/word-finder.png"
                 label="Word Finder with Locked Results"
                 description="Locked words shown with 'Available at Level X' label"
                 aspectRatio="portrait"

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { adminAreas } from "@/content/product-details";
 import { createPageMetadata } from "@/lib/metadata";
+import AppScreenshot from "../../components/AppScreenshot";
 
 export const metadata = createPageMetadata({
   title: "Admin for Clinicians",
@@ -30,6 +31,40 @@ export default function AdminForCliniciansPage() {
             </ul>
           </article>
         ))}
+      </section>
+
+      {/* Screenshots */}
+      <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="space-y-3">
+          <AppScreenshot
+            src="/images/screenshots/admin-pin-protection.png"
+            label="PIN Protection"
+            description="PIN-protected admin access for security"
+            aspectRatio="landscape"
+            size="full"
+          />
+          <p className="text-sm font-medium text-slate-700 text-center">PIN Protection</p>
+        </div>
+        <div className="space-y-3">
+          <AppScreenshot
+            src="/images/screenshots/multi-user-profiles.png"
+            label="Multi-User Profiles"
+            description="Multiple isolated user profiles"
+            aspectRatio="landscape"
+            size="full"
+          />
+          <p className="text-sm font-medium text-slate-700 text-center">User Profiles</p>
+        </div>
+        <div className="space-y-3">
+          <AppScreenshot
+            src="/images/screenshots/customize-appearance.png"
+            label="Customize Appearance"
+            description="Theme, grid size, and display settings"
+            aspectRatio="portrait"
+            size="full"
+          />
+          <p className="text-sm font-medium text-slate-700 text-center">Appearance Settings</p>
+        </div>
       </section>
 
       <section className="rounded-2xl border border-slate-200 bg-slate-50 p-6">

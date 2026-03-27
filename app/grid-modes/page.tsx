@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { gridModes } from "@/content/features";
 import { createPageMetadata } from "@/lib/metadata";
+import AppScreenshot from "../../components/AppScreenshot";
 
 export const metadata = createPageMetadata({
   title: "Grid Modes",
@@ -32,6 +33,40 @@ export default function GridModesPage() {
             </ul>
           </article>
         ))}
+      </section>
+
+      {/* Screenshots */}
+      <section className="grid gap-6 md:grid-cols-3">
+        <div className="space-y-3">
+          <AppScreenshot
+            src="/images/screenshots/core-fringe-grid.png"
+            label="Core-Fringe Grid"
+            description="Core-fringe layout with pinned vocabulary"
+            aspectRatio="landscape"
+            size="full"
+          />
+          <p className="text-sm font-medium text-slate-700 text-center">Core-Fringe Grid</p>
+        </div>
+        <div className="space-y-3">
+          <AppScreenshot
+            src="/images/screenshots/activity-board-grid.png"
+            label="Activity Board"
+            description="Activity board with themed category buttons"
+            aspectRatio="landscape"
+            size="full"
+          />
+          <p className="text-sm font-medium text-slate-700 text-center">Activity Board</p>
+        </div>
+        <div className="space-y-3">
+          <AppScreenshot
+            src="/images/screenshots/text-mode.png"
+            label="Text Mode"
+            description="Text communication with phrases and shortcuts"
+            aspectRatio="landscape"
+            size="full"
+          />
+          <p className="text-sm font-medium text-slate-700 text-center">Text Mode</p>
+        </div>
       </section>
 
       <section className="rounded-2xl border border-slate-200 bg-slate-50 p-6">

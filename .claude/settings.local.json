@@ -6,7 +6,12 @@
       "Bash(npx next build)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(cp \"Schermafbeeldingen/Activityboard mode.png\" \"public/images/screenshots/activity-board-grid.png\")",
+      "Bash(cp \"Schermafbeeldingen/Add delete and change activity boards.png\" \"public/images/screenshots/activity-board-list.png\")",
+      "Bash(cp \"Schermafbeeldingen/Admin mode behind a PIN.png\" \"public/images/screenshots/admin-pin-protection.png\")",
+      "Bash(cp \"Schermafbeeldingen/Automatic verb conjugation.png\" \"public/images/screenshots/verb-conjugation.png\")",
+      "Bash(cp \"Schermafbeeldingen/CoreFringe mode.png\" \"public/images/screenshots/core-fringe-grid.png\")"
     ]
   }
 }

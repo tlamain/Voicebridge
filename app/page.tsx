@@ -160,9 +160,9 @@ export default function HomePage() {
         <ScrollReveal>
           <div className="mx-auto max-w-4xl">
             <AppScreenshot
-              src="/images/screenshots/main-screen.svg"
+              src="/images/screenshots/core-fringe-grid.png"
               label="Loquor AAC — Main Screen"
-              description="Symbol grid, message builder, and grammar bar"
+              description="Symbol grid with core-fringe layout and pictogram communication"
               aspectRatio="landscape"
               size="full"
             />
@@ -299,11 +299,11 @@ export default function HomePage() {
 
           <ScrollReveal delay={200}>
             <AppScreenshot
-              src="/images/screenshots/smart-grammar.svg"
+              src="/images/screenshots/verb-conjugation.png"
               label="Smart Grammar Engine"
-              description="Context-aware verb conjugation and grammar bar"
-              aspectRatio="portrait"
-              size="md"
+              description="Automatic verb conjugation with color-coded grammar"
+              aspectRatio="landscape"
+              size="lg"
             />
           </ScrollReveal>
         </div>
@@ -322,9 +322,9 @@ export default function HomePage() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center">
           <ScrollReveal>
             <AppScreenshot
-              src="/images/screenshots/progressive-vocabulary.svg"
+              src="/images/screenshots/progressive-vocabulary-settings.png"
               label="Progressive Vocabulary"
-              description="Level progression with ghost slots and readiness button"
+              description="Progressive vocabulary settings with level controls"
               aspectRatio="portrait"
               size="md"
             />

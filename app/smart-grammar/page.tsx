@@ -182,9 +182,9 @@ export default function SmartGrammarPage() {
       {/* Hero screenshot */}
       <ScrollReveal>
         <AppScreenshot
-          src="/images/screenshots/grammar-live-conjugation.svg"
+          src="/images/screenshots/verb-conjugation.png"
           label="Smart Grammar Engine — Live Conjugation"
-          description="Subject tapped → verb auto-conjugated → grammar bar ready for determiners"
+          description="Automatic verb conjugation with color-coded grammar assist"
           aspectRatio="landscape"
           size="full"
         />
@@ -322,12 +322,21 @@ export default function SmartGrammarPage() {
               </div>
               <div className="lg:w-1/2">
                 <AppScreenshot
-                  src="/images/screenshots/grammar-bar.svg"
+                  src="/images/screenshots/color-coded-grammar.png"
                   label="Grammar Bar"
-                  description="Colour-coded determiner chips with gender-aware dimming"
+                  description="Fitzgerald Key color-coded grammar settings"
                   aspectRatio="landscape"
                   size="full"
                 />
+                <div className="mt-6">
+                  <AppScreenshot
+                    src="/images/screenshots/noun-plural-form.png"
+                    label="Noun Pluralisation"
+                    description="Select singular or plural noun form"
+                    aspectRatio="landscape"
+                    size="full"
+                  />
+                </div>
               </div>
             </div>
           </div>

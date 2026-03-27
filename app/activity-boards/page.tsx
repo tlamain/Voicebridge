@@ -22,6 +22,7 @@ const sections = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
+    screenshotSrc: "/images/screenshots/activity-board-list.png",
     screenshotLabel: "Activity Board List",
     screenshotDescription: "Scrollable board list with search, icons, and column counts",
     items: [
@@ -43,8 +44,9 @@ const sections = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z" />
       </svg>
     ),
+    screenshotSrc: "/images/screenshots/activity-board-grid.png",
     screenshotLabel: "Board Editor",
-    screenshotDescription: "Board editor with icon picker, grid columns stepper, and colour swatches",
+    screenshotDescription: "Activity board grid with category buttons and icons",
     items: [
       "Icon or image picker with emoji, device photo library, and vocabulary-pack image options",
       "Live preview updates as you change icon, colour, or grid size",
@@ -64,8 +66,9 @@ const sections = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
       </svg>
     ),
+    screenshotSrc: "/images/screenshots/edit-board-layout.png",
     screenshotLabel: "Grid Edit Mode",
-    screenshotDescription: "Board grid with empty cells, placed buttons, and edit bar",
+    screenshotDescription: "Board grid editor with drag handles and edit controls",
     items: [
       "Tap an empty cell to open the symbol picker — choose an existing symbol, search, or create a new one",
       "Create board-to-board link buttons and navigation buttons like Home and Back",
@@ -122,6 +125,7 @@ export default function ActivityBoardsPage() {
               {/* Screenshot side */}
               <div className="lg:w-[45%] flex items-center justify-center">
                 <AppScreenshot
+                  src={section.screenshotSrc}
                   label={section.screenshotLabel}
                   description={section.screenshotDescription}
                   aspectRatio="portrait"
