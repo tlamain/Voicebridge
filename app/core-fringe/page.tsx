@@ -147,13 +147,14 @@ export default function CoreFringePage() {
               </div>
 
               {/* Screenshot side */}
-              <div className="lg:w-[45%] flex items-center justify-center">
+              <div className="w-full lg:w-[45%] lg:pt-20">
                 <AppScreenshot
                   src={section.screenshotSrc}
                   label={section.screenshotLabel}
                   description={section.screenshotDescription}
                   aspectRatio="portrait"
-                  size="sm"
+                  size="full"
+                  align={i % 2 === 1 ? "end" : "start"}
                 />
               </div>
             </div>
@@ -164,8 +165,8 @@ export default function CoreFringePage() {
       <ScrollReveal>
         <CTABanner
           title="Experience Core-Fringe Communication"
-          subtitle="Get early access and see how pinned core vocabulary transforms AAC."
-          buttonText="Get Early Access"
+          subtitle="Try Loquor AAC and see how pinned core vocabulary transforms AAC."
+          buttonText="Try Loquor AAC"
           buttonHref="/contact"
         />
       </ScrollReveal>

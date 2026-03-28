@@ -4,9 +4,9 @@ import { createPageMetadata } from "@/lib/metadata";
 import AppScreenshot from "../../components/AppScreenshot";
 
 export const metadata = createPageMetadata({
-  title: "Admin for Clinicians",
+  title: "Admin page",
   description: "Review VoiceBridge AAC admin surfaces for settings, content, language, and user profile workflows.",
-  path: "/admin-for-clinicians",
+  path: "/admin",
 });
 
 export default function AdminForCliniciansPage() {

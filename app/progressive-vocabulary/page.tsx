@@ -388,8 +388,8 @@ export default function ProgressiveVocabularyPage() {
       <ScrollReveal>
         <CTABanner
           title="Help Shape Loquor AAC"
-          subtitle="Join the early access programme and give every communicator the vocabulary they deserve."
-          buttonText="Get Early Access"
+          subtitle="Download Loquor AAC and give every communicator the vocabulary they deserve."
+          buttonText="Try Loquor AAC"
           buttonHref="/contact"
         />
       </ScrollReveal>

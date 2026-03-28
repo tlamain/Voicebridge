@@ -41,7 +41,7 @@ export default function SiteHeader() {
             href={siteConfig.links.contact}
             className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-5 py-2 text-sm font-semibold text-white no-underline transition hover:bg-indigo-700"
           >
-            Get Early Access
+            Try Loquor AAC
           </Link>
         </nav>
 
@@ -88,7 +88,7 @@ export default function SiteHeader() {
               className="mt-2 inline-flex items-center justify-center rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white no-underline transition hover:bg-indigo-700"
               onClick={() => setIsMenuOpen(false)}
             >
-              Get Early Access
+              Try Loquor AAC
             </Link>
           </nav>
         </div>

@@ -124,7 +124,7 @@ const assistLevels = [
     audience: "Therapists & advanced users",
     color: "border-violet-200 bg-violet-50",
     badgeColor: "bg-violet-100 text-violet-700",
-    behavior: "All four groups shown with no dimming. Every token is equally visible. Full clinical control with no restrictions. Ideal when the therapist, not the app, decides what grammar cues to present.",
+    behavior: "All four groups shown with no dimming. Every token is equally visible. Full control with no restrictions. Ideal when the therapist, not the app, decides what grammar cues to present.",
   },
 ];
 
@@ -415,8 +415,8 @@ export default function SmartGrammarPage() {
       <ScrollReveal>
         <CTABanner
           title="Experience Smart Grammar in Action"
-          subtitle="Get early access and see how Loquor AAC handles grammar so your users don't have to."
-          buttonText="Get Early Access"
+          subtitle="Try Loquor AAC and see how it handles grammar so your users don't have to."
+          buttonText="Try Loquor AAC"
           buttonHref="/contact"
         />
       </ScrollReveal>

@@ -281,8 +281,8 @@ export const deepDiveLinks: DeepDiveLink[] = [
     description: "Search, filter, favourite, and edit symbols with progressive vocabulary metadata.",
   },
   {
-    href: "/admin-for-clinicians",
-    label: "Admin for Clinicians",
+    href: "/admin",
+    label: "Admin management",
     description: "Understand settings, content, language, and user management capabilities.",
   },
   {

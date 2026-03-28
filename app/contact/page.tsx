@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
   title: "Contact",
-  description: "Get in touch with the Loquor AAC team for early access, clinical partnerships, or support.",
+  description: "Get in touch with the Loquor AAC team for clinical partnerships, support, or general enquiries.",
   path: "/contact",
 });
 
@@ -21,68 +21,72 @@ export default function ContactPage() {
         </div>
       </ScrollReveal>
 
-      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        <ScrollReveal delay={100}>
-          <div className="rounded-3xl border border-indigo-200 bg-linear-to-br from-indigo-50 to-blue-50 p-8 space-y-4 h-full">
+      <div className="max-w-2xl mx-auto">
+        <ScrollReveal>
+          <div className="rounded-3xl border border-slate-200 bg-white p-10 space-y-6">
             <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-              </svg>
-            </div>
-            <h2 className="font-(--font-jakarta) text-xl font-bold text-slate-900">Early Access</h2>
-            <p className="text-slate-600 leading-relaxed">
-              Loquor AAC is currently in development. Join our early access program to be among the first to try it and help shape the future of accessible communication.
-            </p>
-            <a
-              href="mailto:hello@loquoraac.com?subject=Early Access Request"
-              className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:bg-indigo-700 hover:shadow-lg no-underline"
-            >
-              Request Early Access
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </a>
-          </div>
-        </ScrollReveal>
-
-        <ScrollReveal delay={200}>
-          <div className="rounded-3xl border border-slate-200 bg-white p-8 space-y-6 h-full">
-            <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 text-slate-600">
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
               </svg>
             </div>
-            <h2 className="font-(--font-jakarta) text-xl font-bold text-slate-900">Contact Us</h2>
+            <h2 className="font-(--font-jakarta) text-2xl font-bold text-slate-900">Contact Us</h2>
             <p className="text-slate-600 leading-relaxed">
-              For support, clinical partnerships, feedback, or general inquiries:
+              For support, clinical partnerships, feedback, or general enquiries — we&apos;re here to help. Reach out and a member of our team will get back to you.
             </p>
             <a
               href="mailto:hello@loquoraac.com"
-              className="flex items-center gap-3 text-indigo-600 hover:text-indigo-800 transition-colors font-medium"
+              className="inline-flex items-center gap-3 text-indigo-600 hover:text-indigo-800 transition-colors font-medium text-lg"
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
               </svg>
               hello@loquoraac.com
             </a>
-            <div className="pt-4 border-t border-slate-100">
+            <div className="pt-4 border-t border-slate-100 space-y-1">
               <p className="text-sm text-slate-500">We typically respond within 24–48 hours.</p>
+              <p className="text-sm text-slate-500">Based in the Netherlands — supporting communicators worldwide.</p>
             </div>
           </div>
         </ScrollReveal>
       </div>
 
       <ScrollReveal>
-        <div className="text-center rounded-3xl bg-slate-50 border border-slate-200 p-10 space-y-4">
-          <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-200 text-slate-500">
+        <div className="text-center rounded-3xl bg-linear-to-br from-indigo-50 to-blue-50 border border-indigo-100 p-10 space-y-6">
+          <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-100 text-indigo-600">
             <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
             </svg>
           </div>
-          <h3 className="font-(--font-jakarta) text-xl font-bold text-slate-900">Coming Soon to iOS &amp; Android</h3>
+          <h3 className="font-(--font-jakarta) text-xl font-bold text-slate-900">Download Loquor AAC</h3>
           <p className="text-slate-600 max-w-lg mx-auto">
-            Loquor AAC will be available on the App Store and Google Play. Sign up for early access to be notified when we launch.
+            Available on iOS and Android. Download the app and start communicating today.
           </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="#"
+              className="inline-flex items-center gap-3 rounded-xl bg-black px-5 py-3 text-white hover:bg-slate-800 transition-colors no-underline"
+            >
+              <svg className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+              </svg>
+              <div className="text-left">
+                <div className="text-xs opacity-80">Download on the</div>
+                <div className="text-sm font-semibold">App Store</div>
+              </div>
+            </a>
+            <a
+              href="#"
+              className="inline-flex items-center gap-3 rounded-xl bg-black px-5 py-3 text-white hover:bg-slate-800 transition-colors no-underline"
+            >
+              <svg className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.18 23.76c.3.17.64.24.99.2L15.55 12 12 8.45zm17.05-10.63L17.42 11.5 13.57 12l3.85 3.5 2.81-1.63a1.55 1.55 0 000-2.74zM3.05.27a1.55 1.55 0 00-.87 1.4v20.67c0 .6.32 1.12.87 1.4L14.2 12zm10.52 11.12L3.18.27l11.37 6.56z" />
+              </svg>
+              <div className="text-left">
+                <div className="text-xs opacity-80">Get it on</div>
+                <div className="text-sm font-semibold">Google Play</div>
+              </div>
+            </a>
+          </div>
         </div>
       </ScrollReveal>
     </div>

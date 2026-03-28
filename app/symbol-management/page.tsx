@@ -167,13 +167,14 @@ export default function SymbolManagementPage() {
               </div>
 
               {/* Screenshot side */}
-              <div className="lg:w-[45%] flex items-center justify-center">
+              <div className="w-full lg:w-[45%] lg:pt-20">
                 <AppScreenshot
                   src={section.screenshotSrc}
                   label={section.screenshotLabel}
                   description={section.screenshotDescription}
                   aspectRatio="portrait"
-                  size="sm"
+                  size="full"
+                  align={i % 2 === 1 ? "end" : "start"}
                 />
               </div>
             </div>
@@ -184,8 +185,8 @@ export default function SymbolManagementPage() {
       <ScrollReveal>
         <CTABanner
           title="Take Control of Your Vocabulary"
-          subtitle="Get early access and build the perfect symbol library for every communicator."
-          buttonText="Get Early Access"
+          subtitle="Download Loquor AAC and build the perfect symbol library for every communicator."
+          buttonText="Try Loquor AAC"
           buttonHref="/contact"
         />
       </ScrollReveal>

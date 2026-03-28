@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     question: "Can therapists control settings?",
-    answer: "Yes. The admin panel is protected by a 4–6 digit PIN and gives therapists full control over vocabulary, grammar settings, grid modes, themes, and user profiles. Three grammar assist levels (Simple, Standard, Expert) let therapists adjust complexity as the user progresses. Grammar test runners and vocabulary statistics provide clinical-grade insight into user development.",
+    answer: "Yes. The admin panel is protected by a 4–6 digit PIN and gives therapists full control over vocabulary, grammar settings, grid modes, themes, and user profiles. Three grammar assist levels (Simple, Standard, Expert) let therapists adjust complexity as the user progresses. Grammar test runners and vocabulary statistics provide insight into user development.",
   },
 ];
 

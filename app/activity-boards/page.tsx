@@ -123,13 +123,14 @@ export default function ActivityBoardsPage() {
               </div>
 
               {/* Screenshot side */}
-              <div className="lg:w-[45%] flex items-center justify-center">
+              <div className="w-full lg:w-[45%] lg:pt-20">
                 <AppScreenshot
                   src={section.screenshotSrc}
                   label={section.screenshotLabel}
                   description={section.screenshotDescription}
                   aspectRatio="portrait"
-                  size="sm"
+                  size="full"
+                  align={i % 2 === 1 ? "end" : "start"}
                 />
               </div>
             </div>
@@ -140,8 +141,8 @@ export default function ActivityBoardsPage() {
       <ScrollReveal>
         <CTABanner
           title="Ready to Build Your First Board?"
-          subtitle="Get early access and create communication boards tailored to every moment."
-          buttonText="Get Early Access"
+          subtitle="Download Loquor AAC and create communication boards tailored to every moment."
+          buttonText="Try Loquor AAC"
           buttonHref="/contact"
         />
       </ScrollReveal>
