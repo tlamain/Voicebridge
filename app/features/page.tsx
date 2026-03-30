@@ -221,7 +221,7 @@ export default function FeaturesPage() {
               </div>
 
               {/* Screenshot side */}
-              <div className="w-full lg:w-[45%]">
+              <div className="w-full lg:w-[45%] lg:pt-20">
                 <AppScreenshot
                   src={section.screenshotSrc}
                   label={section.screenshotLabel}

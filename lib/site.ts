@@ -17,6 +17,7 @@ export const siteConfig = {
     faq: "/faq",
     contact: "/contact",
     privacy: "/privacy-policy",
+    terms: "/terms-of-service",
   },
 } as const;
 
@@ -29,6 +30,7 @@ export const publicRoutes = [
   "/faq",
   "/contact",
   "/privacy-policy",
+  "/terms-of-service",
 ] as const;
 
 export const primaryNavigation = [
@@ -41,7 +43,10 @@ export const resourceNavigation = [
   { href: "/contact", label: "Contact" },
 ] as const;
 
-export const legalNavigation = [{ href: "/privacy-policy", label: "Privacy Policy" }] as const;
+export const legalNavigation = [
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/terms-of-service", label: "Terms of Service" },
+] as const;
 
 export function assetPath(path: string): string {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
