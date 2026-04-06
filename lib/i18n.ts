@@ -1,3 +1,5 @@
+import type { I18nNamespaces, NamespaceName } from "@/lib/i18n.types";
+
 export const locales = ["en", "nl", "es", "fr"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
@@ -9,19 +11,30 @@ export const localeNames: Record<Locale, string> = {
   fr: "Français",
 };
 
-/**
- * Load a translation namespace for a given locale.
- * Resolved at build time by the bundler.
- */
-export function getMessages(locale: Locale, namespace: string): Record<string, unknown> {
+function loadNamespace(locale: Locale, namespace: string): unknown {
   try {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     return require(`../messages/${locale}/${namespace}.json`);
   } catch {
-    // Fallback to English if translation file is missing
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     return require(`../messages/en/${namespace}.json`);
   }
+}
+
+/**
+ * Load a translation namespace for a given locale.
+ * Resolved at build time by the bundler.
+ */
+export function getNamespace<N extends NamespaceName>(
+  locale: Locale,
+  namespace: N,
+): I18nNamespaces[N] {
+  return loadNamespace(locale, namespace) as I18nNamespaces[N];
+}
+
+/** Backwards-compatible alias for shared callers. */
+export function getMessages(locale: Locale, namespace: NamespaceName): I18nNamespaces[typeof namespace] {
+  return getNamespace(locale, namespace);
 }
 
 /** Prefix a path with the locale segment */

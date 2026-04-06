@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Functies",
+    "description": "Ontdek de communicatietools, slimme grammatica, progressieve woordenschat, premium stemmen, activiteitenborden en meertalige ondersteuning van Loquor AAC."
+  },
+  "hero": {
+    "title": "Krachtige Functies,",
+    "highlightedTitle": "Eenvoudige Ervaring",
+    "description": "Loquor AAC brengt krachtige communicatietools samen in een intuïtieve interface die snel te leren is. Ontdek alles wat de app te bieden heeft."
+  },
+  "sections": [
+    {
+      "id": "communication-tools",
+      "badge": "Kerncommunicatie",
+      "title": "Communicatietools",
+      "description": "Verschillende manieren om jezelf uit te drukken - van symbolen tikken tot tekst typen, alles in een interface.",
+      "items": [
+        "Symboolraster met instelbare groottes (6-12 kolommen) en categorie-indeling",
+        "Tekstinvoer met live tekenteller en woordvoorspellingen op basis van bigrams",
+        "Berichtstrook die geselecteerde symbolen in natuurlijke spreekvolgorde toont",
+        "Druk lang op werkwoord- of zelfstandignaam-pictogrammen om een specifieke vorm te kiezen",
+        "Berichten delen naar andere apps met een tik",
+        "Word Finder voor begeleid symboolzoeken in grote woordenschatten"
+      ]
+    },
+    {
+      "id": "voice-speech",
+      "badge": "Spraakuitvoer",
+      "title": "Stem en Spraak",
+      "description": "Laat woorden hardop uitspreken met de stem die past - van ingebouwde apparaatspraak tot premium AI-stemmen.",
+      "items": [
+        "Twee TTS-providers: apparaatstem (volledig offline) en ElevenLabs premium AI-stemmen",
+        "Instelbare toonhoogte en snelheid",
+        "Slimme cache voor stemmen vermindert API-oproepen en versnelt herhaalde zinnen",
+        "Automatische fallback naar apparaatstem wanneer je offline bent",
+        "Stemvoorbeeld zodat je eerst kunt luisteren",
+        "Stemkeuze per taal blijft behouden bij taalwissel"
+      ]
+    },
+    {
+      "id": "smart-grammar-engine",
+      "badge": "Taalintelligentie",
+      "title": "Slimme Grammatica-engine",
+      "description": "Laat de app de grammatica regelen. Loquor AAC bouwt automatisch grammaticaal correcte zinnen op uit eenvoudige symboolkeuzes.",
+      "items": [
+        "Automatische werkwoordvervoeging voor Nederlands, Engels, Frans en Spaans - volledig offline",
+        "Voltooide tijd, continue vorm, modale werkwoorden en reflexieve vormen worden automatisch verwerkt",
+        "Meerdere clausules: tik twee onderwerpen achter elkaar om samengestelde zinnen te bouwen",
+        "Frans: elisie, inversie in vragen en congruentie binnen naamwoordgroepen",
+        "Grammar Bar met kleurgecodeerde chips voor lidwoorden, aanwijzers, bezitsvormen en voorzetsels",
+        "Gender-aware dimming vervaagt onjuiste grammatica-opties",
+        "Meervoudsvorm kiezen via lang indrukken",
+        "Drie assistentieniveaus: Simple, Standard en Expert",
+        "Fitzgerald Key kleurt woorden per grammaticale categorie"
+      ]
+    },
+    {
+      "id": "progressive-vocabulary",
+      "badge": "Leren en Groei",
+      "title": "Progressieve Woordenschat",
+      "description": "Een gestructureerde woordenschat die met de gebruiker meegroeit - van eerste woorden tot vloeiende communicatie, met beschermd motorisch geheugen.",
+      "items": [
+        "Leersysteem met 6 niveaus",
+        "Motorisch geheugen blijft behouden doordat posities nooit veranderen",
+        "Alleen woorden van het huidige niveau tellen mee voor doorgang",
+        "Ghost-slots tonen vergrendelde posities als preview",
+        "Floating Readiness Button toont live voortgang naar het volgende niveau",
+        "Readiness Check Modal met statistieken en aanbevelingen",
+        "Expert Vocabulary geeft niveau 6 vrij in beheer",
+        "Instelbare beheersingsdrempel en minimaal gebruik per woord",
+        "Voortgang per taal wordt apart bijgehouden",
+        "Word Finder toont vergrendelde woorden met 'Beschikbaar op niveau X'"
+      ]
+    },
+    {
+      "id": "grid-modes",
+      "badge": "Flexibele Lay-outs",
+      "title": "Rastermodi",
+      "description": "Drie verschillende rastermodi voor elke communicatiestijl, context en cognitieve behoefte.",
+      "items": [
+        "Standaard symboolraster met categorieen en motorische zones",
+        "Activiteitenborden voor contextspecifieke situaties met eigen achtergronden en iconen",
+        "Core-Fringe waarbij kernwoorden vast blijven en fringe-pagina's wisselen per onderwerp",
+        "Meerlagige navigatie in Core-Fringe met automatische Home- en Back-knoppen",
+        "In-grid bewerken op activiteitenborden en Core-Fringe",
+        "Paginabeheer waarbij subpagina's direct als mappen verschijnen"
+      ]
+    },
+    {
+      "id": "customisation-admin",
+      "badge": "Volledige Controle",
+      "title": "Aanpassing en Beheer",
+      "description": "Mantelzorgers krijgen krachtige tools om de ervaring af te stemmen, terwijl instellingen veilig blijven tegen onbedoelde wijzigingen.",
+      "items": [
+        "Vier thema's: Light, Dark, High Contrast en Child-Friendly",
+        "PIN-beveiligd beheerpaneel (4-6 cijfers)",
+        "Volledig beheer voor symbolen, zinnen, afkortingen, categorieen en onregelmatige vormen",
+        "Woordenschatpakketten met concepten, vertalingen, grammaticadata en borden",
+        "Back-up en herstel met ingesloten afbeeldingen in .vbaac-formaat",
+        "Begeleide wizard met 12 stappen voor snelle onboarding",
+        "Voornaamwoordafbeeldingen met foto's van bekende personen",
+        "Adaptieve lay-out voor telefoon en tablet"
+      ]
+    },
+    {
+      "id": "multi-user-accessibility",
+      "badge": "Voor Iedereen",
+      "title": "Meerdere Gebruikers en Toegankelijkheid",
+      "description": "Deel een apparaat tussen meerdere communicators, elk met een volledig gepersonaliseerde ervaring.",
+      "items": [
+        "Volledig gescheiden gebruikersprofielen",
+        "Profielduplicatie kopieert alle data en instellingen",
+        "Responsieve lay-outs voor telefoon en tablet",
+        "Toegankelijk ontwerp met grote tikdoelen en hoog contrast",
+        "Aangepaste avatars met foto's of emoji's",
+        "Invoermodus per gebruiker: symboolraster of alleen tekst"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Zie Het in Actie",
+    "subtitle": "Download de app en ontdek hoe Loquor AAC communicatie kan veranderen.",
+    "buttonText": "Probeer Loquor AAC"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Rastermodi",
+    "description": "Vergelijk de communicatiemodellen Standaardraster, Activiteitsborden en Core-Fringe in Loquor AAC."
+  },
+  "hero": {
+    "title": "Rastermodi",
+    "description": "Loquor AAC ondersteunt drie rastermodellen, zodat teams de communicatiestructuur kunnen afstemmen op de context van de gebruiker."
+  },
+  "modes": [
+    {
+      "id": "standard",
+      "name": "Standaardraster",
+      "bestFor": "Dagelijkse categorienavigatie",
+      "summary": "Klassiek bladeren door categorieën en subcategorieën met voorspelbare symboollocaties.",
+      "details": "Werkt met favorieten en voortgang terwijl kernpatronen voor motorische planning behouden blijven.",
+      "includes": [
+        "Navigatie via categorieën en subcategorieën",
+        "Gedrag van favorieten",
+        "Progressieve woordenschat-overlays",
+        "Consistente plaatsing van symbolen"
+      ]
+    },
+    {
+      "id": "schematic",
+      "name": "Activiteitsborden",
+      "bestFor": "Context- en routinegerichte communicatie",
+      "summary": "Navigatie op basis van borden voor routines zoals eten, school en therapiesessies.",
+      "details": "Ondersteunt bordkoppelingen, functionele navigatiecellen en workflows voor bewerken op de plek zelf.",
+      "includes": [
+        "Borddashboard en bordkoppelingen",
+        "Functionele knoppen Terug en Home",
+        "Realtime bewerken van borden",
+        "Bordmetadata en pictogrambeheer"
+      ]
+    },
+    {
+      "id": "corefringe",
+      "name": "Core-Fringe",
+      "bestFor": "Communicatie met hoge frequentie en diepgang",
+      "summary": "Vastgezette kernwoorden blijven stabiel terwijl fringepagina's per context veranderen.",
+      "details": "Bevat paginabomen, slotbeheer, progressieve vergrendeling van woordenschat en layoutafhandeling per rastergrootte.",
+      "includes": [
+        "Vastgezette kernslots op alle pagina's",
+        "Geneste paginanavigatie met automatische knoppen Home/Terug",
+        "Workflows voor layout- en paginabewerking",
+        "Lay-outkopieën per rastergrootte"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "core-fringe",
+      "title": "Core-Fringe-raster",
+      "label": "Core-Fringe-raster",
+      "description": "Core-Fringe-layout met vastgezette woordenschat"
+    },
+    {
+      "id": "activity-board",
+      "title": "Activiteitsbord",
+      "label": "Activiteitsbord",
+      "description": "Activiteitsbord met thematische categorieknoppen"
+    },
+    {
+      "id": "text-mode",
+      "title": "Tekstmodus",
+      "label": "Tekstmodus",
+      "description": "Tekstcommunicatie met zinnen en snelkoppelingen"
+    }
+  ],
+  "guidance": {
+    "title": "Keuzehulp",
+    "items": [
+      {
+        "id": "standard",
+        "title": "Begin met Standaardraster",
+        "description": "De beste basis voor brede woordenschat en vertrouwd bladeren door categorieën."
+      },
+      {
+        "id": "activity-boards",
+        "title": "Gebruik Activiteitsborden voor routines",
+        "description": "Het meest geschikt wanneer communicatie taak- of omgevingsspecifiek is.",
+        "linkLabel": "Meer informatie ->"
+      },
+      {
+        "id": "core-fringe",
+        "title": "Gebruik Core-Fringe voor diepgang",
+        "description": "Het meest geschikt wanneer kernwoorden vast moeten blijven terwijl fringe-woordenschat groeit.",
+        "linkLabel": "Meer informatie ->"
+      }
+    ]
+  }
+}

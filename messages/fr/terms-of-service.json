@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Conditions d'utilisation",
+    "description": "Conditions d'utilisation de Loquor AAC : vos droits et responsabilites lorsque vous utilisez l'app."
+  },
+  "title": "Conditions d'utilisation - Loquor AAC",
+  "effectiveDateLabel": "Date d'effet",
+  "effectiveDate": "30 mars 2026",
+  "intro": "Veuillez lire attentivement ces Conditions d'utilisation (\"Conditions\") avant d'utiliser Loquor AAC (\"l'App\"). En telechargeant ou en utilisant l'App, vous acceptez d'etre lie par ces Conditions. Si vous n'etes pas d'accord, n'utilisez pas l'App.",
+  "sections": [
+    {
+      "id": "acceptance",
+      "title": "1. Acceptation des conditions",
+      "paragraphs": [
+        "Ces Conditions constituent un accord juridique entre vous (ou l'aidant ou le tuteur agissant au nom d'un utilisateur) et le developpeur de Loquor AAC. En installant ou en utilisant l'App, vous confirmez avoir lu, compris et accepte ces Conditions."
+      ]
+    },
+    {
+      "id": "description",
+      "title": "2. Description de l'app",
+      "paragraphs": [
+        "Loquor AAC est une application de communication augmentee et alternative (AAC) concue pour aider les personnes ayant des difficultes de parole a communiquer au moyen de symboles, de texte et d'une synthese vocale optionnelle propulsee par l'IA. Les fonctionnalites incluent :"
+      ],
+      "items": [
+        "Construction de messages a base de symboles et de texte",
+        "Assistance grammaticale intelligente",
+        "Apprentissage progressif du vocabulaire",
+        "Synthese vocale tierce optionnelle via des cles API fournies par l'utilisateur",
+        "Gestion du vocabulaire controlee par l'administration",
+        "Tableaux d'activite et mises en page personnalisables"
+      ]
+    },
+    {
+      "id": "intended-use",
+      "title": "3. Usage prevu",
+      "paragraphs": [
+        "L'App est destinee a soutenir la communication et ne constitue ni un dispositif medical, ni un outil de therapie clinique, ni un substitut aux services professionnels d'orthophonie. Elle doit etre utilisee en complement d'un accompagnement clinique approprie, et non a sa place.",
+        "L'App peut etre utilisee par des enfants sous la supervision d'un parent, d'un tuteur ou d'un aidant. L'adulte responsable de l'appareil de l'utilisateur accepte ces Conditions en son nom."
+      ]
+    },
+    {
+      "id": "license",
+      "title": "4. Licence",
+      "paragraphs": [
+        "Sous reserve des presentes Conditions, nous vous accordons une licence personnelle, non exclusive, non transferable et revocable pour installer et utiliser l'App sur des appareils que vous possedez ou controlez, uniquement pour vos besoins personnels et non commerciaux de communication.",
+        "Vous ne pouvez pas :"
+      ],
+      "items": [
+        "Copier, modifier ou creer des oeuvres derivees de l'App",
+        "Retroconcevoir, decompiler ou desassembler l'App",
+        "Redistribuer, sous-licencier ou vendre l'App ou l'une de ses parties",
+        "Utiliser l'App a des fins illegales"
+      ]
+    },
+    {
+      "id": "voice-services",
+      "title": "5. Services vocaux tiers",
+      "paragraphs": [
+        "L'App prend en charge l'integration optionnelle avec des fournisseurs tiers de synthese vocale comme ElevenLabs. Pour utiliser ces fonctionnalites, vous devez fournir votre propre cle API et accepter les conditions et la tarification de ce fournisseur. Nous ne sommes pas responsables de la disponibilite, de l'exactitude ou du cout des services tiers.",
+        "Votre cle API est stockee uniquement sur votre appareil et n'est jamais transmise a nos serveurs."
+      ]
+    },
+    {
+      "id": "vocabulary-content",
+      "title": "6. Vocabulaire et contenu",
+      "paragraphs": [
+        "Tout le vocabulaire, les phrases, les symboles et les images que vous ajoutez a l'App restent votre propriete. Nous ne revendiquons aucun droit de propriete sur votre contenu. Il vous appartient de veiller a ce que tout contenu ajoute, y compris les photos ou les symboles, ne porte pas atteinte aux droits de tiers."
+      ]
+    },
+    {
+      "id": "warranties",
+      "title": "7. Absence de garanties",
+      "paragraphs": [
+        "L'App est fournie \"en l'etat\" et \"selon disponibilite\" sans garantie d'aucune sorte, expresse ou implicite, y compris, sans s'y limiter, l'aptitude a un usage particulier, le fonctionnement ininterrompu ou l'absence d'erreurs.",
+        "Parce que l'App est utilisee comme aide a la communication, nous encourageons fortement les utilisateurs et les aidants a conserver des strategies de communication alternatives et a ne pas dependre uniquement de l'App dans des situations urgentes ou sensibles au facteur temps."
+      ]
+    },
+    {
+      "id": "liability",
+      "title": "8. Limitation de responsabilite",
+      "paragraphs": [
+        "Dans toute la mesure permise par la loi, nous ne pourrons etre tenus responsables de tout dommage indirect, accessoire, special ou consecutif decoulant de votre utilisation ou de votre impossibilite d'utiliser l'App, meme si nous avons ete informes de la possibilite de tels dommages."
+      ]
+    },
+    {
+      "id": "changes",
+      "title": "9. Modifications de l'app ou des conditions",
+      "paragraphs": [
+        "Nous pouvons mettre a jour l'App ou les presentes Conditions a tout moment. Les changements importants seront communiques via l'App ou ce site web. Votre utilisation continue de l'App apres publication des changements vaut acceptation des Conditions revisees."
+      ]
+    },
+    {
+      "id": "termination",
+      "title": "10. Resiliation",
+      "paragraphs": [
+        "Vous pouvez cesser d'utiliser l'App a tout moment. Nous nous reservons le droit d'interrompre l'App ou de restreindre l'acces en cas d'usage abusif ou de violation des presentes Conditions. La desinstallation de l'App supprime toutes les donnees locales de votre appareil."
+      ]
+    },
+    {
+      "id": "governing-law",
+      "title": "11. Droit applicable",
+      "paragraphs": [
+        "Les presentes Conditions sont regies et interpretees conformement aux lois de la juridiction dans laquelle le developpeur est etabli, sans egard aux principes de conflit de lois."
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "12. Contact"
+    }
+  ],
+  "contactLead": "Si vous avez des questions sur ces Conditions, veuillez nous contacter a :"
+}

@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "title": "Loquor AAC - Communicatie voor Elke Stem",
+    "description": "Loquor AAC ondersteunt mensen met spraakmoeilijkheden met symboolgebaseerde communicatie, slimme grammatica en natuurlijke stemmen, terwijl gegevens prive en op het apparaat blijven."
+  },
+  "hero": {
+    "badge": "Ondersteunde Communicatie",
+    "title": "Geef Elke Stem de",
+    "highlightedTitle": "Kracht om Gehoord te Worden",
+    "description": "Loquor AAC ondersteunt mensen met spraakmoeilijkheden met symboolgebaseerde communicatie, slimme grammatica en natuurlijke stemmen, terwijl gegevens prive en op het apparaat blijven.",
+    "primaryButton": "Probeer Loquor AAC",
+    "secondaryButton": "Bekijk Functies",
+    "screenshot": {
+      "label": "Loquor AAC - Hoofdscherm",
+      "description": "Symboolraster met core-fringe lay-out en pictogramcommunicatie"
+    }
+  },
+  "howItWorks": {
+    "badge": "Hoe Het Werkt",
+    "title": "Communicatie in Drie Eenvoudige Stappen",
+    "subtitle": "Van symbolen kiezen tot hardop spreken: Loquor AAC houdt het eenvoudig.",
+    "steps": [
+      {
+        "id": "choose",
+        "title": "Kies",
+        "description": "Tik op pictogramsymbolen in een aanpasbaar raster of typ vrij met slimme woordvoorspellingen."
+      },
+      {
+        "id": "build",
+        "title": "Bouw",
+        "description": "Slimme grammatica vervoegt werkwoorden automatisch, kiest lidwoorden en vormt grammaticaal correcte zinnen."
+      },
+      {
+        "id": "speak",
+        "title": "Spreek",
+        "description": "Druk op spreken om je boodschap met een natuurlijke stem te horen - via apparaatstemmen of premium AI-opties."
+      }
+    ]
+  },
+  "features": {
+    "badge": "Functies",
+    "title": "Alles Wat Je Nodig Hebt om te Communiceren",
+    "subtitle": "Gebouwd met clinici, mantelzorgers en AAC-gebruikers om wrijving en cognitieve belasting te verlagen.",
+    "cards": [
+      {
+        "id": "symbol-text",
+        "title": "Symbool- en Tekstcommunicatie",
+        "description": "Tik op pictogramsymbolen of typ vrij. Bouw berichten natuurlijk op met een instelbaar raster van 6-12 kolommen, een berichtstrook en slimme woordvoorspelling."
+      },
+      {
+        "id": "smart-grammar",
+        "title": "Slimme Grammatica-engine",
+        "description": "Automatische werkwoordvervoeging, voltooide tijd, continue vorm en reflexieven - stil op de achtergrond geregeld. Ondersteunt Nederlands, Engels, Frans en Spaans."
+      },
+      {
+        "id": "ai-voices",
+        "title": "Premium AI-stemmen",
+        "description": "Gratis offline apparaatstemmen of premium ElevenLabs AI-stemmen voor natuurlijke, expressieve spraak. Automatische fallback houdt communicatie beschikbaar."
+      },
+      {
+        "id": "progressive-vocabulary",
+        "title": "Progressieve Woordenschat",
+        "description": "Een leersysteem met 6 niveaus dat meegroeit met de gebruiker. Woorden worden vrijgegeven op basis van echt gebruik, met ghost-slots en een voortgangsindicator."
+      },
+      {
+        "id": "grid-modes",
+        "title": "Drie Rastermodi",
+        "description": "Standaard symboolraster, activiteitenborden voor routines en Core-Fringe met vaste kernwoordenschat. Bewerken gebeurt direct in het raster."
+      },
+      {
+        "id": "languages",
+        "title": "4 Talen, Volledig Offline",
+        "description": "Engels, Nederlands, Frans en Spaans - elk met eigen grammaticaregels, woordenschatpakketten en stemopties. Alles werkt volledig offline."
+      },
+      {
+        "id": "privacy",
+        "title": "Privacy op Klinisch Niveau",
+        "description": "Alle data blijft op het apparaat. Geen tracking en geen clouduploads. PIN-beveiligde beheerfuncties voorkomen ongewenste wijzigingen."
+      },
+      {
+        "id": "multi-user",
+        "title": "Meerdere Gebruikersprofielen",
+        "description": "Volledig gescheiden profielen voor elke communicator met aparte databases en instellingen. Eenvoudig wisselen, dupliceren en instellen."
+      }
+    ]
+  },
+  "grammarSpotlight": {
+    "badge": "Taalintelligentie",
+    "title": "Slimme Grammatica Die Vooruitdenkt",
+    "subtitle": "Tik op een onderwerp en een werkwoord, en Loquor doet de rest. Contextafhankelijke vervoeging in vier talen.",
+    "examples": [
+      {
+        "id": "english",
+        "language": "Engels",
+        "note": "Derde persoon enkelvoud -s"
+      },
+      {
+        "id": "dutch",
+        "language": "Nederlands",
+        "note": "Voltooide tijd met hulpwerkwoord"
+      },
+      {
+        "id": "french",
+        "language": "Frans",
+        "note": "Automatische elisie voor klinker"
+      },
+      {
+        "id": "spanish",
+        "language": "Spaans",
+        "note": "Tegenwoordige tijd"
+      }
+    ],
+    "linkLabel": "Bekijk de volledige grammatica-engine",
+    "screenshot": {
+      "label": "Slimme Grammatica-engine",
+      "description": "Automatische werkwoordvervoeging met kleurgecodeerde grammatica"
+    }
+  },
+  "progressiveSpotlight": {
+    "badge": "Progressief Leren",
+    "title": "Woordenschat Die Meegroeit",
+    "subtitle": "Woorden worden vrijgegeven op basis van echt gebruik. Posities veranderen nooit, zodat motorisch geheugen behouden blijft.",
+    "levels": [
+      {
+        "id": "level-1",
+        "level": "Niveau 1",
+        "label": "Essentiele kernwoorden - 80% beheersingsdrempel",
+        "badge": "Voltooid"
+      },
+      {
+        "id": "level-2",
+        "level": "Niveau 2",
+        "label": "Startset kerncommunicatie - 75% beheersingsdrempel",
+        "badge": "Bezig"
+      },
+      {
+        "id": "level-3",
+        "level": "Niveau 3",
+        "label": "Uitgebreide kern + basiswoorden - 70% beheersingsdrempel",
+        "badge": "Vergrendeld"
+      },
+      {
+        "id": "level-4-6",
+        "level": "Niveau 4-6",
+        "label": "Volledige woordenschat tot expertniveau",
+        "badge": "Vergrendeld"
+      }
+    ],
+    "linkLabel": "Ontdek hoe voortgang werkt",
+    "screenshot": {
+      "label": "Progressieve Woordenschat",
+      "description": "Instellingen voor progressieve woordenschat met niveauregelaars"
+    }
+  },
+  "stats": {
+    "items": [
+      {
+        "id": "languages",
+        "label": "Talen"
+      },
+      {
+        "id": "grid-modes",
+        "label": "Rastermodi"
+      },
+      {
+        "id": "levels",
+        "label": "Woordenschatniveaus"
+      },
+      {
+        "id": "offline",
+        "label": "Offline Beschikbaar"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Klaar om Loquor AAC te Proberen?",
+    "subtitle": "Download de app en help de toekomst van toegankelijke communicatie vorm te geven.",
+    "buttonText": "Probeer Loquor AAC"
+  }
+}

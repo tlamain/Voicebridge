@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Beheerpagina",
+    "description": "Bekijk de beheerschermen van Loquor AAC voor instellingen, inhoud, taal en gebruikersprofielen."
+  },
+  "hero": {
+    "title": "Beheer voor Clinici",
+    "description": "De beheermodus in Loquor AAC is ontworpen voor gestructureerde workflows rond instellingen, inhoud, taal en beheer van meerdere gebruikers."
+  },
+  "areas": [
+    {
+      "id": "settings",
+      "area": "Instellingen",
+      "purpose": "Configureer gedrag en veiligheidsmaatregelen voor communicatiesessies.",
+      "capabilities": [
+        "Beveiliging en pincode-instellingen",
+        "Stemprovider, toonhoogte, snelheid en ElevenLabs-configuratie",
+        "Keuze van invoermodus (symboolraster of alleen tekst)",
+        "Uiterlijksthema's, rastergrootte en lettertypevoorkeuren",
+        "Instellingen voor grammatica, Fitzgerald Key, deelknop en Word Finder",
+        "Back-up- en herstelacties"
+      ]
+    },
+    {
+      "id": "content",
+      "area": "Inhoud",
+      "purpose": "Beheer de communicatie-elementen die gebruikers dagelijks gebruiken.",
+      "capabilities": [
+        "Volledige CRUD voor symbolen, zinnen en afkortingen",
+        "Onregelmatige regels voor zelfstandige naamwoorden (enkelvoud/meervoud, niet-telbaar)",
+        "Uitzonderingsvormen voor onregelmatige werkwoorden per taal",
+        "Beheer en bewerking van activiteitsborden",
+        "Beheer van core-fringe-layouts, paginabomen en slots"
+      ]
+    },
+    {
+      "id": "language",
+      "area": "Taal",
+      "purpose": "Beheer voortgang en woordenschatpakketten per taalcontext.",
+      "capabilities": [
+        "Instellingen voor progressieve woordenschat en gereedheidscontroles",
+        "Beheersingsdrempel en instellingen voor minimumgebruik per woord",
+        "Schakelaar Expertwoordenschat voor woorden van niveau 6",
+        "Installatie, herinstallatie en synchronisatie van grammaticadata voor woordenschatpakketten",
+        "Taalspecifieke inhoudsoverzichten en onderhoudsacties"
+      ]
+    },
+    {
+      "id": "users",
+      "area": "Gebruikers",
+      "purpose": "Maak en onderhoud gescheiden communicatieprofielen voor meerdere personen.",
+      "capabilities": [
+        "Standaard toevoegen en begeleid toevoegen met de installatiewizard in 12 stappen",
+        "Actieve gebruiker dupliceren en profielwissel-workflows",
+        "Profielmetadata bewerken (naam, foto, leeftijd, diagnose, notities)",
+        "Verwijderbeperkingen voor actieve gebruiker en veiligheid van de laatste gebruiker"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "pin-protection",
+      "title": "Pincodebeveiliging",
+      "label": "Pincodebeveiliging",
+      "description": "Met pincode beveiligde beheertoegang"
+    },
+    {
+      "id": "user-profiles",
+      "title": "Gebruikersprofielen",
+      "label": "Profielen voor meerdere gebruikers",
+      "description": "Meerdere gescheiden gebruikersprofielen"
+    },
+    {
+      "id": "appearance-settings",
+      "title": "Uiterlijkinstellingen",
+      "label": "Uiterlijk aanpassen",
+      "description": "Thema-, rastergrootte- en weergave-instellingen"
+    }
+  ],
+  "notes": {
+    "title": "Operationele Notities",
+    "items": [
+      "Pincodebeveiliging kan toegang en bewerkingsflows afschermen.",
+      "De taalcontext beïnvloedt inhoudslijsten en pakketacties.",
+      "Gebruikersprofielen zijn gescheiden voor soepelere overdracht tussen zorgteams.",
+      "Back-up- en herstelacties zijn expliciet en door de gebruiker gestart."
+    ]
+  },
+  "links": {
+    "title": "Verken Inhoudsbeheer",
+    "description": "Duik dieper in de tools die clinici gebruiken om communicatie-inhoud te beheren.",
+    "items": [
+      {
+        "id": "symbol-management",
+        "label": "Symboolbibliotheek ->"
+      },
+      {
+        "id": "activity-boards",
+        "label": "Activiteitsborden ->"
+      },
+      {
+        "id": "core-fringe",
+        "label": "Core-Fringe-layouts ->"
+      }
+    ]
+  }
+}

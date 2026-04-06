@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Who It's For",
+    "description": "Loquor AAC serves communicators of all ages, speech-language pathologists, caregivers, and educators."
+  },
+  "hero": {
+    "title": "Built for People Who",
+    "highlightedTitle": "Need It Most",
+    "description": "Loquor AAC serves communicators of all ages and abilities, along with the clinicians, caregivers, and educators who support them."
+  },
+  "benefitsHeading": "Key Benefits",
+  "audiences": [
+    {
+      "id": "adults",
+      "title": "Adults with Acquired Conditions",
+      "conditions": "ALS, stroke, aphasia, TBI, dysarthria, apraxia",
+      "description": "For adults who have lost or are losing the ability to speak, Loquor AAC offers efficient text input with predictive suggestions, quick access to common phrases, and high-quality voice output that helps preserve communication identity.",
+      "highlights": [
+        "Fast text typing with word predictions",
+        "Customizable phrase libraries for daily routines",
+        "Premium AI voices for natural-sounding speech",
+        "Offline capability for reliable communication anywhere"
+      ]
+    },
+    {
+      "id": "children",
+      "title": "Children and Pre-Literate Communicators",
+      "conditions": "Autism, cerebral palsy, developmental delays, intellectual disabilities",
+      "description": "Symbol-based communication with stable, motor-planning friendly layouts that support learning. The progressive vocabulary system grows with the child, and the child-friendly theme makes the experience engaging.",
+      "highlights": [
+        "Pictogram symbols with stable grid positions for muscle memory",
+        "Progressive 6-level vocabulary that grows with the child",
+        "Child-friendly theme with large, colorful tap targets",
+        "Fitzgerald Key color-coding for visual grammar learning"
+      ]
+    },
+    {
+      "id": "slps",
+      "title": "Speech-Language Pathologists",
+      "conditions": "Clinical practice, therapy sessions, assessment",
+      "description": "Advanced grammar controls, three assist levels (Simple, Standard, Expert), and comprehensive admin tools give SLPs the precision they need. Vocabulary statistics and pack management streamline clinical workflows.",
+      "highlights": [
+        "Three assist levels for different therapy stages",
+        "Grammar Bar with gender-aware article selection",
+        "Vocabulary statistics panel for tracking progress",
+        "Vocabulary Packs for structured language intervention"
+      ]
+    },
+    {
+      "id": "caregivers",
+      "title": "Caregivers and Family Members",
+      "conditions": "Parents, guardians, home care, daily support",
+      "description": "The 12-step guided setup wizard makes getting started simple - no technical expertise required. PIN protection keeps settings safe, while profile management lets caregivers manage multiple communicators on a single device.",
+      "highlights": [
+        "12-step guided setup wizard - no tech skills needed",
+        "PIN-protected admin to prevent accidental edits",
+        "Multi-user profiles for managing multiple communicators",
+        "Backup and restore to protect customizations"
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Educational Settings",
+      "conditions": "Schools, special education, classroom use",
+      "description": "The progressive vocabulary system and Fitzgerald Key visual learning aids make Loquor AAC ideal for educational environments. Activity Boards can be customized for classroom contexts.",
+      "highlights": [
+        "Progressive vocabulary for structured learning paths",
+        "Fitzgerald Key color-coding teaches grammar visually",
+        "Activity Boards for classroom-specific contexts",
+        "High contrast and accessible design for all learners"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Find Out How Loquor AAC Can Help",
+    "subtitle": "Whether you're a communicator, caregiver, or clinician, we'd love to hear from you.",
+    "buttonText": "Get in Touch"
+  }
+}

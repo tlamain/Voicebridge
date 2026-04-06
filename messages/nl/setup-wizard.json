@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Installatiewizard",
+    "description": "Bekijk de onboardingflow in 12 stappen die wordt gebruikt bij de eerste start en het instellen van nieuwe gebruikers in Loquor AAC."
+  },
+  "hero": {
+    "title": "Installatiewizard",
+    "description": "De installatiewizard standaardiseert onboarding door teams stap voor stap door taal-, layout-, grammatica-, stem- en beveiligingskeuzes te leiden."
+  },
+  "flowTitle": "Flow in 12 Stappen",
+  "tableLabels": {
+    "step": "Stap",
+    "title": "Titel",
+    "purpose": "Doel"
+  },
+  "steps": [
+    {
+      "id": "language-selection",
+      "step": "0",
+      "title": "Taalselectie",
+      "purpose": "Stel de taalcontext in vóór alle andere keuzes. Dit wordt direct toegepast zodat alle volgende stappen in de gekozen taal worden weergegeven."
+    },
+    {
+      "id": "user-profile",
+      "step": "1",
+      "title": "Gebruikersprofiel",
+      "purpose": "Leg naam, avatar, leeftijd, diagnose en notities vast voor profielidentiteit en zorgcontext."
+    },
+    {
+      "id": "input-mode",
+      "step": "2",
+      "title": "Invoermodus",
+      "purpose": "Kies Symboolraster of Alleen tekst. Bij Alleen tekst worden symboolspecifieke stappen uit de wizard verwijderd."
+    },
+    {
+      "id": "grid-mode",
+      "step": "3",
+      "title": "Rastermodus",
+      "purpose": "Kies de communicatiestructuur Standaard, Activiteitsborden of Core-Fringe."
+    },
+    {
+      "id": "voice-provider",
+      "step": "4",
+      "title": "Stemprovider",
+      "purpose": "Kies apparaatspeech (offline) of optioneel de cloud-stemprovider van ElevenLabs."
+    },
+    {
+      "id": "fitzgerald-key",
+      "step": "5",
+      "title": "Fitzgerald Key",
+      "purpose": "Schakel kleurgecodeerde grammaticale categoriehints op pictogrammen in of uit."
+    },
+    {
+      "id": "progressive-vocabulary",
+      "step": "6",
+      "title": "Progressieve Woordenschat",
+      "purpose": "Schakel een gefaseerd groeimodel voor woordenschat in met gereedheidscontroles en ghost slots."
+    },
+    {
+      "id": "appearance",
+      "step": "7",
+      "title": "Uiterlijk",
+      "purpose": "Configureer thema (Licht, Donker, Hoog contrast, Kindvriendelijk) en lettergrootte voor symbolen."
+    },
+    {
+      "id": "grid-layout",
+      "step": "8",
+      "title": "Rasterlayout",
+      "purpose": "Stel het aantal kolommen (6-12) en voorkeuren voor liggende weergave in."
+    },
+    {
+      "id": "smart-grammar",
+      "step": "9",
+      "title": "Slimme Grammatica",
+      "purpose": "Configureer automatische werkwoordsvervoeging en de inflectiekiezer via lang indrukken."
+    },
+    {
+      "id": "pin-setup",
+      "step": "10",
+      "title": "Pincode instellen",
+      "purpose": "Beveilig beheeracties met optionele pincodebeveiliging van 4-6 cijfers."
+    },
+    {
+      "id": "summary",
+      "step": "11",
+      "title": "Samenvatting",
+      "purpose": "Bekijk alle keuzes voordat je de configuratie afrondt en de app start."
+    }
+  ],
+  "outcomes": {
+    "title": "Implementatieresultaten",
+    "items": [
+      "Consistente onboarding voor mantelzorgers en clinici",
+      "Herhaalbare configuratie voor nieuwe en gedupliceerde gebruikersprofielen",
+      "Snellere initiële gereedheid met minder handmatige configuratierondes",
+      "Keuze van invoermodus past de wizard aan voor symbool- of tekstworkflows"
+    ]
+  }
+}

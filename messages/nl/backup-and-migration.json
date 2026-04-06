@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Back-up en Migratie",
+    "description": "Begrijp de back-upcategorieën, herstelopties en migratieplaybooks van Loquor AAC."
+  },
+  "hero": {
+    "title": "Back-up en Migratie",
+    "description": "Back-upworkflows in Loquor AAC zijn selectief en worden door de gebruiker gestart, zodat teams data gecontroleerd kunnen verplaatsen."
+  },
+  "categoriesTitle": "Back-upcategorieën",
+  "categories": [
+    {
+      "id": "settings",
+      "name": "Instellingen",
+      "description": "Sleutel-waarde-appinstellingen, behalve beheerpincodegegevens."
+    },
+    {
+      "id": "categories",
+      "name": "Categorieën",
+      "description": "Definities en metadata van symboolcategorieën."
+    },
+    {
+      "id": "symbols",
+      "name": "Symbolen",
+      "description": "Symboolrecords, vertalingen en verwijzingen naar ingesloten afbeeldingen."
+    },
+    {
+      "id": "favourites",
+      "name": "Favorieten",
+      "description": "Verwijzingen naar favoriete symbolen voor snelle toegang."
+    },
+    {
+      "id": "phrases",
+      "name": "Zinnen",
+      "description": "Opgeslagen zinsitems en bijbehorende metadata."
+    },
+    {
+      "id": "abbreviations",
+      "name": "Afkortingen",
+      "description": "Regels voor uitbreiding van shortcodes per taal."
+    },
+    {
+      "id": "activity-boards",
+      "name": "Activiteitsborden",
+      "description": "Definities van borden en plaatsing van knoppen."
+    },
+    {
+      "id": "core-fringe-layouts",
+      "name": "Core-Fringe-layouts",
+      "description": "Layouts, pagina's en slotrecords."
+    },
+    {
+      "id": "vocabulary-packs",
+      "name": "Woordenschatpakketten",
+      "description": "Metadata van geïnstalleerde pakketten en gekoppelde records."
+    }
+  ],
+  "recipesTitle": "Migratierecepten",
+  "recipes": [
+    {
+      "id": "device-replacement",
+      "title": "Vervanging van apparaat",
+      "steps": [
+        "Exporteer een selectieve back-up vanaf het bronapparaat.",
+        "Installeer Loquor AAC op het nieuwe apparaat en importeer de back-up.",
+        "Controleer rastermodus, gebruikersprofiel en steminstellingen."
+      ]
+    },
+    {
+      "id": "therapist-handoff",
+      "title": "Overdracht aan therapeut",
+      "steps": [
+        "Dupliceer het actieve gebruikersprofiel voor overdrachtsveiligheid.",
+        "Exporteer categorieën, symbolen en layout-assets.",
+        "Importeer op het ontvangende apparaat en controleer de instellingen voor beheervergrendeling."
+      ]
+    },
+    {
+      "id": "pilot-rollout",
+      "title": "Pilotuitrol",
+      "steps": [
+        "Maak een basisprofiel met de installatiewizard.",
+        "Dupliceer het profiel voor elke leerling en pas alleen noodzakelijke instellingen aan.",
+        "Volg voortgangsstatussen en exporteer periodieke back-ups."
+      ]
+    }
+  ]
+}

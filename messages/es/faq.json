@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Preguntas Frecuentes",
+    "description": "Respuestas a preguntas frecuentes sobre Loquor AAC: uso sin conexion, privacidad, idiomas, gramatica, voces y mas."
+  },
+  "hero": {
+    "title": "Preguntas Frecuentes",
+    "description": "Todo lo que necesitas saber sobre Loquor AAC y nuestro compromiso con la comunicacion accesible."
+  },
+  "items": [
+    {
+      "question": "Funciona Loquor AAC sin conexion?",
+      "answer": "Si. La comunicacion principal funciona completamente sin conexion usando la sintesis de voz integrada del dispositivo. Con internet, puedes usar opcionalmente voces de ElevenLabs. Si la conexion falla, la app vuelve automaticamente a las voces del dispositivo."
+    },
+    {
+      "question": "Mis datos son privados?",
+      "answer": "Absolutamente. Loquor AAC sigue principios local-first. El vocabulario, las frases, los simbolos, la configuracion y los datos de comunicacion se almacenan en tu dispositivo. No recopilamos historial de conversaciones, grabaciones de voz, ubicacion, identificadores del dispositivo ni analiticas."
+    },
+    {
+      "question": "Que idiomas son compatibles?",
+      "answer": "Loquor AAC es totalmente compatible con ingles, neerlandes, espanol y frances. Cada idioma incluye sus propias reglas gramaticales, tablas de conjugacion y paquetes de vocabulario. La interfaz y el motor gramatical se adaptan automaticamente al cambiar de idioma."
+    },
+    {
+      "question": "Puedo personalizar el vocabulario?",
+      "answer": "Si, ampliamente. Puedes anadir, editar y eliminar simbolos, frases, abreviaturas y categorias personalizadas. Tambien puedes asignar fotos o emoji, marcar favoritos y controlar la visibilidad. Los paquetes de vocabulario permiten instalar contenido ya preparado."
+    },
+    {
+      "question": "Que es Vocabulario Progresivo?",
+      "answer": "Vocabulario Progresivo es un sistema de aprendizaje de 6 niveles que desbloquea nuevas palabras gradualmente a medida que el usuario demuestra dominio. La app sigue las estadisticas de uso para decidir cuando avanzar."
+    },
+    {
+      "question": "Que son los Tableros de Actividad?",
+      "answer": "Los Tableros de Actividad son layouts tematicos para contextos concretos como las comidas, el bano, las interacciones sociales o el aula. Cada tablero tiene su propio icono, titulo, color de fondo y rejilla de simbolos."
+    },
+    {
+      "question": "Pueden varios usuarios compartir un dispositivo?",
+      "answer": "Si. Loquor AAC admite perfiles totalmente aislados. Cada usuario tiene su propia base de datos con vocabulario, configuracion, temas y preferencias independientes. Cambiar o duplicar perfiles es sencillo."
+    },
+    {
+      "question": "Incluye ayuda gramatical?",
+      "answer": "Si, y es una de las funciones mas potentes de Loquor AAC. El motor Smart Grammar conjuga verbos automaticamente segun el contexto y la Grammar Bar ofrece ayuda con articulos, demostrativos, posesivos y preposiciones."
+    },
+    {
+      "question": "Que voces hay disponibles?",
+      "answer": "Hay dos tipos de voces. Las voces del dispositivo usan la sintesis de voz integrada y funcionan sin conexion. Las voces premium de ElevenLabs suenan mas naturales, pero requieren internet y una API key propia."
+    },
+    {
+      "question": "Como configuro Loquor AAC?",
+      "answer": "Loquor AAC incluye un asistente guiado de 12 pasos para elegir idioma, perfil de usuario, modo de rejilla, voz, apariencia, gramatica y PIN opcional. Tras la configuracion, la app importa automaticamente el paquete basico de vocabulario."
+    },
+    {
+      "question": "Es adecuado para ninos?",
+      "answer": "Si. Loquor AAC incluye un tema infantil con objetivos tactiles grandes y coloridos, y el sistema de vocabulario progresivo evita la sobrecarga cognitiva introduciendo palabras gradualmente."
+    },
+    {
+      "question": "Pueden los terapeutas controlar la configuracion?",
+      "answer": "Si. El panel de administracion esta protegido con un PIN de 4 a 6 digitos y ofrece control completo sobre vocabulario, gramatica, modos de rejilla, temas y perfiles de usuario."
+    }
+  ],
+  "cta": {
+    "title": "Tienes Mas Preguntas?",
+    "subtitle": "Estamos aqui para ayudarte. Escrbenos y te responderemos lo antes posible.",
+    "buttonText": "Contactanos"
+  }
+}

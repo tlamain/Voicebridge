@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "title": "Smart Grammar Engine",
+    "description": "Automatic verb conjugation, noun pluralisation, and grammar bar assistance across Dutch, English, French, and Spanish - all offline."
+  },
+  "hero": {
+    "badge": "Language Intelligence",
+    "title": "Smart Grammar Engine",
+    "description": "A context-aware grammar system that automatically conjugates verbs, selects the right auxiliary, handles reflexives, and applies sentence-level transformations in real time, completely offline. Supports Dutch, English, French, and Spanish."
+  },
+  "heroScreenshot": {
+    "label": "Smart Grammar Engine - Live Conjugation",
+    "description": "Automatic verb conjugation with color-coded grammar assist"
+  },
+  "howItWorks": {
+    "title": "How the Engine Works",
+    "steps": [
+      {
+        "id": "tap-symbols",
+        "title": "Tap symbols",
+        "description": "Each symbol tap is analysed: is it a pronoun, a noun, a temporal marker, or a verb? The engine identifies the word type automatically."
+      },
+      {
+        "id": "state-machine",
+        "title": "State machine updates",
+        "description": "A sentence state machine tracks subject, tense, auxiliary chain, and clause boundaries. When context changes, all verbs are reconjugated."
+      },
+      {
+        "id": "display-speak",
+        "title": "Display and speak",
+        "description": "Sentence-level transformations such as do-support, elision, inversion, and reflexives are applied just before display. The result is a grammatically correct sentence."
+      }
+    ]
+  },
+  "examples": {
+    "badge": "Live Examples",
+    "title": "Four Languages, One Tap",
+    "subtitle": "The engine applies language-specific rules for each supported language. Here are real examples from the app.",
+    "languages": [
+      {
+        "id": "english",
+        "language": "English",
+        "examples": [
+          {
+            "input": "she + walk",
+            "output": "she walks",
+            "note": "3rd person singular -s"
+          },
+          {
+            "input": "I + be + walk",
+            "output": "I am walking",
+            "note": "Continuous aspect (-ing)"
+          },
+          {
+            "input": "he + do + not + eat",
+            "output": "he does not eat",
+            "note": "Do-support negation"
+          },
+          {
+            "input": "I + have + walk",
+            "output": "I have walked",
+            "note": "Perfect tense"
+          }
+        ]
+      },
+      {
+        "id": "dutch",
+        "language": "Dutch",
+        "examples": [
+          {
+            "input": "hij + lopen",
+            "output": "hij loopt",
+            "note": "3rd person singular +t"
+          },
+          {
+            "input": "ik + hebben + lopen",
+            "output": "ik heb gelopen",
+            "note": "Perfect tense (hebben)"
+          },
+          {
+            "input": "ik + wassen + zich",
+            "output": "ik was me",
+            "note": "Reflexive pronoun adjustment"
+          },
+          {
+            "input": "ik + wil + gaan + jij + wil + gaan",
+            "output": "ik wil gaan jij wilt gaan",
+            "note": "Multi-clause sentence"
+          }
+        ]
+      },
+      {
+        "id": "french",
+        "language": "French",
+        "examples": [
+          {
+            "input": "je + aimer",
+            "output": "j'aime",
+            "note": "Elision before vowel"
+          },
+          {
+            "input": "demain + je + parler",
+            "output": "demain je parlerai",
+            "note": "Future tense from temporal marker"
+          },
+          {
+            "input": "je + manger + pas",
+            "output": "je ne mange pas",
+            "note": "Negation wrapping (ne...pas)"
+          },
+          {
+            "input": "manger + il + ?",
+            "output": "mange-t-il ?",
+            "note": "Interrogative inversion with euphonic -t-"
+          }
+        ]
+      },
+      {
+        "id": "spanish",
+        "language": "Spanish",
+        "examples": [
+          {
+            "input": "ella + hablar",
+            "output": "ella habla",
+            "note": "Present tense -ar verb"
+          },
+          {
+            "input": "yo + tener",
+            "output": "yo tengo",
+            "note": "Irregular yo-form"
+          },
+          {
+            "input": "ellos + vivir",
+            "output": "ellos viven",
+            "note": "3rd person plural -ir verb"
+          },
+          {
+            "input": "tu + poder",
+            "output": "tu puedes",
+            "note": "Stem-changing verb (o -> ue)"
+          }
+        ]
+      }
+    ]
+  },
+  "capabilities": {
+    "badge": "Capabilities",
+    "title": "What the Engine Handles",
+    "subtitle": "From simple present tense to complex multi-clause constructions, the engine covers the full range of grammar needs.",
+    "items": [
+      {
+        "id": "verb-conjugation",
+        "title": "Verb Conjugation",
+        "description": "Automatically conjugates verbs based on subject, tense, and language. Handles regular and irregular verbs, modal constructions, and auxiliary-verb chains."
+      },
+      {
+        "id": "perfect-tense",
+        "title": "Perfect Tense",
+        "description": "Detects auxiliary verbs and converts the following verb to its past participle form. Dutch and French select the correct auxiliary automatically."
+      },
+      {
+        "id": "continuous-aspect",
+        "title": "Continuous Aspect",
+        "description": "English be + verb constructions produce the correct -ing form and handle spelling rules such as CVC doubling, silent-e drop, and -ie to -ying."
+      },
+      {
+        "id": "modal-verbs",
+        "title": "Modal Verbs",
+        "description": "Recognises modal verbs and forces the following main verb into its infinitive form."
+      },
+      {
+        "id": "multi-clause",
+        "title": "Multi-Clause Support",
+        "description": "When a second subject pronoun appears mid-sentence, the engine starts a new grammatical clause. Each clause conjugates independently."
+      },
+      {
+        "id": "reflexive-verbs",
+        "title": "Reflexive Verbs",
+        "description": "Dutch reflexive constructions resolve the correct pronoun form based on subject. The engine adjusts the reflexive automatically."
+      },
+      {
+        "id": "noun-pluralisation",
+        "title": "Noun Pluralisation",
+        "description": "Long-press any noun to choose singular or plural before adding it to the message. The grammar engine then reconjugates verbs to agree with the new number."
+      },
+      {
+        "id": "french-agreement",
+        "title": "French Noun Agreement",
+        "description": "Tap plural or feminine control tokens to apply full noun-phrase agreement so articles, adjectives, and nouns update together."
+      }
+    ]
+  },
+  "grammarBar": {
+    "badge": "Grammar Bar",
+    "title": "Determiner Helper",
+    "description": "The grammar bar is a horizontal strip of tappable chips that appears in tablet landscape mode. Tap a chip to insert a determiner, possessive, or preposition directly before the last noun in the message, producing natural word order without manual repositioning.",
+    "dimming": "Gender-aware dimming: when a noun is in the message, incompatible articles and demonstratives are automatically dimmed. Tap 'appel' in Dutch and 'de' lights up while 'het' fades, so grammar knowledge is not required.",
+    "groups": [
+      {
+        "id": "articles",
+        "name": "Articles",
+        "examples": "de, het, een / the, a / le, la, les / el, la",
+        "description": "Inserted automatically before the last noun for natural word order."
+      },
+      {
+        "id": "demonstratives",
+        "name": "Demonstratives",
+        "examples": "dit, dat / this, that / ce, cette / este, esta",
+        "description": "Gender-aware dimming highlights the compatible option for the current noun."
+      },
+      {
+        "id": "possessives",
+        "name": "Possessives",
+        "examples": "mijn, jouw / my, your / mon, ma / mi, tu",
+        "description": "Supports ownership framing across all four supported languages."
+      },
+      {
+        "id": "prepositions",
+        "name": "Prepositions",
+        "examples": "met, voor / with, for / avec, pour / con, para",
+        "description": "Adds location, direction, and relation context to any sentence."
+      }
+    ],
+    "primaryScreenshot": {
+      "label": "Grammar Bar",
+      "description": "Fitzgerald Key color-coded grammar settings"
+    },
+    "secondaryScreenshot": {
+      "label": "Noun Pluralisation",
+      "description": "Select singular or plural noun form"
+    }
+  },
+  "assistLevels": {
+    "badge": "Assist Levels",
+    "title": "The Right Amount of Help",
+    "subtitle": "One setting controls how much grammar assistance is shown. Choose the level that matches the communicator's needs or change it as they grow.",
+    "items": [
+      {
+        "id": "simple",
+        "level": "Simple",
+        "audience": "Beginner communicators",
+        "behavior": "Only articles and demonstratives are shown in the grammar bar. Incompatible tokens are dimmed. Contextual hints appear below the bar to guide word order."
+      },
+      {
+        "id": "standard",
+        "level": "Standard",
+        "audience": "Everyday communication",
+        "behavior": "All four grammar groups are visible. Incompatible tokens are dimmed based on noun gender. No additional hints. Best for most daily use."
+      },
+      {
+        "id": "expert",
+        "level": "Expert",
+        "audience": "Therapists and advanced users",
+        "behavior": "All four groups are shown with no dimming. Every token is equally visible, giving full control over which grammar cues to present."
+      }
+    ]
+  },
+  "offline": {
+    "title": "100% Offline - No Grammar API Required",
+    "description": "The entire grammar engine - all four languages, all conjugation tables, and all transformation rules - runs on-device. There are no cloud calls, no latency, and no privacy concerns. Verb exception data is stored locally and loaded into memory for fast lookup. If something goes wrong, the app always returns the original word rather than crashing."
+  },
+  "links": [
+    {
+      "id": "progressive-vocabulary",
+      "label": "Progressive Vocabulary ->"
+    },
+    {
+      "id": "features",
+      "label": "All Features ->"
+    }
+  ],
+  "cta": {
+    "title": "Experience Smart Grammar in Action",
+    "subtitle": "Try Loquor AAC and see how it handles grammar so your users don't have to.",
+    "buttonText": "Try Loquor AAC"
+  }
+}

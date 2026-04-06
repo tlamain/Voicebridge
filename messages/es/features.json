@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Funciones",
+    "description": "Explora las herramientas de comunicacion, la gramatica inteligente, el vocabulario progresivo, las voces premium, los tableros de actividad y el soporte multilingue de Loquor AAC."
+  },
+  "hero": {
+    "title": "Funciones Potentes,",
+    "highlightedTitle": "Experiencia Sencilla",
+    "description": "Loquor AAC combina herramientas de comunicacion potentes con una interfaz intuitiva que cualquiera puede aprender rapidamente."
+  },
+  "sections": [
+    {
+      "id": "communication-tools",
+      "badge": "Comunicacion Principal",
+      "title": "Herramientas de Comunicacion",
+      "description": "Varias formas de expresarte: tocar simbolos, escribir texto y combinar ambos en una sola interfaz.",
+      "items": [
+        "Rejilla de simbolos configurable (6-12 columnas) con organizacion por categorias",
+        "Modo de texto con contador en vivo y predicciones de palabras",
+        "Tira de mensaje con los simbolos en orden natural de habla",
+        "Pulsa prolongadamente verbos o sustantivos para elegir una forma concreta",
+        "Compartir mensajes con otras apps con un toque",
+        "Word Finder para buscar simbolos paso a paso"
+      ]
+    },
+    {
+      "id": "voice-speech",
+      "badge": "Salida de Voz",
+      "title": "Voz y Habla",
+      "description": "Escucha tus palabras con la voz que prefieras, desde la voz integrada del dispositivo hasta voces AI premium.",
+      "items": [
+        "Dos proveedores TTS: voz del dispositivo y voces premium de ElevenLabs",
+        "Controles de tono y velocidad ajustables",
+        "Cache inteligente para repetir frases al instante",
+        "Fallback automatico a la voz del dispositivo cuando no hay conexion",
+        "Vista previa de voces antes de elegir",
+        "Seleccion de voz por idioma"
+      ]
+    },
+    {
+      "id": "smart-grammar-engine",
+      "badge": "Inteligencia de Idioma",
+      "title": "Motor de gramatica inteligente",
+      "description": "Deja que la app gestione la gramatica. Loquor AAC construye frases correctas automaticamente a partir de simbolos simples.",
+      "items": [
+        "Conjugacion automatica para neerlandes, ingles, frances y espanol",
+        "Tiempo perfecto, aspecto continuo, modales y reflexivos automáticos",
+        "Frases con multiples clausulas",
+        "Funciones especificas del frances como elision e inversion",
+        "Grammar Bar con chips codificados por color",
+        "Dimming segun genero",
+        "Pluralizacion por pulsacion prolongada",
+        "Tres niveles de asistencia",
+        "Fitzgerald Key para aprendizaje visual"
+      ]
+    },
+    {
+      "id": "progressive-vocabulary",
+      "badge": "Aprendizaje y Crecimiento",
+      "title": "Vocabulario Progresivo",
+      "description": "Un vocabulario estructurado que crece con el usuario, desde las primeras palabras hasta una comunicacion fluida.",
+      "items": [
+        "Aprendizaje en 6 niveles",
+        "Proteccion de la memoria motora",
+        "Evaluacion por nivel",
+        "Ghost slots como vista previa",
+        "Floating Readiness Button",
+        "Modal de readiness con estadisticas",
+        "Expert Vocabulary para nivel 6",
+        "Ajuste del umbral de dominio y usos minimos",
+        "Progresion por idioma",
+        "Word Finder muestra bloqueos por nivel"
+      ]
+    },
+    {
+      "id": "grid-modes",
+      "badge": "Layouts Flexibles",
+      "title": "Modos de Rejilla",
+      "description": "Tres modos de rejilla para adaptarse a cada estilo de comunicacion y contexto.",
+      "items": [
+        "Rejilla simbolica estandar",
+        "Tableros de actividad para contextos especificos",
+        "Core-Fringe con vocabulario esencial fijado",
+        "Navegacion multipagina en Core-Fringe",
+        "Edicion directa sobre la rejilla",
+        "Gestion de arbol de paginas"
+      ]
+    },
+    {
+      "id": "customisation-admin",
+      "badge": "Control Total",
+      "title": "Personalizacion y Administracion",
+      "description": "Los cuidadores obtienen herramientas potentes para adaptar la experiencia y mantenerla segura.",
+      "items": [
+        "Cuatro temas visuales",
+        "Panel de administracion protegido por PIN",
+        "Gestion completa de simbolos, frases y categorias",
+        "Paquetes de vocabulario instalables",
+        "Copias de seguridad y restauracion en formato .vbaac",
+        "Asistente guiado de 12 pasos",
+        "Imagenes personalizadas para pronombres",
+        "Layout adaptativo en telefono y tablet"
+      ]
+    },
+    {
+      "id": "multi-user-accessibility",
+      "badge": "Para Todos",
+      "title": "Multiusuario y Accesibilidad",
+      "description": "Comparte un dispositivo entre varios comunicadores, cada uno con una experiencia personalizada.",
+      "items": [
+        "Perfiles totalmente aislados",
+        "Duplicacion de perfiles",
+        "Layouts responsivos",
+        "Diseno accesible con grandes zonas tactiles",
+        "Avatares personalizados",
+        "Modo de entrada por usuario"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Mira la App en Accion",
+    "subtitle": "Descarga la app y descubre como Loquor AAC puede transformar la comunicacion.",
+    "buttonText": "Probar Loquor AAC"
+  }
+}

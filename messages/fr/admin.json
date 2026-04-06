@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Page d'administration",
+    "description": "Consultez les surfaces d'administration de Loquor AAC pour les reglages, le contenu, la langue et les flux de profils utilisateurs."
+  },
+  "hero": {
+    "title": "Administration pour cliniciens",
+    "description": "Le mode administration de Loquor AAC est concu pour des operations structurees sur les reglages, le contenu, la langue et la gestion multiutilisateur."
+  },
+  "areas": [
+    {
+      "id": "settings",
+      "area": "Reglages",
+      "purpose": "Configurez le comportement et les controles de securite pour les sessions de communication.",
+      "capabilities": [
+        "Securite et controles PIN",
+        "Fournisseur vocal, hauteur, debit et configuration ElevenLabs",
+        "Selection du mode de saisie (grille de symboles ou texte uniquement)",
+        "Themes visuels, taille de grille et preferences de police",
+        "Controles de grammaire, Fitzgerald Key, bouton de partage et Word Finder",
+        "Operations de sauvegarde et de restauration"
+      ]
+    },
+    {
+      "id": "content",
+      "area": "Contenu",
+      "purpose": "Gerez les ressources de communication que les utilisateurs emploient au quotidien.",
+      "capabilities": [
+        "CRUD complet pour symboles, phrases et abreviations",
+        "Regles de noms irreguliers (singulier/pluriel, indenombrables)",
+        "Formes d'exception des verbes irreguliers par langue",
+        "Gestion et edition des tableaux d'activite",
+        "Gestion des mises en page core-fringe, arborescences de pages et slots"
+      ]
+    },
+    {
+      "id": "language",
+      "area": "Langue",
+      "purpose": "Gerez la progression et les packs de vocabulaire selon le contexte linguistique.",
+      "capabilities": [
+        "Controles de vocabulaire progressif et verifications de preparation",
+        "Reglages du seuil de maitrise et du minimum d'usages par mot",
+        "Interrupteur Vocabulaire expert pour les mots du niveau 6",
+        "Installation, reinstallation et synchronisation des donnees grammaticales des packs",
+        "Vues de contenu specifiques a chaque langue et actions de maintenance"
+      ]
+    },
+    {
+      "id": "users",
+      "area": "Utilisateurs",
+      "purpose": "Creez et entretenez des profils de communication isoles pour plusieurs personnes.",
+      "capabilities": [
+        "Ajout standard et ajout guide avec l'assistant de configuration en 12 etapes",
+        "Duplication de l'utilisateur actif et flux de changement de profil",
+        "Edition des metadonnees du profil (nom, photo, age, diagnostic, notes)",
+        "Restrictions de suppression pour proteger l'utilisateur actif et le dernier utilisateur"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "pin-protection",
+      "title": "Protection par PIN",
+      "label": "Protection par PIN",
+      "description": "Acces administrateur protege par PIN"
+    },
+    {
+      "id": "user-profiles",
+      "title": "Profils utilisateur",
+      "label": "Profils multiutilisateurs",
+      "description": "Plusieurs profils utilisateur isoles"
+    },
+    {
+      "id": "appearance-settings",
+      "title": "Reglages d'apparence",
+      "label": "Personnaliser l'apparence",
+      "description": "Theme, taille de grille et reglages d'affichage"
+    }
+  ],
+  "notes": {
+    "title": "Notes operationnelles",
+    "items": [
+      "La protection par PIN peut verrouiller l'acces et les flux d'edition.",
+      "Le contexte linguistique influence les listes de contenu et les operations sur les packs.",
+      "Les profils utilisateur sont isoles pour faciliter les transmissions entre equipes d'accompagnement.",
+      "Les actions de sauvegarde et de restauration sont explicites et initiees par l'utilisateur."
+    ]
+  },
+  "links": {
+    "title": "Explorer la gestion du contenu",
+    "description": "Approfondissez les outils que les cliniciens utilisent pour gerer le contenu de communication.",
+    "items": [
+      {
+        "id": "symbol-management",
+        "label": "Bibliotheque de symboles ->"
+      },
+      {
+        "id": "activity-boards",
+        "label": "Tableaux d'activite ->"
+      },
+      {
+        "id": "core-fringe",
+        "label": "Mises en page Core-Fringe ->"
+      }
+    ]
+  }
+}

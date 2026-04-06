@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Politique de confidentialite",
+    "description": "Decouvrez comment Loquor AAC gere les donnees locales, les services vocaux optionnels, les sauvegardes et les reglages de confidentialite controles par l'utilisateur."
+  },
+  "title": "Politique de confidentialite - Loquor AAC",
+  "effectiveDateLabel": "Date d'effet",
+  "effectiveDate": "5 janvier 2026",
+  "intro": "Loquor AAC (\"l'App\") est concue pour offrir aux utilisateurs une voix de communication fiable grace au texte, aux symboles et a une synthese vocale optionnelle. Votre confidentialite est au coeur de notre conception.",
+  "sections": [
+    {
+      "id": "data-we-collect",
+      "title": "1. Donnees que nous collectons",
+      "paragraphs": [
+        "Loquor AAC ne collecte pas automatiquement de donnees personnelles. Tout le vocabulaire, les phrases, les symboles et les reglages sont stockes uniquement en local sur votre appareil.",
+        "L'App peut stocker localement les elements suivants si vous choisissez de les utiliser :"
+      ],
+      "items": [
+        "Mots, phrases et abreviations personnalises",
+        "Photos ou symboles importes que vous assignez a des boutons",
+        "Frequence d'utilisation des phrases (pour de meilleures suggestions)",
+        "PIN d'administration (stocke localement sous forme hachee ou chiffree)"
+      ]
+    },
+    {
+      "id": "data-not-collected",
+      "title": "2. Donnees non collectees",
+      "paragraphs": [
+        "Nous ne collectons, ne suivons ni ne stockons :"
+      ],
+      "items": [
+        "Historique des conversations",
+        "Enregistrements vocaux",
+        "Donnees de localisation",
+        "Identifiants d'appareil",
+        "Donnees analytiques ou de suivi",
+        "Profils comportementaux ou d'interets",
+        "Aucune donnee permettant de vous identifier"
+      ]
+    },
+    {
+      "id": "voice-services",
+      "title": "3. Services vocaux optionnels (uniquement a l'initiative de l'utilisateur)",
+      "paragraphs": [
+        "Si vous saisissez votre propre cle API pour utiliser des services vocaux tiers comme ElevenLabs, le texte que vous choisissez de faire prononcer peut etre envoye a ce fournisseur uniquement au moment ou vous appuyez sur Parler.",
+        "Loquor AAC ne stocke ni ne transmet votre cle API en dehors de votre appareil. Les cles sont conservees dans le stockage securise de l'appareil."
+      ]
+    },
+    {
+      "id": "local-backups",
+      "title": "4. Sauvegardes locales (uniquement a l'initiative de l'utilisateur)",
+      "paragraphs": [
+        "Vous pouvez exporter ou sauvegarder manuellement votre vocabulaire. Cette action est toujours declenchee par vous. Nous ne telechargeons jamais de sauvegarde sans votre action."
+      ]
+    },
+    {
+      "id": "data-security",
+      "title": "5. Securite des donnees",
+      "paragraphs": [
+        "Comme les donnees restent sur votre appareil :"
+      ],
+      "items": [
+        "Les positions des boutons restent stables (compatibles avec la planification motrice)",
+        "Le vocabulaire peut etre masque, jamais supprime automatiquement",
+        "Un PIN d'administration est necessaire pour modifier le vocabulaire",
+        "Les cles API, si elles sont saisies, sont stockees via le stockage securise de la plateforme"
+      ]
+    },
+    {
+      "id": "children",
+      "title": "6. Confidentialite des enfants",
+      "paragraphs": [
+        "Loquor AAC peut etre utilise par des enfants, mais l'App elle-meme ne collecte pas de donnees sur l'age, l'identite ou le comportement. Le vocabulaire est gere par les aidants via un PIN d'administration local."
+      ]
+    },
+    {
+      "id": "third-party-libraries",
+      "title": "7. Bibliotheques tierces",
+      "paragraphs": [
+        "L'App utilise des bibliotheques open source pour les performances et le stockage hors ligne. Ces bibliotheques s'executent sur l'appareil et ne transmettent pas de donnees personnelles."
+      ]
+    },
+    {
+      "id": "your-rights",
+      "title": "8. Vos droits",
+      "paragraphs": [
+        "Comme nous ne stockons aucune donnee personnelle, il n'y a rien a demander, supprimer ou retirer de nos serveurs. Toutes vos donnees restent sous votre controle sur votre appareil."
+      ]
+    },
+    {
+      "id": "policy-updates",
+      "title": "9. Mises a jour de la politique",
+      "paragraphs": [
+        "Si cette politique change, la mise a jour sera publiee dans l'App et sur notre site web. La date d'effet sera mise a jour en haut."
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "10. Contact"
+    }
+  ],
+  "contactLead": "Pour toute question sur la confidentialite, vous pouvez nous contacter a :"
+}

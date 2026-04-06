@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Setup Wizard",
+    "description": "Review the 12-step onboarding flow used for first-run and new-user setup in Loquor AAC."
+  },
+  "hero": {
+    "title": "Setup Wizard",
+    "description": "The setup wizard standardizes onboarding by guiding teams through language, layout, grammar, voice, and security decisions."
+  },
+  "flowTitle": "12-Step Flow",
+  "tableLabels": {
+    "step": "Step",
+    "title": "Title",
+    "purpose": "Purpose"
+  },
+  "steps": [
+    {
+      "id": "language-selection",
+      "step": "0",
+      "title": "Language Selection",
+      "purpose": "Set language context before all other decisions. Applies immediately so all subsequent steps render in the chosen language."
+    },
+    {
+      "id": "user-profile",
+      "step": "1",
+      "title": "User Profile",
+      "purpose": "Capture name, avatar, age, diagnosis, and notes for profile identity and care context."
+    },
+    {
+      "id": "input-mode",
+      "step": "2",
+      "title": "Input Mode",
+      "purpose": "Choose Symbol Grid or Text-only. Selecting Text-only removes symbol-specific steps from the wizard."
+    },
+    {
+      "id": "grid-mode",
+      "step": "3",
+      "title": "Grid Mode",
+      "purpose": "Choose Standard, Activity Boards, or Core-Fringe communication structure."
+    },
+    {
+      "id": "voice-provider",
+      "step": "4",
+      "title": "Voice Provider",
+      "purpose": "Select device speech (offline) or optional ElevenLabs cloud voice provider."
+    },
+    {
+      "id": "fitzgerald-key",
+      "step": "5",
+      "title": "Fitzgerald Key",
+      "purpose": "Enable or disable colour-coded grammar category cues on pictograms."
+    },
+    {
+      "id": "progressive-vocabulary",
+      "step": "6",
+      "title": "Progressive Vocabulary",
+      "purpose": "Enable staged vocabulary growth model with readiness checks and ghost slots."
+    },
+    {
+      "id": "appearance",
+      "step": "7",
+      "title": "Appearance",
+      "purpose": "Configure theme (Light, Dark, High Contrast, Child-Friendly) and symbol font size."
+    },
+    {
+      "id": "grid-layout",
+      "step": "8",
+      "title": "Grid Layout",
+      "purpose": "Set column count (6-12) and landscape display mode preferences."
+    },
+    {
+      "id": "smart-grammar",
+      "step": "9",
+      "title": "Smart Grammar",
+      "purpose": "Configure automatic verb conjugation and long-press inflection picker."
+    },
+    {
+      "id": "pin-setup",
+      "step": "10",
+      "title": "PIN Setup",
+      "purpose": "Protect admin operations with optional 4-6 digit PIN security."
+    },
+    {
+      "id": "summary",
+      "step": "11",
+      "title": "Summary",
+      "purpose": "Review all selections before finalising setup and launching the app."
+    }
+  ],
+  "outcomes": {
+    "title": "Implementation Outcomes",
+    "items": [
+      "Consistent onboarding for caregivers and clinicians",
+      "Repeatable setup across new and duplicate user profiles",
+      "Faster initial readiness with fewer manual configuration passes",
+      "Input mode selection adapts the wizard to symbol or text workflows"
+    ]
+  }
+}

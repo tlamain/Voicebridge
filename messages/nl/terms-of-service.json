@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Servicevoorwaarden",
+    "description": "Servicevoorwaarden voor Loquor AAC - jouw rechten en verantwoordelijkheden bij het gebruik van de app."
+  },
+  "title": "Servicevoorwaarden - Loquor AAC",
+  "effectiveDateLabel": "Ingangsdatum",
+  "effectiveDate": "30 maart 2026",
+  "intro": "Lees deze Servicevoorwaarden (\"Voorwaarden\") zorgvuldig door voordat je Loquor AAC (\"de App\") gebruikt. Door de App te downloaden of te gebruiken ga je akkoord met deze Voorwaarden. Als je niet akkoord gaat, gebruik de App dan niet.",
+  "sections": [
+    {
+      "id": "acceptance",
+      "title": "1. Aanvaarding van de Voorwaarden",
+      "paragraphs": [
+        "Deze Voorwaarden vormen een juridische overeenkomst tussen jou (of de mantelzorger of voogd die namens een gebruiker handelt) en de ontwikkelaar van Loquor AAC. Door de App te installeren of te gebruiken bevestig je dat je deze Voorwaarden hebt gelezen, begrepen en ermee akkoord gaat."
+      ]
+    },
+    {
+      "id": "description",
+      "title": "2. Beschrijving van de App",
+      "paragraphs": [
+        "Loquor AAC is een applicatie voor ondersteunende en alternatieve communicatie (AAC), ontworpen om mensen met spraakmoeilijkheden te helpen communiceren via symbolen, tekst en optionele AI-gestuurde spraaksynthese. Functies zijn onder meer:"
+      ],
+      "items": [
+        "Berichtopbouw op basis van symbolen en tekst",
+        "Slimme grammaticale ondersteuning",
+        "Progressief leren van woordenschat",
+        "Optionele spraaksynthese van derden via API-sleutels die door de gebruiker worden aangeleverd",
+        "Door beheer gecontroleerd woordenschatbeheer",
+        "Activiteitsborden en aanpasbare layouts"
+      ]
+    },
+    {
+      "id": "intended-use",
+      "title": "3. Beoogd Gebruik",
+      "paragraphs": [
+        "De App is bedoeld als communicatieondersteuning en is geen medisch hulpmiddel, klinisch therapie-instrument of vervanging voor professionele logopedische zorg. De App moet naast passende klinische ondersteuning worden gebruikt, niet in plaats daarvan.",
+        "De App kan door kinderen worden gebruikt onder toezicht van een ouder, voogd of mantelzorger. De volwassene die verantwoordelijk is voor het apparaat van de gebruiker accepteert deze Voorwaarden namens hen."
+      ]
+    },
+    {
+      "id": "license",
+      "title": "4. Licentie",
+      "paragraphs": [
+        "Onder voorbehoud van deze Voorwaarden verlenen wij je een persoonlijke, niet-exclusieve, niet-overdraagbare en herroepbare licentie om de App te installeren en te gebruiken op apparaten die je bezit of beheert, uitsluitend voor je persoonlijke, niet-commerciële communicatiebehoeften.",
+        "Je mag niet:"
+      ],
+      "items": [
+        "De App kopiëren, wijzigen of afgeleide werken ervan maken",
+        "De App reverse-engineeren, decompileren of demonteren",
+        "De App of een deel ervan herdistribueren, in sublicentie geven of verkopen",
+        "De App gebruiken voor enig onwettig doel"
+      ]
+    },
+    {
+      "id": "voice-services",
+      "title": "5. Stemdiensten van Derden",
+      "paragraphs": [
+        "De App ondersteunt optionele integratie met externe tekst-naar-spraakproviders zoals ElevenLabs. Om deze functies te gebruiken moet je je eigen API-sleutel aanleveren en akkoord gaan met de voorwaarden en prijzen van die provider. Wij zijn niet verantwoordelijk voor de beschikbaarheid, nauwkeurigheid of kosten van diensten van derden.",
+        "Je API-sleutel wordt alleen op je apparaat opgeslagen en nooit naar onze servers verzonden."
+      ]
+    },
+    {
+      "id": "vocabulary-content",
+      "title": "6. Woordenschat en Inhoud",
+      "paragraphs": [
+        "Alle woordenschat, zinnen, symbolen en afbeeldingen die je aan de App toevoegt blijven van jou. Wij claimen geen eigendom over je inhoud. Jij bent verantwoordelijk om ervoor te zorgen dat inhoud die je toevoegt, waaronder foto's of symbolen, geen inbreuk maakt op rechten van derden."
+      ]
+    },
+    {
+      "id": "warranties",
+      "title": "7. Geen Garanties",
+      "paragraphs": [
+        "De App wordt geleverd \"zoals deze is\" en \"zoals beschikbaar\" zonder enige vorm van garantie, uitdrukkelijk of impliciet, inclusief maar niet beperkt tot geschiktheid voor een bepaald doel, ononderbroken werking of foutloze prestaties.",
+        "Omdat de App als communicatiemiddel wordt gebruikt, raden wij gebruikers en mantelzorgers sterk aan om alternatieve communicatiestrategieën te behouden en niet uitsluitend op de App te vertrouwen in tijdkritische of noodsituaties."
+      ]
+    },
+    {
+      "id": "liability",
+      "title": "8. Beperking van Aansprakelijkheid",
+      "paragraphs": [
+        "Voor zover maximaal toegestaan door de wet zijn wij niet aansprakelijk voor enige indirecte, incidentele, bijzondere of gevolgschade die voortvloeit uit je gebruik van of onvermogen om de App te gebruiken, zelfs als wij op de mogelijkheid van zulke schade zijn gewezen."
+      ]
+    },
+    {
+      "id": "changes",
+      "title": "9. Wijzigingen aan de App of Voorwaarden",
+      "paragraphs": [
+        "Wij kunnen de App of deze Voorwaarden op elk moment bijwerken. Materiële wijzigingen worden via de App of deze website gecommuniceerd. Voortgezet gebruik van de App nadat wijzigingen zijn geplaatst, geldt als aanvaarding van de herziene Voorwaarden."
+      ]
+    },
+    {
+      "id": "termination",
+      "title": "10. Beëindiging",
+      "paragraphs": [
+        "Je kunt op elk moment stoppen met het gebruik van de App. Wij behouden ons het recht voor de App stop te zetten of toegang te beperken in gevallen van misbruik of schending van deze Voorwaarden. Het verwijderen van de App verwijdert alle lokale gegevens van je apparaat."
+      ]
+    },
+    {
+      "id": "governing-law",
+      "title": "11. Toepasselijk Recht",
+      "paragraphs": [
+        "Deze Voorwaarden worden beheerst door en uitgelegd in overeenstemming met de wetten van het rechtsgebied waarin de ontwikkelaar is gevestigd, zonder rekening te houden met conflicterende rechtsregels."
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "12. Contact"
+    }
+  ],
+  "contactLead": "Als je vragen hebt over deze Voorwaarden, neem dan contact met ons op via:"
+}

@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "title": "Architecture du produit",
+    "description": "Vue d'ensemble des systemes produit de Loquor AAC, de ses capacites de communication et de ses flux operationnels."
+  },
+  "hero": {
+    "title": "Architecture du produit",
+    "description": "Loquor AAC est concu comme une plateforme de communication avec un accompagnement en couches pour les utilisateurs, les aidants et les cliniciens."
+  },
+  "pillars": [
+    {
+      "id": "communication-modes",
+      "value": "Une app, trois modeles de communication",
+      "title": "Modes de communication",
+      "description": "Passez de la Grille standard aux Tableaux d'activite et a Core-Fringe sans modifier le flux principal du message."
+    },
+    {
+      "id": "language-intelligence",
+      "value": "Une aide grammaticale en communication reelle",
+      "title": "Intelligence linguistique",
+      "description": "Conjugaison contextuelle des verbes, pluralisation des noms, aide aux determinants et selection des formes en neerlandais, anglais, francais et espagnol."
+    },
+    {
+      "id": "voice-output",
+      "value": "Une sortie vocale toujours disponible",
+      "title": "Sortie vocale",
+      "description": "Utilisez la synthese vocale de l'appareil hors ligne et les voix optionnelles ElevenLabs en ligne avec bascule automatique."
+    },
+    {
+      "id": "progressive-learning",
+      "value": "Une progression structuree du debutant a l'expert",
+      "title": "Apprentissage progressif",
+      "description": "Debloquez le vocabulaire en 6 niveaux avec controles de preparation, ghost slots, protection de la memoire motrice et suivi par langue."
+    },
+    {
+      "id": "clinical-admin",
+      "value": "Des controles integres pour aidants et orthophonistes",
+      "title": "Administration clinique",
+      "description": "Des controles proteges par PIN pour l'edition du contenu, la configuration des utilisateurs, la gestion des langues, des mises en page et des packs de vocabulaire."
+    },
+    {
+      "id": "privacy-portability",
+      "value": "Les donnees restent sous le controle de l'utilisateur",
+      "title": "Confidentialite et portabilite",
+      "description": "Stockage local en priorite avec sauvegarde et restauration selectives initiees par l'utilisateur. Pas de cloud, pas de suivi, pas d'historique de conversation stocke."
+    }
+  ],
+  "capabilitiesTitle": "Capacites du systeme",
+  "featureSections": [
+    {
+      "id": "communication-engine",
+      "title": "Moteur de communication",
+      "summary": "Composez avec des symboles et du texte dans un seul flux, puis parlez ou partagez avec un minimum de friction.",
+      "highlights": [
+        "Constructeur de messages avec composition symboles + texte",
+        "Comportement de prediction et d'expansion des abreviations",
+        "Selecteur par appui long des formes verbales et nominales avant ajout au message",
+        "Flux de favoris et de categories",
+        "Controles de partage dans les reglages d'administration"
+      ]
+    },
+    {
+      "id": "grid-systems",
+      "title": "Systemes de grille",
+      "summary": "Choisissez un modele de communication adapte a la charge cognitive, au contexte et aux objectifs d'accompagnement.",
+      "highlights": [
+        "Grille standard par categories avec preservation des zones motrices",
+        "Navigation par tableaux d'activite pour les routines",
+        "Mises en page Core-Fringe avec mots nucleaires fixes et navigation multipage",
+        "Edition dans la grille avec glisser, ajout et suppression"
+      ]
+    },
+    {
+      "id": "grammar-language",
+      "title": "Moteur grammatical intelligent",
+      "summary": "Conjugaison contextuelle pour le neerlandais, l'anglais, le francais et l'espagnol, entierement hors ligne et automatique.",
+      "highlights": [
+        "Conjugaison verbale : present, passe, parfait, continu et futur",
+        "Verbes modaux, constructions reflexives et phrases a plusieurs propositions",
+        "Francais : elision, inversion interrogative et accord des groupes nominaux",
+        "Pluralisation des noms par appui long avec reconjugaison grammaticale",
+        "Barre grammaticale avec puces de determinants codees par couleur",
+        "Trois niveaux d'assistance : Simple, Standard, Expert"
+      ]
+    },
+    {
+      "id": "progressive-vocabulary",
+      "title": "Vocabulaire progressif",
+      "summary": "Un systeme d'apprentissage en 6 niveaux qui protege la memoire motrice tout en enrichissant le vocabulaire selon l'usage reel.",
+      "highlights": [
+        "6 niveaux avec pools d'evaluation par niveau (seuls les nouveaux mots comptent)",
+        "Protection de la memoire motrice : les positions des mots ne changent jamais",
+        "Les ghost slots montrent les mots verrouilles sans interaction",
+        "Bouton flottant de preparation avec pourcentage de progression en direct",
+        "Interrupteur Vocabulaire expert pour les mots du niveau 6",
+        "Etat de progression independant par langue"
+      ]
+    },
+    {
+      "id": "voice-output",
+      "title": "Voix et sortie",
+      "summary": "Maintenez la continuite de la communication malgre les conditions reseau et les defaillances de fournisseurs.",
+      "highlights": [
+        "Fournisseur vocal de l'appareil avec hauteur et debit configurables",
+        "Integration optionnelle d'ElevenLabs avec cache audio local",
+        "Bascule automatique vers la voix de l'appareil en cas d'echec",
+        "Apercu et changement de fournisseur dans les reglages d'administration"
+      ]
+    },
+    {
+      "id": "clinical-admin",
+      "title": "Administration clinique et contenu",
+      "summary": "Des operations structurees pour les equipes qui gerent symboles, mises en page, utilisateurs et reglages.",
+      "highlights": [
+        "Administration des reglages, du contenu, des langues et des utilisateurs",
+        "Protection par PIN et comportements de verrouillage d'administration",
+        "Gestion des symboles, phrases, abreviations, tableaux et mises en page",
+        "Installation de packs de vocabulaire, synchronisation des donnees grammaticales et flux de reinitialisation"
+      ]
+    },
+    {
+      "id": "data-portability",
+      "title": "Donnees et portabilite",
+      "summary": "Gardez les donnees de communication locales et transportables lorsque les equipes migrent ou dupliquent des configurations.",
+      "highlights": [
+        "Sauvegarde et restauration selectives avec interrupteurs par categorie",
+        "Portabilite des images integrees dans les sauvegardes `.vbaac`",
+        "Isolation des profils multiutilisateurs avec bases de donnees separees",
+        "Flux de duplication d'utilisateur et de migration"
+      ]
+    }
+  ],
+  "linksTitle": "Explorer des zones specifiques",
+  "deepDiveLinks": [
+    {
+      "id": "product",
+      "label": "Architecture du produit",
+      "description": "Carte generale des systemes centraux et des flux de la plateforme."
+    },
+    {
+      "id": "grid-modes",
+      "label": "Modes de grille",
+      "description": "Comparez les usages Standard, Tableaux d'activite et Core-Fringe."
+    },
+    {
+      "id": "smart-grammar",
+      "label": "Moteur grammatical intelligent",
+      "description": "Regles de conjugaison, exemples par langue, niveaux d'assistance et selection des formes."
+    },
+    {
+      "id": "progressive-vocabulary",
+      "label": "Vocabulaire progressif",
+      "description": "Systeme par niveaux, protection de la memoire motrice, ghost slots et controles de preparation."
+    },
+    {
+      "id": "activity-boards",
+      "label": "Tableaux d'activite",
+      "description": "Creez des tableaux thematiques pour les routines avec icones personnalisees, tailles de grille et edition directe."
+    },
+    {
+      "id": "core-fringe",
+      "label": "Mises en page Core-Fringe",
+      "description": "Mises en page multipages avec vocabulaire nucleaire fixe et pages fringe dynamiques."
+    },
+    {
+      "id": "symbol-management",
+      "label": "Bibliotheque de symboles",
+      "description": "Recherchez, filtrez, mettez en favoris et modifiez les symboles avec metadonnees de vocabulaire progressif."
+    },
+    {
+      "id": "admin",
+      "label": "Administration",
+      "description": "Comprenez les capacites de reglages, contenu, langue et gestion des utilisateurs."
+    },
+    {
+      "id": "backup-and-migration",
+      "label": "Sauvegarde et migration",
+      "description": "Consultez les categories de sauvegarde, les modeles de restauration et les recettes de migration."
+    },
+    {
+      "id": "setup-wizard",
+      "label": "Assistant de configuration",
+      "description": "Parcourez l'onboarding en 12 etapes et le flux de creation d'utilisateur."
+    }
+  ]
+}

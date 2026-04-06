@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "Contact",
+    "description": "Contactez l'equipe Loquor AAC pour des partenariats, du support ou des questions generales."
+  },
+  "hero": {
+    "title": "Nous Contacter",
+    "description": "Que vous soyez communicateur, aidant, clinicien ou enseignant, nous serions ravis d'echanger avec vous au sujet de Loquor AAC."
+  },
+  "card": {
+    "title": "Contact",
+    "description": "Pour le support, les partenariats cliniques, les retours ou les questions generales, nous sommes la pour vous aider. Ecrivez-nous et un membre de l'equipe vous repondra rapidement.",
+    "responseTime": "Nous repondons generalement sous 24 a 48 heures.",
+    "location": "Base aux Pays-Bas, avec un accompagnement pour les communicateurs du monde entier."
+  },
+  "download": {
+    "title": "Telecharger Loquor AAC",
+    "description": "Disponible sur iOS et Android. Telechargez l'application et commencez a communiquer des aujourd'hui.",
+    "appStorePrefix": "Telecharger sur",
+    "appStoreLabel": "App Store",
+    "googlePlayPrefix": "Disponible sur",
+    "googlePlayLabel": "Google Play"
+  }
+}

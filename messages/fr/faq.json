@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Questions Frequemment Posees",
+    "description": "Reponses aux questions frequentes sur Loquor AAC : utilisation hors ligne, confidentialite, langues, grammaire, voix et plus encore."
+  },
+  "hero": {
+    "title": "Questions Frequemment Posees",
+    "description": "Tout ce qu'il faut savoir sur Loquor AAC et sur notre engagement pour une communication accessible."
+  },
+  "items": [
+    {
+      "question": "Loquor AAC fonctionne-t-il hors ligne ?",
+      "answer": "Oui. La communication principale fonctionne entierement hors ligne grace a la synthese vocale integree de l'appareil. Avec internet, vous pouvez utiliser en option des voix ElevenLabs. Si la connexion tombe, l'application revient automatiquement aux voix locales."
+    },
+    {
+      "question": "Mes donnees sont-elles privees ?",
+      "answer": "Absolument. Loquor AAC suit une approche local-first. Le vocabulaire, les phrases, les symboles, les reglages et les donnees de communication restent sur votre appareil. Nous ne collectons ni historique des conversations, ni enregistrements vocaux, ni localisation, ni analytics."
+    },
+    {
+      "question": "Quelles langues sont prises en charge ?",
+      "answer": "Loquor AAC prend en charge l'anglais, le neerlandais, l'espagnol et le francais. Chaque langue dispose de ses propres regles grammaticales, tableaux de conjugaison et packs de vocabulaire."
+    },
+    {
+      "question": "Puis-je personnaliser le vocabulaire ?",
+      "answer": "Oui, largement. Vous pouvez ajouter, modifier et supprimer des symboles, phrases, abreviations et categories personnalises. Vous pouvez aussi attribuer des photos ou des emoji, marquer des favoris et gerer la visibilite."
+    },
+    {
+      "question": "Qu'est-ce que le Vocabulaire Progressif ?",
+      "answer": "Le Vocabulaire Progressif est un systeme d'apprentissage en 6 niveaux qui debloque progressivement de nouveaux mots a mesure que l'utilisateur progresse. L'application suit l'usage reel pour determiner quand passer au niveau suivant."
+    },
+    {
+      "question": "Que sont les tableaux d'activite ?",
+      "answer": "Les tableaux d'activite sont des mises en page thematiques pour des contextes precis comme les repas, la salle de bain, les interactions sociales ou la classe. Chaque tableau a sa propre icone, son titre, sa couleur de fond et sa grille de symboles."
+    },
+    {
+      "question": "Plusieurs utilisateurs peuvent-ils partager un appareil ?",
+      "answer": "Oui. Loquor AAC prend en charge des profils utilisateurs totalement isoles. Chaque personne dispose de sa propre base de donnees avec vocabulaire, reglages, themes et preferences independants."
+    },
+    {
+      "question": "Y a-t-il une assistance grammaticale ?",
+      "answer": "Oui, et c'est l'une des fonctions les plus puissantes de Loquor AAC. Le moteur Smart Grammar conjugue les verbes automatiquement selon le contexte et la Grammar Bar fournit des aides colorees pour les articles, demonstratifs, possessifs et prepositions."
+    },
+    {
+      "question": "Quelles voix sont disponibles ?",
+      "answer": "Deux types de voix sont disponibles. Les voix de l'appareil utilisent la synthese vocale integree et fonctionnent hors ligne. Les voix premium ElevenLabs sont plus naturelles, mais necessitent internet et votre propre cle API."
+    },
+    {
+      "question": "Comment configurer Loquor AAC ?",
+      "answer": "Loquor AAC comprend un assistant guide en 12 etapes pour choisir la langue, le profil utilisateur, le mode de grille, la voix, l'apparence, la grammaire et un PIN optionnel. Une fois la configuration terminee, l'application importe automatiquement le pack de vocabulaire de base."
+    },
+    {
+      "question": "Est-ce adapte aux enfants ?",
+      "answer": "Oui. Loquor AAC comprend un theme enfant avec de grandes zones tactiles colorees, et le systeme de vocabulaire progressif introduit les mots progressivement pour limiter la surcharge cognitive."
+    },
+    {
+      "question": "Les therapeutes peuvent-ils gerer les reglages ?",
+      "answer": "Oui. Le panneau d'administration est protege par un PIN de 4 a 6 chiffres et permet de controler le vocabulaire, la grammaire, les modes de grille, les themes et les profils utilisateurs."
+    }
+  ],
+  "cta": {
+    "title": "Vous Avez Encore des Questions ?",
+    "subtitle": "Nous sommes la pour vous aider. Ecrivez-nous et nous vous repondrons rapidement.",
+    "buttonText": "Nous Contacter"
+  }
+}

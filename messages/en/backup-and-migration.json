@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Backup and Migration",
+    "description": "Understand Loquor AAC backup categories, restore controls, and migration playbooks."
+  },
+  "hero": {
+    "title": "Backup and Migration",
+    "description": "Loquor AAC backup workflows are selective and user initiated so teams can move data with control."
+  },
+  "categoriesTitle": "Backup Categories",
+  "categories": [
+    {
+      "id": "settings",
+      "name": "Settings",
+      "description": "Key-value app settings except admin PIN material."
+    },
+    {
+      "id": "categories",
+      "name": "Categories",
+      "description": "Symbol category definitions and metadata."
+    },
+    {
+      "id": "symbols",
+      "name": "Symbols",
+      "description": "Symbol records, translations, and embedded image references."
+    },
+    {
+      "id": "favourites",
+      "name": "Favourites",
+      "description": "Favourite symbol references for rapid access."
+    },
+    {
+      "id": "phrases",
+      "name": "Phrases",
+      "description": "Saved phrase entries and related metadata."
+    },
+    {
+      "id": "abbreviations",
+      "name": "Abbreviations",
+      "description": "Shortcode expansion rules by language."
+    },
+    {
+      "id": "activity-boards",
+      "name": "Activity Boards",
+      "description": "Board definitions and button placements."
+    },
+    {
+      "id": "core-fringe-layouts",
+      "name": "Core-Fringe Layouts",
+      "description": "Layouts, pages, and slot records."
+    },
+    {
+      "id": "vocabulary-packs",
+      "name": "Vocabulary Packs",
+      "description": "Installed pack metadata and linkage records."
+    }
+  ],
+  "recipesTitle": "Migration Recipes",
+  "recipes": [
+    {
+      "id": "device-replacement",
+      "title": "Device replacement",
+      "steps": [
+        "Export selective backup from the source device.",
+        "Install Loquor AAC on the new device and import the backup.",
+        "Validate grid mode, user profile, and voice settings."
+      ]
+    },
+    {
+      "id": "therapist-handoff",
+      "title": "Therapist handoff",
+      "steps": [
+        "Duplicate the active user profile for transfer safety.",
+        "Export categories, symbols, and layout assets.",
+        "Import into the receiving device and validate admin lock settings."
+      ]
+    },
+    {
+      "id": "pilot-rollout",
+      "title": "Pilot rollout",
+      "steps": [
+        "Create a baseline profile with the setup wizard.",
+        "Duplicate the profile for each learner and adjust only necessary settings.",
+        "Track progression states and export periodic backups."
+      ]
+    }
+  ]
+}

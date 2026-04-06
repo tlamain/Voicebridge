@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "Tableros de actividad",
+    "description": "Crea tableros de comunicacion tematicos para comidas, rutinas, sesiones de terapia y mas. Personaliza iconos, tamano de cuadricula, colores de fondo y botones directamente sobre el tablero."
+  },
+  "hero": {
+    "title": "Tableros de actividad",
+    "description": "Tableros de comunicacion tematicos adaptados a rutinas, entornos y actividades concretas. Crea un tablero para la hora de comer, otro para la escuela y cambia entre ellos con un toque."
+  },
+  "sections": [
+    {
+      "id": "board-management",
+      "badge": "Gestion de tableros",
+      "title": "Crear, copiar y organizar tableros",
+      "description": "Construye una biblioteca de tableros tematicos para cada situacion, desde las comidas hasta las sesiones de terapia. Duplica un tablero existente para ahorrar tiempo y luego ajustalo para un nuevo contexto.",
+      "items": [
+        "Explora todos los tableros del idioma actual con busqueda en vivo por titulo o descripcion",
+        "Crea un tablero nuevo con titulo, icono o foto, ancho de cuadricula (6-12 columnas) y color de fondo",
+        "Copia un tablero existente para duplicar su diseno y todos sus botones con un solo toque",
+        "Cada tablero muestra su icono, titulo, numero de columnas, numero de botones y origen del paquete de vocabulario",
+        "Los tableros son especificos por idioma: al cambiar el idioma de la app aparece otro conjunto"
+      ]
+    },
+    {
+      "id": "customisation",
+      "badge": "Personalizacion",
+      "title": "Iconos, colores y tamano de cuadricula",
+      "description": "Haz que cada tablero se reconozca al instante. Elige un emoji, una foto del dispositivo o una imagen de un paquete de vocabulario instalado, y despues selecciona un color de fondo y un ancho de cuadricula.",
+      "items": [
+        "Selector de icono o imagen con emoji, biblioteca de fotos del dispositivo y opciones de imagen de paquetes de vocabulario",
+        "La vista previa en vivo se actualiza al cambiar icono, color o tamano de cuadricula",
+        "Control por pasos para columnas: elige de 6 a 12 columnas; las filas se calculan automaticamente segun el tamano de pantalla",
+        "El color de fondo mediante muestras predefinidas da a cada tablero una identidad visual propia",
+        "Editor de dos columnas en tabletas para una edicion mas rapida; una sola columna en telefonos"
+      ]
+    },
+    {
+      "id": "grid-editing",
+      "badge": "Edicion de cuadricula",
+      "title": "Construir el contenido del tablero visualmente",
+      "description": "Abre cualquier tablero en modo de edicion de cuadricula para aniadir, mover y organizar botones directamente sobre la cuadricula. No hace falta salir del flujo de administracion: todo ocurre en el mismo lugar.",
+      "items": [
+        "Toca una celda vacia para abrir el selector de simbolos: elige un simbolo existente, busca o crea uno nuevo",
+        "Crea botones de enlace entre tableros y botones de navegacion como Inicio y Atras",
+        "Mueve un boton seleccionandolo y tocando otra celda; editalo con pulsacion larga",
+        "Edita los detalles del boton: etiqueta, texto hablado, emoji, imagen personalizada, categoria, color Fitzgerald y color de fondo",
+        "Cuando termines, toca Hecho: la app vuelve al editor del tablero para que sigas ajustando la configuracion"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Listo para crear tu primer tablero?",
+    "subtitle": "Descarga Loquor AAC y crea tableros de comunicacion adaptados a cada momento.",
+    "buttonText": "Probar Loquor AAC"
+  }
+}

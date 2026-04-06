@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Assistant de configuration",
+    "description": "Consultez le flux d'onboarding en 12 etapes utilise au premier lancement et lors de la creation de nouveaux utilisateurs dans Loquor AAC."
+  },
+  "hero": {
+    "title": "Assistant de configuration",
+    "description": "L'assistant de configuration standardise l'onboarding en guidant les equipes a travers les choix de langue, de mise en page, de grammaire, de voix et de securite."
+  },
+  "flowTitle": "Flux en 12 etapes",
+  "tableLabels": {
+    "step": "Etape",
+    "title": "Titre",
+    "purpose": "Objectif"
+  },
+  "steps": [
+    {
+      "id": "language-selection",
+      "step": "0",
+      "title": "Selection de la langue",
+      "purpose": "Definir le contexte linguistique avant toute autre decision. Le choix s'applique immediatement afin que toutes les etapes suivantes s'affichent dans la langue choisie."
+    },
+    {
+      "id": "user-profile",
+      "step": "1",
+      "title": "Profil utilisateur",
+      "purpose": "Recueillir nom, avatar, age, diagnostic et notes pour l'identite du profil et le contexte d'accompagnement."
+    },
+    {
+      "id": "input-mode",
+      "step": "2",
+      "title": "Mode de saisie",
+      "purpose": "Choisir Grille de symboles ou Texte uniquement. Si Texte uniquement est choisi, les etapes propres aux symboles sont retirees de l'assistant."
+    },
+    {
+      "id": "grid-mode",
+      "step": "3",
+      "title": "Mode de grille",
+      "purpose": "Choisir la structure de communication Standard, Tableaux d'activite ou Core-Fringe."
+    },
+    {
+      "id": "voice-provider",
+      "step": "4",
+      "title": "Fournisseur vocal",
+      "purpose": "Selectionner la voix de l'appareil (hors ligne) ou le fournisseur cloud optionnel ElevenLabs."
+    },
+    {
+      "id": "fitzgerald-key",
+      "step": "5",
+      "title": "Fitzgerald Key",
+      "purpose": "Activer ou desactiver les indices de categories grammaticales codes par couleur sur les pictogrammes."
+    },
+    {
+      "id": "progressive-vocabulary",
+      "step": "6",
+      "title": "Vocabulaire progressif",
+      "purpose": "Activer un modele de croissance par etapes du vocabulaire avec controles de preparation et ghost slots."
+    },
+    {
+      "id": "appearance",
+      "step": "7",
+      "title": "Apparence",
+      "purpose": "Configurer le theme (Clair, Sombre, Fort contraste, Enfantin) et la taille de police des symboles."
+    },
+    {
+      "id": "grid-layout",
+      "step": "8",
+      "title": "Mise en page de la grille",
+      "purpose": "Definir le nombre de colonnes (6-12) et les preferences d'affichage en mode paysage."
+    },
+    {
+      "id": "smart-grammar",
+      "step": "9",
+      "title": "Grammaire intelligente",
+      "purpose": "Configurer la conjugaison verbale automatique et le selecteur d'inflexion par appui long."
+    },
+    {
+      "id": "pin-setup",
+      "step": "10",
+      "title": "Configuration du PIN",
+      "purpose": "Proteger les operations d'administration avec un code PIN optionnel de 4 a 6 chiffres."
+    },
+    {
+      "id": "summary",
+      "step": "11",
+      "title": "Resume",
+      "purpose": "Revoir toutes les selections avant de finaliser la configuration et de lancer l'app."
+    }
+  ],
+  "outcomes": {
+    "title": "Resultats de mise en oeuvre",
+    "items": [
+      "Onboarding coherent pour les aidants et les cliniciens",
+      "Configuration reproductible pour les nouveaux profils et les profils dupliques",
+      "Mise en route plus rapide avec moins de passes de configuration manuelle",
+      "Le choix du mode de saisie adapte l'assistant aux flux symboles ou texte"
+    ]
+  }
+}

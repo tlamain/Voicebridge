@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "title": "Vocabulario progresivo",
+    "description": "Un sistema de aprendizaje de vocabulario de 6 niveles que crece con el usuario. La memoria motora se protege, las posiciones de las palabras nunca cambian y la progresion se basa en el uso real."
+  },
+  "hero": {
+    "badge": "Aprendizaje y crecimiento",
+    "title": "Vocabulario progresivo",
+    "description": "Un sistema estructurado de vocabulario de 6 niveles que crece con el comunicador. Las palabras se desbloquean por uso genuino, las posiciones nunca se mueven y cada nivel se apoya naturalmente en el anterior."
+  },
+  "heroScreenshot": {
+    "label": "Vocabulario progresivo - Ajustes",
+    "description": "Ajustes de vocabulario progresivo con controles de nivel y opciones de visualizacion"
+  },
+  "principle": {
+    "title": "El principio central",
+    "description": "Usa palabras para desbloquear mas palabras. Los estudiantes empiezan en el Nivel 1 con un pequeno conjunto de palabras esenciales. A medida que demuestran un uso constante, el sistema sigue el progreso y desbloquea el siguiente nivel sin mover ninguna palabra existente.",
+    "items": [
+      {
+        "id": "motor-memory",
+        "title": "Proteccion de la memoria motora",
+        "description": "Las palabras nunca cambian de posicion una vez introducidas. Un simbolo en la fila 2, columna 3 del Nivel 1 se mantiene ahi hasta el Nivel 6."
+      },
+      {
+        "id": "per-level",
+        "title": "Evaluacion por nivel",
+        "description": "Solo cuentan para avanzar las palabras introducidas en el nivel actual. Las palabras ya dominadas no inflan el progreso."
+      },
+      {
+        "id": "usage-driven",
+        "title": "Avance guiado por uso",
+        "description": "Las palabras solo se dominan despues de tocarlas el numero de veces requerido. El sistema mide uso real, no solo exposicion."
+      },
+      {
+        "id": "ghost-slots",
+        "title": "Ghost slots",
+        "description": "Las palabras bloqueadas se muestran como celdas fantasma no interactivas: visibles, pero no tocables. Los aprendices ven lo que viene despues sin sentirse saturados."
+      }
+    ]
+  },
+  "levels": {
+    "badge": "Sistema por niveles",
+    "title": "Seis niveles de crecimiento",
+    "subtitle": "Cada nivel tiene su propio umbral y requisito de dominio. Los umbrales bajan en niveles superiores porque los grupos de palabras son mayores.",
+    "items": [
+      {
+        "id": "level-1",
+        "label": "Nivel 1",
+        "description": "Palabras esenciales de alto poder",
+        "thresholdLabel": "umbral de dominio",
+        "tapsLabel": "toques para dominar"
+      },
+      {
+        "id": "level-2",
+        "label": "Nivel 2",
+        "description": "Inicio de comunicacion nuclear",
+        "thresholdLabel": "umbral de dominio",
+        "tapsLabel": "toques para dominar"
+      },
+      {
+        "id": "level-3",
+        "label": "Nivel 3",
+        "description": "Nucleo ampliado + conceptos basicos",
+        "thresholdLabel": "umbral de dominio",
+        "tapsLabel": "toques para dominar"
+      },
+      {
+        "id": "level-4",
+        "label": "Nivel 4",
+        "description": "Nucleo completo + vocabulario de personas",
+        "thresholdLabel": "umbral de dominio",
+        "tapsLabel": "toques para dominar"
+      },
+      {
+        "id": "level-5",
+        "label": "Nivel 5",
+        "description": "Sistema completo - techo de dominio",
+        "thresholdLabel": "umbral de dominio",
+        "tapsLabel": "techo de dominio"
+      },
+      {
+        "id": "level-6",
+        "label": "Nivel 6",
+        "description": "Vocabulario experto - desbloqueo manual del cuidador",
+        "thresholdLabel": "umbral de dominio",
+        "tapsLabel": "desbloqueo manual"
+      }
+    ],
+    "footnote": "El Nivel 5 es el techo de avance automatico, donde todas las palabras son visibles. El Nivel 6 no se consigue por uso; un cuidador debe desbloquearlo manualmente en los ajustes de administracion."
+  },
+  "readiness": {
+    "badge": "Feedback de preparacion",
+    "title": "El boton flotante de preparacion",
+    "description": "Un boton de accion flotante en la pantalla principal ofrece al comunicador feedback en vivo sobre el progreso. Su color y su insignia se actualizan automaticamente a medida que se usan palabras. Al tocarlo se abre el modal de comprobacion de preparacion con estadisticas completas.",
+    "fabStates": [
+      {
+        "id": "in-progress",
+        "label": "En progreso",
+        "description": "Progreso por debajo del 75%: el boton muestra en azul el porcentaje actual de avance."
+      },
+      {
+        "id": "almost-there",
+        "label": "Casi listo",
+        "description": "Progreso por encima del 75% pero aun no suficiente: el boton se vuelve naranja para indicar que el usuario esta cerca."
+      },
+      {
+        "id": "ready",
+        "label": "Listo",
+        "description": "Todas las palabras necesarias estan dominadas: el boton se vuelve verde y puede latir para invitar al avance."
+      }
+    ],
+    "modal": {
+      "badge": "Flujo de subida de nivel",
+      "title": "Modal de comprobacion de preparacion",
+      "description": "Cuando el usuario toca el boton flotante, el modal muestra un desglose detallado del progreso hacia el siguiente nivel.",
+      "items": [
+        {
+          "id": "progress-circle",
+          "label": "Circulo de progreso",
+          "detail": "Muestra el porcentaje hacia el siguiente nivel"
+        },
+        {
+          "id": "status-title",
+          "label": "Titulo de estado",
+          "detail": "Sigue asi, Vas progresando, Casi listo o Ya puedes avanzar"
+        },
+        {
+          "id": "stats-row",
+          "label": "Fila de estadisticas",
+          "detail": "Palabras usadas, palabras dominadas y total de toques"
+        },
+        {
+          "id": "recommendations",
+          "label": "Recomendaciones de practica",
+          "detail": "Hasta 12 palabras que aun necesitan mas toques"
+        },
+        {
+          "id": "unlock-button",
+          "label": "Boton de desbloqueo",
+          "detail": "Aparece solo cuando se alcanza el umbral"
+        }
+      ],
+      "screenshot": {
+        "label": "Modal de comprobacion de preparacion",
+        "description": "Controles administrativos de vocabulario progresivo"
+      }
+    }
+  },
+  "gridSizes": {
+    "badge": "Modo Core-Fringe",
+    "title": "Progresion independiente del tamano de cuadricula",
+    "description": "En el modo Core-Fringe, la progresion se limita a los simbolos colocados en el diseño activo de cuadricula. Cada tamano de cuadricula tiene su propio conjunto, por lo que cambiar de tamano cambia tambien el conjunto de progresion.",
+    "gridSizeLabel": "Tamano de cuadricula",
+    "totalConceptsLabel": "Conceptos totales",
+    "level6ConceptsLabel": "Conceptos de Nivel 6"
+  },
+  "adminControls": {
+    "badge": "Controles de administracion",
+    "title": "Configuracion del cuidador",
+    "subtitle": "Todos los ajustes de progresion se encuentran en la pantalla de Administracion, en Idioma -> Vocabulario progresivo. Cada ajuste es por usuario, por lo que distintos comunicadores pueden tener requisitos de dominio diferentes.",
+    "items": [
+      {
+        "id": "enable-progression",
+        "label": "Activar progresion",
+        "description": "Activa o desactiva el sistema completo. Si esta desactivado, todos los simbolos son visibles."
+      },
+      {
+        "id": "show-ghost-slots",
+        "label": "Mostrar ghost slots",
+        "description": "Muestra las posiciones bloqueadas como vistas previas atenuadas con iconos de candado."
+      },
+      {
+        "id": "mastery-threshold",
+        "label": "Umbral de dominio",
+        "description": "Ajusta el porcentaje de palabras que deben dominarse (50-100% en pasos de 5%)."
+      },
+      {
+        "id": "min-uses",
+        "label": "Usos minimos por palabra",
+        "description": "Ajusta cuantas veces debe tocarse cada palabra para considerarse dominada (1-10)."
+      },
+      {
+        "id": "expert-vocabulary",
+        "label": "Vocabulario experto",
+        "description": "Desbloquea las palabras del Nivel 6. Solo aparece a partir del Nivel 5 y sigue siendo una decision manual del cuidador."
+      },
+      {
+        "id": "reset-progression",
+        "label": "Restablecer progresion",
+        "description": "Reinicia todas las palabras al Nivel 1 y requiere confirmacion."
+      }
+    ]
+  },
+  "wordFinder": {
+    "badge": "Integracion con Word Finder",
+    "title": "Las palabras bloqueadas se marcan claramente",
+    "description": "Word Finder busca en todo el vocabulario pero muestra las palabras bloqueadas como no disponibles, cada una con la etiqueta 'Disponible en el Nivel X'. Tocar un resultado bloqueado no hace nada. Cuando el usuario sube de nivel, ese mismo resultado pasa a poder seleccionarse.",
+    "items": [
+      "Los resultados de busqueda se ordenan con las palabras desbloqueadas primero",
+      "Los resultados bloqueados muestran el nivel requerido, no solo un candado",
+      "La guia paso a paso no puede activar una celda bloqueada",
+      "Se actualiza al instante cuando se desbloquea un nuevo nivel"
+    ],
+    "screenshot": {
+      "label": "Word Finder con resultados bloqueados",
+      "description": "Palabras bloqueadas mostradas con la etiqueta 'Disponible en el Nivel X'"
+    }
+  },
+  "links": [
+    {
+      "id": "smart-grammar",
+      "label": "Motor de gramatica inteligente ->"
+    },
+    {
+      "id": "features",
+      "label": "Todas las funciones ->"
+    }
+  ],
+  "cta": {
+    "title": "Ayuda a dar forma a Loquor AAC",
+    "subtitle": "Descarga Loquor AAC y da a cada comunicador el vocabulario que merece.",
+    "buttonText": "Probar Loquor AAC"
+  }
+}

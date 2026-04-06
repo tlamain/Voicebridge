@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Copia de seguridad y migracion",
+    "description": "Comprende las categorias de respaldo, los controles de restauracion y los playbooks de migracion de Loquor AAC."
+  },
+  "hero": {
+    "title": "Copia de seguridad y migracion",
+    "description": "Los flujos de copia de seguridad de Loquor AAC son selectivos e iniciados por el usuario para que los equipos muevan datos con control."
+  },
+  "categoriesTitle": "Categorias de respaldo",
+  "categories": [
+    {
+      "id": "settings",
+      "name": "Ajustes",
+      "description": "Ajustes de la app en formato clave-valor, excepto el material del PIN administrativo."
+    },
+    {
+      "id": "categories",
+      "name": "Categorias",
+      "description": "Definiciones y metadatos de categorias de simbolos."
+    },
+    {
+      "id": "symbols",
+      "name": "Simbolos",
+      "description": "Registros de simbolos, traducciones y referencias a imagenes incrustadas."
+    },
+    {
+      "id": "favourites",
+      "name": "Favoritos",
+      "description": "Referencias a simbolos favoritos para acceso rapido."
+    },
+    {
+      "id": "phrases",
+      "name": "Frases",
+      "description": "Entradas de frases guardadas y metadatos relacionados."
+    },
+    {
+      "id": "abbreviations",
+      "name": "Abreviaturas",
+      "description": "Reglas de expansion de codigos cortos por idioma."
+    },
+    {
+      "id": "activity-boards",
+      "name": "Tableros de actividad",
+      "description": "Definiciones de tableros y ubicacion de botones."
+    },
+    {
+      "id": "core-fringe-layouts",
+      "name": "Disenios Core-Fringe",
+      "description": "Disenios, paginas y registros de ranuras."
+    },
+    {
+      "id": "vocabulary-packs",
+      "name": "Paquetes de vocabulario",
+      "description": "Metadatos de paquetes instalados y registros de vinculacion."
+    }
+  ],
+  "recipesTitle": "Recetas de migracion",
+  "recipes": [
+    {
+      "id": "device-replacement",
+      "title": "Sustitucion de dispositivo",
+      "steps": [
+        "Exporta una copia de seguridad selectiva desde el dispositivo de origen.",
+        "Instala Loquor AAC en el nuevo dispositivo e importa la copia.",
+        "Valida el modo de cuadricula, el perfil de usuario y los ajustes de voz."
+      ]
+    },
+    {
+      "id": "therapist-handoff",
+      "title": "Traspaso a terapeuta",
+      "steps": [
+        "Duplica el perfil de usuario activo para mayor seguridad en la transferencia.",
+        "Exporta categorias, simbolos y recursos de disenio.",
+        "Importa en el dispositivo receptor y valida los ajustes de bloqueo administrativo."
+      ]
+    },
+    {
+      "id": "pilot-rollout",
+      "title": "Despliegue piloto",
+      "steps": [
+        "Crea un perfil base con el asistente de configuracion.",
+        "Duplica el perfil para cada alumno y ajusta solo lo necesario.",
+        "Haz seguimiento de los estados de progresion y exporta copias periodicas."
+      ]
+    }
+  ]
+}

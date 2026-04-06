@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Sauvegarde et migration",
+    "description": "Comprenez les categories de sauvegarde, les controles de restauration et les playbooks de migration de Loquor AAC."
+  },
+  "hero": {
+    "title": "Sauvegarde et migration",
+    "description": "Les flux de sauvegarde de Loquor AAC sont selectifs et initiees par l'utilisateur afin que les equipes puissent deplacer les donnees avec controle."
+  },
+  "categoriesTitle": "Categories de sauvegarde",
+  "categories": [
+    {
+      "id": "settings",
+      "name": "Reglages",
+      "description": "Reglages cle-valeur de l'app, hors donnees du PIN administrateur."
+    },
+    {
+      "id": "categories",
+      "name": "Categories",
+      "description": "Definitions et metadonnees des categories de symboles."
+    },
+    {
+      "id": "symbols",
+      "name": "Symboles",
+      "description": "Enregistrements de symboles, traductions et references d'images integrees."
+    },
+    {
+      "id": "favourites",
+      "name": "Favoris",
+      "description": "References des symboles favoris pour un acces rapide."
+    },
+    {
+      "id": "phrases",
+      "name": "Phrases",
+      "description": "Entrees de phrases enregistrees et metadonnees associees."
+    },
+    {
+      "id": "abbreviations",
+      "name": "Abreviations",
+      "description": "Regles d'expansion des codes courts par langue."
+    },
+    {
+      "id": "activity-boards",
+      "name": "Tableaux d'activite",
+      "description": "Definitions des tableaux et positionnement des boutons."
+    },
+    {
+      "id": "core-fringe-layouts",
+      "name": "Mises en page Core-Fringe",
+      "description": "Mises en page, pages et enregistrements de slots."
+    },
+    {
+      "id": "vocabulary-packs",
+      "name": "Packs de vocabulaire",
+      "description": "Metadonnees des packs installes et enregistrements de liaison."
+    }
+  ],
+  "recipesTitle": "Recettes de migration",
+  "recipes": [
+    {
+      "id": "device-replacement",
+      "title": "Remplacement d'appareil",
+      "steps": [
+        "Exportez une sauvegarde selective depuis l'appareil source.",
+        "Installez Loquor AAC sur le nouvel appareil et importez la sauvegarde.",
+        "Verifiez le mode de grille, le profil utilisateur et les reglages vocaux."
+      ]
+    },
+    {
+      "id": "therapist-handoff",
+      "title": "Transmission au therapeute",
+      "steps": [
+        "Dupliquez le profil utilisateur actif pour securiser le transfert.",
+        "Exportez categories, symboles et ressources de mise en page.",
+        "Importez sur l'appareil destinataire et verifiez les reglages de verrouillage d'administration."
+      ]
+    },
+    {
+      "id": "pilot-rollout",
+      "title": "Deploiement pilote",
+      "steps": [
+        "Creez un profil de base avec l'assistant de configuration.",
+        "Dupliquez ce profil pour chaque apprenant et n'ajustez que les reglages necessaires.",
+        "Suivez les etats de progression et exportez des sauvegardes periodiques."
+      ]
+    }
+  ]
+}

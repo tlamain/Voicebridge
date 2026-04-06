@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "Tableaux d'activite",
+    "description": "Creez des tableaux de communication thematiques pour les repas, les routines, les seances de therapie et plus encore. Personnalisez les icones, la taille de grille, les couleurs de fond et les boutons directement sur le tableau."
+  },
+  "hero": {
+    "title": "Tableaux d'activite",
+    "description": "Des tableaux de communication thematiques adaptes a des routines, environnements et activites precis. Creez un tableau pour les repas, un autre pour l'ecole et passez de l'un a l'autre d'un geste."
+  },
+  "sections": [
+    {
+      "id": "board-management",
+      "badge": "Gestion des tableaux",
+      "title": "Creer, copier et organiser les tableaux",
+      "description": "Constituez une bibliotheque de tableaux thematiques pour chaque situation, des repas aux seances de therapie. Dupliquez un tableau existant pour gagner du temps, puis adaptez-le a un nouveau contexte.",
+      "items": [
+        "Parcourez tous les tableaux de la langue active avec recherche en direct par titre ou description",
+        "Creez un nouveau tableau avec un titre, une icone ou une photo, une largeur de grille (6-12 colonnes) et une couleur de fond",
+        "Copiez un tableau existant pour dupliquer sa mise en page et tous ses boutons en un seul geste",
+        "Chaque tableau affiche son icone, son titre, son nombre de colonnes, son nombre de boutons et l'origine du pack de vocabulaire",
+        "Les tableaux sont specifiques a chaque langue : changer la langue de l'app affiche un autre ensemble"
+      ]
+    },
+    {
+      "id": "customisation",
+      "badge": "Personnalisation",
+      "title": "Icones, couleurs et taille de grille",
+      "description": "Rendez chaque tableau immediatement reconnaissable. Choisissez un emoji, une photo de l'appareil ou une image issue d'un pack de vocabulaire installe, puis selectionnez une couleur de fond et une largeur de grille.",
+      "items": [
+        "Selecteur d'icone ou d'image avec emoji, phototheque de l'appareil et images issues des packs de vocabulaire",
+        "Apercu en direct mis a jour quand vous modifiez l'icone, la couleur ou la taille de grille",
+        "Controle pas a pas des colonnes : choisissez de 6 a 12 colonnes ; les lignes sont calculees automatiquement selon la taille de l'ecran",
+        "Des pastilles de couleur predefinies donnent a chaque tableau une identite visuelle distincte",
+        "Editeur en deux colonnes sur tablette pour aller plus vite ; une seule colonne sur telephone"
+      ]
+    },
+    {
+      "id": "grid-editing",
+      "badge": "Edition de la grille",
+      "title": "Construire le contenu du tableau visuellement",
+      "description": "Ouvrez n'importe quel tableau en mode edition de grille pour ajouter, deplacer et organiser les boutons directement dans la grille. Pas besoin de quitter le flux d'administration : tout se fait sur place.",
+      "items": [
+        "Touchez une cellule vide pour ouvrir le selecteur de symboles : choisissez un symbole existant, recherchez-en un ou creez-en un nouveau",
+        "Creez des boutons de lien vers d'autres tableaux et des boutons de navigation comme Accueil et Retour",
+        "Deplacez un bouton en le selectionnant puis en touchant une autre cellule ; modifiez-le par appui long",
+        "Modifiez les details du bouton : etiquette, texte prononce, emoji, image personnalisee, categorie, couleur Fitzgerald et couleur de fond",
+        "Quand vous avez termine, touchez Terminer : l'app revient a l'editeur du tableau pour poursuivre les reglages"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Pret a creer votre premier tableau ?",
+    "subtitle": "Telechargez Loquor AAC et creez des tableaux de communication adaptes a chaque moment.",
+    "buttonText": "Essayer Loquor AAC"
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "title": "Progressive Vocabulary",
+    "description": "A 6-level vocabulary learning system that grows with the user. Motor memory is protected, word positions never change, and progression is driven by real usage."
+  },
+  "hero": {
+    "badge": "Learning and Growth",
+    "title": "Progressive Vocabulary",
+    "description": "A structured 6-level vocabulary system that grows with the communicator. Words unlock through genuine use, positions never move, and each level builds naturally on the one before."
+  },
+  "heroScreenshot": {
+    "label": "Progressive Vocabulary - Settings",
+    "description": "Progressive vocabulary settings with level controls and display options"
+  },
+  "principle": {
+    "title": "The Core Principle",
+    "description": "Use words to unlock more words. Students start at Level 1 with a small set of essential words. As they demonstrate consistent use, the system tracks progress and unlocks the next level without moving any existing words.",
+    "items": [
+      {
+        "id": "motor-memory",
+        "title": "Motor Memory Protection",
+        "description": "Words never change position once introduced. A symbol at row 2, column 3 at Level 1 stays there through Level 6."
+      },
+      {
+        "id": "per-level",
+        "title": "Per-Level Evaluation",
+        "description": "Only words introduced at the current level count toward advancement. Previously mastered words do not inflate progress."
+      },
+      {
+        "id": "usage-driven",
+        "title": "Usage-Driven Advancement",
+        "description": "Words become mastered only after being tapped the required number of times. The system measures genuine use, not just exposure."
+      },
+      {
+        "id": "ghost-slots",
+        "title": "Ghost Slots",
+        "description": "Locked words render as non-interactive ghost cells - visible but not tappable. Learners see what is coming without being overwhelmed."
+      }
+    ]
+  },
+  "levels": {
+    "badge": "Level System",
+    "title": "Six Levels of Growth",
+    "subtitle": "Each level has its own threshold and mastery requirement. Thresholds decrease at higher levels because the word pools grow larger.",
+    "items": [
+      {
+        "id": "level-1",
+        "label": "Level 1",
+        "description": "Essential power words",
+        "thresholdLabel": "mastery threshold",
+        "tapsLabel": "taps to master"
+      },
+      {
+        "id": "level-2",
+        "label": "Level 2",
+        "description": "Core communication starter",
+        "thresholdLabel": "mastery threshold",
+        "tapsLabel": "taps to master"
+      },
+      {
+        "id": "level-3",
+        "label": "Level 3",
+        "description": "Expanded core + basics",
+        "thresholdLabel": "mastery threshold",
+        "tapsLabel": "taps to master"
+      },
+      {
+        "id": "level-4",
+        "label": "Level 4",
+        "description": "Full core + people vocabulary",
+        "thresholdLabel": "mastery threshold",
+        "tapsLabel": "taps to master"
+      },
+      {
+        "id": "level-5",
+        "label": "Level 5",
+        "description": "Complete system - mastery ceiling",
+        "thresholdLabel": "mastery threshold",
+        "tapsLabel": "mastery ceiling"
+      },
+      {
+        "id": "level-6",
+        "label": "Level 6",
+        "description": "Expert vocabulary - manual caregiver unlock",
+        "thresholdLabel": "mastery threshold",
+        "tapsLabel": "manual unlock"
+      }
+    ],
+    "footnote": "Level 5 is the automatic advancement ceiling, where all words are visible. Level 6 is not earned through usage; it is unlocked manually by a caregiver in admin settings."
+  },
+  "readiness": {
+    "badge": "Readiness Feedback",
+    "title": "The Floating Readiness Button",
+    "description": "A floating action button on the main screen gives the communicator live progress feedback. Its colour and badge update automatically as words are used. Tapping it opens the Readiness Check Modal with full stats.",
+    "fabStates": [
+      {
+        "id": "in-progress",
+        "label": "In Progress",
+        "description": "Progress below 75% - the FAB shows the current completion percentage in blue."
+      },
+      {
+        "id": "almost-there",
+        "label": "Almost There",
+        "description": "Progress above 75% but not yet ready - the FAB turns orange to signal that the user is close."
+      },
+      {
+        "id": "ready",
+        "label": "Ready!",
+        "description": "All required words are mastered - the FAB turns green and can pulse to invite advancement."
+      }
+    ],
+    "modal": {
+      "badge": "Level-Up Flow",
+      "title": "Readiness Check Modal",
+      "description": "When the user taps the FAB, the Readiness Check Modal shows a detailed breakdown of progress toward the next level.",
+      "items": [
+        {
+          "id": "progress-circle",
+          "label": "Progress circle",
+          "detail": "Shows percentage toward the next level"
+        },
+        {
+          "id": "status-title",
+          "label": "Status title",
+          "detail": "Keep Going, Making Progress, Almost There, or You're Ready"
+        },
+        {
+          "id": "stats-row",
+          "label": "Stats row",
+          "detail": "Words used, words mastered, and total taps"
+        },
+        {
+          "id": "recommendations",
+          "label": "Practice recommendations",
+          "detail": "Up to 12 words that still need more taps"
+        },
+        {
+          "id": "unlock-button",
+          "label": "Unlock button",
+          "detail": "Appears only when the threshold is met"
+        }
+      ],
+      "screenshot": {
+        "label": "Readiness Check Modal",
+        "description": "Progressive vocabulary admin controls"
+      }
+    }
+  },
+  "gridSizes": {
+    "badge": "Core-Fringe Mode",
+    "title": "Grid-Size Independent Progression",
+    "description": "In Core-Fringe mode, progression is scoped to the symbols placed on the active grid layout. Each grid size has its own pool, so switching grid sizes switches the progression pool independently.",
+    "gridSizeLabel": "Grid Size",
+    "totalConceptsLabel": "Total Concepts",
+    "level6ConceptsLabel": "Level 6 Concepts"
+  },
+  "adminControls": {
+    "badge": "Admin Controls",
+    "title": "Caregiver Configuration",
+    "subtitle": "All progression settings live in the Admin screen under Language -> Progressive Vocabulary. Each setting is per-user, so different communicators can have different mastery requirements.",
+    "items": [
+      {
+        "id": "enable-progression",
+        "label": "Enable Progression",
+        "description": "Toggle the entire system on or off. When off, all symbols are visible."
+      },
+      {
+        "id": "show-ghost-slots",
+        "label": "Show Ghost Slots",
+        "description": "Display locked word positions as ghosted previews with lock icons."
+      },
+      {
+        "id": "mastery-threshold",
+        "label": "Mastery Threshold",
+        "description": "Adjust the percentage of words that must be mastered (50-100% in 5% steps)."
+      },
+      {
+        "id": "min-uses",
+        "label": "Min Uses Per Word",
+        "description": "Adjust how many times each word must be tapped to count as mastered (1-10)."
+      },
+      {
+        "id": "expert-vocabulary",
+        "label": "Expert Vocabulary",
+        "description": "Unlocks Level 6 words. Only appears at Level 5 and above, and remains a manual caregiver decision."
+      },
+      {
+        "id": "reset-progression",
+        "label": "Reset Progression",
+        "description": "Resets all words back to Level 1 and requires confirmation."
+      }
+    ]
+  },
+  "wordFinder": {
+    "badge": "Word Finder Integration",
+    "title": "Locked Words Are Clearly Marked",
+    "description": "Word Finder searches the entire vocabulary but shows locked words as unavailable, each labelled with 'Available at Level X'. Tapping a locked result does nothing. Once the user advances, the same result becomes selectable.",
+    "items": [
+      "Search results are sorted with unlocked words first",
+      "Locked results show the required level, not just a padlock",
+      "Step-by-step guidance cannot activate a locked cell",
+      "Updates instantly when a new level is unlocked"
+    ],
+    "screenshot": {
+      "label": "Word Finder with Locked Results",
+      "description": "Locked words shown with 'Available at Level X' label"
+    }
+  },
+  "links": [
+    {
+      "id": "smart-grammar",
+      "label": "Smart Grammar Engine ->"
+    },
+    {
+      "id": "features",
+      "label": "All Features ->"
+    }
+  ],
+  "cta": {
+    "title": "Help Shape Loquor AAC",
+    "subtitle": "Download Loquor AAC and give every communicator the vocabulary they deserve.",
+    "buttonText": "Try Loquor AAC"
+  }
+}

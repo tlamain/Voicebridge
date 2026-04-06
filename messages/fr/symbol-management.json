@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Bibliotheque de symboles",
+    "description": "Gerez l'ensemble de votre vocabulaire de symboles : recherchez, filtrez, mettez en favoris, masquez et modifiez les symboles avec texte prononce, images personnalisees, champs de vocabulaire progressif et couleurs Fitzgerald."
+  },
+  "hero": {
+    "title": "Bibliotheque de symboles",
+    "description": "Tout votre vocabulaire au meme endroit. Recherchez, filtrez, mettez en favoris, masquez et modifiez chaque symbole, avec un controle total sur son apparence, sa voix et son comportement dans le systeme d'apprentissage progressif."
+  },
+  "sections": [
+    {
+      "id": "browse-find",
+      "badge": "Parcourir et trouver",
+      "title": "Recherche et filtres intelligents",
+      "description": "Retrouvez rapidement n'importe quel symbole de votre vocabulaire. La recherche classe intelligemment les resultats et les puces de filtre s'adaptent aux categories qui existent vraiment.",
+      "items": [
+        "Recherche par etiquette avec classement intelligent : correspondances exactes d'abord, puis commence par, puis contient",
+        "Puces de filtre : Tout, Favoris, plus une puce pour chaque categorie contenant actuellement des symboles",
+        "Chaque carte de symbole affiche l'image ou l'emoji, l'etiquette, la categorie et les boutons d'action rapide",
+        "Actions rapides sur chaque ligne : modifier (crayon), afficher ou masquer (oeil) et mettre en favori (etoile)",
+        "La liste des symboles se charge pour la langue active ; changez de langue pour voir un autre ensemble"
+      ]
+    },
+    {
+      "id": "quick-actions",
+      "badge": "Actions rapides",
+      "title": "Favoris et visibilite",
+      "description": "Ajoutez une etoile aux symboles importants pour y acceder vite, ou masquez ceux que vous ne souhaitez pas utiliser regulierement sans les supprimer.",
+      "items": [
+        "Touchez l'etoile pour marquer un symbole comme favori ; utilisez le filtre Favoris pour le retrouver instantanement",
+        "Touchez l'oeil pour masquer un symbole de l'usage courant tout en le conservant dans la base de donnees",
+        "Les symboles masques peuvent etre restaures a tout moment ; c'est plus sur que la suppression en cas d'hesitation",
+        "Les etats de favori et de visibilite peuvent aussi etre geres dans l'editeur complet du symbole"
+      ]
+    },
+    {
+      "id": "symbol-editor",
+      "badge": "Editeur de symboles",
+      "title": "Un controle total sur chaque symbole",
+      "description": "Creez de nouveaux symboles ou modifiez les existants grace a un editeur complet. Definissez l'etiquette, le texte prononce, l'image, la categorie et les metadonnees avancees, le tout au meme endroit.",
+      "items": [
+        "Etiquette : nom visible sur la carte du symbole et dans la grille",
+        "Texte prononce : ce que l'app dit a voix haute ; par defaut identique a l'etiquette si laisse vide",
+        "Emoji : representation textuelle pour une reconnaissance visuelle rapide",
+        "Image personnalisee : ajoutez une photo depuis la bibliotheque de l'appareil ou prenez-en une avec l'appareil photo",
+        "Categorie : chaque symbole doit appartenir a une categorie pour l'organisation et le filtrage",
+        "Langue : creez ou mettez a jour le symbole pour la langue active actuelle"
+      ]
+    },
+    {
+      "id": "advanced-features",
+      "badge": "Fonctions avancees",
+      "title": "Vocabulaire progressif et couleurs Fitzgerald",
+      "description": "Pour les cliniciens qui utilisent des progressions d'apprentissage structurees, chaque symbole contient des metadonnees qui controlent quand et comment il apparait dans le systeme de vocabulaire progressif.",
+      "items": [
+        "Position : definit l'emplacement du symbole dans la grille progressive pour conserver la coherence motrice",
+        "Zone motrice : regroupe les symboles par region physique de l'ecran pour soutenir la planification motrice",
+        "Type de mot : classe le symbole (nom, verbe, adjectif, etc.) pour la logique grammaticale et pedagogique",
+        "Niveau d'introduction : controle a quel niveau parmi les 6 niveaux progressifs le symbole devient disponible",
+        "Priorite d'usage et prerequis : ajustent le moment du deverrouillage et ce qui doit etre maitrise avant",
+        "Surcharge de categorie Fitzgerald : assigne explicitement un groupe de couleur grammaticale au lieu de s'appuyer sur le comportement automatique"
+      ]
+    },
+    {
+      "id": "safe-deletion",
+      "badge": "Suppression securisee",
+      "title": "Supprimer en connaissance de cause",
+      "description": "Lorsque vous supprimez un symbole, l'app verifie s'il est encore utilise dans des tableaux d'activite ou marque comme favori afin d'eviter de casser un tableau par erreur.",
+      "items": [
+        "Avant suppression, l'app avertit si le symbole est utilise dans des tableaux d'activite",
+        "Un avertissement distinct apparait si le symbole figure actuellement dans vos favoris",
+        "Si vous souhaitez seulement retirer un symbole de l'usage courant, le masquer est l'option la plus sure",
+        "La suppression est definitive ; utilisez-la seulement si vous n'avez vraiment plus besoin du symbole"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Prenez le controle de votre vocabulaire",
+    "subtitle": "Telechargez Loquor AAC et construisez la bibliotheque de symboles ideale pour chaque communicateur.",
+    "buttonText": "Essayer Loquor AAC"
+  }
+}

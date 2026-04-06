@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Veelgestelde Vragen",
+    "description": "Antwoorden op veelgestelde vragen over Loquor AAC - offline gebruik, privacy, talen, grammatica, stemmen en meer."
+  },
+  "hero": {
+    "title": "Veelgestelde Vragen",
+    "description": "Alles wat je moet weten over Loquor AAC en onze inzet voor toegankelijke communicatie."
+  },
+  "items": [
+    {
+      "question": "Werkt Loquor AAC offline?",
+      "answer": "Ja. De kern van de communicatie werkt volledig offline met de ingebouwde tekst-naar-spraak van je apparaat. Met internet kun je optioneel ElevenLabs AI-stemmen gebruiken voor natuurlijkere spraak. Valt de verbinding weg, dan schakelt de app automatisch terug naar apparaatstemmen."
+    },
+    {
+      "question": "Is mijn data prive?",
+      "answer": "Absoluut. Loquor AAC is ontworpen volgens local-first principes. Woordenschat, zinnen, symbolen, instellingen en communicatiegegevens blijven op je apparaat. We verzamelen geen gesprekshistorie, spraakopnames, locatiegegevens, apparaat-id's of analytics."
+    },
+    {
+      "question": "Welke talen worden ondersteund?",
+      "answer": "Loquor AAC ondersteunt Engels, Nederlands, Spaans en Frans volledig. Elke taal heeft eigen grammaticaregels, vervoegingstabellen en woordenschatpakketten. De interface en grammatica-engine passen zich automatisch aan wanneer je van taal wisselt."
+    },
+    {
+      "question": "Kan ik de woordenschat aanpassen?",
+      "answer": "Ja, uitgebreid. Je kunt aangepaste symbolen, zinnen, afkortingen en categorieen toevoegen, bewerken en verwijderen. Je kunt foto's of emoji's toewijzen, favorieten markeren en zichtbaarheid beheren. Woordenschatpakketten maken het mogelijk om kant-en-klare inhoud te installeren."
+    },
+    {
+      "question": "Wat is Progressieve Woordenschat?",
+      "answer": "Progressieve Woordenschat is een leersysteem met 6 niveaus dat nieuwe woorden geleidelijk vrijgeeft naarmate de gebruiker vaardiger wordt. De app volgt gebruiksstatistieken om te bepalen of iemand klaar is voor het volgende niveau."
+    },
+    {
+      "question": "Wat zijn Activiteitenborden?",
+      "answer": "Activiteitenborden zijn thematische communicatielay-outs voor specifieke contexten zoals eten, badkamer, sociale interacties of klassituaties. Elk bord heeft een eigen pictogram, titel, achtergrondkleur en raster met symbolen."
+    },
+    {
+      "question": "Kunnen meerdere gebruikers een apparaat delen?",
+      "answer": "Ja. Loquor AAC ondersteunt volledig gescheiden gebruikersprofielen. Elke gebruiker heeft een eigen database met aparte woordenschat, instellingen, thema's en voorkeuren. Je kunt eenvoudig wisselen en profielen dupliceren."
+    },
+    {
+      "question": "Ondersteunt het grammatica-hulp?",
+      "answer": "Ja, en dat is een van de sterkste functies van Loquor AAC. De Smart Grammar-engine vervoegt werkwoorden automatisch op basis van context en de Grammar Bar geeft kleurgecodeerde hulp voor lidwoorden, aanwijzende woorden, bezittelijke vormen en voorzetsels."
+    },
+    {
+      "question": "Welke stemmen zijn beschikbaar?",
+      "answer": "Er zijn twee soorten stemmen. Apparaatstemmen gebruiken de ingebouwde tekst-naar-spraak van je telefoon of tablet en werken offline. Premium ElevenLabs AI-stemmen klinken natuurlijker maar vereisen internet en een eigen API-sleutel."
+    },
+    {
+      "question": "Hoe stel ik Loquor AAC in?",
+      "answer": "Loquor AAC heeft een begeleide wizard met 12 stappen voor taalkeuze, gebruikersprofiel, rastermodus, steminstellingen, uiterlijk, grammatica en optionele PIN-beveiliging. Na de setup importeert de app automatisch het kernwoordenschatpakket."
+    },
+    {
+      "question": "Is het geschikt voor kinderen?",
+      "answer": "Ja. Loquor AAC bevat een kindvriendelijk thema met grote, kleurrijke tikdoelen en eenvoudige lay-outs. Het progressieve woordenschat-systeem voorkomt overbelasting door woorden geleidelijk te introduceren."
+    },
+    {
+      "question": "Kunnen therapeuten de instellingen beheren?",
+      "answer": "Ja. Het beheerpaneel is beschermd met een PIN van 4-6 cijfers en geeft therapeuten volledige controle over woordenschat, grammatica, rastermodi, thema's en gebruikersprofielen."
+    }
+  ],
+  "cta": {
+    "title": "Nog Vragen?",
+    "subtitle": "We helpen je graag. Neem contact op en we reageren zo snel mogelijk.",
+    "buttonText": "Neem Contact Op"
+  }
+}

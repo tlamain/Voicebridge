@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "title": "Core-Fringe-layouts",
+    "description": "Bouw communicatie-layouts met meerdere pagina's waarin veelgebruikte kernwoorden vast blijven staan terwijl fringe-woordenschat per context verandert. Beheer paginabomen, slots en navigatie automatisch."
+  },
+  "hero": {
+    "title": "Core-Fringe-layouts",
+    "description": "Een communicatiesysteem met meerdere pagina's waarin veelgebruikte kernwoorden op elke pagina zichtbaar blijven terwijl fringe-woordenschat zich aanpast aan het huidige onderwerp. De gouden standaard voor gestructureerde AAC."
+  },
+  "sections": [
+    {
+      "id": "layout-management",
+      "badge": "Layoutbeheer",
+      "title": "Layouts Maken en Activeren",
+      "description": "Elke taal kan meerdere core-fringe-layouts hebben, maar er is er steeds maar één actief. Maak een layout, kies de rastergrootte en activeer die wanneer alles klaarstaat.",
+      "items": [
+        "Bekijk alle layouts voor de huidige taal met live zoeken op naam",
+        "Maak een layout met een naam, pictogram of foto en rastergrootte (6-12 kolommen) - rijen worden automatisch berekend",
+        "Elke nieuwe layout start met een voor jou aangemaakte Home-hoofdpagina",
+        "Activeer een layout zodat die voor die taal in core-fringe-modus wordt gebruikt",
+        "Per taal kan slechts één layout actief zijn - de actieve layout wordt altijd bovenaan gesorteerd",
+        "Layoutregels tonen pictogram, naam, rastergrootte, aantal pagina's, aantal slots, herkomst van pakket en actieve status"
+      ]
+    },
+    {
+      "id": "page-hierarchy",
+      "badge": "Paginahiërarchie",
+      "title": "Paginabomen met Automatische Navigatie",
+      "description": "Organiseer woordenschat over een boom van pagina's. Wanneer je een subpagina toevoegt, plaatst de app automatisch een linktegel op de bovenliggende pagina en voegt Home- en Terug-knoppen toe op de nieuwe pagina.",
+      "items": [
+        "Elke layout start met een rootpagina Home - voeg daaronder subpagina's toe om onderwerpgebieden op te bouwen",
+        "Het maken van een subpagina plaatst automatisch een linktegel op de bovenliggende pagina (met waarschuwing als er geen vrije slot is)",
+        "Nieuwe subpagina's krijgen automatisch navigatieknoppen Home en Terug op hun eigen raster",
+        "Bewerk een paginatitel, pictogram of afbeelding - linktegels die ernaartoe verwijzen worden automatisch bijgewerkt",
+        "Kopieer een pagina om de structuur en slots te dupliceren en pas die daarna aan voor een nieuw onderwerp",
+        "Op tablets wordt de paginaboom inline in de editor getoond; op telefoons opent een aparte Paginabeheer-modal"
+      ]
+    },
+    {
+      "id": "core-vocabulary",
+      "badge": "Kernwoordenschat",
+      "title": "Vastgezette Kernslots versus Dynamische Fringe-slots",
+      "description": "De kern van het core-fringe-model: zet veelgebruikte woorden vast zodat ze op elke pagina zichtbaar blijven, terwijl fringe-slots veranderen wanneer de gebruiker tussen onderwerpen navigeert.",
+      "items": [
+        "Vastgezette (Core) slots blijven zichtbaar tijdens navigatie - ze vormen gedeelde kernwoordenschat in de layout",
+        "Dynamische (Fringe) slots veranderen wanneer de gebruiker tussen pagina's beweegt - bedoeld voor onderwerpgebonden woorden",
+        "De sloteditor bevat een schakelaar Vastgezet zodat je elk woord tot kernwoord kunt promoveren",
+        "Twee slottypen: symboolslots (woordenschat) en linkslots (paginanavigatie) - elk met eigen bewerkopties",
+        "Verplaats slots door één cel te selecteren en op een andere te tikken; verwissel door naar een bezette cel te verplaatsen"
+      ]
+    },
+    {
+      "id": "grid-editing",
+      "badge": "Rasterbewerking",
+      "title": "Layouts Rechtstreeks op het Raster Bewerken",
+      "description": "Open een layout of pagina in rasterbewerkingsmodus om cellen te vullen, slots te herschikken en navigatie te beheren - zonder de beheerflow te verlaten.",
+      "items": [
+        "Tik op een lege cel om de symboolkiezer te openen - voeg woordenschat, navigatieknoppen of paginalinks toe",
+        "Druk lang op een bestaand slot om label, gesproken tekst, afbeelding, kleur, vastgezette status of positie te bewerken",
+        "Met de paginakeuzer in de bewerkingsbalk spring je tijdens het bewerken tussen pagina's",
+        "Acties Pagina toevoegen en Pagina kopiëren zijn direct beschikbaar vanuit de bewerkingsbalk",
+        "Tik op Klaar om terug te keren naar de layouteditor - die wordt automatisch opnieuw geopend zodat je je plek niet verliest"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Ervaar Core-Fringe-communicatie",
+    "subtitle": "Probeer Loquor AAC en zie hoe vastgezette kernwoordenschat AAC verandert.",
+    "buttonText": "Probeer Loquor AAC"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "title": "Loquor AAC - Comunicacion para Cada Voz",
+    "description": "Loquor AAC ayuda a las personas con dificultades del habla mediante comunicacion basada en simbolos, gramatica inteligente y voces naturales, manteniendo los datos privados y en el dispositivo."
+  },
+  "hero": {
+    "badge": "Comunicacion Aumentativa y Alternativa",
+    "title": "Dale a Cada Voz el",
+    "highlightedTitle": "Poder de Ser Escuchada",
+    "description": "Loquor AAC ayuda a las personas con dificultades del habla mediante comunicacion basada en simbolos, gramatica inteligente y voces naturales, manteniendo los datos privados y en el dispositivo.",
+    "primaryButton": "Probar Loquor AAC",
+    "secondaryButton": "Ver Funciones",
+    "screenshot": {
+      "label": "Loquor AAC - Pantalla Principal",
+      "description": "Rejilla de simbolos con layout core-fringe y comunicacion con pictogramas"
+    }
+  },
+  "howItWorks": {
+    "badge": "Como Funciona",
+    "title": "Comunicacion en Tres Pasos Simples",
+    "subtitle": "Desde elegir simbolos hasta hablar en voz alta, Loquor AAC lo hace sencillo.",
+    "steps": [
+      {
+        "id": "choose",
+        "title": "Elige",
+        "description": "Toca simbolos pictograficos en una rejilla personalizable o escribe libremente con prediccion inteligente."
+      },
+      {
+        "id": "build",
+        "title": "Construye",
+        "description": "La gramatica inteligente conjuga verbos automaticamente, selecciona articulos y forma frases correctas."
+      },
+      {
+        "id": "speak",
+        "title": "Habla",
+        "description": "Pulsa hablar para escuchar tu mensaje con una voz natural, ya sea del dispositivo o de opciones AI premium."
+      }
+    ]
+  },
+  "features": {
+    "badge": "Funciones",
+    "title": "Todo lo que Necesitas para Comunicarte",
+    "subtitle": "Creado con clinicos, cuidadores y usuarios de AAC para reducir friccion y carga cognitiva.",
+    "cards": [
+      {
+        "id": "symbol-text",
+        "title": "Comunicacion con Simbolos y Texto",
+        "description": "Toca simbolos pictograficos o escribe libremente. Construye mensajes con una rejilla configurable de 6 a 12 columnas, una tira de mensaje y prediccion inteligente."
+      },
+      {
+        "id": "smart-grammar",
+        "title": "Motor de gramatica inteligente",
+        "description": "Conjugacion automatica, tiempo perfecto, aspecto continuo y reflexivos, todo resuelto en segundo plano. Compatible con neerlandes, ingles, frances y espanol."
+      },
+      {
+        "id": "ai-voices",
+        "title": "Voces AI Premium",
+        "description": "Voces gratuitas del dispositivo sin conexion o voces AI premium de ElevenLabs para un habla mas natural. El fallback automatico mantiene la comunicacion disponible."
+      },
+      {
+        "id": "progressive-vocabulary",
+        "title": "Vocabulario Progresivo",
+        "description": "Un sistema de 6 niveles que crece con el usuario. Las palabras se desbloquean segun el uso real, con ghost slots y un indicador de progreso."
+      },
+      {
+        "id": "grid-modes",
+        "title": "Tres Modos de Rejilla",
+        "description": "Rejilla estandar, tableros de actividad y Core-Fringe con vocabulario esencial fijado. La edicion se realiza directamente en la rejilla."
+      },
+      {
+        "id": "languages",
+        "title": "4 Idiomas, Todo Offline",
+        "description": "Ingles, neerlandes, frances y espanol, cada uno con sus reglas gramaticales, paquetes de vocabulario y opciones de voz. Todo funciona completamente sin conexion."
+      },
+      {
+        "id": "privacy",
+        "title": "Privacidad de Nivel Clinico",
+        "description": "Todos los datos permanecen en el dispositivo. Sin seguimiento ni subidas a la nube. El acceso con PIN protege la configuracion."
+      },
+      {
+        "id": "multi-user",
+        "title": "Perfiles Multiusuario",
+        "description": "Perfiles completamente aislados para cada comunicador con bases de datos y ajustes independientes. Cambiar, duplicar y configurar es sencillo."
+      }
+    ]
+  },
+  "grammarSpotlight": {
+    "badge": "Inteligencia de Idioma",
+    "title": "Gramatica Inteligente que se Adelanta",
+    "subtitle": "Toca un sujeto y un verbo, y Loquor se encarga del resto. Conjugacion contextual en cuatro idiomas.",
+    "examples": [
+      {
+        "id": "english",
+        "language": "Ingles",
+        "note": "Tercera persona singular -s"
+      },
+      {
+        "id": "dutch",
+        "language": "Neerlandes",
+        "note": "Tiempo perfecto con auxiliar"
+      },
+      {
+        "id": "french",
+        "language": "Frances",
+        "note": "Elision automatica antes de vocal"
+      },
+      {
+        "id": "spanish",
+        "language": "Espanol",
+        "note": "Conjugacion en presente"
+      }
+    ],
+    "linkLabel": "Explora el motor gramatical completo",
+    "screenshot": {
+      "label": "Motor de gramatica inteligente",
+      "description": "Conjugacion automatica con gramatica codificada por color"
+    }
+  },
+  "progressiveSpotlight": {
+    "badge": "Aprendizaje Progresivo",
+    "title": "Vocabulario que Crece con el Usuario",
+    "subtitle": "Las palabras se desbloquean segun el uso real. Las posiciones nunca cambian, por lo que la memoria motora se mantiene.",
+    "levels": [
+      {
+        "id": "level-1",
+        "level": "Nivel 1",
+        "label": "Palabras esenciales de poder - umbral del 80%",
+        "badge": "Completado"
+      },
+      {
+        "id": "level-2",
+        "level": "Nivel 2",
+        "label": "Inicio de comunicacion esencial - umbral del 75%",
+        "badge": "En progreso"
+      },
+      {
+        "id": "level-3",
+        "level": "Nivel 3",
+        "label": "Nucleo ampliado + basicos - umbral del 70%",
+        "badge": "Bloqueado"
+      },
+      {
+        "id": "level-4-6",
+        "level": "Nivel 4-6",
+        "label": "Vocabulario completo hasta nivel experto",
+        "badge": "Bloqueado"
+      }
+    ],
+    "linkLabel": "Descubre como funciona la progresion",
+    "screenshot": {
+      "label": "Vocabulario Progresivo",
+      "description": "Configuracion del vocabulario progresivo con controles de nivel"
+    }
+  },
+  "stats": {
+    "items": [
+      {
+        "id": "languages",
+        "label": "Idiomas"
+      },
+      {
+        "id": "grid-modes",
+        "label": "Modos de Rejilla"
+      },
+      {
+        "id": "levels",
+        "label": "Niveles de Vocabulario"
+      },
+      {
+        "id": "offline",
+        "label": "Disponible sin Conexion"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Listo para Probar Loquor AAC?",
+    "subtitle": "Descarga la app y ayuda a dar forma al futuro de la comunicacion accesible.",
+    "buttonText": "Probar Loquor AAC"
+  }
+}

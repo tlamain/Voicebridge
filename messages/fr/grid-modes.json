@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Modes de grille",
+    "description": "Comparez les modeles de communication Grille standard, Tableaux d'activite et Core-Fringe dans Loquor AAC."
+  },
+  "hero": {
+    "title": "Modes de grille",
+    "description": "Loquor AAC prend en charge trois modeles de grille afin que les equipes puissent adapter la structure de communication au contexte de l'utilisateur."
+  },
+  "modes": [
+    {
+      "id": "standard",
+      "name": "Grille standard",
+      "bestFor": "Navigation quotidienne par categories",
+      "summary": "Navigation classique dans les categories et sous-categories avec positions de symboles previsibles.",
+      "details": "Fonctionne avec les favoris et la progression tout en preservant les schemas moteurs fondamentaux.",
+      "includes": [
+        "Navigation par categories et sous-categories",
+        "Comportement des favoris",
+        "Couches de vocabulaire progressif",
+        "Cohérence de placement des symboles"
+      ]
+    },
+    {
+      "id": "schematic",
+      "name": "Tableaux d'activite",
+      "bestFor": "Communication liee au contexte et aux routines",
+      "summary": "Navigation basee sur des tableaux pour des routines comme les repas, l'ecole et les seances de therapie.",
+      "details": "Prend en charge les liens entre tableaux, les cellules de navigation fonctionnelles et les flux d'edition sur place.",
+      "includes": [
+        "Tableau de bord des tableaux et liens entre tableaux",
+        "Boutons fonctionnels Retour et Accueil",
+        "Interactions d'edition en temps reel",
+        "Metadonnees de tableau et gestion des icones"
+      ]
+    },
+    {
+      "id": "corefringe",
+      "name": "Core-Fringe",
+      "bestFor": "Communication frequente avec profondeur",
+      "summary": "Les mots nucleaires fixes restent stables pendant que les pages fringe changent selon le contexte.",
+      "details": "Inclut arborescences de pages, gestion des slots, verrouillage progressif du vocabulaire et gestion des mises en page selon la taille de grille.",
+      "includes": [
+        "Slots nucleaires fixes sur toutes les pages",
+        "Navigation imbriquee avec boutons automatiques Accueil/Retour",
+        "Flux d'edition des mises en page et des pages",
+        "Copies de mise en page specifiques a chaque taille de grille"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "core-fringe",
+      "title": "Grille Core-Fringe",
+      "label": "Grille Core-Fringe",
+      "description": "Mise en page core-fringe avec vocabulaire fixe"
+    },
+    {
+      "id": "activity-board",
+      "title": "Tableau d'activite",
+      "label": "Tableau d'activite",
+      "description": "Tableau d'activite avec boutons de categories thematiques"
+    },
+    {
+      "id": "text-mode",
+      "title": "Mode texte",
+      "label": "Mode texte",
+      "description": "Communication textuelle avec phrases et raccourcis"
+    }
+  ],
+  "guidance": {
+    "title": "Guide de selection",
+    "items": [
+      {
+        "id": "standard",
+        "title": "Commencez par la Grille standard",
+        "description": "La meilleure base pour un vocabulaire large et une navigation familiere par categories."
+      },
+      {
+        "id": "activity-boards",
+        "title": "Utilisez les Tableaux d'activite pour les routines",
+        "description": "Le meilleur choix lorsque la communication depend d'une tache ou d'un environnement precis.",
+        "linkLabel": "En savoir plus ->"
+      },
+      {
+        "id": "core-fringe",
+        "title": "Utilisez Core-Fringe pour plus de profondeur",
+        "description": "Le meilleur choix lorsque les mots nucleaires doivent rester fixes pendant que le vocabulaire fringe s'etend.",
+        "linkLabel": "En savoir plus ->"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Voor Wie",
+    "description": "Loquor AAC ondersteunt communicators van alle leeftijden, logopedisten, mantelzorgers en onderwijsprofessionals."
+  },
+  "hero": {
+    "title": "Gebouwd voor Mensen die",
+    "highlightedTitle": "het het Hardst Nodig Hebben",
+    "description": "Loquor AAC ondersteunt communicators van alle leeftijden en mogelijkheden, samen met de clinici, mantelzorgers en docenten die hen begeleiden."
+  },
+  "benefitsHeading": "Belangrijkste Voordelen",
+  "audiences": [
+    {
+      "id": "adults",
+      "title": "Volwassenen met Verworven Aandoeningen",
+      "conditions": "ALS, beroerte, afasie, TBI, dysartrie, apraxie",
+      "description": "Voor volwassenen die hun spraakvermogen verliezen of verloren hebben, biedt Loquor AAC snelle tekstinvoer, directe toegang tot veelgebruikte zinnen en hoogwaardige stemuitvoer.",
+      "highlights": [
+        "Snel typen met woordvoorspellingen",
+        "Aanpasbare zinnenbibliotheken voor dagelijkse routines",
+        "Premium AI-stemmen voor natuurlijke spraak",
+        "Offline betrouwbaarheid op elke locatie"
+      ]
+    },
+    {
+      "id": "children",
+      "title": "Kinderen en Preliterate Communicators",
+      "conditions": "Autisme, cerebrale parese, ontwikkelingsvertraging, verstandelijke beperking",
+      "description": "Symboolgebaseerde communicatie met stabiele, motorisch vriendelijke lay-outs die leren ondersteunen. Het progressieve woordenschat-systeem groeit mee met het kind.",
+      "highlights": [
+        "Pictogramsymbolen met vaste posities voor spiergeheugen",
+        "Progressieve woordenschat met 6 niveaus",
+        "Kindvriendelijk thema met grote, kleurrijke tikdoelen",
+        "Fitzgerald Key voor visueel grammaticaleren"
+      ]
+    },
+    {
+      "id": "slps",
+      "title": "Logopedisten",
+      "conditions": "Klinische praktijk, therapiesessies, diagnostiek",
+      "description": "Geavanceerde grammaticacontroles, drie assistentieniveaus en uitgebreide beheerfuncties geven logopedisten de precisie die ze nodig hebben.",
+      "highlights": [
+        "Drie assistentieniveaus voor verschillende therapiefasen",
+        "Grammar Bar met geslachtsbewuste lidwoordkeuze",
+        "Statistieken voor voortgang",
+        "Woordenschatpakketten voor gestructureerde taalinterventie"
+      ]
+    },
+    {
+      "id": "caregivers",
+      "title": "Mantelzorgers en Familieleden",
+      "conditions": "Ouders, verzorgers, thuisondersteuning",
+      "description": "De begeleide wizard met 12 stappen maakt starten eenvoudig, zonder technische voorkennis. PIN-beveiliging houdt instellingen veilig en profielbeheer ondersteunt meerdere communicators op een apparaat.",
+      "highlights": [
+        "Wizard met 12 stappen zonder technische drempel",
+        "PIN-beveiligd beheer tegen onbedoelde wijzigingen",
+        "Meerdere gebruikersprofielen op een apparaat",
+        "Back-up en herstel voor bescherming van aanpassingen"
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Onderwijsomgevingen",
+      "conditions": "Scholen, speciaal onderwijs, klasgebruik",
+      "description": "Het progressieve woordenschat-systeem en de visuele leermiddelen van Fitzgerald Key maken Loquor AAC geschikt voor onderwijscontexten. Activiteitenborden kunnen worden afgestemd op de klas.",
+      "highlights": [
+        "Progressieve woordenschat voor gestructureerde leerlijnen",
+        "Fitzgerald Key maakt grammatica visueel",
+        "Activiteitenborden voor klassituaties",
+        "Hoog contrast en toegankelijk ontwerp voor alle leerlingen"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Ontdek Hoe Loquor AAC Kan Helpen",
+    "subtitle": "Of je nu communicator, mantelzorger of clinicus bent, we horen graag van je.",
+    "buttonText": "Neem Contact Op"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Admin Page",
+    "description": "Review Loquor AAC admin surfaces for settings, content, language, and user profile workflows."
+  },
+  "hero": {
+    "title": "Admin for Clinicians",
+    "description": "Admin mode in Loquor AAC is designed for structured operations across settings, content, language, and multi-user management."
+  },
+  "areas": [
+    {
+      "id": "settings",
+      "area": "Settings",
+      "purpose": "Configure behaviour and safety controls for communication sessions.",
+      "capabilities": [
+        "Security and PIN controls",
+        "Voice provider, pitch, rate, and ElevenLabs configuration",
+        "Input mode selection (Symbol Grid or Text-only)",
+        "Appearance themes, grid size, and font preferences",
+        "Grammar, Fitzgerald Key, share button, and Word Finder controls",
+        "Backup and restore operations"
+      ]
+    },
+    {
+      "id": "content",
+      "area": "Content",
+      "purpose": "Manage the communication assets users interact with daily.",
+      "capabilities": [
+        "Symbols, phrases, and abbreviations with full CRUD",
+        "Irregular noun rules (singular/plural, uncountable)",
+        "Irregular verb exception forms per language",
+        "Activity board management and editing",
+        "Core-fringe layout, page tree, and slot management"
+      ]
+    },
+    {
+      "id": "language",
+      "area": "Language",
+      "purpose": "Handle progression and vocabulary packaging by language context.",
+      "capabilities": [
+        "Progressive vocabulary controls and readiness checks",
+        "Mastery threshold and min-uses-per-word settings",
+        "Expert Vocabulary toggle for Level 6 words",
+        "Vocabulary pack install, reinstall, and grammar data sync",
+        "Language-specific content views and maintenance actions"
+      ]
+    },
+    {
+      "id": "users",
+      "area": "Users",
+      "purpose": "Create and maintain isolated communication profiles for multiple people.",
+      "capabilities": [
+        "Standard add and guided add with 12-step setup wizard",
+        "Duplicate active user and switch profile flows",
+        "Profile metadata editing (name, photo, age, diagnosis, notes)",
+        "Delete restrictions for active and last-user safety"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "pin-protection",
+      "title": "PIN Protection",
+      "label": "PIN Protection",
+      "description": "PIN-protected admin access for security"
+    },
+    {
+      "id": "user-profiles",
+      "title": "User Profiles",
+      "label": "Multi-User Profiles",
+      "description": "Multiple isolated user profiles"
+    },
+    {
+      "id": "appearance-settings",
+      "title": "Appearance Settings",
+      "label": "Customize Appearance",
+      "description": "Theme, grid size, and display settings"
+    }
+  ],
+  "notes": {
+    "title": "Operational Notes",
+    "items": [
+      "PIN protection can gate entry and edit workflows.",
+      "Language context influences content lists and pack operations.",
+      "User profiles are isolated for cleaner care-team handoffs.",
+      "Backup and restore actions are explicit and user initiated."
+    ]
+  },
+  "links": {
+    "title": "Explore Content Management",
+    "description": "Dive deeper into the tools clinicians use to manage communication content.",
+    "items": [
+      {
+        "id": "symbol-management",
+        "label": "Symbol Library ->"
+      },
+      {
+        "id": "activity-boards",
+        "label": "Activity Boards ->"
+      },
+      {
+        "id": "core-fringe",
+        "label": "Core-Fringe Layouts ->"
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "Pagina de administracion",
+    "description": "Revisa las superficies de administracion de Loquor AAC para ajustes, contenido, idioma y flujos de perfiles de usuario."
+  },
+  "hero": {
+    "title": "Administracion para clinicos",
+    "description": "El modo de administracion de Loquor AAC esta disenado para operaciones estructuradas en ajustes, contenido, idioma y gestion multiusuario."
+  },
+  "areas": [
+    {
+      "id": "settings",
+      "area": "Ajustes",
+      "purpose": "Configura el comportamiento y los controles de seguridad para las sesiones de comunicacion.",
+      "capabilities": [
+        "Seguridad y controles de PIN",
+        "Proveedor de voz, tono, velocidad y configuracion de ElevenLabs",
+        "Seleccion del modo de entrada (cuadricula de simbolos o solo texto)",
+        "Temas visuales, tamano de cuadricula y preferencias de fuente",
+        "Controles de gramatica, Fitzgerald Key, boton de compartir y Word Finder",
+        "Operaciones de copia de seguridad y restauracion"
+      ]
+    },
+    {
+      "id": "content",
+      "area": "Contenido",
+      "purpose": "Gestiona los recursos de comunicacion con los que interactuan los usuarios cada dia.",
+      "capabilities": [
+        "CRUD completo para simbolos, frases y abreviaturas",
+        "Reglas para sustantivos irregulares (singular/plural, incontables)",
+        "Formas de excepcion para verbos irregulares por idioma",
+        "Gestion y edicion de tableros de actividad",
+        "Gestion de disenios core-fringe, arboles de paginas y ranuras"
+      ]
+    },
+    {
+      "id": "language",
+      "area": "Idioma",
+      "purpose": "Gestiona la progresion y los paquetes de vocabulario segun el contexto del idioma.",
+      "capabilities": [
+        "Controles de vocabulario progresivo y comprobaciones de preparacion",
+        "Ajustes de umbral de dominio y usos minimos por palabra",
+        "Interruptor de Vocabulario Experto para palabras del Nivel 6",
+        "Instalacion, reinstalacion y sincronizacion de datos gramaticales de paquetes",
+        "Vistas de contenido especificas por idioma y acciones de mantenimiento"
+      ]
+    },
+    {
+      "id": "users",
+      "area": "Usuarios",
+      "purpose": "Crea y mantiene perfiles de comunicacion aislados para varias personas.",
+      "capabilities": [
+        "Alta estandar y alta guiada con el asistente de configuracion de 12 pasos",
+        "Duplicar usuario activo y flujos de cambio de perfil",
+        "Edicion de metadatos del perfil (nombre, foto, edad, diagnostico, notas)",
+        "Restricciones de eliminacion para proteger al usuario activo y al ultimo usuario"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "pin-protection",
+      "title": "Proteccion por PIN",
+      "label": "Proteccion por PIN",
+      "description": "Acceso administrativo protegido por PIN"
+    },
+    {
+      "id": "user-profiles",
+      "title": "Perfiles de usuario",
+      "label": "Perfiles multiusuario",
+      "description": "Multiples perfiles de usuario aislados"
+    },
+    {
+      "id": "appearance-settings",
+      "title": "Ajustes de apariencia",
+      "label": "Personalizar apariencia",
+      "description": "Tema, tamano de cuadricula y ajustes de visualizacion"
+    }
+  ],
+  "notes": {
+    "title": "Notas operativas",
+    "items": [
+      "La proteccion por PIN puede limitar el acceso y los flujos de edicion.",
+      "El contexto del idioma influye en las listas de contenido y las operaciones con paquetes.",
+      "Los perfiles de usuario estan aislados para facilitar el relevo entre equipos de apoyo.",
+      "Las acciones de copia de seguridad y restauracion son explicitas e iniciadas por el usuario."
+    ]
+  },
+  "links": {
+    "title": "Explora la gestion de contenido",
+    "description": "Profundiza en las herramientas que usan los clinicos para gestionar el contenido de comunicacion.",
+    "items": [
+      {
+        "id": "symbol-management",
+        "label": "Biblioteca de simbolos ->"
+      },
+      {
+        "id": "activity-boards",
+        "label": "Tableros de actividad ->"
+      },
+      {
+        "id": "core-fringe",
+        "label": "Disenios Core-Fringe ->"
+      }
+    ]
+  }
+}

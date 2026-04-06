@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Modos de cuadricula",
+    "description": "Compara los modelos de comunicacion Cuadricula estandar, Tableros de actividad y Core-Fringe en Loquor AAC."
+  },
+  "hero": {
+    "title": "Modos de cuadricula",
+    "description": "Loquor AAC admite tres modelos de cuadricula para que los equipos ajusten la estructura comunicativa al contexto del usuario."
+  },
+  "modes": [
+    {
+      "id": "standard",
+      "name": "Cuadricula estandar",
+      "bestFor": "Navegacion diaria por categorias",
+      "summary": "Exploracion clasica de categorias y subcategorias con ubicaciones de simbolos predecibles.",
+      "details": "Funciona con favoritos y progresion, preservando los patrones centrales de planificacion motora.",
+      "includes": [
+        "Navegacion por categorias y subcategorias",
+        "Comportamiento de favoritos",
+        "Capas de vocabulario progresivo",
+        "Consistencia en la colocacion de simbolos"
+      ]
+    },
+    {
+      "id": "schematic",
+      "name": "Tableros de actividad",
+      "bestFor": "Comunicacion basada en contexto y rutinas",
+      "summary": "Navegacion basada en tableros para rutinas como comidas, escuela y sesiones de terapia.",
+      "details": "Admite enlaces entre tableros, celdas funcionales de navegacion y flujos de edicion en el propio tablero.",
+      "includes": [
+        "Panel de tableros y enlaces entre tableros",
+        "Botones funcionales de Atras e Inicio",
+        "Interacciones de edicion en tiempo real",
+        "Metadatos del tablero y gestion de iconos"
+      ]
+    },
+    {
+      "id": "corefringe",
+      "name": "Core-Fringe",
+      "bestFor": "Comunicacion frecuente con profundidad",
+      "summary": "Las palabras nucleares fijadas permanecen estables mientras las paginas fringe cambian segun el contexto.",
+      "details": "Incluye arboles de paginas, gestion de ranuras, bloqueo progresivo de vocabulario y manejo de disenos especificos por tamano de cuadricula.",
+      "includes": [
+        "Ranuras nucleares fijadas en todas las paginas",
+        "Navegacion anidada con botones automáticos de Inicio/Atras",
+        "Flujos de edicion de disenos y paginas",
+        "Copias de diseno especificas por tamano de cuadricula"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "core-fringe",
+      "title": "Cuadricula Core-Fringe",
+      "label": "Cuadricula Core-Fringe",
+      "description": "Diseno core-fringe con vocabulario fijado"
+    },
+    {
+      "id": "activity-board",
+      "title": "Tablero de actividad",
+      "label": "Tablero de actividad",
+      "description": "Tablero de actividad con botones tematicos por categoria"
+    },
+    {
+      "id": "text-mode",
+      "title": "Modo texto",
+      "label": "Modo texto",
+      "description": "Comunicacion por texto con frases y atajos"
+    }
+  ],
+  "guidance": {
+    "title": "Guia de seleccion",
+    "items": [
+      {
+        "id": "standard",
+        "title": "Empieza con Cuadricula estandar",
+        "description": "La mejor base para un vocabulario amplio y una navegacion por categorias familiar."
+      },
+      {
+        "id": "activity-boards",
+        "title": "Usa Tableros de actividad para rutinas",
+        "description": "La mejor opcion cuando la comunicacion depende de una tarea o entorno concreto.",
+        "linkLabel": "Mas informacion ->"
+      },
+      {
+        "id": "core-fringe",
+        "title": "Usa Core-Fringe para profundidad",
+        "description": "La mejor opcion cuando las palabras nucleares deben permanecer fijas mientras el vocabulario fringe se expande.",
+        "linkLabel": "Mas informacion ->"
+      }
+    ]
+  }
+}

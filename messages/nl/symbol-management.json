@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Symboolbibliotheek",
+    "description": "Beheer je volledige symboolwoordenschat - zoek, filter, markeer als favoriet, verberg en bewerk symbolen met gesproken tekst, aangepaste afbeeldingen, velden voor progressieve woordenschat en Fitzgerald-kleuren."
+  },
+  "hero": {
+    "title": "Symboolbibliotheek",
+    "description": "Je volledige woordenschat op één plek. Zoek, filter, markeer als favoriet, verberg en bewerk elk symbool - met volledige controle over hoe het eruitziet, klinkt en zich gedraagt in het progressieve leersysteem."
+  },
+  "sections": [
+    {
+      "id": "browse-find",
+      "badge": "Bladeren en Zoeken",
+      "title": "Slim Zoeken en Filteren",
+      "description": "Vind snel elk symbool in je woordenschat. De zoekfunctie rangschikt resultaten intelligent en dynamische filterchips passen zich aan de categorieën aan die echt bestaan.",
+      "items": [
+        "Zoek op label met slimme rangschikking - exacte treffers eerst, daarna begint-met en daarna bevat",
+        "Filterchips: Alles, Favorieten, plus één chip per categorie die momenteel symbolen bevat",
+        "Elke symboolkaart toont afbeelding of emoji, label, categorie en knoppen voor snelle acties",
+        "Snelle acties op elke rij: bewerken (potlood), tonen of verbergen (oog) en favoriet maken (ster)",
+        "De symboollijst wordt geladen voor de actieve taal - wissel van taal om een andere set te zien"
+      ]
+    },
+    {
+      "id": "quick-actions",
+      "badge": "Snelle Acties",
+      "title": "Favorieten en Zichtbaarheid",
+      "description": "Markeer belangrijke symbolen met een ster voor snelle toegang, of verberg symbolen die je niet in regulier gebruik wilt zonder ze te verwijderen.",
+      "items": [
+        "Tik op de sterknop om een symbool als favoriet te markeren - gebruik de filter Favorieten om ze direct terug te vinden",
+        "Tik op de oogknop om een symbool uit regulier gebruik te verbergen terwijl het in de database blijft staan",
+        "Verborgen symbolen kunnen altijd worden hersteld - veiliger dan verwijderen wanneer je twijfelt",
+        "Favorieten- en zichtbaarheidsstatus kunnen ook in de volledige symbooleditor worden ingesteld"
+      ]
+    },
+    {
+      "id": "symbol-editor",
+      "badge": "Symbooleditor",
+      "title": "Volledige Controle over Elk Symbool",
+      "description": "Maak nieuwe symbolen of bewerk bestaande met een uitgebreide editor. Stel label, gesproken tekst, afbeelding, categorie en geavanceerde metadata in - alles op één plek.",
+      "items": [
+        "Label - de zichtbare naam op de symboolkaart en in het raster",
+        "Gesproken tekst - wat de app hardop uitspreekt; standaard gelijk aan het label als dit leeg blijft",
+        "Emoji - een op tekst gebaseerde emojiweergave voor snelle visuele herkenning",
+        "Aangepaste afbeelding - voeg een foto toe uit de bibliotheek van het apparaat of maak er een met de camera",
+        "Categorie - elk symbool moet voor organisatie en filtering bij een categorie horen",
+        "Taal - maak het symbool aan of werk het bij voor de huidige actieve taal"
+      ]
+    },
+    {
+      "id": "advanced-features",
+      "badge": "Geavanceerde Functies",
+      "title": "Progressieve Woordenschat en Fitzgerald-kleuren",
+      "description": "Voor clinici die met gestructureerde leerprogressies werken, draagt elk symbool metadata die bepaalt wanneer en hoe het in het systeem voor progressieve woordenschat verschijnt.",
+      "items": [
+        "Positie - bepaalt de plaatsing van het symbool in het progressieve raster voor consistente motorische planning",
+        "Motorische zone - groepeert symbolen per fysieke schermregio ter ondersteuning van motorische planning",
+        "Woordtype - classificeert het symbool (zelfstandig naamwoord, werkwoord, bijvoeglijk naamwoord en meer) voor grammatica en leerlijnlogica",
+        "Introductieniveau - bepaalt op welk van de 6 progressieve niveaus het symbool beschikbaar wordt",
+        "Gebruiksprioriteit en voorwaarden - verfijn wanneer een symbool wordt ontgrendeld en wat eerst beheerst moet zijn",
+        "Fitzgerald-categorie-override - wijs expliciet een grammaticakleur toe in plaats van automatisch gedrag te gebruiken"
+      ]
+    },
+    {
+      "id": "safe-deletion",
+      "badge": "Veilig Verwijderen",
+      "title": "Verwijderen met Bewustzijn",
+      "description": "Wanneer je een symbool verwijdert, controleert de app of het nog op activiteitsborden wordt gebruikt of als favoriet is gemarkeerd, zodat je nooit per ongeluk een bord kapotmaakt.",
+      "items": [
+        "Voor verwijdering waarschuwt de app als het symbool op activiteitsborden wordt gebruikt",
+        "Er verschijnt een aparte waarschuwing als het symbool momenteel in je favorietenlijst staat",
+        "Als je een symbool alleen uit regulier gebruik wilt halen, is verbergen de veiligere optie",
+        "Verwijderen is permanent - gebruik dit alleen wanneer je het symbool echt niet meer nodig hebt"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Neem Controle over je Woordenschat",
+    "subtitle": "Download Loquor AAC en bouw de perfecte symboolbibliotheek voor elke communicator.",
+    "buttonText": "Probeer Loquor AAC"
+  }
+}

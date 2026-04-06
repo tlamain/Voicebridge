@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Para Quien Es",
+    "description": "Loquor AAC da soporte a comunicadores de todas las edades, logopedas, cuidadores y educadores."
+  },
+  "hero": {
+    "title": "Creado para Personas que",
+    "highlightedTitle": "Mas lo Necesitan",
+    "description": "Loquor AAC da soporte a comunicadores de todas las edades y capacidades, junto con los clinicos, cuidadores y educadores que les acompanan."
+  },
+  "benefitsHeading": "Beneficios Clave",
+  "audiences": [
+    {
+      "id": "adults",
+      "title": "Adultos con Condiciones Adquiridas",
+      "conditions": "ELA, ictus, afasia, TCE, disartria, apraxia",
+      "description": "Para adultos que han perdido o estan perdiendo la capacidad de hablar, Loquor AAC ofrece escritura eficiente, acceso rapido a frases habituales y voces de alta calidad.",
+      "highlights": [
+        "Escritura rapida con prediccion",
+        "Bibliotecas de frases personalizables",
+        "Voces AI premium",
+        "Fiabilidad sin conexion"
+      ]
+    },
+    {
+      "id": "children",
+      "title": "Ninos y Comunicadores Prelectores",
+      "conditions": "Autismo, paralisis cerebral, retrasos del desarrollo, discapacidad intelectual",
+      "description": "Comunicacion basada en simbolos con layouts estables y aptos para la planificacion motora. El vocabulario progresivo crece con el nino.",
+      "highlights": [
+        "Pictogramas con posiciones estables",
+        "Vocabulario progresivo de 6 niveles",
+        "Tema infantil con objetivos tactiles grandes",
+        "Fitzgerald Key para aprender gramatica visualmente"
+      ]
+    },
+    {
+      "id": "slps",
+      "title": "Logopedas",
+      "conditions": "Practica clinica, terapia, evaluacion",
+      "description": "Controles gramaticales avanzados, tres niveles de ayuda y herramientas administrativas completas dan a los logopedas la precision que necesitan.",
+      "highlights": [
+        "Tres niveles de ayuda",
+        "Grammar Bar con seleccion segun genero",
+        "Panel de estadisticas de vocabulario",
+        "Paquetes de vocabulario para intervencion estructurada"
+      ]
+    },
+    {
+      "id": "caregivers",
+      "title": "Cuidadores y Familiares",
+      "conditions": "Padres, tutores, apoyo diario",
+      "description": "El asistente guiado de 12 pasos facilita el inicio sin conocimientos tecnicos. La proteccion por PIN mantiene la configuracion segura.",
+      "highlights": [
+        "Asistente guiado de 12 pasos",
+        "PIN administrativo",
+        "Perfiles multiusuario",
+        "Copia de seguridad y restauracion"
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Entornos Educativos",
+      "conditions": "Escuelas, educacion especial, uso en aula",
+      "description": "El vocabulario progresivo y las ayudas visuales de Fitzgerald Key hacen que Loquor AAC encaje bien en contextos educativos.",
+      "highlights": [
+        "Vocabulario progresivo para itinerarios de aprendizaje",
+        "Fitzgerald Key ensena gramatica visualmente",
+        "Tableros de actividad para el aula",
+        "Diseno accesible y de alto contraste"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Descubre Como Puede Ayudar Loquor AAC",
+    "subtitle": "Tanto si eres comunicador, cuidador o clinico, nos encantara saber de ti.",
+    "buttonText": "Ponerte en Contacto"
+  }
+}

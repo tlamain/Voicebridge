@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Politica de privacidad",
+    "description": "Lee como Loquor AAC gestiona los datos locales, los servicios de voz opcionales, las copias de seguridad y los ajustes de privacidad controlados por el usuario."
+  },
+  "title": "Politica de privacidad - Loquor AAC",
+  "effectiveDateLabel": "Fecha de entrada en vigor",
+  "effectiveDate": "5 de enero de 2026",
+  "intro": "Loquor AAC (\"la App\") esta disenada para ofrecer a los usuarios una voz de comunicacion fiable mediante texto, simbolos y sintesis de voz opcional. Tu privacidad es central en nuestro diseno.",
+  "sections": [
+    {
+      "id": "data-we-collect",
+      "title": "1. Datos que recopilamos",
+      "paragraphs": [
+        "Loquor AAC no recopila automaticamente datos personales. Todo el vocabulario, las frases, los simbolos y los ajustes se almacenan solo localmente en tu dispositivo.",
+        "La App puede almacenar localmente lo siguiente si eliges usarlo:"
+      ],
+      "items": [
+        "Palabras, frases y abreviaturas personalizadas",
+        "Fotos o simbolos cargados que asignas a botones",
+        "Frecuencia de uso de frases (para mejores sugerencias)",
+        "PIN de administracion (almacenado localmente en forma cifrada o hasheada)"
+      ]
+    },
+    {
+      "id": "data-not-collected",
+      "title": "2. Datos que no recopilamos",
+      "paragraphs": [
+        "No recopilamos, rastreamos ni almacenamos:"
+      ],
+      "items": [
+        "Historial de conversaciones",
+        "Grabaciones de voz",
+        "Datos de ubicacion",
+        "Identificadores de dispositivo",
+        "Datos analiticos o de seguimiento",
+        "Perfiles de comportamiento o intereses",
+        "Cualquier dato usado para identificarte"
+      ]
+    },
+    {
+      "id": "voice-services",
+      "title": "3. Servicios de voz opcionales (solo iniciados por el usuario)",
+      "paragraphs": [
+        "Si introduces tu propia clave API para usar servicios de voz de terceros como ElevenLabs, el texto que decidas reproducir puede enviarse a ese proveedor unicamente en el momento en que pulses Hablar.",
+        "Loquor AAC no almacena ni transmite tu clave API fuera de tu dispositivo. Las claves se guardan en el almacenamiento seguro del dispositivo."
+      ]
+    },
+    {
+      "id": "local-backups",
+      "title": "4. Copias de seguridad locales (solo iniciadas por el usuario)",
+      "paragraphs": [
+        "Puedes exportar o hacer una copia de seguridad de tu vocabulario manualmente. Esto siempre lo inicias tu. Nunca subimos copias de seguridad sin tu accion."
+      ]
+    },
+    {
+      "id": "data-security",
+      "title": "5. Seguridad de los datos",
+      "paragraphs": [
+        "Como los datos permanecen en tu dispositivo:"
+      ],
+      "items": [
+        "Las posiciones de los botones se mantienen estables (seguras para la planificacion motora)",
+        "El vocabulario puede ocultarse, pero nunca eliminarse automaticamente",
+        "Se requiere acceso mediante PIN administrativo para modificar el vocabulario",
+        "Las claves API, si se introducen, se almacenan usando el almacenamiento seguro de la plataforma"
+      ]
+    },
+    {
+      "id": "children",
+      "title": "6. Privacidad infantil",
+      "paragraphs": [
+        "Loquor AAC puede ser usado por ninios, pero la App en si no recopila datos sobre edad, identidad o comportamiento. El vocabulario es gestionado por cuidadores mediante un PIN administrativo local."
+      ]
+    },
+    {
+      "id": "third-party-libraries",
+      "title": "7. Bibliotecas de terceros",
+      "paragraphs": [
+        "La App usa bibliotecas de codigo abierto para el rendimiento y el almacenamiento sin conexion. Estas bibliotecas se ejecutan en el dispositivo y no transmiten datos personales."
+      ]
+    },
+    {
+      "id": "your-rights",
+      "title": "8. Tus derechos",
+      "paragraphs": [
+        "Como nosotros no almacenamos datos personales, no hay nada que solicitar, borrar o retirar de nuestros servidores. Todos tus datos siguen bajo tu control en tu dispositivo."
+      ]
+    },
+    {
+      "id": "policy-updates",
+      "title": "9. Actualizaciones de la politica",
+      "paragraphs": [
+        "Si esta politica cambia, la actualizacion se publicara dentro de la App y en nuestro sitio web. La fecha de entrada en vigor se actualizara en la parte superior."
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "10. Contacto"
+    }
+  ],
+  "contactLead": "Si tienes preguntas sobre privacidad, puedes escribirnos a:"
+}

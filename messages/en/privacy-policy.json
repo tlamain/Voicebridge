@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Privacy Policy",
+    "description": "Read how Loquor AAC handles local-first data, optional voice services, backups, and user-controlled privacy settings."
+  },
+  "title": "Privacy Policy - Loquor AAC",
+  "effectiveDateLabel": "Effective date",
+  "effectiveDate": "January 5, 2026",
+  "intro": "Loquor AAC (\"the App\") is designed to give users a reliable communication voice using text, symbols, and optional speech synthesis. Your privacy is central to our design.",
+  "sections": [
+    {
+      "id": "data-we-collect",
+      "title": "1. Data We Collect",
+      "paragraphs": [
+        "Loquor AAC does not automatically collect personal data. All vocabulary, phrases, symbols, and settings are stored locally on your device only.",
+        "The App may store the following locally if you choose to use it:"
+      ],
+      "items": [
+        "Custom words, phrases, abbreviations",
+        "Uploaded photos or symbols you assign to buttons",
+        "Usage frequency of phrases (for better suggestions)",
+        "Admin PIN (stored in hashed or encrypted form locally)"
+      ]
+    },
+    {
+      "id": "data-not-collected",
+      "title": "2. Data Not Collected",
+      "paragraphs": [
+        "We do not collect, track, or store:"
+      ],
+      "items": [
+        "Conversation history",
+        "Voice recordings",
+        "Location data",
+        "Device identifiers",
+        "Analytics or tracking data",
+        "Behavioral or interest profiles",
+        "Any data used to identify you"
+      ]
+    },
+    {
+      "id": "voice-services",
+      "title": "3. Optional Voice Services (User-Initiated Only)",
+      "paragraphs": [
+        "If you enter your own API key to use third-party voice services such as ElevenLabs, text you choose to speak may be sent to that provider only at the moment you press Speak.",
+        "Loquor AAC does not store or transmit your API key outside your device. Keys are kept in secure storage on the device."
+      ]
+    },
+    {
+      "id": "local-backups",
+      "title": "4. Local Backups (User-Initiated Only)",
+      "paragraphs": [
+        "You may export or back up your vocabulary manually. This is always initiated by you. We never upload backups without your action."
+      ]
+    },
+    {
+      "id": "data-security",
+      "title": "5. Data Security",
+      "paragraphs": [
+        "Because data lives on your device:"
+      ],
+      "items": [
+        "Button positions remain stable (motor-planning safe)",
+        "Vocabulary can be hidden (masked), never auto-deleted",
+        "Admin PIN access is required to modify vocabulary",
+        "API keys, if entered, are stored using platform secure storage"
+      ]
+    },
+    {
+      "id": "children",
+      "title": "6. Children's Privacy",
+      "paragraphs": [
+        "Loquor AAC can be used by children, but the App itself does not collect data about age, identity, or behavior. Vocabulary is managed by caregivers using a local admin PIN."
+      ]
+    },
+    {
+      "id": "third-party-libraries",
+      "title": "7. Third-Party Libraries",
+      "paragraphs": [
+        "The App uses open-source libraries for performance and offline storage. These libraries run on the device and do not transmit personal data."
+      ]
+    },
+    {
+      "id": "your-rights",
+      "title": "8. Your Rights",
+      "paragraphs": [
+        "Since no personal data is stored by us, there is nothing to request, delete, or withdraw from our servers. All your data stays in your control on your device."
+      ]
+    },
+    {
+      "id": "policy-updates",
+      "title": "9. Policy Updates",
+      "paragraphs": [
+        "If this policy changes, the update will be posted inside the App and on our website. The effective date will be updated at the top."
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "10. Contact"
+    }
+  ],
+  "contactLead": "For questions about privacy, you can reach us at:"
+}

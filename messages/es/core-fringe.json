@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "title": "Disenios Core-Fringe",
+    "description": "Construye disenios de comunicacion multipagina donde las palabras nucleares de alta frecuencia quedan fijadas mientras el vocabulario fringe cambia segun el contexto. Gestiona arboles de paginas, ranuras y navegacion automaticamente."
+  },
+  "hero": {
+    "title": "Disenios Core-Fringe",
+    "description": "Un sistema de comunicacion multipagina en el que las palabras nucleares de alta frecuencia permanecen visibles en todas las paginas mientras el vocabulario fringe se adapta al tema actual. El estandar de referencia para AAC estructurada."
+  },
+  "sections": [
+    {
+      "id": "layout-management",
+      "badge": "Gestion de disenos",
+      "title": "Crear y activar disenios",
+      "description": "Cada idioma puede tener varios disenios core-fringe, pero solo uno puede estar activo a la vez. Crea un diseno, define su tamano de cuadricula y activalo cuando este listo.",
+      "items": [
+        "Explora todos los disenios del idioma actual con busqueda en vivo por nombre",
+        "Crea un diseno con nombre, icono o foto y tamano de cuadricula (6-12 columnas); las filas se calculan automaticamente",
+        "Cada diseno nuevo empieza con una pagina principal Inicio creada automaticamente",
+        "Activa un diseno para que sea el usado en modo core-fringe para ese idioma",
+        "Solo puede haber un diseno activo por idioma; el activo siempre se ordena arriba",
+        "Las filas del diseno muestran icono, nombre, tamano de cuadricula, numero de paginas, numero de ranuras, origen del paquete y estado activo"
+      ]
+    },
+    {
+      "id": "page-hierarchy",
+      "badge": "Jerarquia de paginas",
+      "title": "Arboles de paginas con navegacion automatica",
+      "description": "Organiza el vocabulario a traves de un arbol de paginas. Cuando anades una subpagina, la app coloca automaticamente un mosaico de enlace en la pagina principal y agrega botones de Inicio y Atras en la nueva pagina.",
+      "items": [
+        "Cada diseno empieza con una pagina raiz Inicio; agrega subpaginas debajo para construir areas tematicas",
+        "Al crear una subpagina se coloca automaticamente un mosaico de enlace en la pagina principal (con aviso si no hay ranura libre)",
+        "Las nuevas subpaginas reciben botones de navegacion Inicio y Atras de forma automatica en su propia cuadricula",
+        "Edita el titulo, icono o imagen de una pagina; los mosaicos que apuntan a ella se actualizan automaticamente",
+        "Copia una pagina para duplicar su estructura y ranuras, y luego ajustala para un nuevo tema",
+        "En tabletas, el arbol de paginas aparece integrado en el editor; en telefonos se abre un modal especifico de gestion de paginas"
+      ]
+    },
+    {
+      "id": "core-vocabulary",
+      "badge": "Vocabulario nuclear",
+      "title": "Ranuras nucleares fijadas frente a ranuras fringe dinamicas",
+      "description": "El corazon del modelo core-fringe: fija las palabras de alta frecuencia para que sigan visibles en todas las paginas, mientras las ranuras fringe cambian cuando el usuario navega entre temas.",
+      "items": [
+        "Las ranuras fijadas (Core) siguen visibles durante la navegacion y actuan como vocabulario nuclear compartido",
+        "Las ranuras dinamicas (Fringe) cambian cuando el usuario se mueve entre paginas y sirven para palabras especificas del tema",
+        "El editor de ranuras incluye un interruptor Fijado para convertir cualquier palabra en vocabulario nuclear",
+        "Dos tipos de ranuras: de simbolo (vocabulario) y de enlace (navegacion entre paginas), cada una con opciones de edicion adaptadas",
+        "Mueve ranuras seleccionando una celda y tocando otra; intercambialas moviendo una sobre una ocupada"
+      ]
+    },
+    {
+      "id": "grid-editing",
+      "badge": "Edicion de cuadricula",
+      "title": "Edita los disenios directamente sobre la cuadricula",
+      "description": "Abre cualquier diseno o pagina en modo de edicion de cuadricula para rellenar celdas, reorganizar ranuras y gestionar la navegacion sin salir del flujo de administracion.",
+      "items": [
+        "Toca una celda vacia para abrir el selector de simbolos: anade vocabulario, botones de navegacion o enlaces a paginas",
+        "Mantén pulsada una ranura existente para editar etiqueta, texto hablado, imagen, color, estado fijado o posicion",
+        "El selector de paginas en la barra de edicion te permite saltar entre paginas mientras editas",
+        "Las acciones Aniadir pagina y Copiar pagina estan disponibles directamente desde la barra de edicion",
+        "Toca Hecho para volver al editor del diseno; se vuelve a abrir automaticamente para que no pierdas el contexto"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Experimenta la comunicacion Core-Fringe",
+    "subtitle": "Prueba Loquor AAC y descubre como el vocabulario nuclear fijado transforma la AAC.",
+    "buttonText": "Probar Loquor AAC"
+  }
+}

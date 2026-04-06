@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "title": "Motor de gramatica inteligente",
+    "description": "Conjugacion automatica de verbos, pluralizacion de sustantivos y ayuda desde la barra gramatical en neerlandes, ingles, frances y espaniol, todo sin conexion."
+  },
+  "hero": {
+    "badge": "Inteligencia linguistica",
+    "title": "Motor de gramatica inteligente",
+    "description": "Un sistema gramatical contextual que conjuga verbos automaticamente, selecciona el auxiliar correcto, gestiona reflexivos y aplica transformaciones a nivel de oracion en tiempo real, completamente sin conexion. Compatible con neerlandes, ingles, frances y espaniol."
+  },
+  "heroScreenshot": {
+    "label": "Motor de gramatica inteligente - Conjugacion en vivo",
+    "description": "Conjugacion automatica de verbos con asistencia gramatical codificada por color"
+  },
+  "howItWorks": {
+    "title": "Como funciona el motor",
+    "steps": [
+      {
+        "id": "tap-symbols",
+        "title": "Toca simbolos",
+        "description": "Cada toque sobre un simbolo se analiza: es un pronombre, un sustantivo, un marcador temporal o un verbo? El motor identifica automaticamente el tipo de palabra."
+      },
+      {
+        "id": "state-machine",
+        "title": "Se actualiza la maquina de estado",
+        "description": "Una maquina de estado de la oracion sigue el sujeto, el tiempo verbal, la cadena de auxiliares y los limites de clausula. Cuando cambia el contexto, todos los verbos se reconjugan."
+      },
+      {
+        "id": "display-speak",
+        "title": "Mostrar y hablar",
+        "description": "Las transformaciones a nivel de oracion, como do-support, elision, inversion y reflexivos, se aplican justo antes de mostrar el texto. El resultado es una oracion gramaticalmente correcta."
+      }
+    ]
+  },
+  "examples": {
+    "badge": "Ejemplos en vivo",
+    "title": "Cuatro idiomas, un toque",
+    "subtitle": "El motor aplica reglas especificas de cada idioma para cada lengua compatible. Aqui tienes ejemplos reales de la app.",
+    "languages": [
+      {
+        "id": "english",
+        "language": "Ingles",
+        "examples": [
+          {
+            "input": "she + walk",
+            "output": "she walks",
+            "note": "3.ª persona singular con -s"
+          },
+          {
+            "input": "I + be + walk",
+            "output": "I am walking",
+            "note": "Aspecto continuo (-ing)"
+          },
+          {
+            "input": "he + do + not + eat",
+            "output": "he does not eat",
+            "note": "Negacion con do-support"
+          },
+          {
+            "input": "I + have + walk",
+            "output": "I have walked",
+            "note": "Tiempo perfecto"
+          }
+        ]
+      },
+      {
+        "id": "dutch",
+        "language": "Neerlandes",
+        "examples": [
+          {
+            "input": "hij + lopen",
+            "output": "hij loopt",
+            "note": "3.ª persona singular +t"
+          },
+          {
+            "input": "ik + hebben + lopen",
+            "output": "ik heb gelopen",
+            "note": "Tiempo perfecto (hebben)"
+          },
+          {
+            "input": "ik + wassen + zich",
+            "output": "ik was me",
+            "note": "Ajuste del pronombre reflexivo"
+          },
+          {
+            "input": "ik + wil + gaan + jij + wil + gaan",
+            "output": "ik wil gaan jij wilt gaan",
+            "note": "Oracion con varias clausulas"
+          }
+        ]
+      },
+      {
+        "id": "french",
+        "language": "Frances",
+        "examples": [
+          {
+            "input": "je + aimer",
+            "output": "j'aime",
+            "note": "Elision antes de vocal"
+          },
+          {
+            "input": "demain + je + parler",
+            "output": "demain je parlerai",
+            "note": "Futuro a partir de marcador temporal"
+          },
+          {
+            "input": "je + manger + pas",
+            "output": "je ne mange pas",
+            "note": "Negacion envolvente (ne...pas)"
+          },
+          {
+            "input": "manger + il + ?",
+            "output": "mange-t-il ?",
+            "note": "Inversion interrogativa con -t- eufonica"
+          }
+        ]
+      },
+      {
+        "id": "spanish",
+        "language": "Espaniol",
+        "examples": [
+          {
+            "input": "ella + hablar",
+            "output": "ella habla",
+            "note": "Presente de verbo en -ar"
+          },
+          {
+            "input": "yo + tener",
+            "output": "yo tengo",
+            "note": "Forma irregular de yo"
+          },
+          {
+            "input": "ellos + vivir",
+            "output": "ellos viven",
+            "note": "3.ª persona plural de verbo en -ir"
+          },
+          {
+            "input": "tu + poder",
+            "output": "tu puedes",
+            "note": "Verbo con cambio de raiz (o -> ue)"
+          }
+        ]
+      }
+    ]
+  },
+  "capabilities": {
+    "badge": "Capacidades",
+    "title": "Lo que gestiona el motor",
+    "subtitle": "Desde presente simple hasta construcciones complejas con varias clausulas, el motor cubre toda la gama de necesidades gramaticales.",
+    "items": [
+      {
+        "id": "verb-conjugation",
+        "title": "Conjugacion verbal",
+        "description": "Conjuga automaticamente los verbos segun sujeto, tiempo e idioma. Gestiona verbos regulares e irregulares, construcciones modales y cadenas de verbos auxiliares."
+      },
+      {
+        "id": "perfect-tense",
+        "title": "Tiempo perfecto",
+        "description": "Detecta verbos auxiliares y convierte el verbo siguiente a participio pasado. En neerlandes y frances selecciona automaticamente el auxiliar correcto."
+      },
+      {
+        "id": "continuous-aspect",
+        "title": "Aspecto continuo",
+        "description": "Las construcciones inglesas con be + verbo producen la forma correcta en -ing y aplican reglas ortograficas como duplicacion CVC, eliminacion de e muda y cambio de -ie a -ying."
+      },
+      {
+        "id": "modal-verbs",
+        "title": "Verbos modales",
+        "description": "Reconoce verbos modales y obliga al verbo principal siguiente a permanecer en infinitivo."
+      },
+      {
+        "id": "multi-clause",
+        "title": "Soporte para varias clausulas",
+        "description": "Cuando aparece un segundo pronombre sujeto a mitad de la oracion, el motor inicia una nueva clausula gramatical. Cada clausula se conjuga de forma independiente."
+      },
+      {
+        "id": "reflexive-verbs",
+        "title": "Verbos reflexivos",
+        "description": "Las construcciones reflexivas en neerlandes resuelven automaticamente la forma pronominal correcta segun el sujeto."
+      },
+      {
+        "id": "noun-pluralisation",
+        "title": "Pluralizacion de sustantivos",
+        "description": "Mantén pulsado cualquier sustantivo para elegir singular o plural antes de aniadirlo al mensaje. El motor gramatical vuelve a conjugar los verbos para concordar con el nuevo numero."
+      },
+      {
+        "id": "french-agreement",
+        "title": "Concordancia nominal en frances",
+        "description": "Toca los tokens de plural o femenino para aplicar concordancia completa en el sintagma nominal, de modo que articulos, adjetivos y sustantivos se actualicen juntos."
+      }
+    ]
+  },
+  "grammarBar": {
+    "badge": "Barra gramatical",
+    "title": "Ayuda con determinantes",
+    "description": "La barra gramatical es una franja horizontal de chips tocables que aparece en modo horizontal de tablet. Toca un chip para insertar un determinante, posesivo o preposicion justo antes del ultimo sustantivo del mensaje y asi mantener un orden natural de palabras sin recolocacion manual.",
+    "dimming": "Atenuacion segun genero: cuando hay un sustantivo en el mensaje, los articulos y demostrativos incompatibles se atenúan automaticamente. Toca 'appel' en neerlandes y 'de' se ilumina mientras 'het' se desvanece, por lo que no hace falta conocer la gramatica.",
+    "groups": [
+      {
+        "id": "articles",
+        "name": "Articulos",
+        "examples": "de, het, een / the, a / le, la, les / el, la",
+        "description": "Se insertan automaticamente antes del ultimo sustantivo para mantener un orden natural."
+      },
+      {
+        "id": "demonstratives",
+        "name": "Demostrativos",
+        "examples": "dit, dat / this, that / ce, cette / este, esta",
+        "description": "La atenuacion segun genero resalta la opcion compatible con el sustantivo actual."
+      },
+      {
+        "id": "possessives",
+        "name": "Posesivos",
+        "examples": "mijn, jouw / my, your / mon, ma / mi, tu",
+        "description": "Permite expresar posesion en los cuatro idiomas compatibles."
+      },
+      {
+        "id": "prepositions",
+        "name": "Preposiciones",
+        "examples": "met, voor / with, for / avec, pour / con, para",
+        "description": "Anade contexto de lugar, direccion y relacion a cualquier oracion."
+      }
+    ],
+    "primaryScreenshot": {
+      "label": "Barra gramatical",
+      "description": "Ajustes gramaticales codificados por color segun Fitzgerald Key"
+    },
+    "secondaryScreenshot": {
+      "label": "Pluralizacion de sustantivos",
+      "description": "Selecciona la forma singular o plural del sustantivo"
+    }
+  },
+  "assistLevels": {
+    "badge": "Niveles de asistencia",
+    "title": "La cantidad justa de ayuda",
+    "subtitle": "Una sola configuracion controla cuanta ayuda gramatical se muestra. Elige el nivel que mejor se adapte al comunicador o ajústalo a medida que progresa.",
+    "items": [
+      {
+        "id": "simple",
+        "level": "Simple",
+        "audience": "Comunicadores principiantes",
+        "behavior": "Solo se muestran articulos y demostrativos en la barra gramatical. Los tokens incompatibles se atenúan. Aparecen pistas contextuales debajo de la barra para guiar el orden de palabras."
+      },
+      {
+        "id": "standard",
+        "level": "Estandar",
+        "audience": "Comunicacion cotidiana",
+        "behavior": "Los cuatro grupos gramaticales estan visibles. Los tokens incompatibles se atenúan segun el genero del sustantivo. Sin pistas adicionales. Es la mejor opcion para el uso diario."
+      },
+      {
+        "id": "expert",
+        "level": "Experto",
+        "audience": "Terapeutas y usuarios avanzados",
+        "behavior": "Los cuatro grupos se muestran sin atenuacion. Todos los tokens tienen la misma visibilidad, lo que da control total sobre las pistas gramaticales que se presentan."
+      }
+    ]
+  },
+  "offline": {
+    "title": "100% sin conexion - no se necesita API gramatical",
+    "description": "Todo el motor gramatical, los cuatro idiomas, todas las tablas de conjugacion y todas las reglas de transformacion, se ejecuta en el dispositivo. No hay llamadas a la nube, latencia ni problemas de privacidad. Los datos de excepciones verbales se guardan localmente y se cargan en memoria para una consulta rapida. Si algo falla, la app siempre devuelve la palabra original en lugar de bloquearse."
+  },
+  "links": [
+    {
+      "id": "progressive-vocabulary",
+      "label": "Vocabulario progresivo ->"
+    },
+    {
+      "id": "features",
+      "label": "Todas las funciones ->"
+    }
+  ],
+  "cta": {
+    "title": "Ve la gramatica inteligente en accion",
+    "subtitle": "Prueba Loquor AAC y mira como resuelve la gramatica para que tus usuarios no tengan que hacerlo.",
+    "buttonText": "Probar Loquor AAC"
+  }
+}

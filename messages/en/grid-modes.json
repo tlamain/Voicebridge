@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Grid Modes",
+    "description": "Compare Standard Grid, Activity Boards, and Core-Fringe communication models in Loquor AAC."
+  },
+  "hero": {
+    "title": "Grid Modes",
+    "description": "Loquor AAC supports three grid models so teams can match communication structure to user context."
+  },
+  "modes": [
+    {
+      "id": "standard",
+      "name": "Standard Grid",
+      "bestFor": "Daily category navigation",
+      "summary": "Classic category and subcategory browsing with predictable symbol locations.",
+      "details": "Works with favourites and progression while preserving core motor-planning patterns.",
+      "includes": [
+        "Category and subcategory navigation",
+        "Favourites behaviour",
+        "Progressive vocabulary overlays",
+        "Symbol placement consistency"
+      ]
+    },
+    {
+      "id": "schematic",
+      "name": "Activity Boards",
+      "bestFor": "Context and routine-based communication",
+      "summary": "Board-based navigation for routines like meals, school, and therapy sessions.",
+      "details": "Supports board links, functional navigation cells, and in-place edit mode workflows.",
+      "includes": [
+        "Board dashboard and board links",
+        "Functional Back and Home buttons",
+        "Real-time board edit interactions",
+        "Board metadata and icon management"
+      ]
+    },
+    {
+      "id": "corefringe",
+      "name": "Core-Fringe",
+      "bestFor": "High-frequency communication with depth",
+      "summary": "Pinned core words remain stable while fringe pages change by context.",
+      "details": "Includes page trees, slot management, progressive vocabulary locking, and per-grid-size layout handling.",
+      "includes": [
+        "Pinned core slots across all pages",
+        "Nested page navigation with auto Home/Back buttons",
+        "Layout and page editor workflows",
+        "Grid-size specific layout copies"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "core-fringe",
+      "title": "Core-Fringe Grid",
+      "label": "Core-Fringe Grid",
+      "description": "Core-fringe layout with pinned vocabulary"
+    },
+    {
+      "id": "activity-board",
+      "title": "Activity Board",
+      "label": "Activity Board",
+      "description": "Activity board with themed category buttons"
+    },
+    {
+      "id": "text-mode",
+      "title": "Text Mode",
+      "label": "Text Mode",
+      "description": "Text communication with phrases and shortcuts"
+    }
+  ],
+  "guidance": {
+    "title": "Selection Guidance",
+    "items": [
+      {
+        "id": "standard",
+        "title": "Start with Standard Grid",
+        "description": "Best baseline for broad vocabulary and familiar category browsing."
+      },
+      {
+        "id": "activity-boards",
+        "title": "Use Activity Boards for routines",
+        "description": "Best when communication is task or environment specific.",
+        "linkLabel": "Learn more ->"
+      },
+      {
+        "id": "core-fringe",
+        "title": "Use Core-Fringe for depth",
+        "description": "Best when core words must stay fixed while fringe vocabulary expands.",
+        "linkLabel": "Learn more ->"
+      }
+    ]
+  }
+}

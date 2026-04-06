@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "title": "Slimme Grammatica-engine",
+    "description": "Automatische werkwoordsvervoeging, meervoudsvorming van zelfstandige naamwoorden en ondersteuning via de grammaticabalk in het Nederlands, Engels, Frans en Spaans, volledig offline."
+  },
+  "hero": {
+    "badge": "Taalintelligentie",
+    "title": "Slimme Grammatica-engine",
+    "description": "Een contextbewust grammaticasysteem dat werkwoorden automatisch vervoegt, het juiste hulpwerkwoord kiest, wederkerende vormen afhandelt en zinsniveau-transformaties in realtime toepast, volledig offline. Ondersteunt Nederlands, Engels, Frans en Spaans."
+  },
+  "heroScreenshot": {
+    "label": "Slimme Grammatica-engine - Live vervoeging",
+    "description": "Automatische werkwoordsvervoeging met kleurgecodeerde grammaticale ondersteuning"
+  },
+  "howItWorks": {
+    "title": "Hoe de Engine Werkt",
+    "steps": [
+      {
+        "id": "tap-symbols",
+        "title": "Tik op symbolen",
+        "description": "Elke tik op een symbool wordt geanalyseerd: is het een voornaamwoord, een zelfstandig naamwoord, een tijdsmarkering of een werkwoord? De engine herkent het woordtype automatisch."
+      },
+      {
+        "id": "state-machine",
+        "title": "Statusmachine wordt bijgewerkt",
+        "description": "Een zinsstatusmachine volgt onderwerp, tijd, keten van hulpwerkwoorden en clausulegrenzen. Wanneer de context verandert, worden alle werkwoorden opnieuw vervoegd."
+      },
+      {
+        "id": "display-speak",
+        "title": "Weergeven en uitspreken",
+        "description": "Transformaties op zinsniveau zoals do-support, elisie, inversie en wederkerende vormen worden vlak voor weergave toegepast. Het resultaat is een grammaticaal correcte zin."
+      }
+    ]
+  },
+  "examples": {
+    "badge": "Live Voorbeelden",
+    "title": "Vier Talen, Een Tik",
+    "subtitle": "De engine past taalspecifieke regels toe voor elke ondersteunde taal. Hieronder staan echte voorbeelden uit de app.",
+    "languages": [
+      {
+        "id": "english",
+        "language": "Engels",
+        "examples": [
+          {
+            "input": "she + walk",
+            "output": "she walks",
+            "note": "3e persoon enkelvoud -s"
+          },
+          {
+            "input": "I + be + walk",
+            "output": "I am walking",
+            "note": "Duratieve vorm (-ing)"
+          },
+          {
+            "input": "he + do + not + eat",
+            "output": "he does not eat",
+            "note": "Ontkenning met do-support"
+          },
+          {
+            "input": "I + have + walk",
+            "output": "I have walked",
+            "note": "Voltooide tijd"
+          }
+        ]
+      },
+      {
+        "id": "dutch",
+        "language": "Nederlands",
+        "examples": [
+          {
+            "input": "hij + lopen",
+            "output": "hij loopt",
+            "note": "3e persoon enkelvoud +t"
+          },
+          {
+            "input": "ik + hebben + lopen",
+            "output": "ik heb gelopen",
+            "note": "Voltooide tijd (hebben)"
+          },
+          {
+            "input": "ik + wassen + zich",
+            "output": "ik was me",
+            "note": "Aanpassing van het wederkerend voornaamwoord"
+          },
+          {
+            "input": "ik + wil + gaan + jij + wil + gaan",
+            "output": "ik wil gaan jij wilt gaan",
+            "note": "Meerledige zin"
+          }
+        ]
+      },
+      {
+        "id": "french",
+        "language": "Frans",
+        "examples": [
+          {
+            "input": "je + aimer",
+            "output": "j'aime",
+            "note": "Elisie voor een klinker"
+          },
+          {
+            "input": "demain + je + parler",
+            "output": "demain je parlerai",
+            "note": "Toekomende tijd vanuit een tijdsmarkering"
+          },
+          {
+            "input": "je + manger + pas",
+            "output": "je ne mange pas",
+            "note": "Ontkennende structuur (ne...pas)"
+          },
+          {
+            "input": "manger + il + ?",
+            "output": "mange-t-il ?",
+            "note": "Vraaginversie met eufonische -t-"
+          }
+        ]
+      },
+      {
+        "id": "spanish",
+        "language": "Spaans",
+        "examples": [
+          {
+            "input": "ella + hablar",
+            "output": "ella habla",
+            "note": "Tegenwoordige tijd -ar werkwoord"
+          },
+          {
+            "input": "yo + tener",
+            "output": "yo tengo",
+            "note": "Onregelmatige yo-vorm"
+          },
+          {
+            "input": "ellos + vivir",
+            "output": "ellos viven",
+            "note": "3e persoon meervoud -ir werkwoord"
+          },
+          {
+            "input": "tu + poder",
+            "output": "tu puedes",
+            "note": "Klinkerwisselend werkwoord (o -> ue)"
+          }
+        ]
+      }
+    ]
+  },
+  "capabilities": {
+    "badge": "Mogelijkheden",
+    "title": "Wat de Engine Aankan",
+    "subtitle": "Van eenvoudige tegenwoordige tijd tot complexe meerledige zinnen: de engine dekt het volledige bereik van grammaticale behoeften.",
+    "items": [
+      {
+        "id": "verb-conjugation",
+        "title": "Werkwoordsvervoeging",
+        "description": "Vervoegt werkwoorden automatisch op basis van onderwerp, tijd en taal. Verwerkt regelmatige en onregelmatige werkwoorden, modale constructies en ketens met hulpwerkwoorden."
+      },
+      {
+        "id": "perfect-tense",
+        "title": "Voltooide Tijd",
+        "description": "Herkent hulpwerkwoorden en zet het volgende werkwoord om naar de voltooid deelwoordvorm. Nederlands en Frans kiezen automatisch het juiste hulpwerkwoord."
+      },
+      {
+        "id": "continuous-aspect",
+        "title": "Duratieve Vorm",
+        "description": "Engelse constructies met be + werkwoord leveren automatisch de juiste -ing-vorm op en verwerken spellingregels zoals CVC-verdubbeling, het wegvallen van stille e en -ie naar -ying."
+      },
+      {
+        "id": "modal-verbs",
+        "title": "Modale Werkwoorden",
+        "description": "Herkent modale werkwoorden en dwingt het volgende hoofdwerkwoord in de infinitiefvorm."
+      },
+      {
+        "id": "multi-clause",
+        "title": "Ondersteuning voor Meerledige Zinnen",
+        "description": "Wanneer midden in een zin een tweede onderwerp-voornaamwoord verschijnt, start de engine een nieuwe grammaticale clausule. Elke clausule wordt onafhankelijk vervoegd."
+      },
+      {
+        "id": "reflexive-verbs",
+        "title": "Wederkerende Werkwoorden",
+        "description": "Nederlandse wederkerende constructies krijgen automatisch de juiste voornaamwoordsvorm op basis van het onderwerp."
+      },
+      {
+        "id": "noun-pluralisation",
+        "title": "Meervoudsvorming van Zelfstandige Naamwoorden",
+        "description": "Houd een zelfstandig naamwoord ingedrukt om enkelvoud of meervoud te kiezen voordat het aan het bericht wordt toegevoegd. Daarna vervoegt de grammatica-engine werkwoorden opnieuw zodat ze overeenkomen met het gekozen getal."
+      },
+      {
+        "id": "french-agreement",
+        "title": "Franse Naamwoordcongruentie",
+        "description": "Tik op tokens voor meervoud of vrouwelijk om volledige congruentie in de naamwoordgroep toe te passen, zodat lidwoorden, bijvoeglijke naamwoorden en zelfstandige naamwoorden samen worden bijgewerkt."
+      }
+    ]
+  },
+  "grammarBar": {
+    "badge": "Grammaticabalk",
+    "title": "Lidwoordhulp",
+    "description": "De grammaticabalk is een horizontale strook met aantikbare chips die verschijnt in liggende tabletmodus. Tik op een chip om een lidwoord, bezittelijk voornaamwoord of voorzetsel direct voor het laatste zelfstandig naamwoord in het bericht te plaatsen, zodat natuurlijke woordvolgorde ontstaat zonder handmatig te verplaatsen.",
+    "dimming": "Geslachtsbewust dimmen: wanneer een zelfstandig naamwoord in het bericht staat, worden ongeschikte lidwoorden en aanwijzende voornaamwoorden automatisch gedimd. Tik op 'appel' in het Nederlands en 'de' licht op terwijl 'het' vervaagt, zodat grammaticale kennis niet nodig is.",
+    "groups": [
+      {
+        "id": "articles",
+        "name": "Lidwoorden",
+        "examples": "de, het, een / the, a / le, la, les / el, la",
+        "description": "Worden automatisch voor het laatste zelfstandig naamwoord geplaatst voor natuurlijke woordvolgorde."
+      },
+      {
+        "id": "demonstratives",
+        "name": "Aanwijzende voornaamwoorden",
+        "examples": "dit, dat / this, that / ce, cette / este, esta",
+        "description": "Geslachtsbewust dimmen benadrukt de passende keuze voor het huidige zelfstandig naamwoord."
+      },
+      {
+        "id": "possessives",
+        "name": "Bezittelijke voornaamwoorden",
+        "examples": "mijn, jouw / my, your / mon, ma / mi, tu",
+        "description": "Ondersteunt eigendomsrelaties in alle vier ondersteunde talen."
+      },
+      {
+        "id": "prepositions",
+        "name": "Voorzetsels",
+        "examples": "met, voor / with, for / avec, pour / con, para",
+        "description": "Voegt locatie-, richting- en relatiecontext toe aan elke zin."
+      }
+    ],
+    "primaryScreenshot": {
+      "label": "Grammaticabalk",
+      "description": "Kleurgecodeerde grammatica-instellingen volgens Fitzgerald Key"
+    },
+    "secondaryScreenshot": {
+      "label": "Meervoudsvorming van Zelfstandige Naamwoorden",
+      "description": "Kies de enkelvouds- of meervoudsvorm van een zelfstandig naamwoord"
+    }
+  },
+  "assistLevels": {
+    "badge": "Assistentieniveaus",
+    "title": "De Juiste Hoeveelheid Hulp",
+    "subtitle": "Eén instelling bepaalt hoeveel grammaticale ondersteuning wordt getoond. Kies het niveau dat past bij de behoeften van de communicator of pas het aan naarmate die groeit.",
+    "items": [
+      {
+        "id": "simple",
+        "level": "Simpel",
+        "audience": "Beginnende communicators",
+        "behavior": "Alleen lidwoorden en aanwijzende voornaamwoorden worden in de grammaticabalk getoond. Onverenigbare tokens worden gedimd. Contextuele hints verschijnen onder de balk om de woordvolgorde te begeleiden."
+      },
+      {
+        "id": "standard",
+        "level": "Standaard",
+        "audience": "Dagelijkse communicatie",
+        "behavior": "Alle vier grammaticagroepen zijn zichtbaar. Onverenigbare tokens worden gedimd op basis van het grammaticale geslacht van het zelfstandig naamwoord. Geen extra hints. Het beste voor dagelijks gebruik."
+      },
+      {
+        "id": "expert",
+        "level": "Expert",
+        "audience": "Therapeuten en gevorderde gebruikers",
+        "behavior": "Alle vier groepen worden zonder dimmen getoond. Elk token is even zichtbaar, voor volledige controle over welke grammaticale signalen worden aangeboden."
+      }
+    ]
+  },
+  "offline": {
+    "title": "100% Offline - Geen Grammatica-API Nodig",
+    "description": "De volledige grammatica-engine - alle vier talen, alle vervoegingstabellen en alle transformatieregels - draait op het apparaat zelf. Er zijn geen cloudaanroepen, geen vertraging en geen privacyzorgen. Uitzonderingsdata voor werkwoorden worden lokaal opgeslagen en snel in het geheugen geladen. Gaat er iets mis, dan toont de app altijd het oorspronkelijke woord in plaats van te crashen."
+  },
+  "links": [
+    {
+      "id": "progressive-vocabulary",
+      "label": "Progressieve Woordenschat ->"
+    },
+    {
+      "id": "features",
+      "label": "Alle Functies ->"
+    }
+  ],
+  "cta": {
+    "title": "Ervaar Slimme Grammatica in Actie",
+    "subtitle": "Probeer Loquor AAC en zie hoe het grammatica afhandelt zodat je gebruikers dat niet hoeven te doen.",
+    "buttonText": "Probeer Loquor AAC"
+  }
+}

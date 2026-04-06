@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "title": "Progressieve Woordenschat",
+    "description": "Een woordenschatleersysteem met 6 niveaus dat met de gebruiker meegroeit. Motorisch geheugen blijft beschermd, woordposities veranderen nooit en voortgang wordt gestuurd door echt gebruik."
+  },
+  "hero": {
+    "badge": "Leren en Groei",
+    "title": "Progressieve Woordenschat",
+    "description": "Een gestructureerd woordenschat­systeem met 6 niveaus dat meegroeit met de communicator. Woorden worden ontgrendeld door echt gebruik, posities verschuiven nooit en elk niveau bouwt natuurlijk voort op het vorige."
+  },
+  "heroScreenshot": {
+    "label": "Progressieve Woordenschat - Instellingen",
+    "description": "Instellingen voor progressieve woordenschat met niveauregelaars en weergaveopties"
+  },
+  "principle": {
+    "title": "Het Kernprincipe",
+    "description": "Gebruik woorden om meer woorden te ontgrendelen. Leerlingen beginnen op niveau 1 met een kleine set essentiële woorden. Als ze consequent gebruik laten zien, volgt het systeem de voortgang en ontgrendelt het het volgende niveau zonder bestaande woorden te verplaatsen.",
+    "items": [
+      {
+        "id": "motor-memory",
+        "title": "Bescherming van Motorisch Geheugen",
+        "description": "Woorden veranderen nooit van positie zodra ze zijn geïntroduceerd. Een symbool op rij 2, kolom 3 in niveau 1 blijft daar tot en met niveau 6."
+      },
+      {
+        "id": "per-level",
+        "title": "Evaluatie per Niveau",
+        "description": "Alleen woorden die op het huidige niveau zijn geïntroduceerd tellen mee voor doorgang. Eerder beheerde woorden blazen de voortgang niet kunstmatig op."
+      },
+      {
+        "id": "usage-driven",
+        "title": "Voortgang op Basis van Gebruik",
+        "description": "Woorden worden pas beheerst nadat ze het vereiste aantal keren zijn aangetikt. Het systeem meet echt gebruik, niet alleen blootstelling."
+      },
+      {
+        "id": "ghost-slots",
+        "title": "Ghost Slots",
+        "description": "Vergrendelde woorden worden weergegeven als niet-interactieve ghost-cellen: zichtbaar, maar niet aantikbaar. Zo zien lerenden wat eraan komt zonder overweldigd te raken."
+      }
+    ]
+  },
+  "levels": {
+    "badge": "Niveausysteem",
+    "title": "Zes Niveaus van Groei",
+    "subtitle": "Elk niveau heeft een eigen drempel en beheersingsvereiste. Op hogere niveaus dalen de drempels omdat de woordpools groter worden.",
+    "items": [
+      {
+        "id": "level-1",
+        "label": "Niveau 1",
+        "description": "Essentiële krachtige woorden",
+        "thresholdLabel": "beheersingsdrempel",
+        "tapsLabel": "tikken om te beheersen"
+      },
+      {
+        "id": "level-2",
+        "label": "Niveau 2",
+        "description": "Startset voor kerncommunicatie",
+        "thresholdLabel": "beheersingsdrempel",
+        "tapsLabel": "tikken om te beheersen"
+      },
+      {
+        "id": "level-3",
+        "label": "Niveau 3",
+        "description": "Uitgebreide kern + basiswoorden",
+        "thresholdLabel": "beheersingsdrempel",
+        "tapsLabel": "tikken om te beheersen"
+      },
+      {
+        "id": "level-4",
+        "label": "Niveau 4",
+        "description": "Volledige kern + woorden voor personen",
+        "thresholdLabel": "beheersingsdrempel",
+        "tapsLabel": "tikken om te beheersen"
+      },
+      {
+        "id": "level-5",
+        "label": "Niveau 5",
+        "description": "Volledig systeem - bovengrens voor beheersing",
+        "thresholdLabel": "beheersingsdrempel",
+        "tapsLabel": "maximum voor beheersing"
+      },
+      {
+        "id": "level-6",
+        "label": "Niveau 6",
+        "description": "Expertwoordenschat - handmatig ontgrendeld door mantelzorger",
+        "thresholdLabel": "beheersingsdrempel",
+        "tapsLabel": "handmatig ontgrendelen"
+      }
+    ],
+    "footnote": "Niveau 5 is de bovengrens voor automatische doorgang, waarbij alle woorden zichtbaar zijn. Niveau 6 wordt niet verdiend door gebruik; het wordt handmatig ontgrendeld door een mantelzorger in de beheerinstellingen."
+  },
+  "readiness": {
+    "badge": "Gereedheidsfeedback",
+    "title": "De Drijvende Gereedheidsknop",
+    "description": "Een drijvende actieknop op het hoofdscherm geeft de communicator live feedback over de voortgang. De kleur en badge worden automatisch bijgewerkt naarmate woorden worden gebruikt. Tik erop om de Gereedheidscontrole-modal met volledige statistieken te openen.",
+    "fabStates": [
+      {
+        "id": "in-progress",
+        "label": "Bezig",
+        "description": "Voortgang onder 75% - de actieknop toont het huidige voltooiingspercentage in blauw."
+      },
+      {
+        "id": "almost-there",
+        "label": "Bijna Daar",
+        "description": "Voortgang boven 75% maar nog niet klaar - de actieknop wordt oranje om te tonen dat de gebruiker dichtbij is."
+      },
+      {
+        "id": "ready",
+        "label": "Klaar!",
+        "description": "Alle vereiste woorden zijn beheerst - de actieknop wordt groen en kan pulseren om doorgang uit te nodigen."
+      }
+    ],
+    "modal": {
+      "badge": "Niveau-Omhoog-flow",
+      "title": "Gereedheidscontrole-modal",
+      "description": "Wanneer de gebruiker op de actieknop tikt, toont de Gereedheidscontrole-modal een gedetailleerd overzicht van de voortgang naar het volgende niveau.",
+      "items": [
+        {
+          "id": "progress-circle",
+          "label": "Voortgangscirkel",
+          "detail": "Toont het percentage richting het volgende niveau"
+        },
+        {
+          "id": "status-title",
+          "label": "Statustitel",
+          "detail": "Ga door, Je boekt vooruitgang, Bijna daar of Je bent klaar"
+        },
+        {
+          "id": "stats-row",
+          "label": "Statistiekenrij",
+          "detail": "Gebruikte woorden, beheerde woorden en totaal aantal tikken"
+        },
+        {
+          "id": "recommendations",
+          "label": "Oefenaanbevelingen",
+          "detail": "Tot 12 woorden die nog meer tikken nodig hebben"
+        },
+        {
+          "id": "unlock-button",
+          "label": "Ontgrendelknop",
+          "detail": "Verschijnt alleen wanneer de drempel is gehaald"
+        }
+      ],
+      "screenshot": {
+        "label": "Gereedheidscontrole-modal",
+        "description": "Beheerinstellingen voor progressieve woordenschat"
+      }
+    }
+  },
+  "gridSizes": {
+    "badge": "Core-Fringe-modus",
+    "title": "Voortgang Onafhankelijk van Rastergrootte",
+    "description": "In Core-Fringe-modus is de voortgang beperkt tot de symbolen die in de actieve rasterlayout zijn geplaatst. Elke rastergrootte heeft zijn eigen pool, dus wisselen van rastergrootte betekent ook wisselen van voortgangspool.",
+    "gridSizeLabel": "Rastergrootte",
+    "totalConceptsLabel": "Totaal aantal concepten",
+    "level6ConceptsLabel": "Concepten van niveau 6"
+  },
+  "adminControls": {
+    "badge": "Beheerinstellingen",
+    "title": "Configuratie door Mantelzorger",
+    "subtitle": "Alle voortgangsinstellingen staan in het beheerscherm onder Taal -> Progressieve Woordenschat. Elke instelling is per gebruiker, zodat verschillende communicators verschillende beheersingsvereisten kunnen hebben.",
+    "items": [
+      {
+        "id": "enable-progression",
+        "label": "Voortgang Inschakelen",
+        "description": "Schakel het volledige systeem aan of uit. Wanneer uit, zijn alle symbolen zichtbaar."
+      },
+      {
+        "id": "show-ghost-slots",
+        "label": "Ghost Slots Tonen",
+        "description": "Toon posities van vergrendelde woorden als ghost-voorbeelden met slotpictogrammen."
+      },
+      {
+        "id": "mastery-threshold",
+        "label": "Beheersingsdrempel",
+        "description": "Pas het percentage woorden aan dat beheerst moet zijn (50-100% in stappen van 5%)."
+      },
+      {
+        "id": "min-uses",
+        "label": "Minimaal Gebruik per Woord",
+        "description": "Pas aan hoe vaak elk woord aangetikt moet worden om als beheerst te tellen (1-10)."
+      },
+      {
+        "id": "expert-vocabulary",
+        "label": "Expertwoordenschat",
+        "description": "Ontgrendelt woorden van niveau 6. Verschijnt alleen bij niveau 5 en hoger en blijft een handmatige beslissing van de mantelzorger."
+      },
+      {
+        "id": "reset-progression",
+        "label": "Voortgang Resetten",
+        "description": "Zet alle woorden terug naar niveau 1 en vraagt om bevestiging."
+      }
+    ]
+  },
+  "wordFinder": {
+    "badge": "Word Finder-integratie",
+    "title": "Vergrendelde Woorden Zijn Duidelijk Gemarkeerd",
+    "description": "Word Finder doorzoekt de volledige woordenschat maar toont vergrendelde woorden als niet beschikbaar, elk met het label 'Beschikbaar op niveau X'. Tikken op een vergrendeld resultaat doet niets. Zodra de gebruiker een niveau stijgt, wordt hetzelfde resultaat selecteerbaar.",
+    "items": [
+      "Zoekresultaten worden gesorteerd met ontgrendelde woorden eerst",
+      "Vergrendelde resultaten tonen het vereiste niveau, niet alleen een hangslot",
+      "Stapsgewijze begeleiding kan geen vergrendelde cel activeren",
+      "Wordt direct bijgewerkt wanneer een nieuw niveau wordt ontgrendeld"
+    ],
+    "screenshot": {
+      "label": "Word Finder met Vergrendelde Resultaten",
+      "description": "Vergrendelde woorden getoond met label 'Beschikbaar op niveau X'"
+    }
+  },
+  "links": [
+    {
+      "id": "smart-grammar",
+      "label": "Slimme Grammatica-engine ->"
+    },
+    {
+      "id": "features",
+      "label": "Alle Functies ->"
+    }
+  ],
+  "cta": {
+    "title": "Help Loquor AAC Vormgeven",
+    "subtitle": "Download Loquor AAC en geef elke communicator de woordenschat die die verdient.",
+    "buttonText": "Probeer Loquor AAC"
+  }
+}

@@ -4,7 +4,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import SkipLink from "@/components/SkipLink";
 import { absoluteSiteUrl, siteConfig } from "@/lib/site";
-import { locales, isValidLocale, getMessages, type Locale } from "@/lib/i18n";
+import { locales, isValidLocale, getNamespace, type Locale } from "@/lib/i18n";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -16,7 +16,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = getMessages(locale as Locale, "common") as Record<string, string>;
+  const t = getNamespace(locale as Locale, "common");
 
   return {
     metadataBase: new URL(siteConfig.deployment.origin),
@@ -69,7 +69,7 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  const t = getMessages(locale, "common") as Record<string, string>;
+  const t = getNamespace(locale, "common");
 
   return (
     <>

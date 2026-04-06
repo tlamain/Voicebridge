@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "Contact",
+    "description": "Neem contact op met het Loquor AAC-team voor samenwerkingen, ondersteuning of algemene vragen."
+  },
+  "hero": {
+    "title": "Neem Contact Op",
+    "description": "Geinteresseerd in Loquor AAC? Of je nu communicator, mantelzorger, clinicus of docent bent, we horen graag van je."
+  },
+  "card": {
+    "title": "Contact",
+    "description": "Voor ondersteuning, klinische samenwerkingen, feedback of algemene vragen staan we voor je klaar. Neem contact op en iemand van ons team reageert zo snel mogelijk.",
+    "responseTime": "We reageren meestal binnen 24-48 uur.",
+    "location": "Gevestigd in Nederland - ondersteuning voor communicators wereldwijd."
+  },
+  "download": {
+    "title": "Download Loquor AAC",
+    "description": "Beschikbaar op iOS en Android. Download de app en begin vandaag nog met communiceren.",
+    "appStorePrefix": "Download in de",
+    "appStoreLabel": "App Store",
+    "googlePlayPrefix": "Download via",
+    "googlePlayLabel": "Google Play"
+  }
+}

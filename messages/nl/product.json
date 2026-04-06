@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "title": "Productarchitectuur",
+    "description": "Overzicht op hoofdlijnen van de productsystemen, communicatiecapaciteiten en operationele workflows van Loquor AAC."
+  },
+  "hero": {
+    "title": "Productarchitectuur",
+    "description": "Loquor AAC is ontworpen als een communicatieplatform met gelaagde ondersteuning voor gebruikers, mantelzorgers en clinici."
+  },
+  "pillars": [
+    {
+      "id": "communication-modes",
+      "value": "Een app, drie communicatiemodellen",
+      "title": "Communicatiemodi",
+      "description": "Wissel tussen Standaardraster, Activiteitsborden en Core-Fringe zonder de kern van de berichtenstroom te veranderen."
+    },
+    {
+      "id": "language-intelligence",
+      "value": "Grammaticale ondersteuning in echte communicatie",
+      "title": "Taalintelligentie",
+      "description": "Contextbewuste werkwoordsvervoeging, meervoudsvorming van zelfstandige naamwoorden, lidwoordhulp en vormselectie in het Nederlands, Engels, Frans en Spaans."
+    },
+    {
+      "id": "voice-output",
+      "value": "Altijd beschikbare spraakuitvoer",
+      "title": "Spraakuitvoer",
+      "description": "Gebruik apparaat-tekst-naar-spraak offline en optionele ElevenLabs-stemmen online met automatische fallback."
+    },
+    {
+      "id": "progressive-learning",
+      "value": "Gestructureerde groei van starter tot expert",
+      "title": "Progressief Leren",
+      "description": "Ontgrendel woordenschat in 6 niveaus met gereedheidscontroles, ghost slots, bescherming van motorisch geheugen en voortgangsregistratie per taal."
+    },
+    {
+      "id": "clinical-admin",
+      "value": "Mantelzorger- en logopediebediening ingebouwd",
+      "title": "Klinisch Beheer",
+      "description": "Met pincode beveiligde bediening voor inhoudsbewerking, gebruikersinstelling, taalacties, layoutbeheer en installatie van woordenschatpakketten."
+    },
+    {
+      "id": "privacy-portability",
+      "value": "Data blijft onder controle van de gebruiker",
+      "title": "Privacy en Overdraagbaarheid",
+      "description": "Lokale opslag als uitgangspunt met door de gebruiker gestarte selectieve back-up en herstel. Geen cloud, geen tracking en geen opgeslagen gespreksgeschiedenis."
+    }
+  ],
+  "capabilitiesTitle": "Systeemmogelijkheden",
+  "featureSections": [
+    {
+      "id": "communication-engine",
+      "title": "Communicatie-engine",
+      "summary": "Stel berichten samen met symbolen en tekst in een workflow, en spreek of deel ze met minimale frictie.",
+      "highlights": [
+        "Berichtopbouw met symbolen en tekst in combinatie",
+        "Gedrag voor voorspelling en afkortingsuitbreiding",
+        "Werkwoord-/naamwoordvorm kiezen via lang indrukken voordat het woord aan het bericht wordt toegevoegd",
+        "Favorieten- en categorieworkflows",
+        "Instellingen voor delen in het beheergedeelte"
+      ]
+    },
+    {
+      "id": "grid-systems",
+      "title": "Rastersystemen",
+      "summary": "Kies een communicatiemodel dat past bij cognitieve belasting, context en zorgdoelen.",
+      "highlights": [
+        "Standaard categorieraster met behoud van motorische zones",
+        "Navigatie met activiteitsborden voor routines",
+        "Core-Fringe-layouts met vastgezette kernwoorden en meerpaginanavigatie",
+        "Bewerken in het raster met slepen, toevoegen en verwijderen"
+      ]
+    },
+    {
+      "id": "grammar-language",
+      "title": "Slimme grammatica-engine",
+      "summary": "Contextbewuste vervoeging voor Nederlands, Engels, Frans en Spaans, volledig offline en automatisch.",
+      "highlights": [
+        "Werkwoordsvervoeging: tegenwoordige, verleden, voltooide, duratieve en toekomende tijd",
+        "Modale werkwoorden, wederkerende constructies en meerledige zinnen",
+        "Frans: elisie, vraaginversie en congruentie in naamwoordgroepen",
+        "Meervoudsvorming via lang indrukken met hervervoeging van de grammatica",
+        "Grammaticabalk met kleurgecodeerde lidwoordchips",
+        "Drie assistentieniveaus: Simpel, Standaard, Expert"
+      ]
+    },
+    {
+      "id": "progressive-vocabulary",
+      "title": "Progressieve Woordenschat",
+      "summary": "Een leersysteem met 6 niveaus dat motorisch geheugen beschermt terwijl de woordenschat groeit op basis van aantoonbaar gebruik.",
+      "highlights": [
+        "6 niveaus met evaluatiepools per niveau (alleen nieuwe woorden tellen mee)",
+        "Bescherming van motorisch geheugen: woordposities veranderen nooit",
+        "Ghost slots tonen vergrendelde woorden alvast zonder interactie toe te staan",
+        "Drijvende gereedheidsknop met live voortgangspercentage",
+        "Schakelaar Expertwoordenschat voor woorden van niveau 6",
+        "Onafhankelijke voortgangsstatus per taal"
+      ]
+    },
+    {
+      "id": "voice-output",
+      "title": "Stem en Uitvoer",
+      "summary": "Behoud communicatiecontinuiteit bij wisselende netwerkomstandigheden en storingen van aanbieders.",
+      "highlights": [
+        "Stemprovider van het apparaat met instelbare toonhoogte en snelheid",
+        "Optionele ElevenLabs-integratie met lokale audiocache",
+        "Automatische fallback naar apparaatspeech bij elke fout",
+        "Voorbeeldweergave en providerwissel in de beheerinstellingen"
+      ]
+    },
+    {
+      "id": "clinical-admin",
+      "title": "Klinisch Beheer en Inhoud",
+      "summary": "Gestructureerde workflows voor zorgteams die symbolen, layouts, gebruikers en instellingen beheren.",
+      "highlights": [
+        "Beheer van instellingen, inhoud, taal en gebruikers",
+        "Pincodebeveiliging en beheervergrendeling",
+        "Beheer van symbolen, zinnen, afkortingen, borden en layouts",
+        "Installatie van woordenschatpakketten, synchronisatie van grammaticadata en resetflows"
+      ]
+    },
+    {
+      "id": "data-portability",
+      "title": "Data en Overdraagbaarheid",
+      "summary": "Houd communicatiedata lokaal en overdraagbaar wanneer teams instellingen migreren of dupliceren.",
+      "highlights": [
+        "Selectieve back-up en herstel met categorie-schakelaars",
+        "Ingesloten afbeeldingsoverdracht in `.vbaac`-back-upbestanden",
+        "Isolatie van meerdere gebruikersprofielen met afzonderlijke databases",
+        "Workflows voor gebruikersduplicatie en migratie"
+      ]
+    }
+  ],
+  "linksTitle": "Verken Specifieke Onderdelen",
+  "deepDiveLinks": [
+    {
+      "id": "product",
+      "label": "Productarchitectuur",
+      "description": "Overzichtskaart van kernsystemen en platformworkflows."
+    },
+    {
+      "id": "grid-modes",
+      "label": "Rastermodi",
+      "description": "Vergelijk gebruikspatronen van Standaard, Activiteitsborden en Core-Fringe."
+    },
+    {
+      "id": "smart-grammar",
+      "label": "Slimme Grammatica-engine",
+      "description": "Vervoegingsregels, taalvoorbeelden, assistentieniveaus en vormselectie."
+    },
+    {
+      "id": "progressive-vocabulary",
+      "label": "Progressieve Woordenschat",
+      "description": "Niveausysteem, bescherming van motorisch geheugen, ghost slots en gereedheidscontroles."
+    },
+    {
+      "id": "activity-boards",
+      "label": "Activiteitsborden",
+      "description": "Maak themaborden voor routines met aangepaste pictogrammen, rastergroottes en bewerken in het raster."
+    },
+    {
+      "id": "core-fringe",
+      "label": "Core-Fringe-layouts",
+      "description": "Lay-outs met meerdere pagina's, vastgezette kernwoordenschat en dynamische fringepagina's."
+    },
+    {
+      "id": "symbol-management",
+      "label": "Symboolbibliotheek",
+      "description": "Zoek, filter, favoriet, en bewerk symbolen met metadata voor progressieve woordenschat."
+    },
+    {
+      "id": "admin",
+      "label": "Beheer",
+      "description": "Begrijp de mogelijkheden voor instellingen, inhoud, taal en gebruikersbeheer."
+    },
+    {
+      "id": "backup-and-migration",
+      "label": "Back-up en Migratie",
+      "description": "Bekijk back-upcategorieën, herstelpatronen en migratierecepten."
+    },
+    {
+      "id": "setup-wizard",
+      "label": "Installatiewizard",
+      "description": "Doorloop de onboarding in 12 stappen en de flow voor nieuwe gebruikers."
+    }
+  ]
+}

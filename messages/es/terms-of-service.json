@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Terminos de servicio",
+    "description": "Terminos de servicio de Loquor AAC: tus derechos y responsabilidades al usar la app."
+  },
+  "title": "Terminos de servicio - Loquor AAC",
+  "effectiveDateLabel": "Fecha de entrada en vigor",
+  "effectiveDate": "30 de marzo de 2026",
+  "intro": "Lee estos Terminos de servicio (\"Terminos\") con atencion antes de usar Loquor AAC (\"la App\"). Al descargar o usar la App aceptas quedar sujeto a estos Terminos. Si no estas de acuerdo, no uses la App.",
+  "sections": [
+    {
+      "id": "acceptance",
+      "title": "1. Aceptacion de los terminos",
+      "paragraphs": [
+        "Estos Terminos constituyen un acuerdo legal entre tu (o el cuidador o tutor que actue en nombre del usuario) y el desarrollador de Loquor AAC. Al instalar o usar la App confirmas que has leido, entendido y aceptado estos Terminos."
+      ]
+    },
+    {
+      "id": "description",
+      "title": "2. Descripcion de la app",
+      "paragraphs": [
+        "Loquor AAC es una aplicacion de comunicacion aumentativa y alternativa (AAC) disenada para ayudar a personas con dificultades del habla a comunicarse mediante simbolos, texto y sintesis de voz opcional impulsada por IA. Entre sus funciones se incluyen:"
+      ],
+      "items": [
+        "Construccion de mensajes basada en simbolos y en texto",
+        "Asistencia gramatical inteligente",
+        "Aprendizaje progresivo de vocabulario",
+        "Sintesis de voz opcional de terceros mediante claves API aportadas por el usuario",
+        "Gestion de vocabulario controlada por administracion",
+        "Tableros de actividad y disenios personalizables"
+      ]
+    },
+    {
+      "id": "intended-use",
+      "title": "3. Uso previsto",
+      "paragraphs": [
+        "La App esta destinada a ayudar en la comunicacion y no es un dispositivo medico, una herramienta de terapia clinica ni un sustituto de los servicios profesionales de logopedia. Debe usarse junto con el apoyo clinico adecuado, no en lugar de este.",
+        "La App puede ser usada por ninios bajo la supervision de un padre, tutor o cuidador. El adulto responsable del dispositivo del usuario acepta estos Terminos en su nombre."
+      ]
+    },
+    {
+      "id": "license",
+      "title": "4. Licencia",
+      "paragraphs": [
+        "Sujeto a estos Terminos, te concedemos una licencia personal, no exclusiva, intransferible y revocable para instalar y usar la App en dispositivos que poseas o controles, unicamente para tus necesidades personales y no comerciales de comunicacion.",
+        "No puedes:"
+      ],
+      "items": [
+        "Copiar, modificar ni crear obras derivadas de la App",
+        "Realizar ingenieria inversa, descompilar o desmontar la App",
+        "Redistribuir, sublicenciar o vender la App o cualquiera de sus partes",
+        "Usar la App para cualquier fin ilegal"
+      ]
+    },
+    {
+      "id": "voice-services",
+      "title": "5. Servicios de voz de terceros",
+      "paragraphs": [
+        "La App admite integracion opcional con proveedores externos de texto a voz como ElevenLabs. Para usar estas funciones, debes aportar tu propia clave API y aceptar los terminos y precios de ese proveedor. No somos responsables de la disponibilidad, exactitud ni coste de los servicios de terceros.",
+        "Tu clave API se guarda solo en tu dispositivo y nunca se transmite a nuestros servidores."
+      ]
+    },
+    {
+      "id": "vocabulary-content",
+      "title": "6. Vocabulario y contenido",
+      "paragraphs": [
+        "Todo el vocabulario, las frases, los simbolos y las imagenes que anadas a la App siguen siendo tuyos. No reclamamos propiedad sobre tu contenido. Eres responsable de garantizar que cualquier contenido que incorpores, incluidas fotos o simbolos, no infrinja derechos de terceros."
+      ]
+    },
+    {
+      "id": "warranties",
+      "title": "7. Sin garantias",
+      "paragraphs": [
+        "La App se proporciona \"tal cual\" y \"segun disponibilidad\" sin garantias de ningun tipo, expresas o implicitas, incluidas, entre otras, la idoneidad para un fin concreto, el funcionamiento ininterrumpido o la ausencia de errores.",
+        "Como la App se usa como apoyo de comunicacion, recomendamos encarecidamente a usuarios y cuidadores mantener estrategias de comunicacion alternativas y no depender exclusivamente de la App en situaciones urgentes o sensibles al tiempo."
+      ]
+    },
+    {
+      "id": "liability",
+      "title": "8. Limitacion de responsabilidad",
+      "paragraphs": [
+        "En la maxima medida permitida por la ley, no seremos responsables de ningun dano indirecto, incidental, especial o consecuente derivado de tu uso o imposibilidad de usar la App, incluso si se nos ha advertido de la posibilidad de dichos danos."
+      ]
+    },
+    {
+      "id": "changes",
+      "title": "9. Cambios en la app o en los terminos",
+      "paragraphs": [
+        "Podemos actualizar la App o estos Terminos en cualquier momento. Los cambios materiales se comunicaran a traves de la App o de este sitio web. Tu uso continuado de la App despues de que se publiquen los cambios constituye aceptacion de los Terminos revisados."
+      ]
+    },
+    {
+      "id": "termination",
+      "title": "10. Finalizacion",
+      "paragraphs": [
+        "Puedes dejar de usar la App en cualquier momento. Nos reservamos el derecho de suspender la App o restringir el acceso en casos de uso indebido o incumplimiento de estos Terminos. Al desinstalar la App se eliminan todos los datos locales de tu dispositivo."
+      ]
+    },
+    {
+      "id": "governing-law",
+      "title": "11. Ley aplicable",
+      "paragraphs": [
+        "Estos Terminos se rigen e interpretan de acuerdo con las leyes de la jurisdiccion en la que se basa el desarrollador, sin tener en cuenta los principios sobre conflicto de leyes."
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "12. Contacto"
+    }
+  ],
+  "contactLead": "Si tienes preguntas sobre estos Terminos, ponte en contacto con nosotros en:"
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Biblioteca de simbolos",
+    "description": "Gestiona todo tu vocabulario de simbolos: busca, filtra, marca favoritos, oculta y edita simbolos con texto hablado, imagenes personalizadas, campos de vocabulario progresivo y colores Fitzgerald."
+  },
+  "hero": {
+    "title": "Biblioteca de simbolos",
+    "description": "Todo tu vocabulario en un solo lugar. Busca, filtra, marca favoritos, oculta y edita cada simbolo, con control total sobre su aspecto, su sonido y su comportamiento dentro del sistema de aprendizaje progresivo."
+  },
+  "sections": [
+    {
+      "id": "browse-find",
+      "badge": "Explorar y encontrar",
+      "title": "Busqueda y filtros inteligentes",
+      "description": "Encuentra rapidamente cualquier simbolo de tu vocabulario. La busqueda ordena los resultados de forma inteligente y los chips de filtro se adaptan a las categorias que realmente existen.",
+      "items": [
+        "Busca por etiqueta con clasificacion inteligente: coincidencias exactas primero, luego empieza por y despues contiene",
+        "Chips de filtro: Todo, Favoritos y un chip por cada categoria que tenga simbolos",
+        "Cada tarjeta de simbolo muestra imagen o emoji, etiqueta, categoria y botones de accion rapida",
+        "Acciones rapidas en cada fila: editar (lapiz), mostrar u ocultar (ojo) y marcar favorito (estrella)",
+        "La lista de simbolos se carga para el idioma activo; cambia de idioma para ver otro conjunto"
+      ]
+    },
+    {
+      "id": "quick-actions",
+      "badge": "Acciones rapidas",
+      "title": "Favoritos y visibilidad",
+      "description": "Marca con una estrella los simbolos importantes para acceder rapido, u oculta los que no quieras en uso habitual sin borrarlos.",
+      "items": [
+        "Toca la estrella para marcar un simbolo como favorito; usa el filtro Favoritos para localizarlo al instante",
+        "Toca el ojo para ocultar un simbolo del uso habitual manteniendolo en la base de datos",
+        "Los simbolos ocultos pueden restaurarse en cualquier momento; es mas seguro que borrar cuando no estas seguro",
+        "Los estados de favoritos y visibilidad tambien pueden controlarse dentro del editor completo del simbolo"
+      ]
+    },
+    {
+      "id": "symbol-editor",
+      "badge": "Editor de simbolos",
+      "title": "Control total sobre cada simbolo",
+      "description": "Crea simbolos nuevos o edita los existentes con un editor completo. Configura etiqueta, texto hablado, imagen, categoria y metadatos avanzados, todo en un mismo lugar.",
+      "items": [
+        "Etiqueta: el nombre visible que aparece en la tarjeta del simbolo y en la cuadricula",
+        "Texto hablado: lo que la app pronuncia; por defecto usa la etiqueta si se deja vacio",
+        "Emoji: representacion textual para un reconocimiento visual rapido",
+        "Imagen personalizada: adjunta una foto desde la galeria del dispositivo o toma una con la camara",
+        "Categoria: cada simbolo debe pertenecer a una categoria para organizar y filtrar",
+        "Idioma: crea o actualiza el simbolo para el idioma activo actual"
+      ]
+    },
+    {
+      "id": "advanced-features",
+      "badge": "Funciones avanzadas",
+      "title": "Vocabulario progresivo y colores Fitzgerald",
+      "description": "Para los clinicos que utilizan progresiones de aprendizaje estructuradas, cada simbolo contiene metadatos que controlan cuando y como aparece dentro del sistema de vocabulario progresivo.",
+      "items": [
+        "Posicion: define la ubicacion del simbolo en la cuadricula progresiva para mantener consistencia motora",
+        "Zona motora: agrupa simbolos por region fisica de la pantalla para apoyar la planificacion motora",
+        "Tipo de palabra: clasifica el simbolo (sustantivo, verbo, adjetivo y mas) para la logica gramatical y de aprendizaje",
+        "Nivel de introduccion: controla en cual de los 6 niveles progresivos se vuelve disponible el simbolo",
+        "Prioridad de uso y requisitos previos: ajusta cuando se desbloquea un simbolo y que debe dominarse antes",
+        "Anulacion de categoria Fitzgerald: asigna de forma explicita un grupo de color gramatical en lugar de depender del comportamiento automatico"
+      ]
+    },
+    {
+      "id": "safe-deletion",
+      "badge": "Eliminacion segura",
+      "title": "Eliminar con contexto",
+      "description": "Cuando eliminas un simbolo, la app comprueba si sigue usandose en tableros de actividad o si esta marcado como favorito para que no rompas un tablero por accidente.",
+      "items": [
+        "Antes de borrar, la app avisa si el simbolo se usa en algun tablero de actividad",
+        "Aparece una advertencia aparte si el simbolo esta en tu lista de favoritos",
+        "Si solo quieres sacarlo del uso habitual, ocultarlo es la opcion mas segura",
+        "La eliminacion es permanente; usala solo cuando realmente ya no necesites el simbolo"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Toma el control de tu vocabulario",
+    "subtitle": "Descarga Loquor AAC y construye la biblioteca de simbolos perfecta para cada comunicador.",
+    "buttonText": "Probar Loquor AAC"
+  }
+}

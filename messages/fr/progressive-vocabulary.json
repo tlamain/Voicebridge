@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "title": "Vocabulaire progressif",
+    "description": "Un systeme d'apprentissage du vocabulaire en 6 niveaux qui evolue avec l'utilisateur. La memoire motrice est protegee, la position des mots ne change jamais et la progression repose sur l'usage reel."
+  },
+  "hero": {
+    "badge": "Apprentissage et progression",
+    "title": "Vocabulaire progressif",
+    "description": "Un systeme structure de vocabulaire en 6 niveaux qui grandit avec le communicateur. Les mots se debloquent par l'usage reel, les positions restent fixes et chaque niveau s'appuie naturellement sur le precedent."
+  },
+  "heroScreenshot": {
+    "label": "Vocabulaire progressif - Reglages",
+    "description": "Reglages du vocabulaire progressif avec controles de niveau et options d'affichage"
+  },
+  "principle": {
+    "title": "Le principe central",
+    "description": "Utiliser des mots pour en debloquer d'autres. Les apprenants commencent au Niveau 1 avec un petit ensemble de mots essentiels. Lorsqu'ils montrent un usage regulier, le systeme suit leur progression et debloque le niveau suivant sans deplacer les mots existants.",
+    "items": [
+      {
+        "id": "motor-memory",
+        "title": "Protection de la memoire motrice",
+        "description": "Les mots ne changent jamais de position une fois introduits. Un symbole en ligne 2, colonne 3 au Niveau 1 reste au meme endroit jusqu'au Niveau 6."
+      },
+      {
+        "id": "per-level",
+        "title": "Evaluation par niveau",
+        "description": "Seuls les mots introduits au niveau actuel comptent pour progresser. Les mots deja maitrises ne gonflent pas artificiellement la progression."
+      },
+      {
+        "id": "usage-driven",
+        "title": "Progression guidee par l'usage",
+        "description": "Un mot n'est maitrise qu'apres avoir ete touche le nombre de fois requis. Le systeme mesure l'usage reel, pas seulement l'exposition."
+      },
+      {
+        "id": "ghost-slots",
+        "title": "Ghost slots",
+        "description": "Les mots verrouilles s'affichent sous forme de cellules fantomes non interactives : visibles mais non touchables. Les apprenants voient ce qui arrive sans etre submerges."
+      }
+    ]
+  },
+  "levels": {
+    "badge": "Systeme par niveaux",
+    "title": "Six niveaux de progression",
+    "subtitle": "Chaque niveau a son propre seuil et son exigence de maitrise. Les seuils diminuent aux niveaux superieurs car les ensembles de mots deviennent plus larges.",
+    "items": [
+      {
+        "id": "level-1",
+        "label": "Niveau 1",
+        "description": "Mots essentiels a fort impact",
+        "thresholdLabel": "seuil de maitrise",
+        "tapsLabel": "touches pour maitriser"
+      },
+      {
+        "id": "level-2",
+        "label": "Niveau 2",
+        "description": "Demarrage de la communication nucleaire",
+        "thresholdLabel": "seuil de maitrise",
+        "tapsLabel": "touches pour maitriser"
+      },
+      {
+        "id": "level-3",
+        "label": "Niveau 3",
+        "description": "Noyau elargi + bases",
+        "thresholdLabel": "seuil de maitrise",
+        "tapsLabel": "touches pour maitriser"
+      },
+      {
+        "id": "level-4",
+        "label": "Niveau 4",
+        "description": "Noyau complet + vocabulaire des personnes",
+        "thresholdLabel": "seuil de maitrise",
+        "tapsLabel": "touches pour maitriser"
+      },
+      {
+        "id": "level-5",
+        "label": "Niveau 5",
+        "description": "Systeme complet - plafond de maitrise",
+        "thresholdLabel": "seuil de maitrise",
+        "tapsLabel": "plafond de maitrise"
+      },
+      {
+        "id": "level-6",
+        "label": "Niveau 6",
+        "description": "Vocabulaire expert - deverrouillage manuel par l'aidant",
+        "thresholdLabel": "seuil de maitrise",
+        "tapsLabel": "deverrouillage manuel"
+      }
+    ],
+    "footnote": "Le Niveau 5 est le plafond de progression automatique, ou tous les mots sont visibles. Le Niveau 6 ne s'obtient pas par l'usage : il est deverrouille manuellement par un aidant dans les reglages d'administration."
+  },
+  "readiness": {
+    "badge": "Retour de preparation",
+    "title": "Le bouton flottant de preparation",
+    "description": "Un bouton d'action flottant sur l'ecran principal donne au communicateur un retour en direct sur sa progression. Sa couleur et son badge se mettent a jour automatiquement au fur et a mesure de l'usage des mots. En le touchant, on ouvre la fenetre de verification de preparation avec les statistiques completes.",
+    "fabStates": [
+      {
+        "id": "in-progress",
+        "label": "En cours",
+        "description": "Progression inferieure a 75 % : le bouton affiche en bleu le pourcentage actuel."
+      },
+      {
+        "id": "almost-there",
+        "label": "Presque pret",
+        "description": "Progression superieure a 75 % mais pas encore suffisante : le bouton devient orange pour signaler que l'utilisateur est proche."
+      },
+      {
+        "id": "ready",
+        "label": "Pret",
+        "description": "Tous les mots requis sont maitrises : le bouton devient vert et peut pulser pour inviter au passage au niveau suivant."
+      }
+    ],
+    "modal": {
+      "badge": "Flux de passage de niveau",
+      "title": "Fenetre de verification de preparation",
+      "description": "Lorsque l'utilisateur touche le bouton flottant, la fenetre affiche un detail complet de la progression vers le niveau suivant.",
+      "items": [
+        {
+          "id": "progress-circle",
+          "label": "Cercle de progression",
+          "detail": "Affiche le pourcentage vers le niveau suivant"
+        },
+        {
+          "id": "status-title",
+          "label": "Titre d'etat",
+          "detail": "Continuez, Vous progressez, Presque pret ou Vous etes pret"
+        },
+        {
+          "id": "stats-row",
+          "label": "Ligne de statistiques",
+          "detail": "Mots utilises, mots maitrises et nombre total de touches"
+        },
+        {
+          "id": "recommendations",
+          "label": "Recommandations de pratique",
+          "detail": "Jusqu'a 12 mots qui necessitent encore plus de touches"
+        },
+        {
+          "id": "unlock-button",
+          "label": "Bouton de deverrouillage",
+          "detail": "Apparaît uniquement lorsque le seuil est atteint"
+        }
+      ],
+      "screenshot": {
+        "label": "Fenetre de verification de preparation",
+        "description": "Controles d'administration du vocabulaire progressif"
+      }
+    }
+  },
+  "gridSizes": {
+    "badge": "Mode Core-Fringe",
+    "title": "Progression independante de la taille de grille",
+    "description": "En mode Core-Fringe, la progression est limitee aux symboles places sur la mise en page de grille active. Chaque taille de grille a son propre ensemble, donc changer de taille change aussi l'ensemble de progression.",
+    "gridSizeLabel": "Taille de grille",
+    "totalConceptsLabel": "Concepts totaux",
+    "level6ConceptsLabel": "Concepts de niveau 6"
+  },
+  "adminControls": {
+    "badge": "Controles d'administration",
+    "title": "Configuration de l'aidant",
+    "subtitle": "Tous les reglages de progression se trouvent dans l'ecran Administration, sous Langue -> Vocabulaire progressif. Chaque reglage est propre a l'utilisateur, ce qui permet d'avoir des exigences de maitrise differentes selon le communicateur.",
+    "items": [
+      {
+        "id": "enable-progression",
+        "label": "Activer la progression",
+        "description": "Activez ou desactivez tout le systeme. Lorsqu'il est desactive, tous les symboles sont visibles."
+      },
+      {
+        "id": "show-ghost-slots",
+        "label": "Afficher les ghost slots",
+        "description": "Affiche les positions verrouillees sous forme d'aperçus fantomes avec icones de cadenas."
+      },
+      {
+        "id": "mastery-threshold",
+        "label": "Seuil de maitrise",
+        "description": "Ajuste le pourcentage de mots qui doivent etre maitrises (50-100 % par pas de 5 %)."
+      },
+      {
+        "id": "min-uses",
+        "label": "Usages minimum par mot",
+        "description": "Ajuste le nombre de fois qu'un mot doit etre touche pour etre considere comme maitrise (1-10)."
+      },
+      {
+        "id": "expert-vocabulary",
+        "label": "Vocabulaire expert",
+        "description": "Deverrouille les mots du Niveau 6. N'apparait qu'a partir du Niveau 5 et reste une decision manuelle de l'aidant."
+      },
+      {
+        "id": "reset-progression",
+        "label": "Reinitialiser la progression",
+        "description": "Reinitialise tous les mots au Niveau 1 et demande confirmation."
+      }
+    ]
+  },
+  "wordFinder": {
+    "badge": "Integration Word Finder",
+    "title": "Les mots verrouilles sont clairement identifies",
+    "description": "Word Finder parcourt tout le vocabulaire mais affiche les mots verrouilles comme indisponibles, chacun etiquete 'Disponible au niveau X'. Toucher un resultat verrouille ne fait rien. Une fois le niveau suivant atteint, ce meme resultat devient selectionnable.",
+    "items": [
+      "Les resultats de recherche sont tries avec les mots deverrouilles en premier",
+      "Les resultats verrouilles affichent le niveau requis, pas seulement un cadenas",
+      "Le guidage pas a pas ne peut pas activer une cellule verrouillee",
+      "La mise a jour est instantanee lorsqu'un nouveau niveau est deverrouille"
+    ],
+    "screenshot": {
+      "label": "Word Finder avec resultats verrouilles",
+      "description": "Mots verrouilles affiches avec l'etiquette 'Disponible au niveau X'"
+    }
+  },
+  "links": [
+    {
+      "id": "smart-grammar",
+      "label": "Moteur grammatical intelligent ->"
+    },
+    {
+      "id": "features",
+      "label": "Toutes les fonctionnalites ->"
+    }
+  ],
+  "cta": {
+    "title": "Aidez a faconner Loquor AAC",
+    "subtitle": "Telechargez Loquor AAC et donnez a chaque communicateur le vocabulaire qu'il merite.",
+    "buttonText": "Essayer Loquor AAC"
+  }
+}

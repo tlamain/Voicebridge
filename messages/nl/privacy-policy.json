@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Privacybeleid",
+    "description": "Lees hoe Loquor AAC omgaat met lokale data, optionele stemdiensten, back-ups en privacy-instellingen onder controle van de gebruiker."
+  },
+  "title": "Privacybeleid - Loquor AAC",
+  "effectiveDateLabel": "Ingangsdatum",
+  "effectiveDate": "5 januari 2026",
+  "intro": "Loquor AAC (\"de App\") is ontworpen om gebruikers een betrouwbare communicatiestem te geven met tekst, symbolen en optionele spraaksynthese. Je privacy staat centraal in ons ontwerp.",
+  "sections": [
+    {
+      "id": "data-we-collect",
+      "title": "1. Gegevens die we verzamelen",
+      "paragraphs": [
+        "Loquor AAC verzamelt niet automatisch persoonsgegevens. Alle woordenschat, zinnen, symbolen en instellingen worden uitsluitend lokaal op je apparaat opgeslagen.",
+        "De App kan de volgende gegevens lokaal opslaan als je ervoor kiest ze te gebruiken:"
+      ],
+      "items": [
+        "Aangepaste woorden, zinnen en afkortingen",
+        "Geuploade foto's of symbolen die je aan knoppen koppelt",
+        "Gebruiksfrequentie van zinnen (voor betere suggesties)",
+        "Beheerpincode (lokaal opgeslagen in gehashte of versleutelde vorm)"
+      ]
+    },
+    {
+      "id": "data-not-collected",
+      "title": "2. Gegevens die niet worden verzameld",
+      "paragraphs": [
+        "Wij verzamelen, volgen of bewaren niet:"
+      ],
+      "items": [
+        "Gespreksgeschiedenis",
+        "Stemopnames",
+        "Locatiegegevens",
+        "Apparaat-id's",
+        "Analyse- of trackinggegevens",
+        "Gedrags- of interesseprofielen",
+        "Gegevens waarmee je geïdentificeerd kunt worden"
+      ]
+    },
+    {
+      "id": "voice-services",
+      "title": "3. Optionele Stemdiensten (Alleen door de gebruiker gestart)",
+      "paragraphs": [
+        "Als je je eigen API-sleutel invoert om externe stemdiensten zoals ElevenLabs te gebruiken, kan tekst die je wilt laten uitspreken alleen op het moment dat je op Spreken drukt naar die provider worden verzonden.",
+        "Loquor AAC slaat je API-sleutel niet buiten je apparaat op en verzendt die ook niet. Sleutels worden bewaard in de beveiligde opslag van het apparaat."
+      ]
+    },
+    {
+      "id": "local-backups",
+      "title": "4. Lokale Back-ups (Alleen door de gebruiker gestart)",
+      "paragraphs": [
+        "Je kunt je woordenschat handmatig exporteren of back-uppen. Dit wordt altijd door jou gestart. We uploaden nooit back-ups zonder jouw actie."
+      ]
+    },
+    {
+      "id": "data-security",
+      "title": "5. Gegevensbeveiliging",
+      "paragraphs": [
+        "Omdat gegevens op je apparaat blijven:"
+      ],
+      "items": [
+        "Blijven knopposities stabiel (veilig voor motorische planning)",
+        "Kan woordenschat worden verborgen (gemaskeerd) en nooit automatisch worden verwijderd",
+        "Is toegang via beheerpincode vereist om woordenschat te wijzigen",
+        "Worden API-sleutels, indien ingevoerd, opgeslagen met de beveiligde opslag van het platform"
+      ]
+    },
+    {
+      "id": "children",
+      "title": "6. Privacy van Kinderen",
+      "paragraphs": [
+        "Loquor AAC kan door kinderen worden gebruikt, maar de App verzamelt zelf geen gegevens over leeftijd, identiteit of gedrag. Woordenschat wordt door mantelzorgers beheerd via een lokale beheerpincode."
+      ]
+    },
+    {
+      "id": "third-party-libraries",
+      "title": "7. Externe Bibliotheken",
+      "paragraphs": [
+        "De App gebruikt open-sourcebibliotheken voor prestaties en offline opslag. Deze bibliotheken draaien op het apparaat en verzenden geen persoonsgegevens."
+      ]
+    },
+    {
+      "id": "your-rights",
+      "title": "8. Jouw Rechten",
+      "paragraphs": [
+        "Omdat wij geen persoonsgegevens opslaan, is er niets om op onze servers op te vragen, te verwijderen of in te trekken. Al je gegevens blijven onder jouw controle op je apparaat."
+      ]
+    },
+    {
+      "id": "policy-updates",
+      "title": "9. Updates van dit Beleid",
+      "paragraphs": [
+        "Als dit beleid verandert, wordt de update in de App en op onze website geplaatst. De ingangsdatum bovenaan wordt dan bijgewerkt."
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "10. Contact"
+    }
+  ],
+  "contactLead": "Voor vragen over privacy kun je contact met ons opnemen via:"
+}

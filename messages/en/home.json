@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "title": "Loquor AAC - Communication for Every Voice",
+    "description": "Loquor AAC empowers people with speech difficulties through symbol-based communication, smart grammar assistance, and natural-sounding voices while keeping data private and on-device."
+  },
+  "hero": {
+    "badge": "Augmentative and Alternative Communication",
+    "title": "Give Every Voice the",
+    "highlightedTitle": "Power to Be Heard",
+    "description": "Loquor AAC empowers people with speech difficulties through symbol-based communication, smart grammar assistance, and natural-sounding voices while keeping data private and on-device.",
+    "primaryButton": "Try Loquor AAC",
+    "secondaryButton": "Explore Features",
+    "screenshot": {
+      "label": "Loquor AAC - Main Screen",
+      "description": "Symbol grid with core-fringe layout and pictogram communication"
+    }
+  },
+  "howItWorks": {
+    "badge": "How It Works",
+    "title": "Communication in Three Simple Steps",
+    "subtitle": "From selecting symbols to speaking out loud, Loquor AAC makes it effortless.",
+    "steps": [
+      {
+        "id": "choose",
+        "title": "Choose",
+        "description": "Tap pictogram symbols from a customizable grid, or type freely with smart word predictions."
+      },
+      {
+        "id": "build",
+        "title": "Build",
+        "description": "Smart grammar automatically conjugates verbs, selects articles, and forms grammatically correct sentences."
+      },
+      {
+        "id": "speak",
+        "title": "Speak",
+        "description": "Press speak to hear your message in a natural voice - choose from device voices or premium AI options."
+      }
+    ]
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Everything You Need to Communicate",
+    "subtitle": "Built with clinicians, caregivers, and AAC users to reduce friction and cognitive load.",
+    "cards": [
+      {
+        "id": "symbol-text",
+        "title": "Symbol and Text Communication",
+        "description": "Tap pictogram symbols or type freely. Build messages naturally with a configurable 6-12 column grid, a message builder strip, and smart word prediction."
+      },
+      {
+        "id": "smart-grammar",
+        "title": "Smart Grammar Engine",
+        "description": "Automatic verb conjugation, perfect tense, continuous aspect, and reflexives - all handled silently. Supports Dutch, English, French, and Spanish with language-specific rules."
+      },
+      {
+        "id": "ai-voices",
+        "title": "Premium AI Voices",
+        "description": "Free offline device voices or premium ElevenLabs AI voices for natural, expressive speech. Automatic fallback ensures communication never stops."
+      },
+      {
+        "id": "progressive-vocabulary",
+        "title": "Progressive Vocabulary",
+        "description": "A 6-level learning system that grows with the user. Words unlock progressively based on real usage, with ghost slot previews and a floating readiness indicator."
+      },
+      {
+        "id": "grid-modes",
+        "title": "Three Grid Modes",
+        "description": "Standard Symbol Grid, Activity Boards for routines, and Core-Fringe with pinned core vocabulary. In-grid editing for full customisation."
+      },
+      {
+        "id": "languages",
+        "title": "4 Languages, All Offline",
+        "description": "English, Dutch, French, and Spanish - each with its own grammar rules, vocabulary packs, and voice options. Everything works completely offline."
+      },
+      {
+        "id": "privacy",
+        "title": "Clinical-Grade Privacy",
+        "description": "All data stays on-device. No tracking, no cloud uploads. PIN-protected admin access keeps settings safe from accidental changes."
+      },
+      {
+        "id": "multi-user",
+        "title": "Multi-User Profiles",
+        "description": "Completely isolated profiles for each communicator with separate databases and settings. Easy profile switching, duplication, and a guided setup wizard."
+      }
+    ]
+  },
+  "grammarSpotlight": {
+    "badge": "Language Intelligence",
+    "title": "Smart Grammar That Thinks Ahead",
+    "subtitle": "Tap a subject and a verb, and Loquor handles the rest. Context-aware conjugation across four languages.",
+    "examples": [
+      {
+        "id": "english",
+        "language": "English",
+        "note": "3rd person singular -s"
+      },
+      {
+        "id": "dutch",
+        "language": "Dutch",
+        "note": "Perfect tense with auxiliary"
+      },
+      {
+        "id": "french",
+        "language": "French",
+        "note": "Automatic elision before vowel"
+      },
+      {
+        "id": "spanish",
+        "language": "Spanish",
+        "note": "Present tense conjugation"
+      }
+    ],
+    "linkLabel": "Explore the full grammar engine",
+    "screenshot": {
+      "label": "Smart Grammar Engine",
+      "description": "Automatic verb conjugation with color-coded grammar"
+    }
+  },
+  "progressiveSpotlight": {
+    "badge": "Progressive Learning",
+    "title": "Vocabulary That Grows With the User",
+    "subtitle": "Words unlock based on real usage. Positions never change, so motor memory always carries forward.",
+    "levels": [
+      {
+        "id": "level-1",
+        "level": "Level 1",
+        "label": "Essential power words - 80% mastery threshold",
+        "badge": "Completed"
+      },
+      {
+        "id": "level-2",
+        "level": "Level 2",
+        "label": "Core communication starter - 75% mastery threshold",
+        "badge": "In progress"
+      },
+      {
+        "id": "level-3",
+        "level": "Level 3",
+        "label": "Expanded core + basics - 70% mastery threshold",
+        "badge": "Locked"
+      },
+      {
+        "id": "level-4-6",
+        "level": "Level 4-6",
+        "label": "Full vocabulary up to expert level",
+        "badge": "Locked"
+      }
+    ],
+    "linkLabel": "Learn how progression works",
+    "screenshot": {
+      "label": "Progressive Vocabulary",
+      "description": "Progressive vocabulary settings with level controls"
+    }
+  },
+  "stats": {
+    "items": [
+      {
+        "id": "languages",
+        "label": "Languages"
+      },
+      {
+        "id": "grid-modes",
+        "label": "Grid Modes"
+      },
+      {
+        "id": "levels",
+        "label": "Vocabulary Levels"
+      },
+      {
+        "id": "offline",
+        "label": "Offline Capable"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Try Loquor AAC?",
+    "subtitle": "Download the app and help shape the future of accessible communication.",
+    "buttonText": "Try Loquor AAC"
+  }
+}

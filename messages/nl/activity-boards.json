@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "Activiteitsborden",
+    "description": "Maak thematische communicatieborden voor maaltijden, routines, therapiesessies en meer. Pas pictogrammen, rastergrootte, achtergrondkleuren en knoppen direct op het bord aan."
+  },
+  "hero": {
+    "title": "Activiteitsborden",
+    "description": "Thematische communicatieborden afgestemd op specifieke routines, omgevingen en activiteiten. Maak een bord voor etenstijd, een ander voor school en wissel ertussen met één tik."
+  },
+  "sections": [
+    {
+      "id": "board-management",
+      "badge": "Bordbeheer",
+      "title": "Borden Maken, Kopiëren en Organiseren",
+      "description": "Bouw een bibliotheek van themaborden voor elke situatie, van etenstijd tot therapiesessies. Dupliceer een bestaand bord om tijd te besparen en pas het daarna aan voor een nieuwe context.",
+      "items": [
+        "Bekijk alle borden voor de huidige taal met live zoeken op titel of beschrijving",
+        "Maak een nieuw bord met een titel, pictogram of foto, rasterbreedte (6-12 kolommen) en achtergrondkleur",
+        "Kopieer een bestaand bord om de lay-out en alle knoppen in één tik te dupliceren",
+        "Elk bord toont pictogram, titel, aantal kolommen, aantal knoppen en herkomst van het woordenschatpakket",
+        "Borden zijn taalspecifiek - als je de app-taal wisselt, zie je een andere set"
+      ]
+    },
+    {
+      "id": "customisation",
+      "badge": "Aanpassing",
+      "title": "Pictogrammen, Kleuren en Rastergrootte",
+      "description": "Maak elk bord direct herkenbaar. Kies een emoji, een foto van het apparaat of een afbeelding uit een geïnstalleerd woordenschatpakket en stel daarna een achtergrondkleur en rasterbreedte in.",
+      "items": [
+        "Kiezer voor pictogram of afbeelding met emoji, fotobibliotheek van het apparaat en afbeeldingsopties uit woordenschatpakketten",
+        "Live voorbeeld wordt bijgewerkt terwijl je pictogram, kleur of rastergrootte wijzigt",
+        "Stapregelaar voor rasterkolommen - kies 6 tot 12 kolommen; rijen worden automatisch berekend op basis van schermgrootte",
+        "Achtergrondkleur uit vooraf ingestelde kleurstalen geeft elk bord een eigen visuele identiteit",
+        "Editor met twee kolommen op tablets voor sneller bewerken; één kolom op telefoons"
+      ]
+    },
+    {
+      "id": "grid-editing",
+      "badge": "Rasterbewerking",
+      "title": "Bordinhoud Visueel Opbouwen",
+      "description": "Open een bord in rasterbewerkingsmodus om knoppen rechtstreeks op het raster toe te voegen, te verplaatsen en te ordenen. Je hoeft de beheerflow niet te verlaten - alles gebeurt op dezelfde plek.",
+      "items": [
+        "Tik op een lege cel om de symboolkiezer te openen - kies een bestaand symbool, zoek of maak een nieuw symbool",
+        "Maak knoppen die naar andere borden linken en navigatieknoppen zoals Home en Terug",
+        "Verplaats een knop door die te selecteren en op een andere cel te tikken; bewerk hem met lang indrukken",
+        "Bewerk knopdetails: label, gesproken tekst, emoji, aangepaste afbeelding, categorie, Fitzgerald-kleur en achtergrondkleur",
+        "Tik op Klaar wanneer je klaar bent - de app gaat terug naar de bordeditor zodat je instellingen verder kunt aanpassen"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Klaar om je Eerste Bord te Maken?",
+    "subtitle": "Download Loquor AAC en maak communicatieborden op maat voor elk moment.",
+    "buttonText": "Probeer Loquor AAC"
+  }
+}

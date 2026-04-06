@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "title": "Mises en page Core-Fringe",
+    "description": "Construisez des mises en page de communication multipages ou les mots nucleaires a haute frequence restent fixes tandis que le vocabulaire fringe change selon le contexte. Gerez automatiquement arborescences de pages, slots et navigation."
+  },
+  "hero": {
+    "title": "Mises en page Core-Fringe",
+    "description": "Un systeme de communication multipage dans lequel les mots nucleaires a haute frequence restent visibles sur chaque page pendant que le vocabulaire fringe s'adapte au sujet en cours. Le standard de reference pour une AAC structuree."
+  },
+  "sections": [
+    {
+      "id": "layout-management",
+      "badge": "Gestion des mises en page",
+      "title": "Creer et activer des mises en page",
+      "description": "Chaque langue peut avoir plusieurs mises en page core-fringe, mais une seule peut etre active a la fois. Creez une mise en page, choisissez la taille de grille et activez-la quand elle est prete.",
+      "items": [
+        "Parcourez toutes les mises en page de la langue active avec recherche en direct par nom",
+        "Creez une mise en page avec un nom, une icone ou une photo et une taille de grille (6-12 colonnes) ; les lignes sont calculees automatiquement",
+        "Chaque nouvelle mise en page commence avec une page racine Accueil creee automatiquement",
+        "Activez une mise en page pour qu'elle devienne celle utilisee en mode core-fringe pour cette langue",
+        "Une seule mise en page peut etre active par langue ; la mise en page active est toujours triee en tete",
+        "Les lignes de mise en page affichent icone, nom, taille de grille, nombre de pages, nombre de slots, origine du pack et statut actif"
+      ]
+    },
+    {
+      "id": "page-hierarchy",
+      "badge": "Hierarchie des pages",
+      "title": "Arborescences avec navigation automatique",
+      "description": "Organisez le vocabulaire dans une arborescence de pages. Lorsqu'une sous-page est ajoutee, l'app place automatiquement une tuile de lien sur la page parente et ajoute des boutons Accueil et Retour sur la nouvelle page.",
+      "items": [
+        "Chaque mise en page commence avec une page racine Accueil ; ajoutez des sous-pages en dessous pour construire des zones thematiques",
+        "La creation d'une sous-page place automatiquement une tuile de lien sur la page parente (avec avertissement s'il n'y a aucun slot libre)",
+        "Les nouvelles sous-pages recoivent automatiquement des boutons de navigation Accueil et Retour sur leur propre grille",
+        "Modifiez le titre, l'icone ou l'image d'une page ; les tuiles qui y pointent se mettent a jour automatiquement",
+        "Copiez une page pour dupliquer sa structure et ses slots, puis adaptez-la a un nouveau theme",
+        "Sur tablette, l'arborescence s'affiche directement dans l'editeur ; sur telephone, un modal dedie de gestion des pages s'ouvre"
+      ]
+    },
+    {
+      "id": "core-vocabulary",
+      "badge": "Vocabulaire nucleaire",
+      "title": "Slots nucleaires fixes vs slots fringe dynamiques",
+      "description": "Le coeur du modele core-fringe : fixez les mots a haute frequence pour qu'ils restent visibles sur chaque page, tandis que les slots fringe changent lorsque l'utilisateur navigue entre les sujets.",
+      "items": [
+        "Les slots fixes (Core) restent visibles pendant la navigation et servent de vocabulaire nucleaire partage",
+        "Les slots dynamiques (Fringe) changent quand l'utilisateur passe d'une page a l'autre et servent aux mots lies au sujet",
+        "L'editeur de slots comprend un interrupteur Fixe pour promouvoir n'importe quel mot en statut nucleaire",
+        "Deux types de slots : symboles (vocabulaire) et liens (navigation de page), chacun avec ses options d'edition",
+        "Deplacez les slots en selectionnant une cellule puis une autre ; echangez-les en deplacant vers une cellule occupee"
+      ]
+    },
+    {
+      "id": "grid-editing",
+      "badge": "Edition de la grille",
+      "title": "Modifier les mises en page directement dans la grille",
+      "description": "Ouvrez une mise en page ou une page en mode edition de grille pour remplir les cellules, reorganiser les slots et gerer la navigation sans quitter le flux d'administration.",
+      "items": [
+        "Touchez une cellule vide pour ouvrir le selecteur de symboles : ajoutez vocabulaire, boutons de navigation ou liens vers des pages",
+        "Maintenez un slot existant pour modifier etiquette, texte prononce, image, couleur, etat fixe ou position",
+        "Le selecteur de pages dans la barre d'edition permet de passer d'une page a l'autre pendant l'edition",
+        "Les actions Ajouter une page et Copier une page sont disponibles directement dans la barre d'edition",
+        "Touchez Terminer pour revenir a l'editeur de mise en page ; il se rouvre automatiquement pour ne pas perdre votre contexte"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Decouvrez la communication Core-Fringe",
+    "subtitle": "Essayez Loquor AAC et voyez comment le vocabulaire nucleaire fixe transforme l'AAC.",
+    "buttonText": "Essayer Loquor AAC"
+  }
+}
