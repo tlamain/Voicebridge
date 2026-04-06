@@ -6,9 +6,9 @@ export const siteConfig = {
   supportEmail: "hello@loquoraac.com",
   socialImagePath: "/og-default.svg",
   deployment: {
-    origin: "https://tlamain.github.io",
-    basePath: "/Voicebridge",
-    siteUrl: "https://tlamain.github.io/Voicebridge",
+    origin: "https://loquoraac.com",
+    basePath: "",
+    siteUrl: "https://loquoraac.com",
   },
   links: {
     home: "/",
