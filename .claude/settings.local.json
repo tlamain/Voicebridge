@@ -11,7 +11,11 @@
       "Bash(cp \"Schermafbeeldingen/Add delete and change activity boards.png\" \"public/images/screenshots/activity-board-list.png\")",
       "Bash(cp \"Schermafbeeldingen/Admin mode behind a PIN.png\" \"public/images/screenshots/admin-pin-protection.png\")",
       "Bash(cp \"Schermafbeeldingen/Automatic verb conjugation.png\" \"public/images/screenshots/verb-conjugation.png\")",
-      "Bash(cp \"Schermafbeeldingen/CoreFringe mode.png\" \"public/images/screenshots/core-fringe-grid.png\")"
+      "Bash(cp \"Schermafbeeldingen/CoreFringe mode.png\" \"public/images/screenshots/core-fringe-grid.png\")",
+      "Bash(cp d:/VoicebridgeWebsite/app/page.tsx \"d:/VoicebridgeWebsite/app/[locale]/page.tsx\")",
+      "Bash(cp d:/VoicebridgeWebsite/app/not-found.tsx \"d:/VoicebridgeWebsite/app/[locale]/not-found.tsx\")",
+      "Bash(grep -rn 'href=\"/[a-z]' app/\\\\[locale\\\\]/*/page.tsx)",
+      "Bash(grep -rn 'href=\"/' app/\\\\[locale\\\\]/*/page.tsx)"
     ]
   }
 }

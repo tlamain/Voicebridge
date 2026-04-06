@@ -1,0 +1,34 @@
+{
+  "site.titleDefault": "Loquor AAC — Communication for Every Voice",
+  "site.description": "Loquor AAC empowers people with speech difficulties through symbol-based communication, smart grammar, premium AI voices, and progressive vocabulary learning.",
+
+  "nav.features": "Features",
+  "nav.whoItsFor": "Who It's For",
+  "nav.faq": "FAQ",
+  "nav.contact": "Contact",
+  "nav.privacyPolicy": "Privacy Policy",
+  "nav.termsOfService": "Terms of Service",
+  "nav.tryApp": "Try Loquor AAC",
+  "nav.toggleMenu": "Toggle menu",
+
+  "footer.tagline": "Empowering communication through symbols, text, and voice — with privacy and accessibility at the core.",
+  "footer.pages": "Pages",
+  "footer.deepDive": "Deep Dive",
+  "footer.legal": "Legal",
+  "footer.smartGrammar": "Smart Grammar",
+  "footer.progressiveVocabulary": "Progressive Vocabulary",
+  "footer.gridModes": "Grid Modes",
+  "footer.activityBoards": "Activity Boards",
+  "footer.coreFringeLayouts": "Core-Fringe Layouts",
+  "footer.symbolLibrary": "Symbol Library",
+  "footer.setupWizard": "Setup Wizard",
+  "footer.copyright": "Built with privacy and accessibility in mind.",
+
+  "notFound.title": "Page Not Found",
+  "notFound.description": "The page you're looking for doesn't exist on Loquor AAC.",
+  "notFound.goHome": "Go Home",
+
+  "skipLink.text": "Skip to content",
+
+  "languageSwitcher.label": "Language"
+}

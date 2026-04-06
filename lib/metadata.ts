@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import { absoluteSiteUrl, siteConfig } from "@/lib/site";
+import { locales, type Locale } from "@/lib/i18n";
 
 type PageMetadataOptions = {
   title: string;
   description: string;
   path: string;
+  locale: Locale;
 };
 
 export function createPageMetadata(options: PageMetadataOptions): Metadata {
-  const { title, description, path } = options;
-  const canonicalUrl = absoluteSiteUrl(path);
+  const { title, description, path, locale } = options;
+  const localizedPath = `/${locale}${path}`;
+  const canonicalUrl = absoluteSiteUrl(localizedPath);
   const metadataBase = new URL(siteConfig.deployment.origin);
   const socialImageUrl = absoluteSiteUrl(siteConfig.socialImagePath);
 
@@ -19,6 +22,9 @@ export function createPageMetadata(options: PageMetadataOptions): Metadata {
     metadataBase,
     alternates: {
       canonical: canonicalUrl,
+      languages: Object.fromEntries(
+        locales.map((l) => [l, absoluteSiteUrl(`/${l}${path}`)])
+      ),
     },
     openGraph: {
       type: "website",

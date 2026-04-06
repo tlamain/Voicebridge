@@ -1,0 +1,34 @@
+{
+  "site.titleDefault": "Loquor AAC — Comunicación para Cada Voz",
+  "site.description": "Loquor AAC empodera a personas con dificultades del habla a través de comunicación basada en símbolos, gramática inteligente, voces premium de IA y aprendizaje progresivo de vocabulario.",
+
+  "nav.features": "Características",
+  "nav.whoItsFor": "Para Quién Es",
+  "nav.faq": "Preguntas Frecuentes",
+  "nav.contact": "Contacto",
+  "nav.privacyPolicy": "Política de Privacidad",
+  "nav.termsOfService": "Términos de Servicio",
+  "nav.tryApp": "Probar Loquor AAC",
+  "nav.toggleMenu": "Alternar menú",
+
+  "footer.tagline": "Potenciando la comunicación a través de símbolos, texto y voz — con privacidad y accesibilidad en el centro.",
+  "footer.pages": "Páginas",
+  "footer.deepDive": "En Profundidad",
+  "footer.legal": "Legal",
+  "footer.smartGrammar": "Gramática Inteligente",
+  "footer.progressiveVocabulary": "Vocabulario Progresivo",
+  "footer.gridModes": "Modos de Cuadrícula",
+  "footer.activityBoards": "Tableros de Actividad",
+  "footer.coreFringeLayouts": "Diseños Núcleo-Periferia",
+  "footer.symbolLibrary": "Biblioteca de Símbolos",
+  "footer.setupWizard": "Asistente de Configuración",
+  "footer.copyright": "Construido con privacidad y accesibilidad en mente.",
+
+  "notFound.title": "Página No Encontrada",
+  "notFound.description": "La página que buscas no existe en Loquor AAC.",
+  "notFound.goHome": "Ir al Inicio",
+
+  "skipLink.text": "Saltar al contenido",
+
+  "languageSwitcher.label": "Idioma"
+}

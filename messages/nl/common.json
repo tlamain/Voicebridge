@@ -1,0 +1,34 @@
+{
+  "site.titleDefault": "Loquor AAC — Communicatie voor Elke Stem",
+  "site.description": "Loquor AAC ondersteunt mensen met spraakmoeilijkheden door symboolgebaseerde communicatie, slimme grammatica, premium AI-stemmen en progressief woordenschat leren.",
+
+  "nav.features": "Functies",
+  "nav.whoItsFor": "Voor Wie",
+  "nav.faq": "Veelgestelde Vragen",
+  "nav.contact": "Contact",
+  "nav.privacyPolicy": "Privacybeleid",
+  "nav.termsOfService": "Gebruiksvoorwaarden",
+  "nav.tryApp": "Probeer Loquor AAC",
+  "nav.toggleMenu": "Menu wisselen",
+
+  "footer.tagline": "Communicatie versterken door symbolen, tekst en stem — met privacy en toegankelijkheid als kern.",
+  "footer.pages": "Pagina's",
+  "footer.deepDive": "Meer Details",
+  "footer.legal": "Juridisch",
+  "footer.smartGrammar": "Slimme Grammatica",
+  "footer.progressiveVocabulary": "Progressieve Woordenschat",
+  "footer.gridModes": "Rastermodi",
+  "footer.activityBoards": "Activiteitenborden",
+  "footer.coreFringeLayouts": "Kern-Rand Lay-outs",
+  "footer.symbolLibrary": "Symbolenbibliotheek",
+  "footer.setupWizard": "Installatiewizard",
+  "footer.copyright": "Gebouwd met privacy en toegankelijkheid in gedachten.",
+
+  "notFound.title": "Pagina Niet Gevonden",
+  "notFound.description": "De pagina die u zoekt bestaat niet op Loquor AAC.",
+  "notFound.goHome": "Naar Home",
+
+  "skipLink.text": "Naar inhoud",
+
+  "languageSwitcher.label": "Taal"
+}

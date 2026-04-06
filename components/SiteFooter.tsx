@@ -1,7 +1,13 @@
 import Link from "next/link";
-import { assetPath, legalNavigation, siteConfig } from "@/lib/site";
+import { assetPath, siteConfig } from "@/lib/site";
+import { localizeHref, type Locale } from "@/lib/i18n";
 
-export default function SiteFooter() {
+type SiteFooterProps = {
+  locale: Locale;
+  translations: Record<string, string>;
+};
+
+export default function SiteFooter({ locale, translations: t }: SiteFooterProps) {
   return (
     <footer className="mt-14 border-t border-slate-200 bg-slate-50">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-10 sm:flex-row sm:items-start sm:justify-between sm:px-6 lg:px-8">
@@ -18,7 +24,7 @@ export default function SiteFooter() {
             {siteConfig.name}
           </p>
           <p className="max-w-md text-sm text-slate-600">
-            Empowering communication through symbols, text, and voice — with privacy and accessibility at the core.
+            {t["footer.tagline"]}
           </p>
           <a
             href={`mailto:${siteConfig.supportEmail}`}
@@ -30,43 +36,38 @@ export default function SiteFooter() {
 
         <div className="flex flex-wrap gap-8">
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Pages</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{t["footer.pages"]}</p>
             <ul className="space-y-2">
-              <li><Link href="/features" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Features</Link></li>
-              <li><Link href="/who-its-for" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Who It&apos;s For</Link></li>
-              <li><Link href="/faq" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">FAQ</Link></li>
-              <li><Link href="/contact" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Contact</Link></li>
+              <li><Link href={localizeHref("/features", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["nav.features"]}</Link></li>
+              <li><Link href={localizeHref("/who-its-for", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["nav.whoItsFor"]}</Link></li>
+              <li><Link href={localizeHref("/faq", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["nav.faq"]}</Link></li>
+              <li><Link href={localizeHref("/contact", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["nav.contact"]}</Link></li>
             </ul>
           </div>
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Deep Dive</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{t["footer.deepDive"]}</p>
             <ul className="space-y-2">
-              <li><Link href="/smart-grammar" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Smart Grammar</Link></li>
-              <li><Link href="/progressive-vocabulary" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Progressive Vocabulary</Link></li>
-              <li><Link href="/grid-modes" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Grid Modes</Link></li>
-              <li><Link href="/activity-boards" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Activity Boards</Link></li>
-              <li><Link href="/core-fringe" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Core-Fringe Layouts</Link></li>
-              <li><Link href="/symbol-management" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Symbol Library</Link></li>
-              <li><Link href="/setup-wizard" className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">Setup Wizard</Link></li>
+              <li><Link href={localizeHref("/smart-grammar", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["footer.smartGrammar"]}</Link></li>
+              <li><Link href={localizeHref("/progressive-vocabulary", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["footer.progressiveVocabulary"]}</Link></li>
+              <li><Link href={localizeHref("/grid-modes", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["footer.gridModes"]}</Link></li>
+              <li><Link href={localizeHref("/activity-boards", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["footer.activityBoards"]}</Link></li>
+              <li><Link href={localizeHref("/core-fringe", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["footer.coreFringeLayouts"]}</Link></li>
+              <li><Link href={localizeHref("/symbol-management", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["footer.symbolLibrary"]}</Link></li>
+              <li><Link href={localizeHref("/setup-wizard", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["footer.setupWizard"]}</Link></li>
             </ul>
           </div>
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Legal</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{t["footer.legal"]}</p>
             <ul className="space-y-2">
-              {legalNavigation.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              <li><Link href={localizeHref("/privacy-policy", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["nav.privacyPolicy"]}</Link></li>
+              <li><Link href={localizeHref("/terms-of-service", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["nav.termsOfService"]}</Link></li>
             </ul>
           </div>
         </div>
       </div>
       <div className="border-t border-slate-200 py-4">
         <p className="text-center text-xs text-slate-500">
-          &copy; {new Date().getFullYear()} {siteConfig.name}. Built with privacy and accessibility in mind.
+          &copy; {new Date().getFullYear()} {siteConfig.name}. {t["footer.copyright"]}
         </p>
       </div>
     </footer>
