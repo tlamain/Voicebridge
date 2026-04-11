@@ -26,12 +26,6 @@ export default function SiteFooter({ locale, translations: t }: SiteFooterProps)
           <p className="max-w-md text-sm text-slate-600">
             {t["footer.tagline"]}
           </p>
-          <a
-            href={`mailto:${siteConfig.supportEmail}`}
-            className="inline-block text-sm font-medium text-indigo-600 no-underline transition hover:text-indigo-800"
-          >
-            {siteConfig.supportEmail}
-          </a>
         </div>
 
         <div className="flex flex-wrap gap-8">

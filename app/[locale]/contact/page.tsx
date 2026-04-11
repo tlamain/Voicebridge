@@ -32,7 +32,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
         </div>
       </ScrollReveal>
 
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <ScrollReveal>
           <div className="rounded-3xl border border-slate-200 bg-white p-10 space-y-6">
             <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600">
