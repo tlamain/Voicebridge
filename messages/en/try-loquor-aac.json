@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Try Loquor AAC",
+    "description": "Download Loquor AAC on iOS and Android and start communicating with symbols, smart grammar, and premium voices."
+  },
+  "hero": {
+    "title": "Try Loquor AAC",
+    "description": "Symbol-based communication, smart grammar, and premium voices — available on iOS and Android."
+  },
+  "download": {
+    "title": "Download Loquor AAC",
+    "description": "Available on iOS and Android. Download the app and start communicating today.",
+    "appStorePrefix": "Coming soon to the",
+    "appStoreLabel": "App Store",
+    "googlePlayPrefix": "Get it on",
+    "googlePlayLabel": "Google Play"
+  }
+}

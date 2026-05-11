@@ -36,6 +36,7 @@ export default function SiteFooter({ locale, translations: t }: SiteFooterProps)
               <li><Link href={localizeHref("/who-its-for", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["nav.whoItsFor"]}</Link></li>
               <li><Link href={localizeHref("/faq", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["nav.faq"]}</Link></li>
               <li><Link href={localizeHref("/contact", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["nav.contact"]}</Link></li>
+              <li><Link href={localizeHref("/try-loquor-aac", locale)} className="text-sm text-slate-700 no-underline transition hover:text-indigo-600">{t["nav.tryApp"]}</Link></li>
             </ul>
           </div>
           <div>

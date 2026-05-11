@@ -155,6 +155,15 @@ export type FaqNamespace = {
   cta: CtaCopy;
 };
 
+export type DownloadCtaCopy = {
+  title: string;
+  description: string;
+  appStorePrefix: string;
+  appStoreLabel: string;
+  googlePlayPrefix: string;
+  googlePlayLabel: string;
+};
+
 export type ContactNamespace = {
   meta: MetaCopy;
   hero: HeroCopy;
@@ -164,14 +173,13 @@ export type ContactNamespace = {
     responseTime: string;
     location: string;
   };
-  download: {
-    title: string;
-    description: string;
-    appStorePrefix: string;
-    appStoreLabel: string;
-    googlePlayPrefix: string;
-    googlePlayLabel: string;
-  };
+  download: DownloadCtaCopy;
+};
+
+export type TryLoquorAacNamespace = {
+  meta: MetaCopy;
+  hero: HeroCopy;
+  download: DownloadCtaCopy;
 };
 
 export type ProductNamespace = {
@@ -478,6 +486,7 @@ export interface I18nNamespaces {
   "who-its-for": WhoItsForNamespace;
   faq: FaqNamespace;
   contact: ContactNamespace;
+  "try-loquor-aac": TryLoquorAacNamespace;
   product: ProductNamespace;
   "grid-modes": GridModesNamespace;
   "smart-grammar": SmartGrammarNamespace;

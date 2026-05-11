@@ -1,23 +1,22 @@
 import ScrollReveal from "@/components/ScrollReveal";
-import TallyEmbed from "@/components/TallyEmbed";
 import { createPageMetadata } from "@/lib/metadata";
 import { getNamespace, type Locale } from "@/lib/i18n";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = getNamespace(locale as Locale, "contact");
+  const t = getNamespace(locale as Locale, "try-loquor-aac");
 
   return createPageMetadata({
     title: t.meta.title,
     description: t.meta.description,
-    path: "/contact",
+    path: "/try-loquor-aac",
     locale: locale as Locale,
   });
 }
 
-export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function TryLoquorAacPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = getNamespace(locale as Locale, "contact");
+  const t = getNamespace(locale as Locale, "try-loquor-aac");
 
   return (
     <div className="py-16 space-y-16">
@@ -32,27 +31,6 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
         </div>
       </ScrollReveal>
 
-      <div className="max-w-3xl mx-auto">
-        <ScrollReveal>
-          <div className="rounded-3xl border border-slate-200 bg-white p-10 space-y-6">
-            <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-              </svg>
-            </div>
-            <h2 className="font-(--font-jakarta) text-2xl font-bold text-slate-900">{t.card.title}</h2>
-            <p className="text-slate-600 leading-relaxed">
-              {t.card.description}
-            </p>
-            <TallyEmbed formId="aQDZ2X" title={t.card.title} />
-            <div className="pt-4 border-t border-slate-100 space-y-1">
-              <p className="text-sm text-slate-500">{t.card.responseTime}</p>
-              <p className="text-sm text-slate-500">{t.card.location}</p>
-            </div>
-          </div>
-        </ScrollReveal>
-      </div>
-
       <ScrollReveal>
         <div className="text-center rounded-3xl bg-linear-to-br from-indigo-50 to-blue-50 border border-indigo-100 p-10 space-y-6">
           <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-100 text-indigo-600">
@@ -60,7 +38,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
             </svg>
           </div>
-          <h3 className="font-(--font-jakarta) text-xl font-bold text-slate-900">{t.download.title}</h3>
+          <h2 className="font-(--font-jakarta) text-2xl font-bold text-slate-900">{t.download.title}</h2>
           <p className="text-slate-600 max-w-lg mx-auto">
             {t.download.description}
           </p>

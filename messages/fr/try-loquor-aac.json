@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Essayer Loquor AAC",
+    "description": "Telechargez Loquor AAC pour iOS et Android et commencez a communiquer avec des symboles, une grammaire intelligente et des voix premium."
+  },
+  "hero": {
+    "title": "Essayer Loquor AAC",
+    "description": "Communication par symboles, grammaire intelligente et voix premium, disponibles sur iOS et Android."
+  },
+  "download": {
+    "title": "Telecharger Loquor AAC",
+    "description": "Disponible sur iOS et Android. Telechargez l'application et commencez a communiquer des aujourd'hui.",
+    "appStorePrefix": "Bientot sur",
+    "appStoreLabel": "App Store",
+    "googlePlayPrefix": "Disponible sur",
+    "googlePlayLabel": "Google Play"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Probeer Loquor AAC",
+    "description": "Download Loquor AAC voor iOS en Android en begin met communiceren via symbolen, slimme grammatica en premium stemmen."
+  },
+  "hero": {
+    "title": "Probeer Loquor AAC",
+    "description": "Symboolgebaseerde communicatie, slimme grammatica en premium stemmen — beschikbaar voor iOS en Android."
+  },
+  "download": {
+    "title": "Download Loquor AAC",
+    "description": "Beschikbaar op iOS en Android. Download de app en begin vandaag nog met communiceren.",
+    "appStorePrefix": "Binnenkort in de",
+    "appStoreLabel": "App Store",
+    "googlePlayPrefix": "Download via",
+    "googlePlayLabel": "Google Play"
+  }
+}

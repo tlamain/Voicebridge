@@ -16,6 +16,7 @@ export const siteConfig = {
     whoItsFor: "/who-its-for",
     faq: "/faq",
     contact: "/contact",
+    tryApp: "/try-loquor-aac",
     privacy: "/privacy-policy",
     terms: "/terms-of-service",
   },
@@ -37,6 +38,7 @@ export const publicRoutes = [
   "/who-its-for",
   "/faq",
   "/contact",
+  "/try-loquor-aac",
   "/privacy-policy",
   "/terms-of-service",
 ] as const;
