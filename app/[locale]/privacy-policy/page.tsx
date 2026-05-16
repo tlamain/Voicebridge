@@ -2,6 +2,31 @@ import { createPageMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 import { getNamespace, type Locale } from "@/lib/i18n";
 
+function renderWithLinks(text: string) {
+  const parts = text.split(/(https?:\/\/[^\s]+)/g);
+  return parts.map((part, index) => {
+    if (!/^https?:\/\//.test(part)) {
+      return part;
+    }
+    const match = part.match(/^(.*?)([.,;)]*)$/);
+    const url = match?.[1] ?? part;
+    const trailing = match?.[2] ?? "";
+    return (
+      <span key={index}>
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-indigo-600 hover:text-indigo-800 font-medium"
+        >
+          {url}
+        </a>
+        {trailing}
+      </span>
+    );
+  });
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = getNamespace(locale as Locale, "privacy-policy");
@@ -31,17 +56,19 @@ export default async function PrivacyPolicyPage({ params }: { params: Promise<{ 
             {t.intro}
           </p>
 
-          {t.sections.map((section, index) => (
+          {t.sections.map((section) => (
             <section
               key={section.id}
               className={`rounded-2xl border p-6 space-y-3 ${
-                index === 1 ? "bg-emerald-50 border-emerald-200" : "bg-white border-slate-200"
+                section.id === "data-not-collected"
+                  ? "bg-emerald-50 border-emerald-200"
+                  : "bg-white border-slate-200"
               }`}
             >
               <h2 className="text-xl font-semibold text-slate-900">{section.title}</h2>
               {section.paragraphs?.map((paragraph) => (
                 <p key={paragraph} className="text-slate-600">
-                  {paragraph}
+                  {renderWithLinks(paragraph)}
                 </p>
               ))}
               {section.items ? (
@@ -51,6 +78,11 @@ export default async function PrivacyPolicyPage({ params }: { params: Promise<{ 
                   ))}
                 </ul>
               ) : null}
+              {section.paragraphsAfter?.map((paragraph) => (
+                <p key={paragraph} className="text-slate-600">
+                  {renderWithLinks(paragraph)}
+                </p>
+              ))}
               {section.id === "contact" ? (
                 <>
                   <p className="text-slate-600">{t.contactLead}</p>

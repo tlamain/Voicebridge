@@ -51,6 +51,7 @@ export type LegalSectionCopy = {
   title: string;
   paragraphs?: string[];
   items?: string[];
+  paragraphsAfter?: string[];
 };
 
 export type CommonNamespace = Record<string, string>;

@@ -1,103 +1,155 @@
 {
   "meta": {
     "title": "Politica de privacidad",
-    "description": "Lee como Loquor AAC gestiona los datos locales, los servicios de voz opcionales, las copias de seguridad y los ajustes de privacidad controlados por el usuario."
+    "description": "Lee como Loquor AAC gestiona los datos locales, los servicios de voz opcionales, las compras dentro de la app y los ajustes de privacidad controlados por el usuario."
   },
   "title": "Politica de privacidad - Loquor AAC",
   "effectiveDateLabel": "Fecha de entrada en vigor",
   "effectiveDate": "5 de enero de 2026",
-  "intro": "Loquor AAC (\"la App\") esta disenada para ofrecer a los usuarios una voz de comunicacion fiable mediante texto, simbolos y sintesis de voz opcional. Tu privacidad es central en nuestro diseno.",
+  "intro": "Loquor AAC (\"la App\") esta disenada para ofrecer a los usuarios una voz de comunicacion fiable mediante texto, simbolos y sintesis de voz opcional. Tu privacidad es central en nuestro diseno. Esta politica explica que datos gestiona la App, quien los procesa y las opciones que tienes.",
   "sections": [
     {
-      "id": "data-we-collect",
-      "title": "1. Datos que recopilamos",
+      "id": "who-we-are",
+      "title": "1. Quienes somos",
       "paragraphs": [
-        "Loquor AAC no recopila automaticamente datos personales. Todo el vocabulario, las frases, los simbolos y los ajustes se almacenan solo localmente en tu dispositivo.",
-        "La App puede almacenar localmente lo siguiente si eliges usarlo:"
+        "Loquor AAC es operado por Thierry Lamain, un desarrollador independiente con sede en los Paises Bajos, que actua como responsable del tratamiento de cualquier dato personal procesado en relacion con la App.",
+        "Puedes contactarnos usando los datos de la seccion Contacto que aparece al final."
+      ]
+    },
+    {
+      "id": "data-we-collect",
+      "title": "2. Datos que procesamos",
+      "paragraphs": [
+        "Loquor AAC es local primero: tu vocabulario, frases, simbolos, fotos y ajustes se almacenan solo en tu dispositivo y no se transmiten a nosotros.",
+        "La App almacena lo siguiente en tu dispositivo cuando la usas:"
       ],
       "items": [
-        "Palabras, frases y abreviaturas personalizadas",
-        "Fotos o simbolos cargados que asignas a botones",
-        "Frecuencia de uso de frases (para mejores sugerencias)",
-        "PIN de administracion (almacenado localmente en forma cifrada o hasheada)"
+        "Palabras, frases y abreviaturas personalizadas que creas",
+        "Fotos o simbolos que asignas a botones",
+        "Frecuencia de uso de frases (usada en el dispositivo para mejores sugerencias)",
+        "PIN de administracion (almacenado localmente en forma cifrada o hasheada)",
+        "Claves API de terceros que decides introducir (guardadas en el almacenamiento seguro de la plataforma)"
+      ],
+      "paragraphsAfter": [
+        "Cuando realizas una compra dentro de la app o te suscribes, una cantidad limitada de datos es procesada por nuestro proveedor de pagos (RevenueCat) y por Apple. Esto se describe en la seccion Compras dentro de la app que aparece mas abajo."
       ]
     },
     {
       "id": "data-not-collected",
-      "title": "2. Datos que no recopilamos",
+      "title": "3. Datos que no recopilamos",
       "paragraphs": [
-        "No recopilamos, rastreamos ni almacenamos:"
+        "No recopilamos, rastreamos, vendemos ni compartimos:"
       ],
       "items": [
-        "Historial de conversaciones",
-        "Grabaciones de voz",
+        "Historial de conversaciones ni mensajes que redactas en la App",
+        "Grabaciones de voz ni entrada del microfono",
         "Datos de ubicacion",
-        "Identificadores de dispositivo",
-        "Datos analiticos o de seguimiento",
-        "Perfiles de comportamiento o intereses",
-        "Cualquier dato usado para identificarte"
+        "Identificadores publicitarios (IDFA), y no te seguimos a traves de aplicaciones ni sitios web",
+        "Perfiles de comportamiento, intereses ni marketing",
+        "Contactos, calendario ni datos de salud"
+      ]
+    },
+    {
+      "id": "ios-permissions",
+      "title": "4. Permisos de iOS",
+      "paragraphs": [
+        "Loquor AAC solicita los siguientes permisos de iOS unicamente cuando son necesarios y solo para los fines descritos:"
+      ],
+      "items": [
+        "Loquor AAC necesita acceder a tu fototeca para que puedas elegir una foto y asignarla a un boton de comunicacion. Las fotos permanecen en tu dispositivo.",
+        "Loquor AAC necesita acceder a tu camara para que puedas tomar una nueva foto y asignarla a un boton de comunicacion. Las fotos permanecen en tu dispositivo."
       ]
     },
     {
       "id": "voice-services",
-      "title": "3. Servicios de voz opcionales (solo iniciados por el usuario)",
+      "title": "5. Servicios de voz opcionales (solo iniciados por el usuario)",
       "paragraphs": [
-        "Si introduces tu propia clave API para usar servicios de voz de terceros como ElevenLabs, el texto que decidas reproducir puede enviarse a ese proveedor unicamente en el momento en que pulses Hablar.",
-        "Loquor AAC no almacena ni transmite tu clave API fuera de tu dispositivo. Las claves se guardan en el almacenamiento seguro del dispositivo."
+        "Si introduces tu propia clave API para usar un servicio de voz de terceros como ElevenLabs, el texto que decidas reproducir se envia directamente desde tu dispositivo a ese proveedor unicamente en el momento en que pulses Hablar.",
+        "Loquor AAC no almacena ni transmite tu clave API fuera de tu dispositivo. Las claves se guardan en el almacenamiento seguro del dispositivo.",
+        "El uso de un servicio de voz de terceros se rige por la politica de privacidad de ese proveedor. Para ElevenLabs, consulta https://elevenlabs.io/privacy."
+      ]
+    },
+    {
+      "id": "in-app-purchases",
+      "title": "6. Compras dentro de la app y suscripciones",
+      "paragraphs": [
+        "Loquor AAC utiliza RevenueCat para gestionar las compras dentro de la app y las suscripciones en la App Store. Cuando realizas una compra o cambia el estado de tu suscripcion, la App comparte lo siguiente con RevenueCat en nuestro nombre:"
+      ],
+      "items": [
+        "Un identificador de usuario seudonimo generado en tu dispositivo",
+        "Tu estado de compra, transaccion y suscripcion",
+        "Modelo del dispositivo, version del sistema operativo y version de la app",
+        "Ajustes de pais e idioma"
+      ],
+      "paragraphsAfter": [
+        "RevenueCat no recibe tu nombre, direccion de correo electronico, datos de contacto ni ningun contenido que crees en la App. El pago real lo gestiona Apple bajo su propia politica de privacidad; nosotros nunca vemos tus datos de pago.",
+        "RevenueCat procesa estos datos en nuestro nombre para que podamos verificar derechos y ofrecer funciones de suscripcion en tus dispositivos. Para mas detalles, consulta https://www.revenuecat.com/privacy/ y https://www.apple.com/legal/privacy/."
       ]
     },
     {
       "id": "local-backups",
-      "title": "4. Copias de seguridad locales (solo iniciadas por el usuario)",
+      "title": "7. Copias de seguridad locales (solo iniciadas por el usuario)",
       "paragraphs": [
-        "Puedes exportar o hacer una copia de seguridad de tu vocabulario manualmente. Esto siempre lo inicias tu. Nunca subimos copias de seguridad sin tu accion."
+        "Puedes exportar o hacer una copia de seguridad de tu vocabulario manualmente. Esto siempre lo inicias tu y el archivo se guarda en la ubicacion que elijas. Nunca subimos copias de seguridad a nuestros servidores."
       ]
     },
     {
       "id": "data-security",
-      "title": "5. Seguridad de los datos",
+      "title": "8. Seguridad de los datos",
       "paragraphs": [
-        "Como los datos permanecen en tu dispositivo:"
+        "Como casi todos tus datos permanecen en tu dispositivo:"
       ],
       "items": [
         "Las posiciones de los botones se mantienen estables (seguras para la planificacion motora)",
-        "El vocabulario puede ocultarse, pero nunca eliminarse automaticamente",
+        "El vocabulario puede ocultarse (enmascararse) y nunca se elimina automaticamente",
         "Se requiere acceso mediante PIN administrativo para modificar el vocabulario",
-        "Las claves API, si se introducen, se almacenan usando el almacenamiento seguro de la plataforma"
+        "Las claves API, si se introducen, se almacenan usando el almacenamiento seguro de la plataforma (Keychain en iOS)"
+      ]
+    },
+    {
+      "id": "data-retention",
+      "title": "9. Conservacion y eliminacion de datos",
+      "paragraphs": [
+        "Los datos locales en tu dispositivo se conservan hasta que los elimines desde la App o desinstales la App. Desinstalar Loquor AAC elimina todo el vocabulario, las fotos, los ajustes y las claves API almacenadas localmente.",
+        "Los registros de compra y suscripcion que conserva RevenueCat se mantienen el tiempo necesario para prestarte la suscripcion y cumplir obligaciones legales y fiscales. Puedes solicitar la eliminacion de tu registro en RevenueCat contactando con nosotros."
       ]
     },
     {
       "id": "children",
-      "title": "6. Privacidad infantil",
+      "title": "10. Privacidad infantil",
       "paragraphs": [
-        "Loquor AAC puede ser usado por ninios, pero la App en si no recopila datos sobre edad, identidad o comportamiento. El vocabulario es gestionado por cuidadores mediante un PIN administrativo local."
+        "Loquor AAC esta pensada para apoyar la comunicacion de usuarios de cualquier edad, incluidos los ninios. La App en si no recopila datos sobre la edad, identidad o comportamiento del usuario, y no crea perfiles de usuario.",
+        "Loquor AAC no contiene publicidad de terceros, no usa SDK de analitica de terceros y no vende ni comparte datos de usuario con anunciantes. El vocabulario, las fotos y los ajustes son gestionados por un cuidador o progenitor en el dispositivo mediante un PIN administrativo local.",
+        "La App no esta dirigida principalmente a ninios menores de 13 anos y no recopilamos a sabiendas informacion personal de ninios. Si crees que un ninio ha facilitado informacion personal, ponte en contacto con nosotros y te ayudaremos."
       ]
     },
     {
       "id": "third-party-libraries",
-      "title": "7. Bibliotecas de terceros",
+      "title": "11. Bibliotecas y servicios de terceros",
       "paragraphs": [
-        "La App usa bibliotecas de codigo abierto para el rendimiento y el almacenamiento sin conexion. Estas bibliotecas se ejecutan en el dispositivo y no transmiten datos personales."
+        "Ademas de los proveedores descritos arriba (RevenueCat para compras, proveedores de voz opcionales como ElevenLabs y Apple para los pagos), Loquor AAC utiliza bibliotecas de codigo abierto para el rendimiento y el almacenamiento en el dispositivo. Estas bibliotecas se ejecutan en el dispositivo y no transmiten datos personales."
       ]
     },
     {
       "id": "your-rights",
-      "title": "8. Tus derechos",
+      "title": "12. Tus derechos",
       "paragraphs": [
-        "Como nosotros no almacenamos datos personales, no hay nada que solicitar, borrar o retirar de nuestros servidores. Todos tus datos siguen bajo tu control en tu dispositivo."
+        "Mantienes el control total de los datos que la App guarda en tu dispositivo: puedes ver, editar, ocultar, exportar o eliminar el vocabulario, las fotos y los ajustes en cualquier momento, y desinstalar la App elimina esos datos.",
+        "Si te encuentras en el Espacio Economico Europeo, el Reino Unido u otra region con leyes de privacidad similares, tienes derecho a acceder, corregir, eliminar y restringir el tratamiento de los datos personales que conservamos sobre ti, asi como a presentar una reclamacion ante tu autoridad local de proteccion de datos. Como solo tratamos datos limitados de compra a traves de RevenueCat, las solicitudes suelen referirse a esos datos. Para ejercer estos derechos, contactanos usando los datos que aparecen mas abajo.",
+        "No vendemos tus datos personales y no los usamos para publicidad ni perfilado."
       ]
     },
     {
       "id": "policy-updates",
-      "title": "9. Actualizaciones de la politica",
+      "title": "13. Actualizaciones de la politica",
       "paragraphs": [
-        "Si esta politica cambia, la actualizacion se publicara dentro de la App y en nuestro sitio web. La fecha de entrada en vigor se actualizara en la parte superior."
+        "Si esta politica cambia, la actualizacion se publicara dentro de la App y en nuestro sitio web. La fecha de entrada en vigor de la parte superior se actualizara para reflejar la version mas reciente."
       ]
     },
     {
       "id": "contact",
-      "title": "10. Contacto"
+      "title": "14. Contacto"
     }
   ],
-  "contactLead": "Si tienes preguntas sobre privacidad, puedes escribirnos a:"
+  "contactLead": "Si tienes preguntas sobre privacidad o quieres ejercer tus derechos, puedes contactar con Thierry Lamain en:"
 }

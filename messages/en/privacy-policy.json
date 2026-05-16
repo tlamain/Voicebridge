@@ -1,103 +1,155 @@
 {
   "meta": {
     "title": "Privacy Policy",
-    "description": "Read how Loquor AAC handles local-first data, optional voice services, backups, and user-controlled privacy settings."
+    "description": "Read how Loquor AAC handles local-first data, optional voice services, in-app purchases, and user-controlled privacy settings."
   },
   "title": "Privacy Policy - Loquor AAC",
   "effectiveDateLabel": "Effective date",
   "effectiveDate": "January 5, 2026",
-  "intro": "Loquor AAC (\"the App\") is designed to give users a reliable communication voice using text, symbols, and optional speech synthesis. Your privacy is central to our design.",
+  "intro": "Loquor AAC (\"the App\") is designed to give users a reliable communication voice using text, symbols, and optional speech synthesis. Your privacy is central to our design. This policy explains what data the App handles, who processes it, and the choices you have.",
   "sections": [
     {
-      "id": "data-we-collect",
-      "title": "1. Data We Collect",
+      "id": "who-we-are",
+      "title": "1. Who We Are",
       "paragraphs": [
-        "Loquor AAC does not automatically collect personal data. All vocabulary, phrases, symbols, and settings are stored locally on your device only.",
-        "The App may store the following locally if you choose to use it:"
+        "Loquor AAC is operated by Thierry Lamain, an individual developer based in the Netherlands, acting as the data controller for any personal data processed in connection with the App.",
+        "You can contact us using the details in the Contact section below."
+      ]
+    },
+    {
+      "id": "data-we-collect",
+      "title": "2. Data We Collect",
+      "paragraphs": [
+        "Loquor AAC is local-first: your vocabulary, phrases, symbols, photos, and settings are stored on your device only and are not transmitted to us.",
+        "The App stores the following on your device when you use it:"
       ],
       "items": [
-        "Custom words, phrases, abbreviations",
-        "Uploaded photos or symbols you assign to buttons",
-        "Usage frequency of phrases (for better suggestions)",
-        "Admin PIN (stored in hashed or encrypted form locally)"
+        "Custom words, phrases, and abbreviations you create",
+        "Photos or symbols you assign to buttons",
+        "Usage frequency of phrases (used on-device for better suggestions)",
+        "Admin PIN (stored locally in hashed or encrypted form)",
+        "Third-party API keys you choose to enter (stored in platform secure storage)"
+      ],
+      "paragraphsAfter": [
+        "When you make an in-app purchase or subscribe, a limited amount of data is processed by our payment provider (RevenueCat) and by Apple. This is described in the In-App Purchases section below."
       ]
     },
     {
       "id": "data-not-collected",
-      "title": "2. Data Not Collected",
+      "title": "3. Data We Do Not Collect",
       "paragraphs": [
-        "We do not collect, track, or store:"
+        "We do not collect, track, sell, or share:"
       ],
       "items": [
-        "Conversation history",
-        "Voice recordings",
+        "Conversation history or messages you compose in the App",
+        "Voice recordings or microphone input",
         "Location data",
-        "Device identifiers",
-        "Analytics or tracking data",
-        "Behavioral or interest profiles",
-        "Any data used to identify you"
+        "Advertising identifiers (IDFA) and we do not track you across apps or websites",
+        "Behavioral, interest, or marketing profiles",
+        "Contacts, calendar, or health data"
+      ]
+    },
+    {
+      "id": "ios-permissions",
+      "title": "4. iOS Permissions",
+      "paragraphs": [
+        "Loquor AAC requests the following iOS permissions only when needed and only for the purposes described:"
+      ],
+      "items": [
+        "Loquor AAC needs access to your photo library so you can pick a photo to assign to a communication button. Photos stay on your device.",
+        "Loquor AAC needs access to your camera so you can take a new photo to assign to a communication button. Photos stay on your device."
       ]
     },
     {
       "id": "voice-services",
-      "title": "3. Optional Voice Services (User-Initiated Only)",
+      "title": "5. Optional Voice Services (User-Initiated Only)",
       "paragraphs": [
-        "If you enter your own API key to use third-party voice services such as ElevenLabs, text you choose to speak may be sent to that provider only at the moment you press Speak.",
-        "Loquor AAC does not store or transmit your API key outside your device. Keys are kept in secure storage on the device."
+        "If you enter your own API key to use a third-party voice service such as ElevenLabs, text you choose to speak is sent directly from your device to that provider only at the moment you press Speak.",
+        "Loquor AAC does not store or transmit your API key outside your device. Keys are kept in secure storage on the device.",
+        "Use of a third-party voice service is governed by that provider's own privacy policy. For ElevenLabs, see https://elevenlabs.io/privacy."
+      ]
+    },
+    {
+      "id": "in-app-purchases",
+      "title": "6. In-App Purchases and Subscriptions",
+      "paragraphs": [
+        "Loquor AAC uses RevenueCat to manage in-app purchases and subscriptions on the App Store. When you make a purchase or your subscription status changes, the App shares the following with RevenueCat on our behalf:"
+      ],
+      "items": [
+        "A pseudonymous app user ID generated on your device",
+        "Your purchase, transaction, and subscription status",
+        "Device model, operating system version, and app version",
+        "Country and language settings"
+      ],
+      "paragraphsAfter": [
+        "RevenueCat does not receive your name, email address, contact details, or any content you create in the App. The actual payment is handled by Apple under Apple's own privacy policy; we never see your payment details.",
+        "RevenueCat processes this data on our behalf so we can verify entitlements and deliver subscription features across your devices. For details, see https://www.revenuecat.com/privacy/ and https://www.apple.com/legal/privacy/."
       ]
     },
     {
       "id": "local-backups",
-      "title": "4. Local Backups (User-Initiated Only)",
+      "title": "7. Local Backups (User-Initiated Only)",
       "paragraphs": [
-        "You may export or back up your vocabulary manually. This is always initiated by you. We never upload backups without your action."
+        "You may export or back up your vocabulary manually. This is always initiated by you, and the file goes to a location you choose. We never upload backups to our servers."
       ]
     },
     {
       "id": "data-security",
-      "title": "5. Data Security",
+      "title": "8. Data Security",
       "paragraphs": [
-        "Because data lives on your device:"
+        "Because almost all of your data lives on your device:"
       ],
       "items": [
         "Button positions remain stable (motor-planning safe)",
-        "Vocabulary can be hidden (masked), never auto-deleted",
+        "Vocabulary can be hidden (masked) and is never automatically deleted",
         "Admin PIN access is required to modify vocabulary",
-        "API keys, if entered, are stored using platform secure storage"
+        "API keys, if entered, are stored using platform secure storage (Keychain on iOS)"
+      ]
+    },
+    {
+      "id": "data-retention",
+      "title": "9. Data Retention and Deletion",
+      "paragraphs": [
+        "Local data on your device is retained until you delete it from within the App or uninstall the App. Uninstalling Loquor AAC removes all locally stored vocabulary, photos, settings, and stored API keys.",
+        "Purchase and subscription records held by RevenueCat are retained for as long as needed to provide your subscription and to meet legal and tax obligations. You can request deletion of your RevenueCat record by contacting us."
       ]
     },
     {
       "id": "children",
-      "title": "6. Children's Privacy",
+      "title": "10. Children's Privacy",
       "paragraphs": [
-        "Loquor AAC can be used by children, but the App itself does not collect data about age, identity, or behavior. Vocabulary is managed by caregivers using a local admin PIN."
+        "Loquor AAC is intended to support communication for users of any age, including children. The App itself does not collect data about a user's age, identity, or behavior, and it does not build user profiles.",
+        "Loquor AAC does not contain third-party advertising, does not use third-party analytics SDKs, and does not sell or share any user data with marketers. Vocabulary, photos, and settings are managed by a caregiver or parent on the device through a local admin PIN.",
+        "The App is not directed primarily at children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided personal information, please contact us and we will assist."
       ]
     },
     {
       "id": "third-party-libraries",
-      "title": "7. Third-Party Libraries",
+      "title": "11. Third-Party Libraries and Services",
       "paragraphs": [
-        "The App uses open-source libraries for performance and offline storage. These libraries run on the device and do not transmit personal data."
+        "Beyond the providers described above (RevenueCat for purchases, optional voice providers such as ElevenLabs, and Apple for payments), Loquor AAC uses open-source libraries for performance and on-device storage. These libraries run on the device and do not transmit personal data."
       ]
     },
     {
       "id": "your-rights",
-      "title": "8. Your Rights",
+      "title": "12. Your Rights",
       "paragraphs": [
-        "Since no personal data is stored by us, there is nothing to request, delete, or withdraw from our servers. All your data stays in your control on your device."
+        "You retain full control of the data the App keeps on your device: you can view, edit, hide, export, or delete vocabulary, photos, and settings at any time, and uninstalling the App removes that data.",
+        "If you are in the European Economic Area, the United Kingdom, or another region with similar privacy laws, you have rights to access, correct, delete, and restrict processing of personal data we hold about you, and to lodge a complaint with your local data protection authority. Because we only process limited purchase data through RevenueCat, requests will usually relate to that data. To exercise these rights, contact us using the details below.",
+        "We do not sell your personal data and we do not use it for advertising or profiling."
       ]
     },
     {
       "id": "policy-updates",
-      "title": "9. Policy Updates",
+      "title": "13. Policy Updates",
       "paragraphs": [
-        "If this policy changes, the update will be posted inside the App and on our website. The effective date will be updated at the top."
+        "If this policy changes, the update will be posted inside the App and on our website. The effective date at the top will be updated to reflect the latest version."
       ]
     },
     {
       "id": "contact",
-      "title": "10. Contact"
+      "title": "14. Contact"
     }
   ],
-  "contactLead": "For questions about privacy, you can reach us at:"
+  "contactLead": "For questions about privacy, or to exercise your rights, you can reach Thierry Lamain at:"
 }

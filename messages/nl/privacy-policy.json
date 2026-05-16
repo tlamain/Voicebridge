@@ -1,103 +1,155 @@
 {
   "meta": {
     "title": "Privacybeleid",
-    "description": "Lees hoe Loquor AAC omgaat met lokale data, optionele stemdiensten, back-ups en privacy-instellingen onder controle van de gebruiker."
+    "description": "Lees hoe Loquor AAC omgaat met lokale data, optionele stemdiensten, in-app aankopen en privacy-instellingen onder controle van de gebruiker."
   },
   "title": "Privacybeleid - Loquor AAC",
   "effectiveDateLabel": "Ingangsdatum",
   "effectiveDate": "5 januari 2026",
-  "intro": "Loquor AAC (\"de App\") is ontworpen om gebruikers een betrouwbare communicatiestem te geven met tekst, symbolen en optionele spraaksynthese. Je privacy staat centraal in ons ontwerp.",
+  "intro": "Loquor AAC (\"de App\") is ontworpen om gebruikers een betrouwbare communicatiestem te geven met tekst, symbolen en optionele spraaksynthese. Je privacy staat centraal in ons ontwerp. Dit beleid legt uit welke gegevens de App verwerkt, wie ze verwerkt en welke keuzes je hebt.",
   "sections": [
     {
-      "id": "data-we-collect",
-      "title": "1. Gegevens die we verzamelen",
+      "id": "who-we-are",
+      "title": "1. Wie we zijn",
       "paragraphs": [
-        "Loquor AAC verzamelt niet automatisch persoonsgegevens. Alle woordenschat, zinnen, symbolen en instellingen worden uitsluitend lokaal op je apparaat opgeslagen.",
-        "De App kan de volgende gegevens lokaal opslaan als je ervoor kiest ze te gebruiken:"
+        "Loquor AAC wordt beheerd door Thierry Lamain, een onafhankelijke ontwikkelaar gevestigd in Nederland, die optreedt als verwerkingsverantwoordelijke voor alle persoonsgegevens die in verband met de App worden verwerkt.",
+        "Je kunt contact met ons opnemen via de gegevens onderaan dit beleid in de sectie Contact."
+      ]
+    },
+    {
+      "id": "data-we-collect",
+      "title": "2. Gegevens die we verwerken",
+      "paragraphs": [
+        "Loquor AAC is lokaal-eerst: je woordenschat, zinnen, symbolen, foto's en instellingen worden uitsluitend op je apparaat opgeslagen en worden niet naar ons verzonden.",
+        "De App slaat het volgende op je apparaat op wanneer je de App gebruikt:"
       ],
       "items": [
-        "Aangepaste woorden, zinnen en afkortingen",
-        "Geuploade foto's of symbolen die je aan knoppen koppelt",
-        "Gebruiksfrequentie van zinnen (voor betere suggesties)",
-        "Beheerpincode (lokaal opgeslagen in gehashte of versleutelde vorm)"
+        "Aangepaste woorden, zinnen en afkortingen die je aanmaakt",
+        "Foto's of symbolen die je aan knoppen koppelt",
+        "Gebruiksfrequentie van zinnen (op het apparaat gebruikt voor betere suggesties)",
+        "Beheerpincode (lokaal opgeslagen in gehashte of versleutelde vorm)",
+        "API-sleutels van derden die je zelf invoert (opgeslagen in de beveiligde opslag van het platform)"
+      ],
+      "paragraphsAfter": [
+        "Wanneer je een in-app aankoop doet of een abonnement neemt, wordt een beperkte hoeveelheid gegevens verwerkt door onze betaalprovider (RevenueCat) en door Apple. Dit wordt beschreven in de sectie In-app aankopen hieronder."
       ]
     },
     {
       "id": "data-not-collected",
-      "title": "2. Gegevens die niet worden verzameld",
+      "title": "3. Gegevens die we niet verzamelen",
       "paragraphs": [
-        "Wij verzamelen, volgen of bewaren niet:"
+        "We verzamelen, volgen, verkopen of delen niet:"
       ],
       "items": [
-        "Gespreksgeschiedenis",
-        "Stemopnames",
+        "Gespreksgeschiedenis of berichten die je in de App opstelt",
+        "Stemopnames of microfooninvoer",
         "Locatiegegevens",
-        "Apparaat-id's",
-        "Analyse- of trackinggegevens",
-        "Gedrags- of interesseprofielen",
-        "Gegevens waarmee je geïdentificeerd kunt worden"
+        "Advertentie-identificatoren (IDFA), en we volgen je niet tussen apps of websites",
+        "Gedrags-, interesse- of marketingprofielen",
+        "Contacten, agenda of gezondheidsgegevens"
+      ]
+    },
+    {
+      "id": "ios-permissions",
+      "title": "4. iOS-machtigingen",
+      "paragraphs": [
+        "Loquor AAC vraagt de volgende iOS-machtigingen alleen wanneer dat nodig is en alleen voor de hieronder beschreven doeleinden:"
+      ],
+      "items": [
+        "Loquor AAC heeft toegang nodig tot je fotobibliotheek zodat je een foto kunt kiezen om aan een communicatieknop te koppelen. Foto's blijven op je apparaat.",
+        "Loquor AAC heeft toegang nodig tot je camera zodat je een nieuwe foto kunt maken om aan een communicatieknop te koppelen. Foto's blijven op je apparaat."
       ]
     },
     {
       "id": "voice-services",
-      "title": "3. Optionele Stemdiensten (Alleen door de gebruiker gestart)",
+      "title": "5. Optionele stemdiensten (alleen door de gebruiker gestart)",
       "paragraphs": [
-        "Als je je eigen API-sleutel invoert om externe stemdiensten zoals ElevenLabs te gebruiken, kan tekst die je wilt laten uitspreken alleen op het moment dat je op Spreken drukt naar die provider worden verzonden.",
-        "Loquor AAC slaat je API-sleutel niet buiten je apparaat op en verzendt die ook niet. Sleutels worden bewaard in de beveiligde opslag van het apparaat."
+        "Als je je eigen API-sleutel invoert om een externe stemdienst zoals ElevenLabs te gebruiken, wordt de tekst die je wilt laten uitspreken alleen op het moment dat je op Spreken drukt rechtstreeks vanaf je apparaat naar die provider verzonden.",
+        "Loquor AAC slaat je API-sleutel niet buiten je apparaat op en verzendt die ook niet. Sleutels worden bewaard in de beveiligde opslag van het apparaat.",
+        "Het gebruik van een externe stemdienst valt onder het eigen privacybeleid van die provider. Voor ElevenLabs zie https://elevenlabs.io/privacy."
+      ]
+    },
+    {
+      "id": "in-app-purchases",
+      "title": "6. In-app aankopen en abonnementen",
+      "paragraphs": [
+        "Loquor AAC gebruikt RevenueCat om in-app aankopen en abonnementen in de App Store te beheren. Wanneer je een aankoop doet of je abonnementsstatus verandert, deelt de App namens ons het volgende met RevenueCat:"
+      ],
+      "items": [
+        "Een pseudonieme app-gebruikers-id die op je apparaat wordt gegenereerd",
+        "Je aankoop-, transactie- en abonnementsstatus",
+        "Apparaatmodel, besturingssysteemversie en app-versie",
+        "Land- en taalinstellingen"
+      ],
+      "paragraphsAfter": [
+        "RevenueCat ontvangt geen naam, e-mailadres, contactgegevens of inhoud die je in de App aanmaakt. De daadwerkelijke betaling wordt door Apple afgehandeld onder het eigen privacybeleid van Apple; wij zien je betaalgegevens nooit.",
+        "RevenueCat verwerkt deze gegevens namens ons zodat we rechten kunnen verifieren en abonnementsfuncties op meerdere apparaten kunnen leveren. Zie voor meer informatie https://www.revenuecat.com/privacy/ en https://www.apple.com/legal/privacy/."
       ]
     },
     {
       "id": "local-backups",
-      "title": "4. Lokale Back-ups (Alleen door de gebruiker gestart)",
+      "title": "7. Lokale back-ups (alleen door de gebruiker gestart)",
       "paragraphs": [
-        "Je kunt je woordenschat handmatig exporteren of back-uppen. Dit wordt altijd door jou gestart. We uploaden nooit back-ups zonder jouw actie."
+        "Je kunt je woordenschat handmatig exporteren of back-uppen. Dit wordt altijd door jou gestart en het bestand wordt opgeslagen op een locatie die jij kiest. We uploaden nooit back-ups naar onze servers."
       ]
     },
     {
       "id": "data-security",
-      "title": "5. Gegevensbeveiliging",
+      "title": "8. Gegevensbeveiliging",
       "paragraphs": [
-        "Omdat gegevens op je apparaat blijven:"
+        "Omdat vrijwel al je gegevens op je apparaat blijven:"
       ],
       "items": [
         "Blijven knopposities stabiel (veilig voor motorische planning)",
-        "Kan woordenschat worden verborgen (gemaskeerd) en nooit automatisch worden verwijderd",
+        "Kan woordenschat worden verborgen (gemaskeerd) en wordt nooit automatisch verwijderd",
         "Is toegang via beheerpincode vereist om woordenschat te wijzigen",
-        "Worden API-sleutels, indien ingevoerd, opgeslagen met de beveiligde opslag van het platform"
+        "Worden API-sleutels, indien ingevoerd, opgeslagen met de beveiligde opslag van het platform (Keychain op iOS)"
+      ]
+    },
+    {
+      "id": "data-retention",
+      "title": "9. Bewaartermijn en verwijdering",
+      "paragraphs": [
+        "Lokale gegevens op je apparaat blijven bewaard totdat je ze in de App verwijdert of de App de-installeert. Door Loquor AAC te de-installeren worden alle lokaal opgeslagen woordenschat, foto's, instellingen en opgeslagen API-sleutels verwijderd.",
+        "Aankoop- en abonnementsregistraties die door RevenueCat worden bewaard, worden bewaard zolang dat nodig is om je abonnement te leveren en om te voldoen aan wettelijke en fiscale verplichtingen. Je kunt verwijdering van je RevenueCat-registratie aanvragen door contact met ons op te nemen."
       ]
     },
     {
       "id": "children",
-      "title": "6. Privacy van Kinderen",
+      "title": "10. Privacy van kinderen",
       "paragraphs": [
-        "Loquor AAC kan door kinderen worden gebruikt, maar de App verzamelt zelf geen gegevens over leeftijd, identiteit of gedrag. Woordenschat wordt door mantelzorgers beheerd via een lokale beheerpincode."
+        "Loquor AAC is bedoeld om communicatie te ondersteunen voor gebruikers van elke leeftijd, inclusief kinderen. De App zelf verzamelt geen gegevens over de leeftijd, identiteit of het gedrag van een gebruiker en stelt geen gebruikersprofielen op.",
+        "Loquor AAC bevat geen advertenties van derden, gebruikt geen externe analyse-SDK's en verkoopt of deelt geen gebruikersgegevens met marketeers. Woordenschat, foto's en instellingen worden door een verzorger of ouder op het apparaat beheerd via een lokale beheerpincode.",
+        "De App is niet primair gericht op kinderen onder de 13 jaar en we verzamelen niet bewust persoonsgegevens van kinderen. Als je vermoedt dat een kind persoonsgegevens heeft verstrekt, neem dan contact met ons op en we helpen je."
       ]
     },
     {
       "id": "third-party-libraries",
-      "title": "7. Externe Bibliotheken",
+      "title": "11. Externe bibliotheken en diensten",
       "paragraphs": [
-        "De App gebruikt open-sourcebibliotheken voor prestaties en offline opslag. Deze bibliotheken draaien op het apparaat en verzenden geen persoonsgegevens."
+        "Naast de hierboven beschreven providers (RevenueCat voor aankopen, optionele stemproviders zoals ElevenLabs en Apple voor betalingen) gebruikt Loquor AAC open-sourcebibliotheken voor prestaties en lokale opslag. Deze bibliotheken draaien op het apparaat en verzenden geen persoonsgegevens."
       ]
     },
     {
       "id": "your-rights",
-      "title": "8. Jouw Rechten",
+      "title": "12. Jouw rechten",
       "paragraphs": [
-        "Omdat wij geen persoonsgegevens opslaan, is er niets om op onze servers op te vragen, te verwijderen of in te trekken. Al je gegevens blijven onder jouw controle op je apparaat."
+        "Je houdt volledige controle over de gegevens die de App op je apparaat bewaart: je kunt woordenschat, foto's en instellingen op elk moment bekijken, bewerken, verbergen, exporteren of verwijderen, en door de App te de-installeren worden die gegevens verwijderd.",
+        "Als je je in de Europese Economische Ruimte, het Verenigd Koninkrijk of een andere regio met vergelijkbare privacywetgeving bevindt, heb je het recht op inzage, correctie, verwijdering en beperking van de verwerking van persoonsgegevens die we over je bewaren, en het recht een klacht in te dienen bij je lokale toezichthouder. Omdat we alleen beperkte aankoopgegevens via RevenueCat verwerken, hebben verzoeken meestal betrekking op die gegevens. Neem contact met ons op via de gegevens hieronder om deze rechten uit te oefenen.",
+        "We verkopen je persoonsgegevens niet en gebruiken ze niet voor reclame of profilering."
       ]
     },
     {
       "id": "policy-updates",
-      "title": "9. Updates van dit Beleid",
+      "title": "13. Updates van dit beleid",
       "paragraphs": [
-        "Als dit beleid verandert, wordt de update in de App en op onze website geplaatst. De ingangsdatum bovenaan wordt dan bijgewerkt."
+        "Als dit beleid verandert, wordt de update in de App en op onze website geplaatst. De ingangsdatum bovenaan wordt bijgewerkt om de meest recente versie te weerspiegelen."
       ]
     },
     {
       "id": "contact",
-      "title": "10. Contact"
+      "title": "14. Contact"
     }
   ],
-  "contactLead": "Voor vragen over privacy kun je contact met ons opnemen via:"
+  "contactLead": "Voor vragen over privacy of om je rechten uit te oefenen kun je Thierry Lamain bereiken via:"
 }
